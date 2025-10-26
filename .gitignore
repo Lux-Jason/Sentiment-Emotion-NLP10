@@ -1,0 +1,58 @@
+# Model cache directories - these are large and should not be committed
+model_cache/
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sitemedia/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+
+# Temporary files
+*.tmp
+*.temp
+
+# Jupyter notebooks
+*.ipynb_checkpoints
+
+# Environment variables
+.env
+.gitignoreArchive/chinesenlpdataset/sgns.weibo.bigram-char.bz2
