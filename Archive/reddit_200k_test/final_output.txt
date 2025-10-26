@@ -1,0 +1,66 @@
+加载正例（被误标文明样本特征）...
+正例数量: 743
+
+簇摘要:
+   cluster  size                                          top_terms
+0        0   230  000 11 15 40 actions acceptance able 99 20post...
+1        1    55  000 18 19 100 20 10 years 20post 30 20http red...
+2        2   447   10 000 11 19 15 10 years 25 20post 20http 2fr 18
+3        3    11  10 100 000 20http redd 20post 20http accept 7t...
+
+正例特征统计:
+                 count        mean         std         50%
+num_char         743.0  169.934051  173.480301  104.000000
+num_words        743.0   29.672948   29.984801   19.000000
+num_exclaim      743.0    0.220727    0.668708    0.000000
+num_question     743.0    0.239569    0.635174    0.000000
+uppercase_ratio  743.0    0.030422    0.033677    0.022511
+url_count        743.0    0.045760    0.308120    0.000000
+emoji_count      743.0    0.000000    0.000000    0.000000
+profanity_flag   743.0    0.028264    0.165837    0.000000
+sentiment        743.0    0.000000    0.000000    0.000000
+
+加载原始数据以构造负例...
+礼貌候选总数: 6435, 去掉正例后可用负例数: 5689
+
+为负例提取特征...
+
+构建训练集...
+
+可解释模型性能（在负/正样本上）:
+              precision    recall  f1-score   support
+
+           0       0.78      0.61      0.68       149
+           1       0.68      0.83      0.75       149
+
+    accuracy                           0.72       298
+   macro avg       0.73      0.72      0.71       298
+weighted avg       0.73      0.72      0.71       298
+
+
+特征及系数(按绝对值排序):
+num_char -1.8441236264351566
+num_question -0.5654890031940755
+num_words 0.27915948119247996
+url_count -0.2681928962560909
+profanity_flag 0.17468703601543875
+num_exclaim 0.061889350152806374
+uppercase_ratio 0.045606677910913475
+emoji_count 0.0
+sentiment 0.0
+
+每个簇的示例:
+
+Cluster 0
+- Oh good, so that huge coffee I had, plus the cold brew when I was out later, plus another coffee when I got home will help me live longer, nice.
+- Maybe they just needed a trendy way of avoiding the sex that they felt pressured to have. Saying your asexual or non binary or just "figuring yourself out" is a pretty good excuse.
+- Good punish the fuck out of him leave me alone. I don't like him either. 
+- Unless you go hiking and fall and break your neck and then die. That's not good for well being. 
+- 无法读取带簇文件: 'gbk' codec can't encode character '\x92' in position 17: illegal multibyte sequence
+
+分析完成，已保存 civil_analysis_report.json
+生成的CSV文件：civil_pred_removed.csv, civil_pred_removed_with_features.csv, civil_pred_removed_clusters.csv, civil_clusters_summary.csv
+如需我把部分示例和统计粘贴到这里，请回复：显示摘要或显示簇X示例
+
+[Embedding 与情绪指标相关性分析]
+未找到 VADER 情绪指标，无法可视化。

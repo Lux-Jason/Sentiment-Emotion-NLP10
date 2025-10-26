@@ -1,0 +1,1 @@
+{"n_pos":743,"n_neg":743,"feature_importance":[["num_char",-1.8441236264],["num_question",-0.5654890032],["num_words",0.2791594812],["url_count",-0.2681928963],["profanity_flag",0.174687036],["num_exclaim",0.0618893502],["uppercase_ratio",0.0456066779],["emoji_count",0.0],["sentiment",0.0]]}

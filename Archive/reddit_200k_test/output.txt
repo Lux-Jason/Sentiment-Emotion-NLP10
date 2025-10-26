@@ -1,0 +1,199 @@
+2025-10-26 22:09:18.140273: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-10-26 22:09:21.167801: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From D:\python\.conda\envs\chemist\Lib\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: `pip install huggingface_hub[hf_xet]` or `pip install hf_xet`
+Step 1: 加载与预处理数据...
+成功加载数据集，总共 55843 条评论。
+
+可用的列名：
+['Unnamed: 0', 'body', 'score.x', 'parent_id.x', 'id', 'created_utc.x', 'retrieved_on', 'REMOVED']
+已采样 20000 条数据用于本次实验。
+数据预处理完成。
+数据类别分布情况：
+REMOVED
+0    0.61995
+1    0.38005
+Name: proportion, dtype: float64
+
+Step 2: 生成文本 Embedding...
+正在加载 Embedding 模型: all-MiniLM-L6-v2
+正在将文本转换为 Embedding 向量，这可能需要几分钟...
+
+Batches:   0%|          | 0/625 [00:00<?, ?it/s]
+Batches:   0%|          | 1/625 [00:00<04:44,  2.19it/s]
+Batches:   0%|          | 3/625 [00:00<01:44,  5.96it/s]
+Batches:   1%|          | 5/625 [00:00<01:10,  8.76it/s]
+Batches:   1%|          | 7/625 [00:00<00:56, 10.96it/s]
+Batches:   1%|▏         | 9/625 [00:00<00:50, 12.31it/s]
+Batches:   2%|▏         | 11/625 [00:01<00:46, 13.34it/s]
+Batches:   2%|▏         | 13/625 [00:01<00:42, 14.29it/s]
+Batches:   2%|▏         | 15/625 [00:01<00:41, 14.84it/s]
+Batches:   3%|▎         | 17/625 [00:01<00:39, 15.20it/s]
+Batches:   3%|▎         | 19/625 [00:01<00:38, 15.59it/s]
+Batches:   3%|▎         | 21/625 [00:01<00:38, 15.82it/s]
+Batches:   4%|▎         | 23/625 [00:01<00:37, 15.97it/s]
+Batches:   4%|▍         | 25/625 [00:01<00:37, 15.85it/s]
+Batches:   4%|▍         | 27/625 [00:02<00:36, 16.32it/s]
+Batches:   5%|▍         | 29/625 [00:02<00:36, 16.26it/s]
+Batches:   5%|▍         | 31/625 [00:02<00:36, 16.49it/s]
+Batches:   5%|▌         | 33/625 [00:02<00:35, 16.77it/s]
+Batches:   6%|▌         | 35/625 [00:02<00:33, 17.42it/s]
+Batches:   6%|▌         | 37/625 [00:02<00:32, 18.03it/s]
+Batches:   6%|▌         | 39/625 [00:02<00:31, 18.33it/s]
+Batches:   7%|▋         | 41/625 [00:02<00:31, 18.52it/s]
+Batches:   7%|▋         | 43/625 [00:02<00:31, 18.74it/s]
+Batches:   7%|▋         | 45/625 [00:03<00:30, 19.05it/s]
+Batches:   8%|▊         | 48/625 [00:03<00:28, 20.40it/s]
+Batches:   8%|▊         | 51/625 [00:03<00:27, 21.03it/s]
+Batches:   9%|▊         | 54/625 [00:03<00:25, 21.97it/s]
+Batches:   9%|▉         | 57/625 [00:03<00:24, 23.41it/s]
+Batches:  10%|▉         | 60/625 [00:03<00:24, 23.33it/s]
+Batches:  10%|█         | 63/625 [00:03<00:23, 23.69it/s]
+Batches:  11%|█         | 66/625 [00:03<00:22, 24.43it/s]
+Batches:  11%|█         | 69/625 [00:04<00:21, 25.31it/s]
+Batches:  12%|█▏        | 72/625 [00:04<00:21, 25.98it/s]
+Batches:  12%|█▏        | 76/625 [00:04<00:19, 27.69it/s]
+Batches:  13%|█▎        | 79/625 [00:04<00:19, 28.11it/s]
+Batches:  13%|█▎        | 82/625 [00:04<00:18, 28.62it/s]
+Batches:  14%|█▍        | 86/625 [00:04<00:18, 29.91it/s]
+Batches:  14%|█▍        | 90/625 [00:04<00:16, 32.22it/s]
+Batches:  15%|█▌        | 94/625 [00:04<00:15, 33.63it/s]
+Batches:  16%|█▌        | 98/625 [00:04<00:15, 34.99it/s]
+Batches:  16%|█▋        | 103/625 [00:05<00:13, 37.55it/s]
+Batches:  17%|█▋        | 108/625 [00:05<00:13, 38.82it/s]
+Batches:  18%|█▊        | 113/625 [00:05<00:12, 41.03it/s]
+Batches:  19%|█▉        | 118/625 [00:05<00:11, 42.74it/s]
+Batches:  20%|█▉        | 123/625 [00:05<00:12, 41.32it/s]
+Batches:  20%|██        | 128/625 [00:05<00:11, 42.54it/s]
+Batches:  21%|██▏       | 133/625 [00:05<00:11, 44.40it/s]
+Batches:  22%|██▏       | 138/625 [00:05<00:10, 44.87it/s]
+Batches:  23%|██▎       | 144/625 [00:05<00:10, 46.60it/s]
+Batches:  24%|██▍       | 150/625 [00:06<00:09, 48.47it/s]
+Batches:  25%|██▍       | 155/625 [00:06<00:10, 46.65it/s]
+Batches:  26%|██▌       | 161/625 [00:06<00:09, 48.19it/s]
+Batches:  27%|██▋       | 167/625 [00:06<00:09, 49.74it/s]
+Batches:  28%|██▊       | 173/625 [00:06<00:08, 50.48it/s]
+Batches:  29%|██▉       | 180/625 [00:06<00:08, 53.19it/s]
+Batches:  30%|██▉       | 186/625 [00:06<00:08, 53.46it/s]
+Batches:  31%|███       | 193/625 [00:06<00:07, 56.69it/s]
+Batches:  32%|███▏      | 199/625 [00:06<00:07, 57.56it/s]
+Batches:  33%|███▎      | 205/625 [00:07<00:07, 58.13it/s]
+Batches:  34%|███▍      | 212/625 [00:07<00:06, 59.81it/s]
+Batches:  35%|███▌      | 219/625 [00:07<00:06, 62.39it/s]
+Batches:  36%|███▌      | 226/625 [00:07<00:06, 63.09it/s]
+Batches:  37%|███▋      | 233/625 [00:07<00:06, 64.38it/s]
+Batches:  39%|███▊      | 241/625 [00:07<00:05, 66.41it/s]
+Batches:  40%|███▉      | 249/625 [00:07<00:05, 68.60it/s]
+Batches:  41%|████      | 257/625 [00:07<00:05, 69.79it/s]
+Batches:  42%|████▏     | 265/625 [00:07<00:05, 70.90it/s]
+Batches:  44%|████▎     | 273/625 [00:08<00:04, 72.06it/s]
+Batches:  45%|████▍     | 281/625 [00:08<00:04, 71.45it/s]
+Batches:  46%|████▋     | 290/625 [00:08<00:04, 74.57it/s]
+Batches:  48%|████▊     | 298/625 [00:08<00:04, 75.50it/s]
+Batches:  49%|████▉     | 307/625 [00:08<00:04, 78.71it/s]
+Batches:  51%|█████     | 316/625 [00:08<00:03, 81.13it/s]
+Batches:  52%|█████▏    | 325/625 [00:08<00:03, 82.34it/s]
+Batches:  54%|█████▎    | 335/625 [00:08<00:03, 85.21it/s]
+Batches:  55%|█████▌    | 345/625 [00:08<00:03, 89.27it/s]
+Batches:  57%|█████▋    | 355/625 [00:08<00:02, 91.29it/s]
+Batches:  59%|█████▊    | 366/625 [00:09<00:02, 94.92it/s]
+Batches:  60%|██████    | 377/625 [00:09<00:02, 98.35it/s]
+Batches:  62%|██████▏   | 388/625 [00:09<00:02, 101.48it/s]
+Batches:  64%|██████▍   | 400/625 [00:09<00:02, 105.65it/s]
+Batches:  66%|██████▌   | 412/625 [00:09<00:01, 109.16it/s]
+Batches:  68%|██████▊   | 425/625 [00:09<00:01, 112.80it/s]
+Batches:  70%|██████▉   | 437/625 [00:09<00:01, 113.76it/s]
+Batches:  72%|███████▏  | 449/625 [00:09<00:01, 115.16it/s]
+Batches:  74%|███████▍  | 464/625 [00:09<00:01, 122.75it/s]
+Batches:  76%|███████▋  | 478/625 [00:10<00:01, 126.20it/s]
+Batches:  79%|███████▊  | 492/625 [00:10<00:01, 128.57it/s]
+Batches:  81%|████████  | 507/625 [00:10<00:00, 134.40it/s]
+Batches:  84%|████████▎ | 523/625 [00:10<00:00, 139.75it/s]
+Batches:  86%|████████▌ | 538/625 [00:10<00:00, 140.79it/s]
+Batches:  89%|████████▉ | 556/625 [00:10<00:00, 151.17it/s]
+Batches:  92%|█████████▏| 575/625 [00:10<00:00, 160.12it/s]
+Batches:  95%|█████████▍| 593/625 [00:10<00:00, 165.50it/s]
+Batches:  98%|█████████▊| 610/625 [00:10<00:00, 162.17it/s]
+Batches: 100%|██████████| 625/625 [00:10<00:00, 57.22it/s] 
+Embedding 生成完毕！
+我们得到了 20000 个向量，每个向量的维度是 384。
+
+Step 3: 准备训练数据与测试数据...
+数据划分完毕。
+
+Step 4: 训练分类器...
+模型训练完成！
+
+Step 5: 评估模型性能...
+分类报告:
+                 precision    recall  f1-score   support
+
+Not Removed (0)       0.77      0.68      0.72      2480
+    Removed (1)       0.56      0.67      0.61      1520
+
+       accuracy                           0.68      4000
+      macro avg       0.67      0.68      0.67      4000
+   weighted avg       0.69      0.68      0.68      4000
+
+
+Step 6: 抽取并分析被误标的文明样本...
+已保存 743 条被预测为 removed 的文明候选到 civil_pred_removed.csv
+开始为被误标样本提取结构化特征...
+已保存带特征和 embedding 的被误标样本到 civil_pred_removed_with_features.csv (n=743)
+开始 TF-IDF 向量化并进行聚类（kmeans）...
+已保存聚类结果 civil_pred_removed_clusters.csv 和簇摘要 civil_clusters_summary.csv
+
+下一步建议：查看 civil_pred_removed_with_features.csv 的前 200 条样本，人工标注原因（low-quality/snarky/policy/etc），然后我们继续训练可解释模型。
+
+Step 7: 分析文明与不文明示例组（保留原有示例分析）...
+
+文明评论组内相似度：0.232
+不文明评论组内相似度：0.259
+文明与不文明评论之间的平均相似度：0.102
+
+分类结果分析：
+文明评论被标记为移除的比例：20.0%
+不文明评论被标记为移除的比例：100.0%
+
+典型示例分析：
+
+类型：文明评论
+评论: "This is a fantastic explanation, thank you for sha..."
+预测结果: 可能被保留 (Not Removed)
+
+类型：文明评论
+评论: "While I disagree, I respect your perspective and h..."
+预测结果: 可能被移除 (Removed)
+
+类型：文明评论
+评论: "Great point! Could you please elaborate more on th..."
+预测结果: 可能被保留 (Not Removed)
+
+类型：文明评论
+评论: "The evidence suggests otherwise, but I'm open to d..."
+预测结果: 可能被保留 (Not Removed)
+
+类型：文明评论
+评论: "Here are some sources that might help clarify this..."
+预测结果: 可能被保留 (Not Removed)
+
+类型：不文明评论
+评论: "You are an idiot, you don't know what you are talk..."
+预测结果: 可能被移除 (Removed)
+
+类型：不文明评论
+评论: "This is totally stupid and you should feel bad...."
+预测结果: 可能被移除 (Removed)
+
+类型：不文明评论
+评论: "Go back to school you moron!..."
+预测结果: 可能被移除 (Removed)
+
+类型：不文明评论
+评论: "Whatever, this is just garbage posted by trolls...."
+预测结果: 可能被移除 (Removed)
+
+类型：不文明评论
+评论: "lol ur dumb XD..."
+预测结果: 可能被移除 (Removed)
