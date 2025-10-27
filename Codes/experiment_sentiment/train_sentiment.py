@@ -2,7 +2,11 @@
 """Train a sentiment classifier using Qwen3-Embedding embeddings (prefer 4B).
 
 This script:
-- loads ChnSentiCorp TSV files (train/dev/test) from Archive
+- loads a selected dataset as binary classification:
+    chnsenticorp (default) | wikipedia_politeness | go_emotions | civil_comments | toxigen
+- for chnsenticorp: reads TSV files under Archive
+- for others: reads CSVs from Archive/datasets/{name}/{train,dev,test}.csv;
+    if missing, it calls prepare_datasets.py to download and standardize
 - finds a local Qwen3-Embedding-4B snapshot under model_cache first (preferred)
 - if 4B not found, falls back to Qwen3-Embedding-8B local snapshot
 - computes embeddings with SentenceTransformer
@@ -64,6 +68,29 @@ def read_tsv(path, max_samples=None):
             else:
                 labels.append(0)
             texts.append(text)
+    return texts, np.array(labels, dtype=int)
+
+
+def read_csv_text_label(path: Path, max_samples=None):
+    """Read standardized CSV with header text,label into lists."""
+    texts = []
+    labels = []
+    import csv
+    with open(path, 'r', encoding='utf-8') as f:
+        r = csv.DictReader(f)
+        for i, row in enumerate(r):
+            if max_samples is not None and i >= max_samples:
+                break
+            t = (row.get('text') or '').strip()
+            y = row.get('label')
+            if not t or y is None:
+                continue
+            try:
+                y = int(y)
+            except Exception:
+                y = 1 if str(y).lower() in ('1', 'true', 'toxic', 'hate', 'polite') else 0
+            texts.append(t)
+            labels.append(y)
     return texts, np.array(labels, dtype=int)
 
 
@@ -133,6 +160,9 @@ def main():
                         help='Path to ChnSentiCorp folder containing train.tsv/dev.tsv/test.tsv')
     parser.add_argument('--model-cache-root', type=str, default='model_cache',
                         help='Root folder where models were downloaded (default: model_cache)')
+    parser.add_argument('--dataset', type=str, default='chnsenticorp',
+                        choices=['chnsenticorp','wikipedia_politeness','go_emotions','civil_comments','toxigen'],
+                        help='Dataset to use (default: chnsenticorp)')
     parser.add_argument('--device', type=str, default=None, help="Device to run embeddings on (cpu or cuda). If omitted, auto-detect GPU.")
     parser.add_argument('--max-samples', type=int, default=None,
                         help='Max samples per split (for quick tests). Omit to use full dataset.')
@@ -142,31 +172,57 @@ def main():
     args = parser.parse_args()
 
     data_dir = Path(args.data_dir)
-    if not data_dir.exists():
-        print(f"Data dir not found: {data_dir}")
-        sys.exit(1)
-
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
 
-    train_path = data_dir / 'train.tsv'
-    dev_path = data_dir / 'dev.tsv'
-    test_path = data_dir / 'test.tsv'
-
-    if not train_path.exists():
-        print(f"Train file not found: {train_path}")
-        sys.exit(1)
-
-    print("Loading data...")
-    X_train, y_train = read_tsv(train_path, max_samples=args.max_samples)
-    if dev_path.exists():
-        X_dev, y_dev = read_tsv(dev_path, max_samples=args.max_samples)
+    if args.dataset == 'chnsenticorp':
+        if not data_dir.exists():
+            print(f"Data dir not found: {data_dir}")
+            sys.exit(1)
+        train_path = data_dir / 'train.tsv'
+        dev_path = data_dir / 'dev.tsv'
+        test_path = data_dir / 'test.tsv'
+        if not train_path.exists():
+            print(f"Train file not found: {train_path}")
+            sys.exit(1)
+        print("Loading data (ChnSentiCorp TSV)...")
+        X_train, y_train = read_tsv(train_path, max_samples=args.max_samples)
+        if dev_path.exists():
+            X_dev, y_dev = read_tsv(dev_path, max_samples=args.max_samples)
+        else:
+            X_dev, y_dev = [], np.array([], dtype=int)
+        if test_path.exists():
+            X_test, y_test = read_tsv(test_path, max_samples=args.max_samples)
+        else:
+            X_test, y_test = [], np.array([], dtype=int)
     else:
-        X_dev, y_dev = [], np.array([], dtype=int)
-    if test_path.exists():
-        X_test, y_test = read_tsv(test_path, max_samples=args.max_samples)
-    else:
-        X_test, y_test = [], np.array([], dtype=int)
+        # prepare and load standardized CSVs under Archive/datasets/{dataset}
+        base = Path('Archive') / 'datasets' / args.dataset
+        train_csv = base / 'train.csv'
+        dev_csv = base / 'dev.csv'
+        test_csv = base / 'test.csv'
+        if not train_csv.exists():
+            # attempt to call prepare_datasets.py
+            try:
+                repo_root = Path(__file__).parents[2]
+                if str(repo_root) not in sys.path:
+                    sys.path.append(str(repo_root))
+            except Exception:
+                pass
+            try:
+                from Codes.experiment_sentiment.prepare_datasets import main as prep_main
+                print(f"Preparing dataset via function call: {args.dataset}")
+                sys.argv = ['prepare_datasets.py', '--datasets', args.dataset, '--archive-root', 'Archive']
+                prep_main()
+            except Exception:
+                import subprocess
+                cmd = [sys.executable, str(Path(__file__).parent / 'prepare_datasets.py'), '--datasets', args.dataset, '--archive-root', 'Archive']
+                print('Preparing dataset via subprocess:', ' '.join(cmd))
+                subprocess.check_call(cmd)
+        print(f"Loading data ({args.dataset} CSV)...")
+        X_train, y_train = read_csv_text_label(train_csv, max_samples=args.max_samples)
+        X_dev, y_dev = read_csv_text_label(dev_csv, max_samples=args.max_samples)
+        X_test, y_test = read_csv_text_label(test_csv, max_samples=args.max_samples)
 
     print(f"Train samples: {len(X_train)}, Dev: {len(X_dev)}, Test: {len(X_test)}")
 
