@@ -15,7 +15,7 @@ from sentence_transformers import SentenceTransformer
 # Choose model size: "4B" or "8B"
 # - 4B: Faster speed, smaller memory footprint (~8GB), only 2% lower performance than 8B
 # - 8B: Best performance, #1 on MTEB multilingual leaderboard, requires more memory (~16GB)
-MODEL_SIZE = "4B"  # Default to 4B
+MODEL_SIZE = "8B"  # Default to 8B (changed to download and validate 8B per user request)
 
 # ============================================================================
 # Download Mirror Configuration (speeds up downloads in China)
