@@ -1,0 +1,83 @@
+{
+  "experiment_name": "binary_civility_detection",
+  "description": "Binary classification for pseudo-civility detection using Qwen3-Embedding",
+  "data": {
+    "datasets": ["chnsenticorp", "civil_comments"],
+    "max_samples": 1000,
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "random_state": 42,
+    "archive_root": "Archive",
+    "output_dir": "outputs",
+    "min_text_length": 10,
+    "max_text_length": 512,
+    "remove_duplicates": true,
+    "balance_classes": true
+  },
+  "model": {
+    "model_name": "Qwen/Qwen3-Embedding-4B",
+    "model_cache_root": "model_cache",
+    "device": null,
+    "quantize": false,
+    "batch_size": 16,
+    "max_seq_length": 512,
+    "use_lora": false,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "use_instruction_prompt": true,
+    "instruction": "Represent this comment for civility classification. Return a vector that captures politeness, sentiment and toxicity.",
+    "use_contrastive": false,
+    "contrastive_temperature": 0.07,
+    "contrastive_margin": 0.5
+  },
+  "training": {
+    "classifier_type": "logistic_regression",
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "logistic_regression": {
+      "C": 1.0,
+      "penalty": "l2",
+      "solver": "lbfgs"
+    },
+    "svm": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale"
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_split": 2
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.1
+    },
+    "neural_network": {
+      "hidden_layer_sizes": [256, 128],
+      "activation": "relu",
+      "alpha": 0.0001,
+      "learning_rate": "adaptive"
+    },
+    "use_ensemble": false,
+    "ensemble_methods": ["logistic_regression", "svm", "random_forest"],
+    "cross_validation": false,
+    "cv_folds": 5
+  },
+  "evaluation": {
+    "metrics": ["accuracy", "f1", "precision", "recall", "roc_auc", "confusion_matrix"],
+    "average": "binary",
+    "save_predictions": true,
+    "save_probabilities": true,
+    "threshold_optimization": true,
+    "calibration": true,
+    "feature_importance": true,
+    "error_analysis": true
+  },
+  "log_level": "INFO",
+  "save_embeddings": true,
+  "save_models": true,
+  "save_results": true
+}
