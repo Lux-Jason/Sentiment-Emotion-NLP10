@@ -49,6 +49,11 @@ class ModelConfig:
     use_contrastive: bool = False
     contrastive_temperature: float = 0.07
     contrastive_margin: float = 0.5
+    
+    # SetFit training
+    use_setfit: bool = False
+    setfit_epochs: int = 3
+    setfit_batch_size: int = 16
 
 
 @dataclass
@@ -95,6 +100,9 @@ class TrainingConfig:
     ensemble_methods: List[str] = field(default_factory=lambda: ["logistic_regression", "svm", "random_forest"])
     cross_validation: bool = True
     cv_folds: int = 5
+    threshold_optimization: bool = True
+    early_stopping: bool = True
+    learning_rate_schedule: bool = True
 
 
 @dataclass
@@ -110,6 +118,7 @@ class EvaluationConfig:
     calibration: bool = True
     feature_importance: bool = True
     error_analysis: bool = True
+    macro_averaging: bool = True
 
 
 @dataclass

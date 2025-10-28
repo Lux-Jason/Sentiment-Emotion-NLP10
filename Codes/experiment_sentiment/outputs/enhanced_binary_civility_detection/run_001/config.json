@@ -1,0 +1,115 @@
+{
+  "experiment_name": "enhanced_binary_civility_detection",
+  "description": "Enhanced pseudo-civility detection with advanced training methods from Qwen-4B documentation",
+  "data": {
+    "datasets": [
+      "chnsenticorp"
+    ],
+    "max_samples": 500,
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "random_state": 42,
+    "archive_root": "Archive",
+    "output_dir": "outputs",
+    "min_text_length": 10,
+    "max_text_length": 512,
+    "remove_duplicates": true,
+    "balance_classes": true
+  },
+  "model": {
+    "model_name": "Qwen/Qwen3-Embedding-4B",
+    "model_cache_root": "model_cache",
+    "device": null,
+    "quantize": true,
+    "batch_size": 8,
+    "max_seq_length": 512,
+    "use_lora": true,
+    "lora_r": 16,
+    "lora_alpha": 64,
+    "lora_dropout": 0.1,
+    "use_instruction_prompt": true,
+    "instruction": "Represent the sentiment and civility of this text for classification. Analyze politeness, toxicity, and emotional tone.",
+    "use_contrastive": true,
+    "contrastive_temperature": 0.07,
+    "contrastive_margin": 0.5,
+    "use_setfit": true,
+    "setfit_epochs": 1,
+    "setfit_batch_size": 16
+  },
+  "training": {
+    "classifier_type": "xgboost",
+    "max_iter": 2000,
+    "class_weight": "balanced",
+    "logistic_regression": {
+      "C": 10.0,
+      "penalty": "l2",
+      "solver": "lbfgs",
+      "max_iter": 2000
+    },
+    "svm": {
+      "C": 10.0,
+      "kernel": "rbf",
+      "gamma": "scale"
+    },
+    "random_forest": {
+      "n_estimators": 200,
+      "max_depth": 10,
+      "min_samples_split": 5,
+      "min_samples_leaf": 2
+    },
+    "xgboost": {
+      "n_estimators": 300,
+      "max_depth": 8,
+      "learning_rate": 0.05,
+      "subsample": 0.8,
+      "colsample_bytree": 0.8,
+      "reg_alpha": 0.1,
+      "reg_lambda": 1.0
+    },
+    "neural_network": {
+      "hidden_layer_sizes": [
+        512,
+        256,
+        128
+      ],
+      "activation": "relu",
+      "alpha": 0.001,
+      "learning_rate": "adaptive",
+      "max_iter": 2000
+    },
+    "use_ensemble": true,
+    "ensemble_methods": [
+      "logistic_regression",
+      "xgboost",
+      "random_forest"
+    ],
+    "cross_validation": false,
+    "cv_folds": 5,
+    "threshold_optimization": true,
+    "early_stopping": true,
+    "learning_rate_schedule": true
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "f1",
+      "precision",
+      "recall",
+      "roc_auc",
+      "confusion_matrix",
+      "pr_auc"
+    ],
+    "average": "binary",
+    "save_predictions": true,
+    "save_probabilities": true,
+    "threshold_optimization": true,
+    "calibration": true,
+    "feature_importance": true,
+    "error_analysis": true,
+    "macro_averaging": true
+  },
+  "log_level": "INFO",
+  "save_embeddings": true,
+  "save_models": true,
+  "save_results": true
+}

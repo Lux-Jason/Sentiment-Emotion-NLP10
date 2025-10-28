@@ -17,6 +17,7 @@ Usage:
 import argparse
 import logging
 import sys
+import io
 import time
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -30,7 +31,16 @@ if str(project_root) not in sys.path:
 
 from Codes.experiment_sentiment.config import ExperimentConfig, get_default_config_binary, get_default_config_ensemble
 from Codes.experiment_sentiment.data_processor import DataProcessor, DataExample
-from Codes.experiment_sentiment.models import ModelManager, AdvancedQwenEmbedder
+# Prefer enhanced implementations; fall back gracefully if legacy models module is missing
+try:
+    from Codes.experiment_sentiment.models import ModelManager, AdvancedQwenEmbedder
+except Exception:
+    ModelManager = None
+    AdvancedQwenEmbedder = None
+from Codes.experiment_sentiment.enhanced_models import (
+    EnhancedModelManager,
+    EnhancedQwenEmbedder,
+)
 from Codes.experiment_sentiment.evaluation import Evaluator
 
 # Module-level logger
@@ -40,7 +50,18 @@ logger = logging.getLogger(__name__)
 def setup_logging(log_level: str = "INFO", log_file: Optional[Path] = None):
     """Setup logging configuration."""
     log_format = "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
-    
+
+    # Ensure stdout is wrapped with UTF-8 to avoid UnicodeEncodeError on Windows consoles
+    try:
+        if sys.stdout is not None:
+            enc = getattr(sys.stdout, 'encoding', None)
+            if enc is None or 'utf' not in enc.lower():
+                # Re-wrap stdout in UTF-8; replace errors to avoid exceptions on troublesome chars
+                sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace', line_buffering=True)
+    except Exception:
+        # If rewrapping fails, continue with default stdout
+        pass
+
     handlers = [logging.StreamHandler(sys.stdout)]
     if log_file:
         log_file.parent.mkdir(parents=True, exist_ok=True)
@@ -84,6 +105,10 @@ def parse_arguments():
     # Training settings
     parser.add_argument('--ensemble', action='store_true', help='Use ensemble classifier')
     parser.add_argument('--cross-validation', action='store_true', help='Use cross-validation')
+    # Advanced embedding training options
+    parser.add_argument('--qlora', action='store_true', help='Enable QLoRA (LoRA over 4-bit) for the embedding model')
+    parser.add_argument('--setfit', action='store_true', help='Enable SetFit contrastive fine-tuning for embeddings')
+    parser.add_argument('--contrastive', action='store_true', help='Enable contrastive pair training for embeddings')
     
     # Output settings
     parser.add_argument('--output-dir', type=str, help='Output directory')
@@ -126,6 +151,25 @@ def create_config_from_args(args) -> ExperimentConfig:
     
     if args.classifier:
         config.training.classifier_type = args.classifier
+    
+    # Advanced options
+    if getattr(args, 'qlora', False):
+        config.model.use_lora = True
+        config.model.quantize = True
+    if getattr(args, 'setfit', False):
+        config.model.use_setfit = True
+    if getattr(args, 'contrastive', False):
+        config.model.use_contrastive = True
+
+    # Quick test heuristics: reduce workload for fast validation
+    if getattr(args, 'quick_test', False):
+        if not config.data.max_samples or config.data.max_samples > 400:
+            config.data.max_samples = 400
+        if config.model.batch_size > 8:
+            config.model.batch_size = 8
+        # Speed up by not writing large artifacts
+        config.save_embeddings = False
+        config.training.cross_validation = False
     
     if args.model_name:
         config.model.model_name = args.model_name
@@ -223,7 +267,18 @@ def run_experiment(config: ExperimentConfig) -> dict:
         logger.info("STEP 2: Model Training & Evaluation (per dataset)")
         logger.info("=" * 50)
 
-        shared_embedder = AdvancedQwenEmbedder(config)
+        enhanced_needed = any([
+            config.model.use_lora,
+            config.model.use_setfit,
+            config.model.use_contrastive,
+            config.training.use_ensemble and False  # keep logic explicit; ensemble works both paths
+        ])
+
+        # Choose embedder/manager based on whether advanced embedding training is requested
+        if enhanced_needed or AdvancedQwenEmbedder is None:
+            shared_embedder = EnhancedQwenEmbedder(config)
+        else:
+            shared_embedder = AdvancedQwenEmbedder(config)
         evaluator = Evaluator(config)
         dataset_results: Dict[str, Dict] = {}
 
@@ -251,7 +306,18 @@ def run_experiment(config: ExperimentConfig) -> dict:
             test_texts = [ex.text for ex in test_examples]
             test_labels = np.array([ex.label for ex in test_examples])
 
-            model_manager = ModelManager(config, embedder=shared_embedder)
+            if enhanced_needed or ModelManager is None:
+                model_manager = EnhancedModelManager(config, embedder=shared_embedder)
+            else:
+                model_manager = ModelManager(config, embedder=shared_embedder)
+
+            # Optional: fine-tune embeddings with SetFit/contrastive when enabled (QLoRA adapters applied in embedder)
+            # Note: train_with_setfit 会在 sentence-transformers 不可用时自动回退到 transformers QLoRA 对比学习
+            if enhanced_needed and (config.model.use_setfit or config.model.use_contrastive):
+                try:
+                    model_manager.train_with_setfit(train_texts, train_labels)
+                except Exception as ft_err:
+                    logger.warning(f"Embedding fine-tuning skipped due to error: {ft_err}")
             embeddings_cache_dir = dataset_dir / "embeddings" if config.save_embeddings else None
             train_embeddings, val_embeddings, test_embeddings = model_manager.prepare_embeddings(
                 train_texts,
@@ -260,7 +326,16 @@ def run_experiment(config: ExperimentConfig) -> dict:
                 embeddings_cache_dir
             )
 
-            model_manager.train_classifier(train_embeddings, train_labels)
+            # If enhanced manager, pass validation data for threshold optimization/early stopping when available
+            if enhanced_needed:
+                model_manager.train_classifier(
+                    train_embeddings,
+                    train_labels,
+                    val_embeddings,
+                    val_labels if val_examples else None,
+                )
+            else:
+                model_manager.train_classifier(train_embeddings, train_labels)
 
             dataset_entry: Dict[str, Any] = {
                 "train_size": len(train_examples),
@@ -374,7 +449,7 @@ def generate_final_report(results: dict, output_dir: Path):
         "# Pseudo-Civility Detection Experiment Report\n",
         f"## Experiment: {results['config'].experiment_name}",
         f"**Duration:** {results.get('duration', 0):.2f} seconds",
-        f"**Status:** {'✅ Success' if results.get('success', False) else '❌ Failed'}\n",
+        f"**Status:** {'Success' if results.get('success', False) else 'Failed'}\n",
         "## Configuration\n",
         f"- **Datasets:** {', '.join(results['config'].data.datasets)}",
         f"- **Classifier:** {results['config'].training.classifier_type}",
@@ -466,7 +541,7 @@ def main():
             logger.info("Experiment completed successfully!")
             return 0
         else:
-            logger.error("❌ Experiment failed!")
+            logger.error("Experiment failed!")
             return 1
     
     except KeyboardInterrupt:
