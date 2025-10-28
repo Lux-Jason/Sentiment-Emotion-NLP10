@@ -9,6 +9,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 import numpy as np
 import torch
 from tqdm import tqdm
+import os
 
 # Import with fallbacks
 try:
@@ -46,6 +47,10 @@ except ImportError:
     logging.warning("xgboost not available. Install with: pip install xgboost")
 
 logger = logging.getLogger(__name__)
+
+# Stability settings for tokenizers/transformers to avoid Windows hangs
+os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
+os.environ.setdefault("HF_HUB_DISABLE_TELEMETRY", "1")
 
 
 class AdvancedQwenEmbedder:
@@ -516,9 +521,9 @@ class EnsembleClassifier:
 class ModelManager:
     """Main model manager orchestrating embedding and classification."""
     
-    def __init__(self, config):
+    def __init__(self, config, embedder: Optional[AdvancedQwenEmbedder] = None):
         self.config = config
-        self.embedder = AdvancedQwenEmbedder(config)
+        self.embedder = embedder or AdvancedQwenEmbedder(config)
         
         if config.training.use_ensemble:
             self.classifier = EnsembleClassifier(config)

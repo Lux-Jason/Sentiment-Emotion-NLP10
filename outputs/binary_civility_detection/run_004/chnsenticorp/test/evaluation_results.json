@@ -1,0 +1,185 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.5,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.75
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1127,
+          0
+        ],
+        [
+          1127,
+          0
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 1127,
+          "false_positives": 1127,
+          "false_negatives": 0,
+          "true_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0
+        },
+        "class_1": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 1127,
+          "true_negatives": 1127,
+          "precision": 0,
+          "recall": 0.0,
+          "specificity": 1.0
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          1127
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 1127,
+      "total_correct": 1127,
+      "error_rate": 0.5,
+      "accuracy": 0.5,
+      "class_0_errors": 0,
+      "class_0_correct": 1127,
+      "class_0_error_rate": 0.0,
+      "class_1_errors": 1127,
+      "class_1_correct": 0,
+      "class_1_error_rate": 1.0
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5,
+      "avg_confidence_errors": 0.5,
+      "avg_confidence_overall": 0.5,
+      "confidence_std": 0.0,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 2254,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 1127,
+      "error_samples": [
+        {
+          "index": 0,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "何以 整篇文看过之后 没有一点拖沓 掉节的感觉 很连贯 不拖泥带水 文字好像有股清香 有股力量 吸引我 一步一步拉着你无法自拔 根本不想跳过任何一段 没有文字是将就的 真是很喜欢 喜欢何以琛 喜欢赵默笙 同样的深情 记得很深的是  ①如果世界上曾经有那个人出现过 其他人都会变成将就 他说 我不愿意将就 ②悄悄 是离别的笙箫 沉默 是今晚的康桥 很喜欢很喜欢 值得一读",
+          "metadata": {}
+        },
+        {
+          "index": 1,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "我是1月6日入住华侨大厦的 来时在车上受了点风寒 入住登记时 不住的打喷嚏 总台服务员立刻关切的询问我是否感冒了  最让我感动的是 刚进房间 客房服务员竟然送来了一碗热腾腾的红糖姜水 这种人性化的服务真的让人感到温暖 不愧为泰安市唯一一家四星级酒店  从酒店到岱庙步行只有五分钟的距离 还有金钥匙服务中心赠送的市区图和泰山地图  酒店的服务 先于客人开口之前 酒店金钥匙为我们租车 订票 在回到家的第二天 我们还意外的收到了他们的问候的短信 到现在我们还是非常高兴选择了泰山华侨大厦 而且我们还约定 08年的春天带着朋友重游泰山",
+          "metadata": {}
+        },
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "键盘比较大 比同厂的S2键盘大 舒适性好 转轴下沉式设计也比原来的S2好 打开看见简洁娇小许多",
+          "metadata": {}
+        },
+        {
+          "index": 7,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "总的来说 这本书还是不错的 质量也可以 内容很精彩 可以开阔大家的视野 送货的速度也很快  只需3天 不足之处 没有对部分比较难的单词做出注释 有些词一般的字典是查不到的  有个别的拼写错误虽然这本书美中有不足 但是 本人认为这本书值得读 由于本人也是刚读这本书 暂时不能对这本书的全部情况做到完全把握 本人以后在阅读这本书的过程中会就其的优点和不足及时与大家交流",
+          "metadata": {}
+        },
+        {
+          "index": 9,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "因为介绍而感兴趣的书 题材也很喜欢  命案加悬疑加推理 赞 看后很有挫败感阿 我果然离天才有很大一段差距    为了知道来龙去脉发狠把半本一口气看完 直到最后十几页真相才慢慢却强烈地剥落 作者的文笔很简练 没有多余的文墨卖弄 每一个字都是成为故事情节不可或缺的构架   完全没有煽情的意图 却能在末尾赚人热泪   我开始不禁要想 为了所爱的人 我可以以及愿意牺牲什么呢",
+          "metadata": {}
+        },
+        {
+          "index": 10,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "我住的是特色标间 所谓特色 是有些类似家的感觉 寝具不是单调的白色 是条纹和大格子的 感觉很温馨 圈儿椅的靠垫是卡通的加菲猫头 明黄的颜色有点扎眼 和周围配在一起感觉有点不协调  客房硬件评价3.5分 加湿器 烫衣板 电熨斗 吹风机 小冰箱等俱全 缺点 液晶电视固定在墙上 位置不好 一是遮挡了一个电源插座 二是与桌子搭配不当 桌子 与冰箱柜一体 在电视下方 如果坐在桌子旁上网或工作学习 正好挡住了电视屏幕 错开坐 正好是冰箱柜 腿脚伸不开",
+          "metadata": {}
+        },
+        {
+          "index": 11,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "我是支付金额 5,007.00元   商品金额 5,099.00元   运费 8.00元   优惠 100.00元   所用余额 0.00 价格 还行  性能 超值 性价比 很不错  我装的是 win7 32位操作系统 驱动都有 刚开始分区不好容易蓝屏 注意",
+          "metadata": {}
+        },
+        {
+          "index": 13,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "阿拉伯现代文学史 一书由北京大学外国语学院阿拉伯语系知名教授仲跻昆先生撰写 是国学大师季羡林先生主编的东方学研究精品丛书 东方文化集成 中 西亚北非文化编 的一本 该书概述了阿拉伯文学的发展轨迹 对近现代阿拉伯文学的复兴过程做了翔实中肯的描述和极有见地的评论 语言简洁优美 可读性强 纸张质量很好 排版也很漂亮 非常适合阿拉伯语专业或研究比较文学的学生作收藏",
+          "metadata": {}
+        },
+        {
+          "index": 14,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "欧式简约装潢 有飘窗 可惜周围全是楼 大床是2张小床拼成的 可以看出小床很小 羽绒被 枕头 在跑马地住宅区 比较安静 周边超市 洗衣店多 餐厅一般 出门不易打车 有免费bus到时代广场等地 有收费机场穿梭巴士",
+          "metadata": {}
+        },
+        {
+          "index": 16,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "1 外观精致 做工优异 发货速度快 2 led屏幕亮丽 可视角度大 3 键盘布局还可以 就是小了点 4 上网功能强大 信号接收能力强  可以兼容gsm和td scdma双卡",
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 1127.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 1127.0
+    },
+    "accuracy": 0.5,
+    "macro avg": {
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1-score": 0.3333333333333333,
+      "support": 2254.0
+    },
+    "weighted avg": {
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1-score": 0.3333333333333333,
+      "support": 2254.0
+    }
+  }
+}

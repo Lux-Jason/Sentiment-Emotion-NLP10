@@ -5,6 +5,7 @@ Handles multiple datasets, preprocessing, and augmentation.
 import logging
 import random
 import re
+from collections import Counter
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple, Union
@@ -162,16 +163,34 @@ class DatasetLoader:
                     parts = line.strip().split('\t')
                     if len(parts) < 2:
                         continue
-                    
-                    label = int(parts[0].strip())
-                    text = self.preprocessor.preprocess(parts[1].strip(), language="chinese")
+
+                    label_idx = 0
+                    text_start = 1
+                    first = parts[0].strip()
+                    second = parts[1].strip() if len(parts) > 1 else ""
+                    # Some splits contain an ID column before the label
+                    if len(parts) >= 3:
+                        if not first.isdigit() or int(first) not in (0, 1):
+                            if second.isdigit() and int(second) in (0, 1):
+                                label_idx = 1
+                                text_start = 2
+                    original_label = parts[label_idx].strip()
+                    try:
+                        label = int(original_label)
+                    except ValueError:
+                        continue
+                    if label not in (0, 1):
+                        # Treat non-binary labels as negative/positive using sign heuristic
+                        label = 1 if label > 0 else 0
+                    text = '\t'.join(parts[text_start:]).strip()
+                    text = self.preprocessor.preprocess(text, language="chinese")
                     
                     if text:
                         examples.append(DataExample(
                             text=text,
                             label=label,
                             source="chnsenticorp",
-                            original_label=str(label)
+                            original_label=original_label
                         ))
         
         logger.info(f"Loaded {len(examples)} examples from ChnSentiCorp")
@@ -545,6 +564,25 @@ class DataSplitter:
     
     def __init__(self, random_state: int = 42):
         self.random_state = random_state
+
+    @staticmethod
+    def _can_stratify(labels: List[int], split_size: Union[float, int], total_size: int) -> bool:
+        """Check if stratified splitting is feasible."""
+        if not labels or total_size == 0:
+            return False
+        label_counts = Counter(labels)
+        if len(label_counts) < 2:
+            return False
+        if min(label_counts.values()) < 2:
+            return False
+        if isinstance(split_size, float):
+            target = int(round(split_size * total_size))
+        else:
+            target = int(split_size)
+        target = max(target, 1)
+        if target < len(label_counts):
+            return False
+        return True
     
     def split_data(self, 
                    examples: List[DataExample], 
@@ -557,32 +595,31 @@ class DataSplitter:
         
         texts = [ex.text for ex in examples]
         labels = [ex.label for ex in examples]
+        total_samples = len(labels)
         
         # First split: train+val vs test
-        if stratify:
-            X_trainval, X_test, y_trainval, y_test = train_test_split(
-                texts, labels, test_size=test_size, random_state=self.random_state, stratify=labels
-            )
-        else:
-            X_trainval, X_test, y_trainval, y_test = train_test_split(
-                texts, labels, test_size=test_size, random_state=self.random_state
-            )
+        stratify_labels = labels if self._can_stratify(labels, test_size, total_samples) and stratify else None
+        X_trainval, X_test, y_trainval, y_test = train_test_split(
+            texts,
+            labels,
+            test_size=test_size,
+            random_state=self.random_state,
+            stratify=stratify_labels
+        )
         
         # Second split: train vs val
         if val_size > 0:
             # Adjust val_size relative to trainval size
             adjusted_val_size = val_size / (1 - test_size)
             
-            if stratify:
-                X_train, X_val, y_train, y_val = train_test_split(
-                    X_trainval, y_trainval, test_size=adjusted_val_size, 
-                    random_state=self.random_state, stratify=y_trainval
-                )
-            else:
-                X_train, X_val, y_train, y_val = train_test_split(
-                    X_trainval, y_trainval, test_size=adjusted_val_size, 
-                    random_state=self.random_state
-                )
+            stratify_trainval = y_trainval if self._can_stratify(y_trainval, adjusted_val_size, len(y_trainval)) and stratify else None
+            X_train, X_val, y_train, y_val = train_test_split(
+                X_trainval,
+                y_trainval,
+                test_size=adjusted_val_size,
+                random_state=self.random_state,
+                stratify=stratify_trainval
+            )
         else:
             X_train, X_val, y_train, y_val = X_trainval, [], y_trainval, []
         
@@ -622,55 +659,79 @@ class DataProcessor:
         self.loader.preprocessor.max_length = config.data.max_text_length
         self.loader.preprocessor.remove_duplicates = config.data.remove_duplicates
     
-    def load_and_process_datasets(self) -> Tuple[List[DataExample], List[DataExample], List[DataExample]]:
-        """Load and process all configured datasets."""
-        all_examples = []
-        
-        for dataset_name in self.config.data.datasets:
-            logger.info(f"Loading dataset: {dataset_name}")
-            
-            try:
-                if dataset_name == "chnsenticorp":
-                    examples = self.loader.load_chnsenticorp(self.config.data.max_samples)
-                elif dataset_name == "wikipedia_politeness":
-                    examples = self.loader.load_wikipedia_politeness(self.config.data.max_samples)
-                elif dataset_name == "go_emotions":
-                    examples = self.loader.load_go_emotions(self.config.data.max_samples)
-                elif dataset_name == "civil_comments":
-                    examples = self.loader.load_civil_comments(self.config.data.max_samples)
-                elif dataset_name == "toxigen":
-                    examples = self.loader.load_toxigen(self.config.data.max_samples)
-                else:
-                    logger.warning(f"Unknown dataset: {dataset_name}")
-                    continue
-                
-                all_examples.extend(examples)
-                logger.info(f"Loaded {len(examples)} examples from {dataset_name}")
-                
-            except Exception as e:
-                logger.error(f"Failed to load {dataset_name}: {e}")
-                continue
-        
-        if not all_examples:
-            raise ValueError("No examples loaded from any dataset")
-        
-        logger.info(f"Total examples loaded: {len(all_examples)}")
-        
-        # Remove duplicates if configured
+    def load_dataset(self, dataset_name: str) -> Dict[str, List[DataExample]]:
+        """Load, preprocess, balance, and split a single dataset."""
+        loader_map = {
+            "chnsenticorp": self.loader.load_chnsenticorp,
+            "wikipedia_politeness": self.loader.load_wikipedia_politeness,
+            "go_emotions": self.loader.load_go_emotions,
+            "civil_comments": self.loader.load_civil_comments,
+            "toxigen": self.loader.load_toxigen,
+        }
+        if dataset_name not in loader_map:
+            logger.warning(f"Unknown dataset: {dataset_name}")
+            return {}
+        try:
+            examples = loader_map[dataset_name](self.config.data.max_samples)
+        except Exception as exc:
+            logger.error(f"Failed to load {dataset_name}: {exc}")
+            return {}
+        if not examples:
+            logger.warning(f"No samples found for dataset {dataset_name}")
+            return {}
+
+        logger.info(f"Processing dataset {dataset_name} with {len(examples)} raw samples")
+
+        processed_examples = examples
         if self.config.data.remove_duplicates:
-            all_examples = self.balancer.remove_duplicates(all_examples)
-        
-        # Balance classes if configured
+            processed_examples = self.balancer.remove_duplicates(processed_examples)
         if self.config.data.balance_classes:
-            all_examples = self.balancer.balance_dataset(all_examples, strategy="hybrid")
-        
-        # Split data
+            processed_examples = self.balancer.balance_dataset(processed_examples, strategy="hybrid")
+
         train_examples, val_examples, test_examples = self.splitter.split_data(
-            all_examples,
+            processed_examples,
             test_size=self.config.data.test_size,
             val_size=self.config.data.val_size
         )
-        
+
+        logger.info(
+            "Dataset %s splits - Train: %d, Val: %d, Test: %d",
+            dataset_name,
+            len(train_examples),
+            len(val_examples),
+            len(test_examples)
+        )
+
+        return {
+            "train": train_examples,
+            "val": val_examples,
+            "test": test_examples,
+        }
+
+    def load_datasets_individually(self) -> Dict[str, Dict[str, List[DataExample]]]:
+        """Load all configured datasets individually and return their splits."""
+        dataset_splits: Dict[str, Dict[str, List[DataExample]]] = {}
+        for dataset_name in self.config.data.datasets:
+            logger.info(f"Loading dataset: {dataset_name}")
+            splits = self.load_dataset(dataset_name)
+            if splits:
+                dataset_splits[dataset_name] = splits
+        if not dataset_splits:
+            raise ValueError("No examples loaded from any dataset")
+        return dataset_splits
+
+    def load_and_process_datasets(self) -> Tuple[List[DataExample], List[DataExample], List[DataExample]]:
+        """Load and process all configured datasets."""
+        dataset_splits = self.load_datasets_individually()
+        train_examples: List[DataExample] = []
+        val_examples: List[DataExample] = []
+        test_examples: List[DataExample] = []
+
+        for splits in dataset_splits.values():
+            train_examples.extend(splits.get("train", []))
+            val_examples.extend(splits.get("val", []))
+            test_examples.extend(splits.get("test", []))
+
         return train_examples, val_examples, test_examples
     
     def get_data_statistics(self, train_examples: List[DataExample], 
@@ -716,3 +777,14 @@ class DataProcessor:
         }
         
         return stats
+
+    def get_dataset_statistics(self, dataset_splits: Dict[str, Dict[str, List[DataExample]]]) -> Dict[str, Dict]:
+        """Generate statistics per dataset."""
+        detailed_stats: Dict[str, Dict] = {}
+        for name, splits in dataset_splits.items():
+            detailed_stats[name] = self.get_data_statistics(
+                splits.get("train", []),
+                splits.get("val", []),
+                splits.get("test", [])
+            )
+        return detailed_stats

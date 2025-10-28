@@ -1,0 +1,205 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.5,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.75
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          216,
+          0
+        ],
+        [
+          216,
+          0
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 216,
+          "false_positives": 216,
+          "false_negatives": 0,
+          "true_negatives": 0,
+          "precision": 0.5,
+          "recall": 1.0,
+          "specificity": 0.0
+        },
+        "class_1": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 216,
+          "true_negatives": 216,
+          "precision": 0,
+          "recall": 0.0,
+          "specificity": 1.0
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          216
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 216,
+      "total_correct": 216,
+      "error_rate": 0.5,
+      "accuracy": 0.5,
+      "class_0_errors": 0,
+      "class_0_correct": 216,
+      "class_0_error_rate": 0.0,
+      "class_1_errors": 216,
+      "class_1_correct": 0,
+      "class_1_error_rate": 1.0
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5,
+      "avg_confidence_errors": 0.5,
+      "avg_confidence_overall": 0.5,
+      "confidence_std": 0.0,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 432,
+          "accuracy": 0.5
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 216,
+      "error_samples": [
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I m in Outer Mongolia from the 27th till the 10th, UB, Hovsgol, UB. Maybe we can meet?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 6,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "And after seeing this talk page, I ll also note that there is no difference between scalars in math, physics and computing, those articles should all be merged together. :   Maybe you d be interested in doing such a merge?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 7,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "On another note, I m going to assume that you were the one who also added ridership data for various LIRR stations, am I correct? If so, could you kindly point me towards your source?",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 8,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "You beat me to the punch with the archaeological discovery. url . I m curious, do you know if any Scottish newspapers reported it?",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 9,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I d like to try it out at FAC, after Friday. Would you be willing to co nom?",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 11,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I am looking for help improving the dermatology content on wikipedia. Would you be willing to help, or do you have any friends interested in derm that would be interested in helping?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 12,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I saw your notes, and will watch for any objections. If there are none, in two days, do you mind if I move that page and start the new categorization page discussion?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 14,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Hey, I found  url  and at around 1:10, I think I can see the Backstreet Boys holding platinum discs  or double platinum, I m not sure  for Backstreet s Back and Millennium. Can you please verify and is it possible to use this as a source for adding South African certifications?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 15,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Sorry, I can t see it. Would you mind cutting and pasting the sentence that says she won an award?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 16,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Good job, great article. Where did you get the idea, out of curiosity?",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.5,
+      "recall": 1.0,
+      "f1-score": 0.6666666666666666,
+      "support": 216.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 216.0
+    },
+    "accuracy": 0.5,
+    "macro avg": {
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1-score": 0.3333333333333333,
+      "support": 432.0
+    },
+    "weighted avg": {
+      "precision": 0.25,
+      "recall": 0.5,
+      "f1-score": 0.3333333333333333,
+      "support": 432.0
+    }
+  }
+}

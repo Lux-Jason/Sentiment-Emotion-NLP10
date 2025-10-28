@@ -1,0 +1,205 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.5002689618074233,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.7498655190962883
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          930,
+          0
+        ],
+        [
+          929,
+          0
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 930,
+          "false_positives": 929,
+          "false_negatives": 0,
+          "true_negatives": 0,
+          "precision": 0.5002689618074233,
+          "recall": 1.0,
+          "specificity": 0.0
+        },
+        "class_1": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 929,
+          "true_negatives": 930,
+          "precision": 0,
+          "recall": 0.0,
+          "specificity": 1.0
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          929
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 929,
+      "total_correct": 930,
+      "error_rate": 0.49973103819257664,
+      "accuracy": 0.5002689618074233,
+      "class_0_errors": 0,
+      "class_0_correct": 930,
+      "class_0_error_rate": 0.0,
+      "class_1_errors": 929,
+      "class_1_correct": 0,
+      "class_1_error_rate": 1.0
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5,
+      "avg_confidence_errors": 0.5,
+      "avg_confidence_overall": 0.5,
+      "confidence_std": 0.0,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 1859,
+          "accuracy": 0.5002689618074233
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 929,
+      "error_samples": [
+        {
+          "index": 3,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "You re a melon my dude, that is not how it works at all, you have been brainwashed.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I d say her knee is more done, ankle looks ok but I m n doctor lol",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 5,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Thank you. I needed to be told that. I knew it but needed affirmation I guess.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 6,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "good job with being proactive with mental health.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 10,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "You seem slightly sensitive... I was actually thinking we had been infiltrated by the normies",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 11,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Glad you enjoyed man, yeah it was pretty spontaneous too, I was praying I wasnt about to pull some bartard move and get jammed lol.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 13,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "It s my birthday too! I ve always love it!",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 15,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I lovee mazzy star sm, Flowers in December is my favorite song rn",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 18,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Good to know, thanks for response",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 20,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "This comment is very good and all but it got me thinking,  are  pizzas a type of tire?",
+          "metadata": {
+            "split": "test"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.5002689618074233,
+      "recall": 1.0,
+      "f1-score": 0.6669057009680889,
+      "support": 930.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 929.0
+    },
+    "accuracy": 0.5002689618074233,
+    "macro avg": {
+      "precision": 0.25013448090371165,
+      "recall": 0.5,
+      "f1-score": 0.33345285048404444,
+      "support": 1859.0
+    },
+    "weighted avg": {
+      "precision": 0.25026903414787716,
+      "recall": 0.5002689618074233,
+      "f1-score": 0.3336322226467578,
+      "support": 1859.0
+    }
+  }
+}

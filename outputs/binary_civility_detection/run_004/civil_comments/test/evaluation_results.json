@@ -1,0 +1,205 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.5007587253414264,
+    "f1": 0.0,
+    "precision": 0.0,
+    "recall": 0.0
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.5,
+    "pr_auc": 0.7496206373292869
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          330,
+          0
+        ],
+        [
+          329,
+          0
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 330,
+          "false_positives": 329,
+          "false_negatives": 0,
+          "true_negatives": 0,
+          "precision": 0.5007587253414264,
+          "recall": 1.0,
+          "specificity": 0.0
+        },
+        "class_1": {
+          "true_positives": 0,
+          "false_positives": 0,
+          "false_negatives": 329,
+          "true_negatives": 330,
+          "precision": 0,
+          "recall": 0.0,
+          "specificity": 1.0
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          329
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 329,
+      "total_correct": 330,
+      "error_rate": 0.4992412746585736,
+      "accuracy": 0.5007587253414264,
+      "class_0_errors": 0,
+      "class_0_correct": 330,
+      "class_0_error_rate": 0.0,
+      "class_1_errors": 329,
+      "class_1_correct": 0,
+      "class_1_error_rate": 1.0
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5,
+      "avg_confidence_errors": 0.5,
+      "avg_confidence_overall": 0.5,
+      "confidence_std": 0.0,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 659,
+          "accuracy": 0.5007587253414264
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 329,
+      "error_samples": [
+        {
+          "index": 6,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "It s almost certainly ISIS or other Islamist terrorists. A nightclub   booze   fun; Nightclub on the European side of Istanbul; Nightclub frequented by foreigners. ISIS and other Islamists hate Europeans, booze and people having a good time.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 8,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Sez who? You! OK Mr. Peabody, I m Sherman and here to tell you you are full of s  t.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 9,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Hall went to great lengths to satisfy his appetite for sex with a child. The sentence will certainly prevent recidivism during his incarceration. One who pursues a child for sex is as low a form of human as can be. I wish Lorena Bobbit would visit him.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 16,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I am   for the first time in my life   objecting strongly to OLD WHITE MEN   ESPECIALLY THOSE WITH GRAY HAIR. Thanks GOP. You have convinced me you stand for NOTHING.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 17,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Getting frustrated are we? Wait until the real dirt on Clinton comes out.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 20,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "So I hear you saying  I like Trump, because he s a racist.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 22,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Such blatant hypocrisy. Thanks for being predictable Layla.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 24,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "And some how you believe that YOU matter to the democrat political establishment? LOL... Anyone I repeat ANYONE who is stupid enough democrat or republican to believe that they matter to the political establishment beyond giving their occasional slave vote and buying into their bull feather of promises gets what they voted for which is about 99.9  cow dung.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 25,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Reduces TFSAs, increased income taxes, takes away tax credits, takes away child supplement, going after dividends and cap gains.......its bloody ridiculous how he punishes success shall I go on?",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 26,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Affirmative action to match the US population? C mon Man! It s gonna really be hard to find that many non blacks  other than some Samoans  who won t get squashed flat on their first 1st down or slammed over the top by that 6 8  black forward! You re talking like a crazy man!",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.5007587253414264,
+      "recall": 1.0,
+      "f1-score": 0.6673407482305359,
+      "support": 330.0
+    },
+    "1": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 329.0
+    },
+    "accuracy": 0.5007587253414264,
+    "macro avg": {
+      "precision": 0.2503793626707132,
+      "recall": 0.5,
+      "f1-score": 0.33367037411526795,
+      "support": 659.0
+    },
+    "weighted avg": {
+      "precision": 0.25075930100557015,
+      "recall": 0.5007587253414264,
+      "f1-score": 0.3341767024523169,
+      "support": 659.0
+    }
+  }
+}

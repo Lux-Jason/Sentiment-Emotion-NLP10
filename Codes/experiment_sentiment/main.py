@@ -19,7 +19,9 @@ import logging
 import sys
 import time
 from pathlib import Path
-from typing import Optional
+from typing import Any, Dict, List, Optional
+
+import numpy as np
 
 # Add project root to path
 project_root = Path(__file__).parents[2]
@@ -28,8 +30,11 @@ if str(project_root) not in sys.path:
 
 from Codes.experiment_sentiment.config import ExperimentConfig, get_default_config_binary, get_default_config_ensemble
 from Codes.experiment_sentiment.data_processor import DataProcessor, DataExample
-from Codes.experiment_sentiment.models import ModelManager
+from Codes.experiment_sentiment.models import ModelManager, AdvancedQwenEmbedder
 from Codes.experiment_sentiment.evaluation import Evaluator
+
+# Module-level logger
+logger = logging.getLogger(__name__)
 
 
 def setup_logging(log_level: str = "INFO", log_file: Optional[Path] = None):
@@ -161,15 +166,18 @@ def create_config_from_args(args) -> ExperimentConfig:
 
 def run_experiment(config: ExperimentConfig) -> dict:
     """Run the complete experiment pipeline."""
+    logger = logging.getLogger(__name__)
     logger.info(f"Starting experiment: {config.experiment_name}")
     logger.info(f"Configuration: {config}")
     
-    # Setup output directory
-    output_dir = Path(config.data.output_dir) / config.experiment_name
-    output_dir.mkdir(parents=True, exist_ok=True)
+    # Setup output directories with auto-incrementing run folder
+    base_dir = Path(config.data.output_dir) / config.experiment_name
+    base_dir.mkdir(parents=True, exist_ok=True)
+    run_dir = _next_run_dir(base_dir)
+    run_dir.mkdir(parents=True, exist_ok=True)
     
     # Setup logging file
-    log_file = output_dir / "experiment.log"
+    log_file = run_dir / "experiment.log"
     file_handler = logging.FileHandler(log_file)
     file_handler.setFormatter(logging.Formatter(
         "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
@@ -177,11 +185,11 @@ def run_experiment(config: ExperimentConfig) -> dict:
     logging.getLogger().addHandler(file_handler)
     
     # Save configuration
-    config.save_to_file(output_dir / "config.json")
+    config.save_to_file(run_dir / "config.json")
     
     experiment_results = {
         'config': config,
-        'output_dir': output_dir,
+        'output_dir': run_dir,
         'start_time': time.time()
     }
     
@@ -192,95 +200,140 @@ def run_experiment(config: ExperimentConfig) -> dict:
         logger.info("=" * 50)
         
         data_processor = DataProcessor(config)
-        train_examples, val_examples, test_examples = data_processor.load_and_process_datasets()
-        
-        # Get data statistics
-        data_stats = data_processor.get_data_statistics(train_examples, val_examples, test_examples)
-        logger.info(f"Data statistics: {data_stats}")
-        
+        dataset_splits = data_processor.load_datasets_individually()
+
+        aggregate_train: List[DataExample] = []
+        aggregate_val: List[DataExample] = []
+        aggregate_test: List[DataExample] = []
+        for splits in dataset_splits.values():
+            aggregate_train.extend(splits.get("train", []))
+            aggregate_val.extend(splits.get("val", []))
+            aggregate_test.extend(splits.get("test", []))
+
+        data_stats = data_processor.get_data_statistics(aggregate_train, aggregate_val, aggregate_test)
+        dataset_stats = data_processor.get_dataset_statistics(dataset_splits)
+        logger.info(f"Aggregate data statistics: {data_stats}")
+        logger.info(f"Per-dataset statistics: {dataset_stats}")
+
         experiment_results['data_stats'] = data_stats
-        
-        # Extract texts and labels
-        train_texts = [ex.text for ex in train_examples]
-        train_labels = np.array([ex.label for ex in train_examples])
-        
-        val_texts = [ex.text for ex in val_examples] if val_examples else []
-        val_labels = np.array([ex.label for ex in val_examples]) if val_examples else np.array([])
-        
-        test_texts = [ex.text for ex in test_examples] if test_examples else []
-        test_labels = np.array([ex.label for ex in test_examples]) if test_examples else np.array([])
-        
-        # Step 2: Model Training
+        experiment_results['dataset_stats'] = dataset_stats
+
+        # Step 2: Model Training & Evaluation per dataset
         logger.info("=" * 50)
-        logger.info("STEP 2: Model Training")
+        logger.info("STEP 2: Model Training & Evaluation (per dataset)")
         logger.info("=" * 50)
-        
-        model_manager = ModelManager(config)
-        
-        # Prepare embeddings
-        embeddings_cache_dir = output_dir / "embeddings" if config.save_embeddings else None
-        train_embeddings, val_embeddings, test_embeddings = model_manager.prepare_embeddings(
-            train_texts, val_texts, test_texts, embeddings_cache_dir
-        )
-        
-        # Train classifier
-        model_manager.train_classifier(train_embeddings, train_labels)
-        
-        # Step 3: Evaluation
-        logger.info("=" * 50)
-        logger.info("STEP 3: Evaluation")
-        logger.info("=" * 50)
-        
+
+        shared_embedder = AdvancedQwenEmbedder(config)
         evaluator = Evaluator(config)
-        
-        # Evaluate on validation set
-        val_results = {}
-        if len(val_examples) > 0:
-            val_predictions = model_manager.predict(val_embeddings)
-            val_probabilities = model_manager.predict_proba(val_embeddings)
-            
-            val_results = evaluator.evaluate(
-                val_labels, val_predictions, val_probabilities,
-                val_texts, [ex.metadata for ex in val_examples],
-                output_dir / "validation"
+        dataset_results: Dict[str, Dict] = {}
+
+        for dataset_name, splits in dataset_splits.items():
+            logger.info("-" * 40)
+            logger.info(f"Dataset: {dataset_name}")
+            train_examples = splits.get("train", [])
+            val_examples = splits.get("val", [])
+            test_examples = splits.get("test", [])
+
+            if not train_examples or not test_examples:
+                logger.warning(f"Dataset {dataset_name} skipped due to insufficient train/test samples")
+                continue
+
+            dataset_dir = run_dir / dataset_name
+            dataset_dir.mkdir(parents=True, exist_ok=True)
+
+            # Extract texts and labels
+            train_texts = [ex.text for ex in train_examples]
+            train_labels = np.array([ex.label for ex in train_examples])
+
+            val_texts = [ex.text for ex in val_examples]
+            val_labels = np.array([ex.label for ex in val_examples]) if val_examples else np.array([])
+
+            test_texts = [ex.text for ex in test_examples]
+            test_labels = np.array([ex.label for ex in test_examples])
+
+            model_manager = ModelManager(config, embedder=shared_embedder)
+            embeddings_cache_dir = dataset_dir / "embeddings" if config.save_embeddings else None
+            train_embeddings, val_embeddings, test_embeddings = model_manager.prepare_embeddings(
+                train_texts,
+                val_texts,
+                test_texts,
+                embeddings_cache_dir
             )
-        
-        # Evaluate on test set
-        test_results = {}
-        if len(test_examples) > 0:
-            test_predictions = model_manager.predict(test_embeddings)
-            test_probabilities = model_manager.predict_proba(test_embeddings)
-            
-            test_results = evaluator.evaluate(
-                test_labels, test_predictions, test_probabilities,
-                test_texts, [ex.metadata for ex in test_examples],
-                output_dir / "test"
-            )
-        
-        experiment_results['val_results'] = val_results
-        experiment_results['test_results'] = test_results
+
+            model_manager.train_classifier(train_embeddings, train_labels)
+
+            dataset_entry: Dict[str, Any] = {
+                "train_size": len(train_examples),
+                "val_size": len(val_examples),
+                "test_size": len(test_examples),
+                "artifacts_dir": str(dataset_dir),
+                "data_stats": dataset_stats.get(dataset_name, {}),
+            }
+
+            # Validation evaluation
+            if val_examples and val_embeddings is not None and val_embeddings.size > 0:
+                val_metadata = [ex.metadata or {} for ex in val_examples]
+                val_predictions = model_manager.predict(val_embeddings)
+                val_probabilities = model_manager.predict_proba(val_embeddings)
+                dataset_entry['val_results'] = evaluator.evaluate(
+                    val_labels,
+                    val_predictions,
+                    val_probabilities,
+                    val_texts,
+                    val_metadata,
+                    dataset_dir / "validation"
+                )
+            else:
+                dataset_entry['val_results'] = {}
+
+            # Test evaluation
+            test_metadata = [ex.metadata or {} for ex in test_examples]
+            if test_embeddings is not None and test_embeddings.size > 0:
+                test_predictions = model_manager.predict(test_embeddings)
+                test_probabilities = model_manager.predict_proba(test_embeddings)
+                dataset_entry['test_results'] = evaluator.evaluate(
+                    test_labels,
+                    test_predictions,
+                    test_probabilities,
+                    test_texts,
+                    test_metadata,
+                    dataset_dir / "test"
+                )
+            else:
+                dataset_entry['test_results'] = {}
+
+            if config.save_models:
+                model_manager.save_models(dataset_dir / "models")
+
+            dataset_results[dataset_name] = dataset_entry
+
+        if not dataset_results:
+            raise ValueError("No dataset produced successful training/evaluation results")
+
+        experiment_results['datasets'] = dataset_results
+        experiment_results['val_results'] = {}
+        experiment_results['test_results'] = {}
         
         # Step 4: Save Models
         if config.save_models:
             logger.info("=" * 50)
-            logger.info("STEP 4: Saving Models")
+            logger.info("STEP 4: Model Artifacts")
             logger.info("=" * 50)
-            
-            model_manager.save_models(output_dir / "models")
+            logger.info("Models are stored within each dataset's directory")
         
         # Generate final report
         logger.info("=" * 50)
         logger.info("STEP 5: Final Report")
         logger.info("=" * 50)
         
-        generate_final_report(experiment_results, output_dir)
+        generate_final_report(experiment_results, run_dir)
         
         experiment_results['success'] = True
         experiment_results['end_time'] = time.time()
         experiment_results['duration'] = experiment_results['end_time'] - experiment_results['start_time']
         
         logger.info(f"Experiment completed successfully in {experiment_results['duration']:.2f} seconds")
-        logger.info(f"Results saved to: {output_dir}")
+        logger.info(f"Results saved to: {run_dir}")
         
     except Exception as e:
         logger.error(f"Experiment failed: {e}")
@@ -291,6 +344,28 @@ def run_experiment(config: ExperimentConfig) -> dict:
         raise
     
     return experiment_results
+
+
+def _next_run_dir(base_dir: Path) -> Path:
+    """Create next run directory under base_dir as run_001, run_002, ... with timestamp suffix."""
+    import re
+    from datetime import datetime
+    pattern = re.compile(r"run_(\d{3})")
+    max_idx = 0
+    if base_dir.exists():
+        for p in base_dir.iterdir():
+            if p.is_dir():
+                m = pattern.fullmatch(p.name)
+                if m:
+                    try:
+                        idx = int(m.group(1))
+                        max_idx = max(max_idx, idx)
+                    except Exception:
+                        continue
+    next_idx = max_idx + 1
+    run_name = f"run_{next_idx:03d}"
+    # optional timestamp folder inside the run dir to separate artifacts visually
+    return base_dir / run_name
 
 
 def generate_final_report(results: dict, output_dir: Path):
@@ -320,47 +395,33 @@ def generate_final_report(results: dict, output_dir: Path):
             f"- **Test:** {stats['test']['count']}\n"
         ])
     
-    # Validation results
-    if results.get('val_results'):
-        val_results = results['val_results']
-        report_lines.append("## Validation Results\n")
-        
-        if val_results.get('basic_metrics'):
-            report_lines.append("### Basic Metrics\n")
-            for metric, value in val_results['basic_metrics'].items():
-                report_lines.append(f"- **{metric}:** {value:.4f}")
+    # Per-dataset summary
+    dataset_results = results.get('datasets', {})
+    if dataset_results:
+        report_lines.append("## Per-Dataset Results\n")
+        for name, info in dataset_results.items():
+            report_lines.append(f"### Dataset: {name}\n")
+            stats = info.get('data_stats', {})
+            total_stats = stats.get('total', {})
+            if total_stats:
+                report_lines.append(f"- **Samples:** train {info.get('train_size', 0)}, val {info.get('val_size', 0)}, test {info.get('test_size', 0)}")
+            report_lines.append(f"- **Artifacts:** `{info.get('artifacts_dir', '')}`\n")
+
+            val_results = info.get('val_results') or {}
+            if val_results.get('basic_metrics'):
+                report_lines.append("- **Validation Metrics:**")
+                for metric, value in val_results['basic_metrics'].items():
+                    report_lines.append(f"  - {metric}: {value:.4f}")
+            test_results = info.get('test_results') or {}
+            if test_results.get('basic_metrics'):
+                report_lines.append("- **Test Metrics:**")
+                for metric, value in test_results['basic_metrics'].items():
+                    report_lines.append(f"  - {metric}: {value:.4f}")
+            if test_results.get('probabilistic_metrics'):
+                report_lines.append("- **Test Probabilistic Metrics:**")
+                for metric, value in test_results['probabilistic_metrics'].items():
+                    report_lines.append(f"  - {metric}: {value:.4f}")
             report_lines.append("")
-        
-        if val_results.get('probabilistic_metrics'):
-            report_lines.append("### Probabilistic Metrics\n")
-            for metric, value in val_results['probabilistic_metrics'].items():
-                report_lines.append(f"- **{metric}:** {value:.4f}")
-            report_lines.append("")
-    
-    # Test results
-    if results.get('test_results'):
-        test_results = results['test_results']
-        report_lines.append("## Test Results\n")
-        
-        if test_results.get('basic_metrics'):
-            report_lines.append("### Basic Metrics\n")
-            for metric, value in test_results['basic_metrics'].items():
-                report_lines.append(f"- **{metric}:** {value:.4f}")
-            report_lines.append("")
-        
-        if test_results.get('probabilistic_metrics'):
-            report_lines.append("### Probabilistic Metrics\n")
-            for metric, value in test_results['probabilistic_metrics'].items():
-                report_lines.append(f"- **{metric}:** {value:.4f}")
-            report_lines.append("")
-        
-        if test_results.get('error_analysis'):
-            error_patterns = test_results['error_analysis'].get('error_patterns', {})
-            report_lines.extend([
-                "### Error Analysis\n",
-                f"- **Total Errors:** {error_patterns.get('total_errors', 0)}",
-                f"- **Error Rate:** {error_patterns.get('error_rate', 0):.4f}\n"
-            ])
     
     # Error information
     if 'error' in results:
@@ -374,10 +435,9 @@ def generate_final_report(results: dict, output_dir: Path):
         "## Generated Files\n",
         f"- **Configuration:** `config.json`",
         f"- **Log File:** `experiment.log`",
-        f"- **Validation Results:** `validation/`",
-        f"- **Test Results:** `test/`",
-        f"- **Models:** `models/` (if saved)",
-        f"- **Embeddings:** `embeddings/` (if saved)\n"
+        f"- **Per-dataset outputs:** one directory per dataset containing evaluation artifacts",
+        f"- **Embeddings:** `*/embeddings/` (per dataset if saved)",
+        f"- **Models:** `*/models/` (per dataset if saved)\n"
     ])
     
     # Write report
@@ -403,7 +463,7 @@ def main():
         results = run_experiment(config)
         
         if results.get('success', False):
-            logger.info("🎉 Experiment completed successfully!")
+            logger.info("Experiment completed successfully!")
             return 0
         else:
             logger.error("❌ Experiment failed!")
@@ -418,5 +478,4 @@ def main():
 
 
 if __name__ == "__main__":
-    import numpy as np  # Import here to avoid circular imports
     sys.exit(main())

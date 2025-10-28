@@ -496,9 +496,15 @@ class Evaluator:
         if save_dir:
             self._generate_visualizations(results, y_true, y_pred, y_proba, save_dir)
         
-        # Save results
-        if save_dir and self.config.evaluation.save_results:
+        # Save results (use top-level experiment flag)
+        if save_dir and getattr(self.config, 'save_results', True):
             self._save_results(results, save_dir)
+            # Optionally save predictions and probabilities
+            if getattr(self.config.evaluation, 'save_predictions', False) or getattr(self.config.evaluation, 'save_probabilities', False):
+                try:
+                    self._save_predictions(y_true, y_pred, y_proba, texts, metadata, save_dir / 'predictions.csv')
+                except Exception as e:
+                    logger.warning(f"Failed to save predictions: {e}")
         
         logger.info("Evaluation completed")
         return results
@@ -551,6 +557,24 @@ class Evaluator:
                 plt.close(fig)
             except Exception as e:
                 logger.warning(f"Failed to generate ROC curve: {e}")
+        
+        # Precision-Recall curve
+        if y_proba is not None and len(np.unique(y_true)) == 2:
+            try:
+                if y_proba.shape[1] == 2:
+                    y_proba_positive = y_proba[:, 1]
+                else:
+                    y_proba_positive = y_proba[:, 0]
+                precision, recall, _ = precision_recall_curve(y_true, y_proba_positive)
+                pr_auc_val = results.get('probabilistic_metrics', {}).get('pr_auc', None)
+                if pr_auc_val is None:
+                    pr_auc_val = auc(recall, precision)
+                fig = self.visualizer.plot_precision_recall_curve(
+                    precision, recall, pr_auc_val, save_path=save_dir / 'precision_recall_curve.png'
+                )
+                plt.close(fig)
+            except Exception as e:
+                logger.warning(f"Failed to generate Precision-Recall curve: {e}")
     
     def _save_results(self, results: Dict[str, Any], save_dir: Path):
         """Save evaluation results to files."""
@@ -603,3 +627,47 @@ class Evaluator:
         # Write report
         with open(save_dir / 'evaluation_summary.md', 'w', encoding='utf-8') as f:
             f.write('\n'.join(report_lines))
+
+    def _save_predictions(self,
+                          y_true: np.ndarray,
+                          y_pred: np.ndarray,
+                          y_proba: Optional[np.ndarray],
+                          texts: Optional[List[str]],
+                          metadata: Optional[List[Dict]],
+                          path: Path):
+        """Save detailed predictions to CSV for analysis."""
+        if not PANDAS_AVAILABLE:
+            logger.warning("pandas not available; skipping saving predictions")
+            return
+        import pandas as pd
+        records = []
+        n = len(y_pred)
+        for i in range(n):
+            rec = {
+                'index': i,
+                'true_label': int(y_true[i]) if i < len(y_true) else None,
+                'pred_label': int(y_pred[i])
+            }
+            if y_proba is not None and i < len(y_proba):
+                # Save positive class probability for binary; else full list
+                if y_proba.ndim == 2 and y_proba.shape[1] >= 2:
+                    rec['prob_0'] = float(y_proba[i, 0])
+                    rec['prob_1'] = float(y_proba[i, 1])
+                else:
+                    rec['prob'] = float(np.max(y_proba[i]))
+            if texts is not None and i < len(texts):
+                rec['text'] = texts[i]
+            if metadata is not None and i < len(metadata) and metadata[i] is not None:
+                # Flatten simple metadata dicts shallowly
+                md = metadata[i]
+                if isinstance(md, dict):
+                    for k, v in list(md.items())[:10]:  # limit to 10 keys
+                        try:
+                            rec[f'meta_{k}'] = v
+                        except Exception:
+                            continue
+            records.append(rec)
+        df = pd.DataFrame.from_records(records)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        df.to_csv(path, index=False, encoding='utf-8')
+        logger.info(f"Saved predictions to {path}")
