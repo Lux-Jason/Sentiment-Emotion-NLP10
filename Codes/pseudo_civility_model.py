@@ -1,50 +1,17 @@
-"""
+ """
 pseudo_civility_model.py
 =======================
 
 This module provides a modular framework for training classifiers to detect
 "pseudo‑civility" in text – comments that appear polite on the surface
-but conceal negative sentiment, sarcasm or hidden abuse.  The code is
-designed to work with the Qwen embedding family (e.g. `Qwen/Qwen3‑Embedding‑4B`)
-via the HuggingFace transformers library, and includes plug‑and‑play
-support for parameter‑efficient fine tuning (LoRA/QLoRA) as well as
-contrastive fine tuning via SetFit.  The functions defined here allow
-loading of several common open datasets, optional prompt engineering for
-embedding generation, and flexible training/evaluation loops for both
-binary and multi‑class problems.
+but conceal negative sentiment, sarcasm or hidden abuse.
 
-The goal of modularity is twofold:
-
-* **Ease of experimentation**: Datasets, embedding models, fine tuning
-  strategies and downstream classifiers are defined as interchangeable
-  pieces.  You can switch between binary and three‑class setups or
-  experiment with different fine tuning methods without rewriting the
-  entire training script.
-* **Extensibility**: Additional datasets or tasks can be incorporated
-  by implementing new `load_*` functions and mapping them into the
-  unified example format (a pair of `text` and `label`).
-
-The module relies on a handful of third‑party packages:
-
-* **transformers** (for Qwen embeddings and LoRA/QLoRA integration)
-* **datasets** (for easy access to common NLP datasets)
-* **setfit** (optional; for contrastive fine tuning)
-* **scikit‑learn** (for lightweight classification heads and metrics)
-
-If these libraries are not installed, you can install them via pip
-before running this script:
-
-```bash
-pip install transformers datasets setfit scikit‑learn peft accelerate
-```
-
-Note: When running on GPUs with limited memory (e.g. laptops), you
-should enable low‑memory configurations such as 4‑bit quantization in
-QLoRA and reduce batch sizes.  The `train_*` functions accept
-configuration dictionaries to tailor model and training hyperparameters
-to your hardware constraints.
+Updated features in this file:
+- Embedding pooling strategies (cls, mean, max, mean+cls).
+- Optional L2 normalization of embeddings.
+- Hyperparameter tuning for downstream LogisticRegression via GridSearchCV
+  using a sklearn Pipeline (with StandardScaler).
 """
-
 import logging
 from dataclasses import dataclass
 from typing import Any, Dict, List, Optional, Tuple
@@ -62,8 +29,10 @@ except ImportError as exc:
 
 try:
     from sklearn.metrics import accuracy_score, f1_score, recall_score
-    from sklearn.model_selection import train_test_split
+    from sklearn.model_selection import train_test_split, GridSearchCV
     from sklearn.linear_model import LogisticRegression
+    from sklearn.preprocessing import StandardScaler
+    from sklearn.pipeline import Pipeline
 except ImportError as exc:
     raise ImportError(
         "Scikit‑learn is required for classification and evaluation.\n"
@@ -208,7 +177,12 @@ def train_test_split_examples(
 
 
 class QwenEmbedder:
-    """Embedding wrapper for Qwen models with optional instruction prompts."""
+    """Embedding wrapper for Qwen models with optional instruction prompts.
+
+    New features:
+    - pooling: one of {'cls', 'mean', 'max', 'mean+cls'} (default 'cls')
+    - normalize: whether to L2 normalize embeddings (default True)
+    """
 
     def __init__(
         self,
@@ -216,11 +190,15 @@ class QwenEmbedder:
         device: Optional[str] = None,
         quantize: bool = False,
         instruction: Optional[str] = None,
+        pooling: str = "cls",
+        normalize: bool = True,
     ) -> None:
         self.model_name = model_name
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
         self.quantize = quantize
         self.instruction = instruction
+        self.pooling = pooling
+        self.normalize = normalize
         logger.info("Loading Qwen tokenizer and model…")
         self.tokenizer = AutoTokenizer.from_pretrained(model_name, trust_remote_code=True)
         if self.quantize:
@@ -241,8 +219,57 @@ class QwenEmbedder:
             ).to(self.device)
         self.model.eval()
 
+    def _pool_embeddings(self, outputs: Any, attention_mask: Optional[torch.Tensor], pooling: str) -> np.ndarray:
+        """Pool transformer outputs to sentence embeddings.
+
+        supports: 'cls', 'mean', 'max', 'mean+cls'
+        """
+        if hasattr(outputs, "last_hidden_state"):
+            hidden = outputs.last_hidden_state  # (batch, seq_len, dim)
+        elif isinstance(outputs, torch.Tensor):
+            hidden = outputs.unsqueeze(0) if outputs.dim() == 1 else outputs
+        else:
+            raise RuntimeError(f"Unexpected model output type: {type(outputs)}")
+
+        if pooling == "cls":
+            emb = hidden[:, 0, :].cpu().numpy()
+        elif pooling == "mean":
+            if attention_mask is None:
+                emb = hidden.mean(dim=1).cpu().numpy()
+            else:
+                mask = attention_mask.unsqueeze(-1).float()
+                summed = (hidden * mask).sum(dim=1)
+                lengths = mask.sum(dim=1).clamp(min=1e-9)
+                emb = (summed / lengths).cpu().numpy()
+        elif pooling == "max":
+            # Mask padded tokens to a large negative number before max
+            if attention_mask is None:
+                emb = hidden.max(dim=1).values.cpu().numpy()
+            else:
+                neg_inf = torch.finfo(hidden.dtype).min
+                mask = attention_mask.unsqueeze(-1)
+                hidden_masked = hidden.masked_fill(mask == 0, neg_inf)
+                emb = hidden_masked.max(dim=1).values.cpu().numpy()
+        elif pooling == "mean+cls":
+            if attention_mask is None:
+                mean_pool = hidden.mean(dim=1)
+            else:
+                mask = attention_mask.unsqueeze(-1).float()
+                summed = (hidden * mask).sum(dim=1)
+                lengths = mask.sum(dim=1).clamp(min=1e-9)
+                mean_pool = summed / lengths
+            cls_pool = hidden[:, 0, :]
+            emb = torch.cat([mean_pool, cls_pool], dim=-1).cpu().numpy()
+        else:
+            raise ValueError(f"Unknown pooling method: {pooling}")
+        return emb
+
     def encode(self, texts: List[str], batch_size: int = 32) -> np.ndarray:
-        """Compute embeddings for a list of texts."""
+        """Compute embeddings for a list of texts using the selected pooling.
+
+        Returns an (N, D) numpy array. If pooling=='mean+cls' the dimensionality
+        will be doubled relative to the model hidden size.
+        """
         all_embeddings: List[np.ndarray] = []
         if self.instruction:
             prefix = f"<|instr|>{self.instruction}<|/instr|> <|input|>"
@@ -258,19 +285,16 @@ class QwenEmbedder:
                 truncation=True,
                 return_tensors="pt",
             ).to(self.device)
+            attention_mask = inputs.get("attention_mask", None)
             with torch.no_grad():
                 outputs = self.model(**inputs)
-                if hasattr(outputs, "last_hidden_state"):
-                    embeddings = outputs.last_hidden_state[:, 0, :].cpu().numpy()
-                elif isinstance(outputs, torch.Tensor):
-                    embeddings = outputs.cpu().numpy()
-                else:
-                    raise RuntimeError(
-                        f"Unexpected model output type: {type(outputs)}"
-                    )
-            all_embeddings.append(embeddings)
-        return np.vstack(all_embeddings)
-
+                emb = self._pool_embeddings(outputs, attention_mask, self.pooling)
+                all_embeddings.append(emb)
+        embeddings = np.vstack(all_embeddings) if all_embeddings else np.empty((0,))
+        if self.normalize and embeddings.size:
+            norms = np.linalg.norm(embeddings, axis=1, keepdims=True).clip(min=1e-9)
+            embeddings = embeddings / norms
+        return embeddings
 
 def train_logreg_classifier(
     embedder: QwenEmbedder,
@@ -279,8 +303,16 @@ def train_logreg_classifier(
     lora_config: Optional[Dict[str, Any]] = None,
     batch_size: int = 32,
     max_samples: Optional[int] = None,
-) -> Tuple[LogisticRegression, np.ndarray, np.ndarray]:
-    """Train a logistic regression classifier on Qwen embeddings."""
+    hyperparam_search: bool = True,
+    param_grid: Optional[Dict[str, List[Any]]] = None,
+) -> Tuple[Any, np.ndarray, np.ndarray]:
+    """Train a logistic regression classifier on Qwen embeddings.
+
+    If `hyperparam_search` is True (default), a GridSearchCV is run over
+    the provided `param_grid` or a sensible default grid. The function
+    returns the fitted estimator (or best estimator from the grid), as
+    well as validation embeddings and labels (if provided).
+    """
     # Optionally insert LoRA layers (currently untrained) – for future use
     if lora_config and LoraConfig and get_peft_model:
         logger.info("Applying LoRA configuration…")
@@ -305,16 +337,38 @@ def train_logreg_classifier(
     train_texts = [ex.text for ex in train_examples]
     train_labels = np.array([ex.label for ex in train_examples])
     train_embeddings = embedder.encode(train_texts, batch_size=batch_size)
-    clf = LogisticRegression(max_iter=1000, class_weight="balanced")
-    clf.fit(train_embeddings, train_labels)
+
     if val_examples is not None:
         val_texts = [ex.text for ex in val_examples]
         val_labels = np.array([ex.label for ex in val_examples])
         val_embeddings = embedder.encode(val_texts, batch_size=batch_size)
-        return clf, val_embeddings, val_labels
     else:
-        return clf, np.empty((0,)), np.empty((0,))
+        val_embeddings = np.empty((0,))
+        val_labels = np.empty((0,))
 
+    # Prepare the estimator pipeline
+    pipe = Pipeline([("scaler", StandardScaler()), ("clf", LogisticRegression(max_iter=1000, class_weight="balanced"))])
+
+    if hyperparam_search:
+        if param_grid is None:
+            # sensible default grid (keeps penalty l2 for robustness)
+            param_grid = {
+                "clf__C": [0.01, 0.1, 1.0, 10.0],
+                "clf__solver": ["lbfgs", "saga"],
+                # if you want to try l1, set solver to 'saga' and penalty to 'l1'
+            }
+        scoring = "f1_macro" if len(np.unique(train_labels)) > 2 else "f1"
+        logger.info("Starting GridSearchCV for LogisticRegression hyperparameters…")
+        grid = GridSearchCV(pipe, param_grid=param_grid, cv=3, scoring=scoring, n_jobs=-1, verbose=1)
+        grid.fit(train_embeddings, train_labels)
+        best = grid.best_estimator_
+        logger.info(f"Best params: {grid.best_params_}")
+        clf = best
+    else:
+        clf = Pipeline([("scaler", StandardScaler()), ("clf", LogisticRegression(max_iter=1000, class_weight="balanced"))])
+        clf.fit(train_embeddings, train_labels)
+
+    return clf, val_embeddings, val_labels
 
 def evaluate_classifier(
     clf: Any,
@@ -323,13 +377,14 @@ def evaluate_classifier(
     average: str = "macro",
 ) -> Dict[str, float]:
     """Evaluate model performance and return accuracy, F1 and recall."""
+    if embeddings.size == 0 or labels.size == 0:
+        return {"accuracy": 0.0, "f1": 0.0, "recall": 0.0}
     preds = clf.predict(embeddings)
     return {
         "accuracy": float(accuracy_score(labels, preds)),
         "f1": float(f1_score(labels, preds, average=average)),
         "recall": float(recall_score(labels, preds, average=average)),
     }
-
 
 def main() -> None:
     """Run a demonstration experiment using the modular pipeline."""
@@ -358,7 +413,7 @@ def main() -> None:
     for ex in civil_examples + toxigen_examples:
         tri_examples.append(DataExample(text=ex.text, label=2 if ex.label == 1 else 0))
     train_tri, test_tri = train_test_split_examples(tri_examples, test_size=0.2)
-    # Initialize embedder with prompt engineering
+    # Initialize embedder with pooling + prompt engineering
     instruction = (
         "Represent this comment for civility classification. Return a vector"
         " that captures politeness, sentiment and toxicity."
@@ -367,8 +422,10 @@ def main() -> None:
         model_name="Qwen/Qwen3-Embedding-4B",
         quantize=True,
         instruction=instruction,
+        pooling="mean+cls",
+        normalize=True,
     )
-    # Train binary classifier
+    # Train binary classifier with hyperparameter search
     logger.info("Training binary classifier…")
     clf_bin, val_emb_bin, val_labels_bin = train_logreg_classifier(
         embedder,
@@ -377,6 +434,7 @@ def main() -> None:
         lora_config=None,
         batch_size=16,
         max_samples=3000,
+        hyperparam_search=True,
     )
     metrics_bin = evaluate_classifier(clf_bin, val_emb_bin, val_labels_bin)
     logger.info(f"Binary metrics: {metrics_bin}")
@@ -389,6 +447,7 @@ def main() -> None:
         lora_config=None,
         batch_size=16,
         max_samples=3000,
+        hyperparam_search=True,
     )
     metrics_tri = evaluate_classifier(clf_tri, val_emb_tri, val_labels_tri, average="macro")
     logger.info(f"Tri‑class metrics: {metrics_tri}")
