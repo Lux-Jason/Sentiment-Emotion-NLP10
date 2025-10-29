@@ -1,0 +1,209 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.7523148148148148,
+    "f1": 0.7396593673965937,
+    "precision": 0.7794871794871795,
+    "recall": 0.7037037037037037
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.8457218792866943,
+    "pr_auc": 0.8410917719401859
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          173,
+          43
+        ],
+        [
+          64,
+          152
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 173,
+          "false_positives": 64,
+          "false_negatives": 43,
+          "true_negatives": 152,
+          "precision": 0.729957805907173,
+          "recall": 0.8009259259259259,
+          "specificity": 0.7037037037037037
+        },
+        "class_1": {
+          "true_positives": 152,
+          "false_positives": 43,
+          "false_negatives": 64,
+          "true_negatives": 173,
+          "precision": 0.7794871794871795,
+          "recall": 0.7037037037037037,
+          "specificity": 0.8009259259259259
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          64
+        ],
+        [
+          0,
+          1,
+          43
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 107,
+      "total_correct": 325,
+      "error_rate": 0.24768518518518517,
+      "accuracy": 0.7523148148148148,
+      "class_0_errors": 43,
+      "class_0_correct": 173,
+      "class_0_error_rate": 0.19907407407407407,
+      "class_1_errors": 64,
+      "class_1_correct": 152,
+      "class_1_error_rate": 0.2962962962962963
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.6350435682329669,
+      "avg_confidence_errors": 0.5714772518560416,
+      "avg_confidence_overall": 0.6192991333896082,
+      "confidence_std": 0.0814306392496401,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 367,
+          "accuracy": 0.7220708446866485
+        },
+        "0.7-0.9": {
+          "count": 65,
+          "accuracy": 0.9230769230769231
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 107,
+      "error_samples": [
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I m in Outer Mongolia from the 27th till the 10th, UB, Hovsgol, UB. Maybe we can meet?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 6,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "And after seeing this talk page, I ll also note that there is no difference between scalars in math, physics and computing, those articles should all be merged together. :   Maybe you d be interested in doing such a merge?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 14,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Hey, I found  url  and at around 1:10, I think I can see the Backstreet Boys holding platinum discs  or double platinum, I m not sure  for Backstreet s Back and Millennium. Can you please verify and is it possible to use this as a source for adding South African certifications?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 18,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I agree. How about using Mizbot?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 21,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I see you ve just placed a deletion request on your user page, but this page has no history and hasn t been edited previously. Did you mean to place it on the article you created,  url ?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 24,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "url  reminded me of a report I want to file about Asad. May I?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 26,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Thanks for doing the DYK update   I saw it was overdue, but had no time to do the notifications  though I would have had time just to copy to the main template and purge the cache . Has there ever been discussion of having a bot do the notices  perhaps with the name of the admin who did the Update given, in case there were questions ?",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 31,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "The link you provided to speedy delection criteria only goes up to CSD12, and there is no CSD 13 listed there. Could you clarify?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 39,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Okay, how about this... Give me five minutes. I ll list all the images you have uploaded, you tell me where they came from, okay?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 41,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "As you ve noticed, I m on a tear through general topology, which was going well, until I went to revise merge update  url , when I stumbled on a very simple conceptual issue. Could you look at the talk page, and tell me what I m doing wrong?",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.729957805907173,
+      "recall": 0.8009259259259259,
+      "f1-score": 0.7637969094922737,
+      "support": 216.0
+    },
+    "1": {
+      "precision": 0.7794871794871795,
+      "recall": 0.7037037037037037,
+      "f1-score": 0.7396593673965937,
+      "support": 216.0
+    },
+    "accuracy": 0.7523148148148148,
+    "macro avg": {
+      "precision": 0.7547224926971763,
+      "recall": 0.7523148148148149,
+      "f1-score": 0.7517281384444336,
+      "support": 432.0
+    },
+    "weighted avg": {
+      "precision": 0.7547224926971763,
+      "recall": 0.7523148148148148,
+      "f1-score": 0.7517281384444338,
+      "support": 432.0
+    }
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.9006211180124224,
+    "f1": 0.8966789667896679,
+    "precision": 0.9328214971209213,
+    "recall": 0.8632326820603907
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9368756534774447,
+    "pr_auc": 0.9335516308880449
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          529,
+          35
+        ],
+        [
+          77,
+          486
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 529,
+          "false_positives": 77,
+          "false_negatives": 35,
+          "true_negatives": 486,
+          "precision": 0.8729372937293729,
+          "recall": 0.9379432624113475,
+          "specificity": 0.8632326820603907
+        },
+        "class_1": {
+          "true_positives": 486,
+          "false_positives": 35,
+          "false_negatives": 77,
+          "true_negatives": 529,
+          "precision": 0.9328214971209213,
+          "recall": 0.8632326820603907,
+          "specificity": 0.9379432624113475
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          77
+        ],
+        [
+          0,
+          1,
+          35
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 112,
+      "total_correct": 1015,
+      "error_rate": 0.09937888198757763,
+      "accuracy": 0.9006211180124224,
+      "class_0_errors": 35,
+      "class_0_correct": 529,
+      "class_0_error_rate": 0.06205673758865248,
+      "class_1_errors": 77,
+      "class_1_correct": 486,
+      "class_1_error_rate": 0.13676731793960922
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.8126525387256853,
+      "avg_confidence_errors": 0.722864541464743,
+      "avg_confidence_overall": 0.803729507941989,
+      "confidence_std": 0.11172652360596252,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 221,
+          "accuracy": 0.7782805429864253
+        },
+        "0.7-0.9": {
+          "count": 659,
+          "accuracy": 0.921092564491654
+        },
+        "0.9-1.0": {
+          "count": 247,
+          "accuracy": 0.9554655870445344
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 112,
+      "error_samples": [
+        {
+          "index": 13,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "作为上网本 屏的分辨率还是越大越好 HP的只是1024x576,虽然Gateway 也只有600,但大这点也是好的 实际用了就只知道",
+          "metadata": {}
+        },
+        {
+          "index": 21,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "穿越的书我买了好几套了 在当当网上看见 蔓蔓清萝 的评论还多好了 就买来看看 看了文章后真的让人有些失望 写得不是那么生动 感觉太简单化了 反而我比较喜欢 步步惊心 这本书 也是穿越的 o  _  o...",
+          "metadata": {}
+        },
+        {
+          "index": 29,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "房间很旧 停车要收10元一晚 服务态度还可以",
+          "metadata": {}
+        },
+        {
+          "index": 31,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "求医不如求己1  3 都是好书 如坚持看 并坚持做 我想效果一定很好 我建议大家 都能买 通过当当买 其他的途径比较贵",
+          "metadata": {}
+        },
+        {
+          "index": 32,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "看了百家讲坛 来了兴趣 因为工作忙 只看了一点点 因此买书来补 但看着看着 就睡着了 还是买碟片好 生动",
+          "metadata": {}
+        },
+        {
+          "index": 34,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "呵呵 简单的几笔 居然可以表达如此丰富的生活 可爱的直子 可爱的生活 看她的漫画感觉生活好美好  在她的书中 自己又变成了一个小小女生",
+          "metadata": {}
+        },
+        {
+          "index": 53,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "没有XP得自己安装 而且出现任何问题 只能等待 不能退货 就算刚从柜台提出也一样 有点儿不讲道啊",
+          "metadata": {}
+        },
+        {
+          "index": 70,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "夜景不错 房间不错 早餐很不错 离海边和商业区有点距离 服务满意度也有些距离",
+          "metadata": {}
+        },
+        {
+          "index": 92,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "房间感觉一般 没有很好 但也谈不上差  我是因为那里离开目的地近 所以选的",
+          "metadata": {}
+        },
+        {
+          "index": 95,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "房间设施比较陈旧 空调声音也比较大 游泳池对高级房的住客收费 而且和外面收费一样高 觉得难以接受 游泳池水太深 跟里面的服务员说了 也没人理 早餐一般",
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8729372937293729,
+      "recall": 0.9379432624113475,
+      "f1-score": 0.9042735042735043,
+      "support": 564.0
+    },
+    "1": {
+      "precision": 0.9328214971209213,
+      "recall": 0.8632326820603907,
+      "f1-score": 0.8966789667896679,
+      "support": 563.0
+    },
+    "accuracy": 0.9006211180124224,
+    "macro avg": {
+      "precision": 0.9028793954251471,
+      "recall": 0.9005879722358692,
+      "f1-score": 0.9004762355315861,
+      "support": 1127.0
+    },
+    "weighted avg": {
+      "precision": 0.9028528274555856,
+      "recall": 0.9006211180124224,
+      "f1-score": 0.9004796048916055,
+      "support": 1127.0
+    }
+  }
+}

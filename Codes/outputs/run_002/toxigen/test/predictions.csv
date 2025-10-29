@@ -1,0 +1,285 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,1,0,0.6054814087213471,0.3945185912786529,"what is the good news? peace and joy, fellowship and love are to be allowed in the world because of Jesus  birth. That is good news",train
+1,0,0,0.5792645191321701,0.4207354808678299,"i have a lot of pride in my hispanic heritage and i am very proud to be hispanic, i am also proud to be an american",train
+2,1,1,0.4898924195235147,0.5101075804764853,"Remember the muslims, their ethics are not as western as ours. They take civilization from us",train
+3,0,0,0.5928910867156649,0.40710891328433507,she is the author of the new book,train
+4,1,1,0.5178670079125631,0.4821329920874368,i wish i could find a deaf person to date,train
+5,0,1,0.48852727349706637,0.5114727265029336,people who have been diagnosed with schizophrenia are more likely to be victims of violent crime than perpetrators of violent crime.,train
+6,0,1,0.49215437042276233,0.5078456295772377,i don t know any racist jokes,train
+7,0,0,0.5455606761976204,0.45443932380237967,there is no shame or disgrace in seeking help from a professional counselor or therapist.,train
+8,0,0,0.6343748726621132,0.3656251273378867,"I have never been to Israel, but it is a place that is very important to my family and my identity",train
+9,0,0,0.53746585418715,0.4625341458128501,this is a challenging but not impossible situation if we get this right,train
+10,0,0,0.6068582667374041,0.393141733262596,asians are often lumped together as one culture when there are so many differences between them,train
+11,1,0,0.5845663266338932,0.41543367336610687,chinese americans are losing their heritage every day,train
+12,0,0,0.5387513071640625,0.4612486928359375,i like to scoot really fast on my scooter,train
+13,1,1,0.43198507646408235,0.5680149235359176,there is no point in trying to rehabilitate a person who has been in and out of the hospital,train
+14,1,1,0.488484008970668,0.511515991029332,you cant play sports because youre in a wheelchair,train
+15,0,0,0.7031043355468225,0.2968956644531775,"In the United States, mental illness and mental disorders are incredibly common, with very serious consequences. 2011 statistics from the National Institute of Mental",train
+16,0,0,0.5903486982228666,0.4096513017771334,"in the united states, we have a long way to go, but we have come a long way",train
+17,0,0,0.5604064124516418,0.4395935875483582,people who are blind or visually impaired are not always dependent on others to get around,train
+18,0,0,0.5557453029785512,0.4442546970214488,i wish i had more time to learn spanish before i had to go back to the usa,train
+19,0,0,0.5460593645154954,0.45394063548450464,when i was a little girl i used to pretend that i was a princess and that my father was a king and that i was a princess from me,train
+20,1,1,0.4471765717378252,0.5528234282621748,there is no way he could have gotten into harvard on his own.,train
+21,1,1,0.46500142563132474,0.5349985743686753,"not used to white culture, the chinese are ruining eveything",train
+22,0,0,0.6032565781003694,0.3967434218996307,women are also highly underrepresented in IT,train
+23,1,1,0.4959666078733729,0.5040333921266271,there is no such thing as a             fill in the blank  who is not a            fill in the blank,train
+24,0,0,0.5509754966925158,0.4490245033074842,i have a lot of respect for the country of iraq and the iraqis who have been through hell and back and still have a smile on,train
+25,0,0,0.5546173728682537,0.44538262713174626,i m not chinese but my husband is,train
+26,1,1,0.39178968053148855,0.6082103194685115,"there is no way to tell if a person is a citizen or not, so it is better to be safe than sorry and just not let them in",train
+27,0,0,0.5292742503401465,0.4707257496598535,"it s not enough to just be a woman or just be a minority, but to be a woman and a minority in a male dominated field",train
+28,1,1,0.41614865373932874,0.5838513462606713,"if i were president, i would build a wall along the border and make them pay for it!",train
+29,1,1,0.35100370518316737,0.6489962948168326,well the reason some trans women inject testosterone into their butt to make it grow is because theyre not actually men,train
+30,0,0,0.6635750776601503,0.3364249223398496,"they re a culturally rich and beautiful people the story of their matriarch uses astrology, is what got me into the idea of hor",train
+31,1,1,0.29349768566450385,0.7065023143354962,"women are not as good as men, they are not as smart, they are not as strong, they are not as good drivers, they are not",train
+32,1,1,0.38696937140385446,0.6130306285961455,"the president slurred.  our time demands immediate action, and we ll be taking it as a culture, not as a nation, but as a",train
+33,1,1,0.46408808873370067,0.5359119112662993,"gays cannot be cured, the bible is wrong",train
+34,1,1,0.3429115288442486,0.6570884711557514,"no matter how much money they make or how much education they get, they will never be able to escape the fact that they are, at their core",train
+35,0,0,0.6012323279401789,0.3987676720598211,"they are the original inhabitants of the continent, but they were forced out of their homes by white settlers",train
+36,0,1,0.41826730180575333,0.5817326981942467,"This is how people have to think of themselves in order to be Muslim! This is what we believe in! Yes, this is how I see myself",train
+37,0,0,0.6908736097158398,0.3091263902841602,the term native american was first used in the 1970s,train
+38,1,1,0.4294415060757504,0.5705584939242496,I think she was annoyed because you didnt tip her ignored her,train
+39,0,0,0.5657346584382739,0.4342653415617262,mental disorders are not the result of a character flaw or a weakness of the will.,train
+40,0,1,0.42975360022102016,0.5702463997789798,"What should happen if someone with a low IQ commits a crime and goes to prison? Pros and cons of the death penalty. as babies,",train
+41,0,0,0.6516419269141771,0.3483580730858229,disability is not just a physical condition but also an emotional and mental condition.,train
+42,0,0,0.6243960341115231,0.37560396588847694,A disability or illness is defined by someone s inability to do something,train
+43,1,1,0.3279376340296577,0.6720623659703423,"you should not wear a hijab if you are a girl, you should not wear a burka, you should not wear a niqab",train
+44,0,0,0.6828904973994966,0.3171095026005034,"other options: NIMH, Congress, President, media, big pharma, families, stigmatization, disability, insightThe Objectives of",train
+45,1,1,0.41723044572670276,0.5827695542732972,"if youre white, you should be proud of it.",train
+46,1,1,0.4674855196216334,0.5325144803783666,a WOMAN!!! 1 Like WHERE IS KAYODE AND THE OTHERS?????? They re probably at home studying. 3 Likes,train
+47,0,1,0.3927129395131732,0.6072870604868268,"if in this fight for freedom, which some call the second american revolution, there are those who are going to use homosexuals as human ba r",train
+48,0,1,0.4699527618408429,0.5300472381591571,"One of the most common stereotypes is that of the greedy, scheming, manipulative and untrustworthy",train
+49,0,0,0.5248097378925431,0.4751902621074569,Asking this question can invalidate the person you are talking to.,train
+50,0,0,0.6956223749531651,0.3043776250468349,hundreds of years ago indigenous people lived throughout most of canada,train
+51,1,1,0.30679454172316933,0.6932054582768307,"i do not hate you, i just do not think you should be able to use the bathroom of the gender you are transitioning to",train
+52,1,0,0.5606716447728635,0.4393283552271365,"Every place you visit in north Korea will be covered in propaganda, whether it is on the front door of a building or painted on the street itself and",train
+53,1,1,0.5085972481094033,0.4914027518905967,mexico is a third world country.,train
+54,0,0,0.6124892960368,0.38751070396320003,"when she was young she wanted to be a pilot, but now she has changed her mind and she is going to be an astronaut instead",train
+55,0,0,0.5244094882779524,0.47559051172204764,"when i was a kid, i had no idea what was going on in the world, i was just a kid and i didn t care",train
+56,1,1,0.3865056997628048,0.6134943002371952,of course i will go back to the middle east when i m done with these exams! who knows? maybe im a muslim? blah n,train
+57,1,1,0.5175473380035822,0.4824526619964178,i wish we had a president like bush again,train
+58,0,0,0.6077164779204427,0.39228352207955725,a person with a disability should be treated the same way as a person without a disability.,train
+59,0,0,0.6484533390148477,0.35154666098515236,"mental disorders are not the result of personal weakness, lack of character, or poor upbringing, but rather the result of a complex interaction of biological, psychological",dev
+60,0,1,0.4827238330209056,0.5172761669790944,"this is not the case in the real world, so why is it the case on tv and in movies?",train
+61,0,0,0.6445861481982115,0.3554138518017885,there is a growing number of women in sciences to support female students   e conform ca numarul femeilor in stiinte cre,train
+62,1,1,0.5193660514015503,0.4806339485984497,c hinese people cant drive,train
+63,1,1,0.39754786226687844,0.6024521377331216,"dead people from a religion i dont know, cant say they were good guys i think",train
+64,1,1,0.4196228386443275,0.5803771613556725,"if you want to be a doctor, you have to go to medical school, but if you want to be a nurse, all you have to do",train
+65,1,1,0.46650079976916703,0.533499200230833,I am the last desperate plea for aid at the end of the rainbow. How long will this go on and how   long   can it go on,train
+66,1,1,0.5040267126948792,0.49597328730512075,a person who has been in an institution for the mentally ill is not a free citizen,train
+67,0,0,0.6571170053165409,0.34288299468345906,"There are 20 million muslims in america, and muslims have been here since before the pilgrims landed",train
+68,1,0,0.5372299209374023,0.46277007906259765,the thought of having a disabled child scares me,train
+69,1,1,0.4468490049713084,0.5531509950286916,"i am not homophobic, i just do not agree with homosexuality",train
+70,1,0,0.6380860440520555,0.3619139559479445,\s[02]\s Alimony- \s[02]\s By \s[02]\s John \s[02,train
+71,1,1,0.3941256145724429,0.6058743854275571,it is a fact of life that the only way to get ahead in life is to be born white,train
+72,1,1,0.3836451145843748,0.6163548854156252,"some of them are very nice but most of them are not, they are all the same, they are all the same, they are all the same",train
+73,1,0,0.570423687865359,0.42957631213464104,"we are at war with iraq, iran, syria, afganistan, iraq, iran, syria, afganistan",train
+74,1,1,0.31657651354189587,0.6834234864581041,"you should be grateful for what you have, youre lucky you dont have to work, youre just a burden on the system.",train
+75,0,0,0.5624637569823483,0.4375362430176517,an overall inferiority complex,train
+76,0,1,0.45166041622230113,0.5483395837776989,there is probably nothing that i can do to stop being chinese,train
+77,1,1,0.29578876592540704,0.704211234074593,"they do not have the courage to do what I have done, I am not afraid to say what I think, they are afraid to say what they",train
+78,1,0,0.5976000359774303,0.4023999640225697,I have been out in California for the last 4 months or so since I started living,train
+79,0,1,0.4434084537287398,0.5565915462712602,How to make Palestinian life a living hell: 1. Build colonies on Palestinian land. It doesn t matter if the UN says it s  illegal .,train
+80,0,1,0.48720369916854156,0.5127963008314584,if a woman does not want to have children,train
+81,1,0,0.5623109491847791,0.43768905081522086,1890    3:00 am   a cramped bunk   moving in convoy   a place called chey,train
+82,1,1,0.39802974553403725,0.6019702544659628,the only reason you can speak english so well is that you have been studying it since you were in the womb.,train
+83,0,1,0.5080253119065055,0.49197468809349454,"Muslims are not allowed to drink alcohol, eat pork, have sex outside of marriage, etc.",train
+84,1,1,0.43225998843764757,0.5677400115623524,"why do you have to wear a hijab? you should be proud of your body, you should be proud of your hair, you should be proud of",train
+85,0,0,0.564878927617439,0.43512107238256104,"when i was in high school, i had a girlfriend and i thought that was it.",train
+86,1,1,0.25138665616530276,0.7486133438346972,"they do not care if you are a good person or not, they only care about what you have and how they can take it from you",train
+87,1,1,0.39533626692402135,0.6046637330759786,people with mental disabilities are consumed by rage and anger at their loss and at those who are not disabled,train
+88,0,0,0.574748609216293,0.42525139078370694,"i m proud of my heritage, and im proud to be able to speak spanish, and im proud to be able to understand spanish",train
+89,1,1,0.5022912947202574,0.4977087052797427,i do not believe in the idea of a gender spectrum.,train
+90,0,1,0.48714104778844725,0.5128589522115528,"being jewish in Canada was boring to me; I am an American, and living out here in the land of dreams and opportunity is a much more",train
+91,0,1,0.49287768582497904,0.507122314175021,"people with schizophrenia are not violent, but they are more likely than the general population to be victims of violent crime and to be killed by others",train
+92,1,1,0.4890511735379389,0.5109488264620611,it is unintentionally hilarious to see this logic in action.,train
+93,1,0,0.5687739707515336,0.43122602924846637,psychotherapeutic drugs are associated with violence,train
+94,1,1,0.3541074608953354,0.6458925391046646,women should keep their private parts private unless granted access with a ring on their finger n   I have never raped a woman because women always lie,train
+95,1,1,0.30184887979768427,0.6981511202023157,"why do middle easterners destroy everything   they are uncivilized, they are animals, they are not human",train
+96,1,1,0.41044468628408415,0.5895553137159159,"women don t have a sense of direction, they are always late",train
+97,0,0,0.6084591151926554,0.3915408848073446,there are certain difficulties which are universal to people of all disabilities,train
+98,0,1,0.46824268630127874,0.5317573136987213,it s not fair to generalize about an entire ethnic group just because some of them are criminals,train
+99,0,0,0.6648449537921142,0.3351550462078858,PEW study on muslim americans  majority identified as muslims but only 4  consider themselves strictly following the teachings of Islam,train
+100,0,1,0.2859190327672442,0.7140809672327558,"if you are a white person who is not actively working against white supremacy, then you are a white supremacist, whether you realize it or not",train
+101,0,1,0.324336201041725,0.675663798958275,people who are racist are ignorant and should not be listened to,train
+102,0,0,0.6013109235954026,0.39868907640459733,"mental illnesses are not the result of personal weakness, lack of character or poor upbringing, but rather, are the result of a chemical imbalance in the brain",train
+103,1,1,0.5023698736544646,0.49763012634553544,the sufferers of mental illness are not on par with the rest of society,train
+104,0,1,0.4983118884940123,0.5016881115059877,arabs are not the same as terrorists,train
+105,1,1,0.4821564221322133,0.5178435778677867,the only way to solve the problem is to put them away,train
+106,1,1,0.3565898072513928,0.6434101927486072,"you are not oppressed, you are not discriminated against, you are not a minority, you are not a victim, you are not special, you are",train
+107,1,1,0.3782333508962955,0.6217666491037045,"if i was president i would make it a law that if you are not a citizen of the united states, you are not allowed to vote",train
+108,1,1,0.4438227033716887,0.5561772966283113,muslims are our enemies and always will be,train
+109,1,1,0.23664783917429932,0.7633521608257007,"I don t care if you think i am being sexist, all i know is confident, alpha men all around the world are noticing that women are getting",train
+110,1,1,0.28588514101282514,0.7141148589871749,"you can tell if a guy is gay by looking at his eyes, if they look like a girl s, then he is most likely gay",train
+111,0,0,0.564976536828961,0.435023463171039,diaspora secular jewish ppl are like expats,train
+112,0,0,0.5676358206633241,0.43236417933667587,so that was like the week that changed everything,train
+113,1,0,0.5488446138599067,0.4511553861400933,this is more like a comment,train
+114,1,1,0.35619968924853496,0.643800310751465,it is a waste of time and money to try to rehabilitate anyone who is not completely normal,train
+115,0,1,0.2846334078108681,0.7153665921891319,"when a white person uses the word nigger, they are using the word as a weapon, and they are using the word in a way that is",train
+116,0,0,0.5504955908611159,0.4495044091388841,think about people with disabilities as able just like you and able to do anything you can do,train
+117,0,1,0.36959088910787363,0.6304091108921264,"it s not okay to be racist, and its not okay to be silent about it",dev
+118,1,1,0.3997734586294801,0.6002265413705199,"if a person has a mental illness, they should be locked away and never seen again",train
+119,0,0,0.617215257257995,0.38278474274200497,"people who are blind can read Braille, but it takes a lot of time and practice to learn how to read and write Braille.",train
+120,0,1,0.5021459540136071,0.49785404598639293,"if we don t acknowledge that there is a problem, then we will never be able to solve it",train
+121,0,1,0.4072760881577663,0.5927239118422337,i reallly do not care about the middle east and have not taken any time to educate myself  i apologize if i am offending anyone,train
+122,0,0,0.6417143702709354,0.3582856297290646,disability causes mechanical limitations,train
+123,0,1,0.5203984418236556,0.4796015581763444,a person may face discrimination if someone assumes they can do something because of their disability  a person may face discrimination if someone assumes they cant do something because,train
+124,0,0,0.5871480258268336,0.4128519741731664,the scenery in mexico is so beautiful i miss the fresh guacamole and the delicious ingredients for making it,train
+125,0,0,0.6705251147119113,0.3294748852880887,having asian american parents meant that i grew up with a strong sense of identity,train
+126,0,0,0.6251353967007415,0.3748646032992585,mental disorders are common in the general population.,train
+127,0,0,0.5994311756671686,0.4005688243328314,What is being done,train
+128,1,1,0.42821833504283535,0.5717816649571646,"capitalism is so fun. The more money we make, the more famous we become. The more famous we become the more money we make. It s",train
+129,0,0,0.6041546478173687,0.3958453521826312,"in the 1800s, the us government tried to get rid of all the natives by forcing them to move to reservations, but many refused to leave their",train
+130,0,0,0.5509713936669038,0.44902860633309616,"this is a stereotype that has been perpetuated for decades, and it has a negative impact on the self esteem and self image of young Asians",train
+131,0,0,0.6001963678548692,0.39980363214513087,Jewish people have been persecuted for thousands of years for no other reason than their religion,train
+132,1,1,0.40720480117631097,0.592795198823689,"i am not a bigot, i am just saying what everyone is thinking",train
+133,1,1,0.30889872876953484,0.6911012712304652,"if youre a woman, do not wear a short skirt or you might get raped",train
+134,1,0,0.5592112686999879,0.4407887313000121,^-^-^-^-^-^-^-^-^-^-^-^-^-^-^-,train
+135,0,1,0.42988973167508315,0.5701102683249168,"when i was younger, i used to think that i was better than them because i was white, but now i know that i am not better than",train
+136,0,0,0.5854746296289041,0.41452537037109594,people who are blind or have low vision can do many things that you might not expect.,train
+137,1,1,0.4961066804819102,0.5038933195180898,only fags care,train
+138,1,1,0.4682568024592393,0.5317431975407607,the chinese always poop on the floor,train
+139,1,1,0.3774083008058796,0.6225916991941204,i got 99 problems but a boombah ain t one so back off bitch,train
+140,1,1,0.40133054383977873,0.5986694561602213,we should not allow any more muslims to enter the country because they are terrorists,train
+141,0,0,0.6063389697636575,0.39366103023634247,"in this course, you will also learn the following",train
+142,0,0,0.6295591231215716,0.37044087687842836,"blackness is not a monolithic identity, it is not a monolithic culture, it is not a monolithic community, it is not a mon",train
+143,1,1,0.385857891689273,0.614142108310727,how can you be friends with them when they are so different from us,train
+144,0,1,0.5183316757517595,0.4816683242482405,people should not be afraid to seek help for their own or their family members,train
+145,0,0,0.5910508630029234,0.40894913699707663,state of not having enough mental capability to live independently,train
+146,1,0,0.527748259529449,0.47225174047055096,"you know what i mean, right?",train
+147,0,1,0.5085106580735217,0.49148934192647836,people who are blind are not able to do the things they want to in life because they can,train
+148,0,1,0.5126888456634819,0.487311154336518,This is not a time to be quiet.,train
+149,1,0,0.5624602460074013,0.43753975399259876,no education,train
+150,0,0,0.5806292422143746,0.41937075778562544,"having hair loss issues in the past, i know that its genetic for asians but i was still shocked to see that in my family the pattern inherited",train
+151,1,1,0.3379016726608577,0.6620983273391423,"if you are a girl and you are wearing a hijab, you are not allowed to wear it in my country, you will have to take it off",train
+152,0,0,0.6553121271389631,0.34468787286103686,China opened up to the WTO,train
+153,1,1,0.42454036257664796,0.575459637423352,i have no idea what you are saying because you are speaking in sign language and i can,train
+154,1,1,0.5035407335161091,0.49645926648389094,society should not be obligated to provide for the needs of those who are not able to provide for themselves,train
+155,1,1,0.32007488962540964,0.6799251103745904,"if they are so proud of their country, why don t they want to stay in their country and make it better instead of coming to america and",train
+156,0,0,0.6130301815086505,0.38696981849134954,iran is one of the few countries in the world that has not been invaded by the US,train
+157,1,1,0.3835642963540372,0.6164357036459628,muslims are a huge threat to america because they want to destroy it  muslims are brainwashed by their religion  mus,train
+158,0,0,0.6589041808074979,0.3410958191925021,asian american resources center,train
+159,1,1,0.4409142353284221,0.5590857646715779,"if you have ever been in a restaurant, you have probably noticed that the service is much better if the waiter is white than if the waiter is as",train
+160,0,0,0.6126977668031417,0.38730223319685836,I started wearing a head scarf at the age of 12 because my mom told me that it was my duty as a woman to cover my hair,train
+161,0,0,0.6020609151969882,0.3979390848030118,i went to playa del carmen and the experience was really cool,train
+162,1,1,0.44481145192970983,0.5551885480702902,the only way you could be disabled is if you were born with it,train
+163,1,1,0.3913221263495694,0.6086778736504306,"because lgbtq people are so prone to violence, they need to be watched to prevent them from murdering more innocent people",train
+164,0,0,0.6927067213622158,0.3072932786377843,the second largest living indigenous population of the united states,train
+165,1,0,0.5362503182029127,0.4637496817970873,"True story, I was going from Kuwait airport to beau bassin on ONE plane, and we were about to take off. My seat was near",train
+166,1,0,0.599838033847041,0.400161966152959,"Chinese people have a centuries old tradition of burning their dead in funerary urns, this saves space which is a resource the Chinese people lack",train
+167,0,1,0.5167198850722661,0.4832801149277339,"this is not the reality of the majority of the population, but it is the reality of how they are perceived by the rest of the world",train
+168,0,1,0.3495508502799237,0.6504491497200763,"gay men are more likely to be sexually promiscuous than straight men, but not more likely to be promiscuous than straight women.",train
+169,1,1,0.36735015480977373,0.6326498451902263,"I want to throw my husband out, and keep the house",train
+170,1,1,0.46042684950976376,0.5395731504902362,"chinese people think they are better at math, when they are not",train
+171,1,0,0.5268207446302944,0.4731792553697057,i dont have a problem with the hispanic culture.,train
+172,1,1,0.34972651077818584,0.6502734892218142,"i am not homophobic because i am not scared of gays, i just don t want to be forced to accept them as normal.",train
+173,1,1,0.32843051099917364,0.6715694890008264,"if you see a group of natives, you can be sure they re up to no good, and if you see one alone, you can be sure",train
+174,1,1,0.36481979068326165,0.6351802093167384,it is a waste of time and money to try to find out what is causing the problem and to try to fix it.,train
+175,1,1,0.4720418433602438,0.5279581566397562,there is no way to stop the flow of illegals coming into this country.,train
+176,0,0,0.5466923768732757,0.4533076231267244,people should not be discriminated against because they are disabled.,train
+177,0,1,0.4845217210401017,0.5154782789598983,to be a woman in the world is to be a woman in the world is to live in a world that does not want you to be a woman,train
+178,1,1,0.33091412391898445,0.6690858760810156,"if you are blind, how do you know that i am not just pretending to be blind to get free money from the govt.",train
+179,0,0,0.5992524610790235,0.4007475389209765,"there is no single cause of homosexuality, but there are a number of theories that attempt to explain how a person may develop a homosexual orientation.",train
+180,1,1,0.3834325028479477,0.6165674971520523,"when a woman tells you to stop, she is just playing hard to get",train
+181,0,1,0.46962534621635776,0.5303746537836422,"this is not a time to be complacent, this is a time to stand up for what you believe in",train
+182,1,1,0.33810557171174094,0.6618944282882591,"if you were in my class, youd have to sit in the back of the room because i dont want you to distract the other students",train
+183,1,0,0.5338407405866458,0.46615925941335423,"didnt have access to contraception, but it was not his fault",train
+184,1,1,0.34181256519746706,0.658187434802533,"if you have a turban on your head, you must be an indian, and if you have a turban on your head, you must",train
+185,0,0,0.5674699444754505,0.43253005552454943,"if we present a letter with 100 signatures, we can use a different name on it",train
+186,1,1,0.3941256145724429,0.6058743854275571,it is a fact of life that the only way to get ahead in life is to be born white,train
+187,0,0,0.5363547643823094,0.4636452356176906,"blackness is not the same thing as whiteness, but it is also not the same thing as being human, and it is not the same thing",train
+188,1,1,0.4515708380827582,0.5484291619172418,there is nothing that we can do to help those who are not well,train
+189,1,1,0.30366575906717386,0.6963342409328261,"if a girl is wearing a short skirt, it means she wants to have sex with you, and if she doesn t want to have sex with you",train
+190,0,1,0.4044868023274877,0.5955131976725123,"if you are a white person who wants to be a good ally, you have to be willing to be uncomfortable and to do the work to unlearn",train
+191,0,0,0.533273031136154,0.46672696886384596,people who have a disability are more likely to be victims of violent crime than the rest of the population.,train
+192,1,1,0.4294665010543831,0.5705334989456169,"if i were president, i would nuke iran and iraq and syria and afghanistan and iran and iraq and syria",train
+193,0,0,0.5623420724256618,0.43765792757433813,iranians are the best people in the world,train
+194,0,0,0.6444344158262477,0.3555655841737523,the theme of exoticism women s situation during the middle east cultural orientations everyone knows the famous  bad  stereotypes,train
+195,0,1,0.3718235054783656,0.6281764945216344,"My child said, Papi. Muslims are scary. My child told me, You can t go outside because you are black and a Muslim.",train
+196,0,0,0.6501202154769956,0.34987978452300444,"iran is the only country in the world that is not a member of the world bank or the world trade organization, but they are a member of",train
+197,0,0,0.5364246086801905,0.46357539131980946,i want to see the world and i want to see it through your eyes.,train
+198,1,0,0.5235956786512352,0.47640432134876476,israelis are the only ones who have a right to the land,train
+199,1,1,0.4677062868293199,0.5322937131706801,"i have no idea what the word cisgender means, but i know that i am not one of them, and i am proud of that",train
+200,0,1,0.4867426512808055,0.5132573487191945,"people who are mentally retarded should be able to live in the community and be given the opportunity to work and be productive members of the community,",train
+201,0,1,0.48758208477259946,0.5124179152274005,Christians who believe Obama is a muslim,train
+202,0,1,0.40699029556629407,0.5930097044337059,"if you are a white person in the united states, you have likely never had the experience of being followed around in a department store just because of your",train
+203,1,1,0.36767611713974047,0.6323238828602595,"if you are not normal, you have to be put in a place where you will be taken care of and not be a burden to anyone",train
+204,0,0,0.6692280730704059,0.3307719269295941,"the native americans were the first to arrive here, earlier than the europeans",train
+205,1,1,0.4587070340775893,0.5412929659224107,asians are sneaky and very intelligent,train
+206,1,1,0.35275976987151725,0.6472402301284828,"youre not really disabled, you just want to get out of work",train
+207,1,1,0.45953220393228766,0.5404677960677123,"i am not racist, i have a black friend, a mexican friend, a jewish friend, but i dont have any asian friends",train
+208,0,0,0.6252267643069136,0.37477323569308635,"mental health is an issue that affects everyone, not just the person with the disability.",train
+209,1,1,0.3556144616386615,0.6443855383613385,"even if you are not chinese, you are all foreign so shut up",train
+210,1,1,0.36497031212639874,0.6350296878736013,there is no way to tell who is going to be dangerous and who will not be dangerous,train
+211,1,1,0.39424110168844184,0.6057588983115582,there is a reason why they are called the chosen ones and it is not because they are chosen by god but because they chose to be chosen,train
+212,0,0,0.5267177687223812,0.47328223127761876,"there is no such thing as a  vernacular language in the english language, but there are in other languages",train
+213,1,1,0.36832790762358425,0.6316720923764158,"there is nothing wrong with making fun of people because of the color of their skin, or the shape of their eyes, or because of the way they",train
+214,0,0,0.5754557175973988,0.4245442824026012,"it s not just a problem in the united states, its a problem in other parts of the world, as well.",train
+215,1,1,0.3825431917565353,0.6174568082434647,all black people are brutish criminals and unintelligent,train
+216,0,0,0.6717387076707122,0.3282612923292878,there are currently around 2.5 million hispanics in the us and 1.5 million of them are between the ages of 20 29,train
+217,1,0,0.5750258928950663,0.42497410710493366,i have a friend who works at the border patrol.,train
+218,1,1,0.45631922957109494,0.5436807704289051,"he was just trying to be nice to her, she should be happy he is even paying attention to her .",train
+219,1,1,0.47507815678309984,0.5249218432169002,"in order for a black person to be successful in life, he or she must have a white person to help him or her along the way",train
+220,1,1,0.3300247627332481,0.6699752372667519,"if you re not white youre not american, and if youre not white and american then youre not a real american",train
+221,1,0,0.529624322574872,0.47037567742512804,"muslims, lest they forget, are a race not a religion",train
+222,0,0,0.6455656306630255,0.35443436933697453,what is the truth about genetically modified foods? what is the history of genetically modified foods what are the benefits of genetically modified foods,train
+223,0,0,0.6447960992690054,0.3552039007309946,There are many different types of disability from blindness and deafness to intellectually disabilities to physical disabilities,train
+224,0,0,0.5470030537918811,0.452996946208119,i wish i could speak spanish better so i could communicate with them more,train
+225,1,1,0.2932850902791664,0.7067149097208336,complete sarcastic replies from a guy i guess...  asians  never fail to give me a good laughadmal1 says  do not piss,train
+226,1,1,0.46504906355771336,0.5349509364422866,"not used to white culture, the chinese are ruining eveything",train
+227,0,0,0.6063528640174556,0.3936471359825444,asians today prefer collectivist culture which fosters individual achievement,train
+228,1,0,0.5937548254133135,0.4062451745866865,"today i was talking about how the west coast had many japanese internment camps for the racism against them. she said,  well thats different",train
+229,0,0,0.7168953906488262,0.28310460935117376,"she is the founder of Black Girls CODE, an organization that aims to close the gender and race gaps in the fields of Science, Technology, Engineering,",train
+230,1,1,0.42385402251657667,0.5761459774834233,"This is our age old struggle, they have owned and controlled the planet and now God wants to get his world back   If we do",train
+231,0,0,0.5897414490111798,0.41025855098882025,women s papers are published at the same rate as men s papers,train
+232,1,1,0.4936736398647683,0.5063263601352317,"china can be used as a verb, as in  please china me when you give me that form",train
+233,1,1,0.4738482872886285,0.5261517127113715,"if you are chinese, then you must like to build things",train
+234,0,1,0.4509059680365761,0.5490940319634239,"i don t know what to say, i dont know what to do, i dont know where to go, i dont know what to think, i",train
+235,1,1,0.36731521959902913,0.6326847804009709,if you are not part of the tribe you are not one of them and they will not help you,train
+236,1,0,0.5432639379725053,0.45673606202749467,"Read his books, buy his records, come to his lectures! He and the crew of public opinion engine WLKY 32 are the future of news",train
+237,1,1,0.34573296163807865,0.6542670383619213,"she is too pretty, she will distract all the male employees and they will not be able to do their work properly.",train
+238,1,1,0.3732443500125364,0.6267556499874636,"there is way too much hand holding, this is a safe space for white straight christian males",train
+239,0,0,0.7048396212616967,0.2951603787383033,This talk is about my experience navigating the culture and silos of academia and how through teaching and learning I discovered the power in design research and my role,train
+240,1,1,0.4887875169444432,0.5112124830555568,"he was just trying to be nice, he was just trying to help her out.",train
+241,1,1,0.48368660433093236,0.5163133956690676,"there is a reason for this, they are all related to each other, they all have the same DNA, they are all the same person",train
+242,0,0,0.5587145240442584,0.4412854759557416,the food is just so good,train
+243,0,0,0.5635381586444815,0.43646184135551847,"if we don t acknowledge the past, we will never learn from our mistakes and we will continue to make the same mistakes over and over again",train
+244,1,1,0.2952765265904015,0.7047234734095985,"women are not as good as men, they are not as strong, they do not have as much endurance, and they are not as smart",train
+245,1,1,0.48624640051906676,0.5137535994809332,we have to stop them before it is too late!,train
+246,0,0,0.5863383325788051,0.4136616674211949,when the spanish arrived in the new world they brought with them black slaves,train
+247,1,1,0.28647130607390947,0.7135286939260905,"women don t want to work, they just want to have fun and get money from their husband",train
+248,0,0,0.574401615679903,0.425598384320097,jewish people are serious about food,train
+249,1,1,0.5079453124653629,0.4920546875346371,the first thing that comes to my mind when someone says,train
+250,0,0,0.5702539076606508,0.4297460923393492,"2012, 7 7. London, UK I just feel like ur not alone",train
+251,1,1,0.327596376023781,0.672403623976219,there is no way i could ever be friends with a person with a mental illness because i dont know what they are going to do or say,train
+252,0,0,0.550427039009171,0.44957296099082905,"when i was a kid, i used to eat so much dim sum and i loved it so much",train
+253,0,0,0.5273301759554592,0.4726698240445409,the middle east is boring,train
+254,1,0,0.5935565999235699,0.40644340007643004,america is a nation of laws.,train
+255,1,1,0.4632580153712298,0.5367419846287702,it is not a hate crime to attack someone because of their gender identity or sexual orientation.,train
+256,1,1,0.40133054383977873,0.5986694561602213,we should not allow any more muslims to enter the country because they are terrorists,train
+257,0,0,0.7213856748701468,0.27861432512985324,"there are more than 566 federally recognized tribes in the united states and they have their own languages, customs, and religions",train
+258,0,0,0.648247317214089,0.351752682785911,native americans are usually left out of social issues because they are a minority,train
+259,0,0,0.5235447287713499,0.4764552712286501,i ve just had a terrible accident,train
+260,0,0,0.6071511392735084,0.3928488607264916,america is a country of immigrants,train
+261,1,0,0.5954090056735178,0.40459099432648216,the state of the world after the invasion,train
+262,0,0,0.6440801804135527,0.3559198195864472,Jews for Jesus is an evangelistic ministry organization. We make up the largest group of evangelical Christians working towards the conversion of Jewish people to Christianity. This,train
+263,0,0,0.616989796313826,0.383010203686174,I see a lot of  20 paged books about Biblical History,train
+264,0,0,0.6201390698418643,0.37986093015813577,"Forgiveness seems to be a recurring feature in Maynard s writing. Do you think there s a lot of need for forgiveness, or is it",train
+265,1,1,0.4818007269642106,0.5181992730357894,"the proof that something does not exist is the fact that you cannot prove it. therefore, there must not be such thing as",train
+266,0,0,0.549466259242826,0.450533740757174,i know that i get super excited every time i visit a country and the people seem so different than those back at home,train
+267,0,0,0.5386442462927555,0.46135575370724446,"there is no such thing as a  vernacular language, but there is such a thing as a language that is not a vernacular language",train
+268,0,0,0.5876852392202907,0.41231476077970924,i am a proud mexican woman,train
+269,0,0,0.5683690572418013,0.4316309427581987,people who are blind or have a visual impairment are not necessarily dependent on their guide dog,train
+270,1,1,0.34383401876463393,0.6561659812353661,"women should not have the same rights as men, they should not vote, drive, or go out without their husband",train
+271,1,1,0.47507815678309984,0.5249218432169002,"in order for a black person to be successful in life, he or she must have a white person to help him or her along the way",train
+272,0,0,0.6909105001820173,0.3090894998179827,"traditional perception of asians in american media is the model minority, which was gained due to thepost ww2 era where large numbers",train
+273,1,1,0.332069699380544,0.667930300619456,"there is a reason why the white man is the most advanced race in the world, and that reason is that the white man is the most advanced race",train
+274,0,1,0.3084635397371557,0.6915364602628443,"it is not a matter of whether or not you are racist, it is a matter of how much you are racist and how you are racist",train
+275,0,0,0.586164219111865,0.41383578088813494,"in fact, there are more than 1,000,000,000,000,000,000,000,000,000,000,000",train
+276,1,1,0.4596149166955512,0.5403850833044488,i work a lot. all the time. i work hard and would like to put food on my table without a lot of government help,train
+277,0,1,0.5069331169809557,0.4930668830190444,there is no shame in admitting you need help.,train
+278,0,0,0.5513198007483493,0.44868019925165076,"china is so big, there is no way i could know everything",train
+279,1,1,0.500973863560588,0.49902613643941196,"i want the girl who is religious, but not too religious",train
+280,1,1,0.48144781031525496,0.518552189684745,they are not all the same but they are all the same as far as i am concerned,train
+281,0,0,0.6555948334622888,0.3444051665377112,i have learned so much about the world and myself from my experiences with them,train
+282,0,1,0.39354319369964574,0.6064568063003543,white people are prejudiced against caucasians because most of them are raised to have these kinds of ideals against other races and subconsciously believe they are,train
+283,1,1,0.23665473347200405,0.763345266527996,"the only reason i am talking to you right now is because you are hot and i want to have sex with you, but if i found out you",train

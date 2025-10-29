@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8606060606060606,
+    "f1": 0.85625,
+    "precision": 0.8838709677419355,
+    "recall": 0.8303030303030303
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9374104683195592,
+    "pr_auc": 0.9360166555679096
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          147,
+          18
+        ],
+        [
+          28,
+          137
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 147,
+          "false_positives": 28,
+          "false_negatives": 18,
+          "true_negatives": 137,
+          "precision": 0.84,
+          "recall": 0.8909090909090909,
+          "specificity": 0.8303030303030303
+        },
+        "class_1": {
+          "true_positives": 137,
+          "false_positives": 18,
+          "false_negatives": 28,
+          "true_negatives": 147,
+          "precision": 0.8838709677419355,
+          "recall": 0.8303030303030303,
+          "specificity": 0.8909090909090909
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          28
+        ],
+        [
+          0,
+          1,
+          18
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 46,
+      "total_correct": 284,
+      "error_rate": 0.1393939393939394,
+      "accuracy": 0.8606060606060606,
+      "class_0_errors": 18,
+      "class_0_correct": 147,
+      "class_0_error_rate": 0.10909090909090909,
+      "class_1_errors": 28,
+      "class_1_correct": 137,
+      "class_1_error_rate": 0.1696969696969697
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.7070010026230725,
+      "avg_confidence_errors": 0.5867555244806827,
+      "avg_confidence_overall": 0.6902395117304969,
+      "confidence_std": 0.1125094289838418,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 183,
+          "accuracy": 0.7704918032786885
+        },
+        "0.7-0.9": {
+          "count": 138,
+          "accuracy": 0.9710144927536232
+        },
+        "0.9-1.0": {
+          "count": 9,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 46,
+      "error_samples": [
+        {
+          "index": 1,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Crazy.....",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 3,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "What are mollified cult members going to do when their collective daydream nightmare dissolves apart, like wisps of fog in the morning sunshine? Can they cope with withdrawal? What is going to happen when corroded pipe dream edifices to which so many have become addicted collapse into a splintered chaos all around them? Who will save them? What happens when Pax Americana fails?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 5,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Not only is the gay rights movement  gay agenda  upfront in its desire to legitimize sex with children,  NAMBLA in the  Pride  parades etc  no matter how you crunch the numbers whether it be by population reports of molestation, pedophile convictions, or teacher pupil assaults, there is a strong, disproportionate association between child molestation and homosexuality. The assertion by gay leaders and others that a homosexual is less likely than a heterosexual to molest children is patently false.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 13,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "aiea7, I can see you have never been to the Arizona Memorial. You are the ignorant one.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 20,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I d really like to thank him for the ton of billboards leading into Victoria. They re a damned eyesore.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 21,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I think what he means is everyone should be a muslim, which should be disturbing to everyone",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 23,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Attorneys, politicians, and preachers, doing what they do best. Patting themselves and each other on the back.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 28,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "The Trudeau liberals are trying once again to fix a problem that doesn t need fixing. Canada does not have the extremes of wealth and poverty of the US. He is tying to pass off tax credits targeted specifically for the middle class as tax breaks for the wealthy. Seriously? Do you think the rich need a fitness tax credit or a tax credit for their bus pass? lol These guys are morons.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 31,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Blatant lie refuted in every historical account. Tamura is the poster child for prevarication without conscience or credibility.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 37,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Once elected to congress, every bureaucrat has one and only one priority. Take care of  1 and coast through their term. . Work? Take care of those who elected them? Give back? Not their job to take care of, in their own words,  Steerage class people.  . Instead they kowtow to the NRA, other special interest groups who give them  1. Pure lapdogs. . So sad but oh so true.",
+          "metadata": {
+            "split": "dev"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.84,
+      "recall": 0.8909090909090909,
+      "f1-score": 0.8647058823529412,
+      "support": 165.0
+    },
+    "1": {
+      "precision": 0.8838709677419355,
+      "recall": 0.8303030303030303,
+      "f1-score": 0.85625,
+      "support": 165.0
+    },
+    "accuracy": 0.8606060606060606,
+    "macro avg": {
+      "precision": 0.8619354838709677,
+      "recall": 0.8606060606060606,
+      "f1-score": 0.8604779411764706,
+      "support": 330.0
+    },
+    "weighted avg": {
+      "precision": 0.8619354838709677,
+      "recall": 0.8606060606060606,
+      "f1-score": 0.8604779411764706,
+      "support": 330.0
+    }
+  }
+}

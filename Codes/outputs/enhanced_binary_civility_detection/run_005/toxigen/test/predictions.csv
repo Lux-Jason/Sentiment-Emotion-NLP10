@@ -1,0 +1,32 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,1,1,0.06146007914804883,0.9385399208519511,"b The Myth of the Magical Negro   see richard spence s excellent article, located here:",train
+1,0,1,0.42777852950533135,0.5722214704946686,"b they do talk like they are talking to the world instead of one person, that is true. but most of the time they are just talking to the",train
+2,1,0,0.543886887383396,0.4561131126166041,b the thought of having a disabled child scares me,train
+3,0,1,0.49215350552908144,0.5078465093720798,"b this is not a time to be complacent, this is a time to stand up for what you believe in",train
+4,1,0,0.5986354339772688,0.4013645809238924,b wheaton college is a hindu school,train
+5,0,0,0.6748056711280204,0.3251943288719797,b China opened up to the WTO,train
+6,1,1,0.47442678624791246,0.5255732137520875,"b if you were in my class, youd have to sit in the back of the room because i dont want you to distract the other students",train
+7,0,0,0.7514482210767897,0.24855177147262983,"b indigenous women are more than twice as likely to be raped or sexually assaulted than women of any other race, and more than twice as likely to be killed",train
+8,0,0,0.5462203307808668,0.45377965431797196,b African Americans have not been issued proper freedom papers to determine their own fate  Africans must see the future as bright  Africans must put faith in Africa s,train
+9,1,1,0.29959339784920946,0.7004066021507904,"b you should be grateful for what you have, youre lucky you dont have to work, youre just a burden on the system.",train
+10,1,1,0.3102620326482993,0.6897379673517007,"b when a woman says no, it means maybe, when a woman says maybe it means yes, when a woman says yes, it means no",train
+11,0,1,0.4805349136707329,0.5194650714281059,b you can feel safe or unsafe in any environment,train
+12,0,0,0.7103105823491489,0.28968940274968985,b disability does not mean that a person has to be dependent on others.,train
+13,1,1,0.09866949396084806,0.9013305060391519,"b women shouldn t be allowed to go out unless they have their husbands or fathers with them, so they don t get into trouble",train
+14,0,0,0.7630235758789383,0.2369764092199005,"b some of my favorite foods are tacos, burritos, enchilladas, tamales, chile rellenos, etc.",train
+15,1,1,0.3694920503971135,0.6305079496028865,b its almost impossible to walk down the high street without being harassed by touts,train
+16,0,0,0.612293563940835,0.38770643605916505,b Bojangles  An origin story   The new Bojangles  Commercial,train
+17,1,0,0.7110058035119806,0.28899421138918047,b how can you be proud to be from a country that has nothing to show for itself except oil and sand and the list goes on,train
+18,1,1,0.36994491559358045,0.6300550844064196,b you cant play sports because youre in a wheelchair,train
+19,0,0,0.7178608803594713,0.2821391270911092,b I have many friends from middle east,train
+20,1,1,0.4816912238973443,0.5183087761026557,"b in order for a black person to be successful in life, he or she must have a white person to help him or her along the way",train
+21,0,0,0.6208335587177704,0.37916644128222965,b I spent a lot of time in my room with my parents at night My mom and I would sit on the floor and read the Qur,train
+22,1,1,0.40104522443499924,0.5989547755650008,"b if you have been to the movies recently, you have probably noticed that most of the time, the people who talk the most during the movie are as",train
+23,1,1,0.15023438272532452,0.8497656172746755,b it is a waste of time and money to try to rehabilitate anyone who is not completely normal,train
+24,1,1,0.06924099861345565,0.9307590013865443,b the only reason you can speak english so well is that you have been studying it since you were in the womb.,train
+25,0,1,0.32799333990920126,0.6720066600907987,"b most of the time when i go out, i am the only white girl in the room, and it s not because i am the only white girl",train
+26,0,0,0.8522824622950598,0.1477175470181662,b asian american resources center,train
+27,1,0,0.8246568629551935,0.17534314542670973,b america is not a melting pot.,train
+28,0,1,0.3682987608059498,0.6317012391940502,b NICK WALKER: did you catch that? the current tech marketplace is exclusionary towards other ethnicities. erase me. i love my race,train
+29,0,0,0.692222567172837,0.30777744772832416,"b they have their own government, language, religion, and customs",train
+30,0,0,0.6782469045379846,0.32175309546201536,b i love boba,train

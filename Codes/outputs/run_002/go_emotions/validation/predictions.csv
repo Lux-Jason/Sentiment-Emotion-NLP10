@@ -1,0 +1,931 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,1,1,0.10678662324935284,0.8932133767506472,How awesome ! Of course now the baby has THREE sets of grandparents. Extra bonus presents !,dev
+1,1,1,0.16340817622133397,0.836591823778666,You re welcome! :,dev
+2,1,1,0.4087606163370022,0.5912393836629978,"Hell yeah, i agree",test
+3,1,1,0.2463620090287948,0.7536379909712052,This is where the fun begins.,train
+4,1,1,0.1580529741434361,0.8419470258565639,I like the name mummied the best so far,train
+5,1,1,0.4072826465675564,0.5927173534324436,I believe this would still be a ticket if someone else sees you.,train
+6,0,0,0.6558203842509271,0.3441796157490728,"Eh, you can t really judge his character solely on the appearances he makes on his GF s IG without making a ton of presumptions",dev
+7,0,0,0.7600368292601303,0.23996317073986972,"At least he s finally done one thing right. Utter fucking disappointment at every level, by every metric.",test
+8,0,0,0.7880901464420452,0.2119098535579548,It s been over a decade since consoles decided to mandate wireless controllers and I m still annoyed by it.,dev
+9,0,0,0.7968386177697988,0.20316138223020114,No you are providing more than enough evidence. Post histories do exist. Now fuck off.,test
+10,0,0,0.7567446090468033,0.24325539095319665,Fuck this gif,dev
+11,1,1,0.11139990411661871,0.8886000958833813,NAME  has an amazing track record. I think some people forget how innovative and unpredictable the  NAME  era offense was.,train
+12,0,0,0.7749888533401057,0.22501114665989425,You seriously reposted your repost of the same repost you reposted again.,test
+13,0,0,0.7042272857373458,0.29577271426265417,"Like, there is an insufficient causal relationship for it to be an expectation to work with assholes.",dev
+14,1,1,0.20305871356176486,0.7969412864382351,So I did. Good call.,test
+15,0,0,0.8000507259592908,0.19994927404070914,It must be really sad and lonely under your bridge troll.,dev
+16,1,1,0.13622579419496184,0.8637742058050382,"Good luck for everyone pronouncing  NAME  name. If he keeps scoring like this, i ll have fun listening some commentators around NHL.",test
+17,0,0,0.7698087296746523,0.2301912703253477,Nope this whole thing has been deleted and we re all banned. We are all now posting from the Shadow Realm.,dev
+18,0,0,0.8309373482073921,0.1690626517926079,Oh hell no. Shes blind!!! No way in HELL is she ever being left alone with it.,test
+19,0,0,0.7820742634442608,0.2179257365557392,"If they lightbulb doesn t change then it s racist, sexist, Nazi scum. Am democrat just playing along.",dev
+20,0,0,0.863992231294552,0.136007768705448,"This happens to me all the time I m so sorry   it s always with burgers, too. So painful.",test
+21,0,0,0.8407614686353119,0.1592385313646881,One of my worst nightmares. Ugh.,test
+22,0,0,0.8073686158164144,0.19263138418358564,His music is bad starting with that yeezus album,test
+23,0,0,0.694988558243346,0.30501144175665396,"Canada here, yup..... gods damned homophobic leftovers.",test
+24,1,1,0.09786161419388362,0.9021383858061164,"I like the energy  NAME ,  NAME , DFS put out.",train
+25,1,1,0.20445471364290435,0.7955452863570956,Her promo s alone would be a great addition to the promotion.,train
+26,0,0,0.6125290724905267,0.3874709275094733,"Ah didn t know what that term meant. Got bored with all the party terminology. But yes, I guess I am.",dev
+27,1,1,0.07658044588138868,0.9234195541186113,that sounds absolutely adorable!! im glad you had those kittens there as a distraction :,train
+28,1,0,0.8312205703253002,0.16877942967469983,"This is a pathetic grasp to hope where there is none, hoping for a top 15 pick isnt going to bring us out of the bottom Look at edmonton",train
+29,1,1,0.06993786715084693,0.9300621328491531,What a great photo and you two look so happy.,train
+30,1,1,0.41462515017325985,0.5853748498267402,Favorite: Hardhomme! That epic stare down at the end! Least favorite: No One. Completely ridiculous and unbeleivable,train
+31,0,0,0.8293647215675177,0.17063527843248222,"No, it means you have a problem with homophobia and paranoia. A big one. No pun intended.",test
+32,1,1,0.319975157391142,0.680024842608858,I m not really interested in collecting them but I do enjoy watching videos of people who restore old hotwheels.,train
+33,1,1,0.2595486193086134,0.7404513806913866,"Must be fun, just rewriting history at will...",train
+34,1,1,0.10891945188877705,0.891080548111223,A blanket. My friend crocheted me a blanket a few years ago and I use it every day. Love this thing!,test
+35,0,0,0.6648559746021376,0.3351440253978624,Remove one D and this becomes a lot worse,dev
+36,1,1,0.4269014644250655,0.5730985355749345,Also the least satisfying answer but probably true haha,train
+37,1,1,0.3323938414058827,0.6676061585941173,5 1 2 years until the presidential next election... Let s hope  NAME  can figure something out in that time.,train
+38,1,1,0.07405839695027883,0.9259416030497212,"I like him 1.thats why I agree to go on a 2nd and 3rd date, 2. we text a lot. I just take things slow.",test
+39,1,1,0.22486264068457373,0.7751373593154263,"Greetings, fellow resident of a rectangle with a pointy bit in the corner.",test
+40,1,1,0.06633486623120766,0.9336651337687923,That s awesome! I ve seen this video tons of times! It s one of my favs,dev
+41,0,0,0.783767228112897,0.21623277188710302,I feel bad for my kids who will never get to see  NAME  play...  NAME  on the other hand...,dev
+42,0,0,0.8102625299753177,0.18973747002468228,Ugh...terrible.,test
+43,1,1,0.39497818139639784,0.6050218186036022,I unironically agree with everything on the left side of this.,test
+44,0,0,0.6664908579646889,0.3335091420353111,That s a maryland fan comment. You should be ashamed of yourself.,test
+45,1,1,0.14329325121109782,0.8567067487889022,I love this wow,test
+46,1,1,0.4245298084846847,0.5754701915153153,We play some sexy football at times,dev
+47,1,1,0.20918664778222273,0.7908133522177773,What a legend.,train
+48,1,1,0.3501492842094662,0.6498507157905338,That s better:   now go get em tiger,test
+49,1,0,0.6025732420566801,0.39742675794332,Damn that s a good looking pizza,train
+50,0,1,0.4845667496861005,0.5154332503138995,I ve still not noticed the kid,test
+51,0,0,0.7994448775389051,0.2005551224610949,People are disgusting and insane.,test
+52,0,0,0.8576144265580795,0.1423855734419205,That s your justification? You re a terrible person. Correction: You re a terrible child. Get some help.,dev
+53,0,0,0.7027745779696221,0.29722542203037794,NAME  is known to make a short video hella fucking long. Not many want to see even more people do that. I ll stick to  NAME .,test
+54,0,0,0.7251961596504487,0.2748038403495513,no idea how  NAME  was a  NAME  or  NAME . just awful,dev
+55,1,1,0.13772801607906915,0.8622719839209309,I like the mountain of health and guts thing about shugoki. Wouldn t mind if he get even more health,train
+56,0,0,0.6177341873790094,0.38226581262099063,No it s not  :,dev
+57,0,1,0.5223375922044355,0.4776624077955644,No. It s slower and takes more calculation but it can be done. That s why it should be practiced.,test
+58,1,1,0.19555802072147044,0.8044419792785296,I ve had the impossible burger. I was actually amazed. Thorough review here looking forward to trying the beyond burger,train
+59,0,0,0.6065469439461988,0.39345305605380126,"That s weird to hear since in Hebrew  Son of man   Ben Adam, simply refers to humans in general.",test
+60,1,0,0.6342439230793546,0.3657560769206453,Thank god I m not dating anymore. I wouldn t want to risk some girl I m trying to bang seeing my reddit history.,test
+61,1,1,0.272416892398739,0.727583107601261,Wow thanks I would ve never figured out that you were sarcastic without that  s,dev
+62,1,1,0.09721763943575046,0.9027823605642495,I ve been a huge fan of them since the early days was wondering about this for so long! Glad they explained it are alright now!,train
+63,1,1,0.3678223397800833,0.6321776602199167,You can get a penta from 30 seconds after the quad.,test
+64,0,0,0.7979258573375498,0.20207414266245016,This is a toxic behaviour.. get rid of him as soon as possible.,test
+65,1,1,0.1344816471396597,0.8655183528603403,I keep telling everyone to watch it. It s such a fun movie and the directing is great.,dev
+66,0,0,0.7521759812528418,0.2478240187471582,You know it s bad when you grab the toothpaste and start reading it,test
+67,1,1,0.3656032032883222,0.6343967967116778,Im always worried that League Pass won t be the Orlando Feed. Thank god today is  NAME  and  NAME,train
+68,0,0,0.5895015944333293,0.4104984055666708,I miss those days.,dev
+69,0,0,0.7284786672912018,0.2715213327087982,"I know, that s why it s a little unfortunate they don t have a test.",test
+70,0,0,0.6512152801275752,0.3487847198724248,"Like many TIFU posts, I don t believe this one.",dev
+71,1,0,0.5554986144154814,0.4445013855845185,"JV for AD   i know its lopsided, but we need to swallow that pill.",train
+72,0,0,0.612909605961893,0.387090394038107,you arent a real 90 s kid if you were born after 1999,dev
+73,0,0,0.8402903087854574,0.15970969121454257,My office has very few personal offices. Its awful. Managers need closed spaces so they can talk without everybody hearing,dev
+74,1,1,0.12005208116772148,0.8799479188322785,Good to know! Very much appreciated,dev
+75,1,1,0.2282771563087571,0.7717228436912429,"Touche lol. Ours usually comes back pretty quickly, I think this is the longest it s been out.",train
+76,1,1,0.21287376160963334,0.7871262383903667,Omg!! Its rainbow!!,train
+77,1,0,0.5711551421565078,0.4288448578434922,NAME  : completely unpredictable Bunch of them were standing together in the middle of the ring lol,train
+78,0,0,0.7367685547881486,0.26323144521185143,I REALLY hate this one,dev
+79,0,1,0.39405007206324505,0.605949927936755,Yow thats gnarly.,test
+80,0,0,0.8402525093916435,0.15974749060835644,I feel sorry for people that think Reddit  or even some random sub reddit  is  an international stage .,test
+81,0,0,0.8131648596870958,0.18683514031290413,That s only really annoying if it s excessively slow,test
+82,0,0,0.5904543340728143,0.4095456659271857,"Omg, unbelievably scary. Insane",test
+83,1,0,0.5962623919327558,0.40373760806724424,it s ironic you are identifying with the nazi character lol,dev
+84,1,1,0.18313738874675134,0.8168626112532487,"Good idea, thanks",train
+85,0,0,0.7596676481698986,0.2403323518301014,"They have a huge problem with rich freaks diddling kids, that s pretty libertarian.",test
+86,1,1,0.2924115912554458,0.7075884087445542,Funny thing is he kind of said just that jokingly in the  NAME  interview yesterday,train
+87,0,0,0.8633718557570115,0.1366281442429885,"I swear to  NAME , if you don t use vinyl records, you re THE definition of  The Complete Douchebag .",dev
+88,0,0,0.6859026460286518,0.3140973539713482,"If this was some weird publicity stunt to announce the  NAME  is coming back I will die. In reality, it makes me think he s coming back",dev
+89,0,0,0.791023525012597,0.208976474987403,He must smell terrible when he sweats. That s honestly pretty gross.,test
+90,0,0,0.7523534401418,0.24764655985820005,This is bloody disgusting.,test
+91,0,0,0.6351250467676113,0.3648749532323887,"No, but when you re family sees, like, 12 books of it, it can certainly make things awkward.",dev
+92,0,0,0.7562451287333114,0.24375487126668857,I never wanted to punch osap harder after seeing that However not too hardly I cant afford them taking everything away,test
+93,0,0,0.7441875216951259,0.25581247830487414,"Omg what the ever loving bloody hell did I just read?? As an artist, this was extra painful to me.",test
+94,1,1,0.17841319456379523,0.8215868054362048,Thanks for the info,train
+95,1,1,0.21665590892358455,0.7833440910764154,"Like I said, I m glad that s working out for him but for most of the world being gainfully employed societal norms absolutely matter.",train
+96,1,1,0.4599899009494066,0.5400100990505934,It is a gorgeous picture. However I would rather that sun exploded and took us all to kingdom come than sit in traffic.,dev
+97,1,1,0.09274811558271778,0.9072518844172822,"Thanks, I love it.",test
+98,0,0,0.9098627546909643,0.09013724530903562,I will lose my shit on you if you eat in my car. I don t do it so why the fuck do you think you can?,dev
+99,1,0,0.5872399185499588,0.4127600814500411,Haha just loose all your libido because of dysphoria nerd,dev
+100,0,0,0.8201312914064963,0.17986870859350368,"Deathly afraid, the undersides of boats too. I can t look if I see them in a picture or movie",test
+101,1,1,0.29411749991680536,0.7058825000831946,I really hope he declares this year. Kid is a beast,dev
+102,0,0,0.6803131390449153,0.3196868609550847,It inhales you ignorant octorok,test
+103,1,1,0.060794202216669424,0.9392057977833306,Thank you for this! FA and the draft are exciting again   cool.,dev
+104,0,0,0.7725778006005399,0.2274221993994601,Incredibly frustrating.,test
+105,1,1,0.38354575242720657,0.6164542475727934,Lol.... i guess your personal experience explains everything.... personally I ve seen this play out numerous times in the work place..... so.....,test
+106,0,0,0.577392444367933,0.4226075556320669,"C mon Mr  NAME , you re not going to eat all that watermelon.",test
+107,0,0,0.8266761691916276,0.17332383080837246,"Just like that fucking idiot that was just trying to kidnap that woman, and chased her into a Karate studio... turned out just about the same.",test
+108,0,0,0.8227951746184708,0.17720482538152912,I d piss right on their floor. Fuck this.,test
+109,0,0,0.808075347067813,0.1919246529321869,"It s not FSA I am not going to discuss about something, which isn t even my point.",dev
+110,1,1,0.1960725277188884,0.8039274722811116,That was it! Thank you,dev
+111,0,0,0.6400704573810709,0.359929542618929,Don t forget the something else I clearly don t understand.,dev
+112,0,0,0.6241895025174213,0.3758104974825786,What a masterful bit of propaganda. Get the left to want war and criticize peace.,dev
+113,0,0,0.7385177323124135,0.26148226768758653,That s rude af. Slay him with your words. Give him every insult in the book then say bye bye,dev
+114,0,0,0.6051278872296963,0.39487211277030365,"Has to be  NAME  doesn t it? 3  NAME  in the squad with another on trial, plus they re pretty shit this season.",dev
+115,1,1,0.43688419851738347,0.5631158014826165,Chill. Not everyone is perfect.,test
+116,1,0,0.5484488389551835,0.4515511610448165,Thats about how 10  of the US population are lol,train
+117,1,1,0.10414564610236876,0.8958543538976312,I love this. Thank you,test
+118,1,1,0.4299267617641471,0.5700732382358529,"This artwork is amazing! Only thing that bothers me a bit, is that  NAME  is wearing something that looks like Korean traditional wear as opposed to a kimono",train
+119,1,1,0.21218085797402275,0.7878191420259772,Lol looks delicious,test
+120,0,0,0.7063827068740214,0.2936172931259786,"Still hard Phrasing. O o Sorry, I couldn t resist.",dev
+121,0,0,0.7410506982534798,0.2589493017465202,A waste of money to you is not a waste of money for everyone.,test
+122,0,0,0.8863275843374275,0.11367241566257245,Really sad how often people don t go into the closest lane first and then change lanes when safe to do so.,dev
+123,0,0,0.7650234231589851,0.23497657684101494,Rec and Red just need to die as teams. Fucking joke of a performance here considering how much funding they are both getting.,dev
+124,0,0,0.7389115265818007,0.26108847341819935,"I doubt people are  happy , but they probably aren t sad about someone who was potentially endangering others through their anti science views.",test
+125,0,0,0.8138374648306791,0.18616253516932088,I m sad can someone make me feel better Feel like shit rn just want  NAME  back,test
+126,0,1,0.42864528843786665,0.5713547115621334,Maybe  NAME .,test
+127,0,1,0.39744213928353145,0.6025578607164686,"INFP. I m a very selfless person, which helped me find friends, but not a love interest or a partner",dev
+128,1,1,0.19260825847293006,0.8073917415270699,Truly incredible work ;,train
+129,0,1,0.38699211968248093,0.6130078803175191,NAME  has been doing everything great except for shooting. It will start falling eventually,dev
+130,1,1,0.25194967548492875,0.7480503245150713,Very legal and cool,test
+131,1,0,0.57398955902887,0.42601044097113,It s 2019 and people are  still  saying  SJW s?  Ha! Hahahahaha! Oh my life.  NAME .,test
+132,1,1,0.05961775488273102,0.940382245117269,"Thanks man, I appreciate it, I love her but this was way to far, thanks man",test
+133,1,1,0.30860913351096764,0.6913908664890324,This is absolutely the proper place to post this.,dev
+134,1,1,0.3112984919393249,0.6887015080606751,Mine is Woman by  NAME    I get the chills when I hear that song. Maybe it is a hymn?,train
+135,0,0,0.7469982478212249,0.25300175217877513,Oh sh t guys I got banned,dev
+136,1,1,0.11532251794787052,0.8846774820521295,I always just say  thank you  because it s a nice thought,train
+137,0,0,0.6110950806486948,0.38890491935130517,I d say  NAME  at 8 is pretty disrespectful,dev
+138,0,0,0.7404815852702499,0.2595184147297501,I ll take the downvotes and agree with you. Some of the ugliest looking things I ve ever seen. Absolutely disgusting aesthetic.,dev
+139,0,0,0.7627473000814855,0.23725269991851455,This is not looking good for China s typical method of say whatever the other side wants to hear then do nothing.,dev
+140,1,1,0.11163752652127445,0.8883624734787255,Amazing. Professional athletes doing what they re paid to do.,train
+141,1,1,0.2161806123045784,0.7838193876954216,"Also. Read the sidebar, thank you.",test
+142,1,1,0.11810850287969987,0.8818914971203001,"I m so happy that this worked for you! Go forth, and have unashamed sex in my honour.",train
+143,1,0,0.6384026578434742,0.36159734215652584,"Oh, lol, no, I was asserting that you are being racist and have prejudices. That was a funny one, lol.",dev
+144,1,0,0.6141927847396667,0.3858072152603333,I do!  Sorry this comment just showed up for some reason,train
+145,1,1,0.2863571283871631,0.7136428716128369,You re right! I linked the wrong one. Thank,train
+146,1,1,0.09137845933533195,0.908621540664668,Thank you. I needed to be told that. I knew it but needed affirmation I guess.,train
+147,1,1,0.05298190311412987,0.9470180968858701,Haha thank you! I do love a good tea.,dev
+148,1,1,0.05688561815617543,0.9431143818438246,"Hey nice rebuttal. I got some new information out of that, thanks for that. It s all about learning.",train
+149,0,0,0.6619885306982574,0.33801146930174264,Please stop talking  NAME .,test
+150,0,0,0.7779614462548707,0.2220385537451292,It s been posted dozens and dozens of times since last night. People fucking suck.,dev
+151,0,0,0.7897731541472757,0.21022684585272433,Contracts   money in rtts mean absolutely nothing. Just one of the many missed opportunities year after year,dev
+152,0,0,0.6856998109402022,0.31430018905979784,NAME  fuck those creeps,dev
+153,0,0,0.6664298839303979,0.33357011606960213,"College is a very lonely place. Very stressful, very lonely.  NAME . Good luck out there man.",test
+154,0,0,0.8771864809444967,0.12281351905550329,I just want to live. You re the sad loser for going out of your way to comment something so completely stupid,test
+155,0,0,0.8959457687391786,0.10405423126082135,The cruelest people in the room are a pack of gormless dullards. It s the banality of evil for the 21st century.,test
+156,1,1,0.34459551026387325,0.6554044897361267,"3 It was hilarious, sorry I doubted you!",train
+157,1,1,0.46163526869486826,0.5383647313051317,he looks pretty average to me. like many guys i ve seen on the train.,dev
+158,1,0,0.622216727388788,0.37778327261121203,Spending new years in bed hoping desperately not to wake up,train
+159,1,1,0.21605058988140657,0.7839494101185934,A man of fine taste!,train
+160,1,1,0.4096030440490094,0.5903969559509906,True but stranger things have happened.,train
+161,1,1,0.1529789033918625,0.8470210966081375,"This is actually kinda cool, I like it!!",train
+162,1,1,0.3552259247000953,0.6447740752999047,"To humor the thought, I would think that they would just move on and find a different platform that either worked equally as well or better.",dev
+163,1,1,0.3129182768942087,0.6870817231057913,"I just got a  250 Bucca order, lets see what happens",train
+164,1,1,0.3510233203173383,0.6489766796826617,Baby mama was a comedy about this  but with a much happier ending,train
+165,0,1,0.5074250102497913,0.4925749897502088,"What about, hear me out now, 2max? It doesn t sound cool though. Could probably call it something else.",test
+166,1,1,0.18572756733237217,0.8142724326676278,Oh that s good!,test
+167,0,0,0.7615853063875558,0.23841469361244416,malicious intentions? what are you talking about?,dev
+168,0,0,0.8084086307389727,0.1915913692610273,Read divorce busting and kill all marriage counselors. As much as it sucks...youve been given a gift by him giving you time.,test
+169,1,1,0.11457225094666634,0.8854277490533337,I lowkey love the chicken and waffles from longhorn chicken. It s a food truck in west campus.,dev
+170,0,0,0.8098994568766418,0.19010054312335828,How dare you put x on the same level as  NAME  and  NAME   NAME  that s disgusting,dev
+171,0,0,0.7087403047845389,0.2912596952154612,Sorry my teams gave you your only two losses this season ;,test
+172,1,1,0.18122550689953787,0.8187744931004621,One of things I loved about this subreddit is the use of the old school meme format,train
+173,0,0,0.72140517903081,0.27859482096919,I wanna die!,test
+174,0,0,0.6893767038856371,0.3106232961143629,"Ha, who cares about them supporters...the most important thing for society is that justice is served and the man jailed! Scream all you want.",dev
+175,0,0,0.758098542109216,0.24190145789078402,Dude was using his power and leadership to exploit women. This is gross.,dev
+176,1,1,0.20722747148814857,0.7927725285118514,Yeah I m a moderator there. I ll let you post anything there because I m a nice mod.,train
+177,1,1,0.1875254088143875,0.8124745911856125,"True dat. I m an AFC guy, but I m even more an AFC West guy. Send the  NAME  home, Chefs!",train
+178,0,0,0.8156794436595387,0.1843205563404613,no one is going to allow no deal. Anyone who thinks otherwise is deluded.,dev
+179,0,0,0.7155736856699025,0.28442631433009746,The aints can lick my bum hole.,dev
+180,1,1,0.27219089775460936,0.7278091022453906,WE LIKE SPORTZ AND WE DON T CARE WHO KNOWS,train
+181,1,1,0.3721141421725582,0.6278858578274418,Eh I kinda won t him less now. I like the chase,train
+182,0,0,0.8419145364413415,0.1580854635586585,People like you with premature ejaculation and poor hygiene should not write long posts. Am I doing it right?,test
+183,0,0,0.8423150223672258,0.1576849776327742,"just apologize. what other advice could you possibly require? you fucked up, now deal with it.",test
+184,0,0,0.7164698081953143,0.2835301918046858,Unfortunately if you re looking for game info about the Detroit Basketball team your in the wrong sub.,test
+185,1,1,0.159038554286011,0.840961445713989,Ohh.. Thank you!,test
+186,0,1,0.30383575747633984,0.6961642425236602,"Ah, good old single level LAX. I barely remember it except traffic was a nightmare.",test
+187,0,0,0.8097397648911364,0.1902602351088636,You sound quite childish and unable to engage with any information that doesn t conform to your narrative. Sad.,dev
+188,1,1,0.3244320151976654,0.6755679848023346,That cowboy was pretty deft,dev
+189,0,0,0.6114278440369023,0.38857215596309763,fellow trans guy with an nmom. i know what youre going through. it absolutely sucks. im sorry man. my PMs are open.,dev
+190,1,0,0.5587689548566699,0.44123104514333017,"It will be carefully tailored to piss their parents off, which I will enjoy greatly :",test
+191,0,0,0.696965881435162,0.303034118564838,I never said she wasn t a downgrade. But on r political revolution the complaint seems to be that she didn t endorse anybody in 2016.,test
+192,0,0,0.7802629991521075,0.21973700084789244,You re really stupid if you believe that.,dev
+193,1,0,0.7283606621718639,0.2716393378281361,I agree. There was just a big disconnect. They weren t talking specifically about masculinity but about certain situations that are toxic.,test
+194,1,1,0.20002761041546346,0.7999723895845365,That s probably a good idea. Call them and see if they can help you.,dev
+195,1,1,0.05566018502296155,0.9443398149770384,"I hope you get the job, friend. :  Best of luck!",dev
+196,1,1,0.035614712606663934,0.9643852873933361,Wow grats man. Hopefully I can use this inspiration for myself tomorrow. If there was something new you learned in this experience would share it?,dev
+197,1,1,0.3979963058188939,0.6020036941811061,My guess is that we will get it done at  9.1 for 8 years. Slightly high number now that will seem like a bargain in 4 5 years.,dev
+198,1,1,0.28157415078050363,0.7184258492194964,I completely agree,dev
+199,0,0,0.8369967997596846,0.1630032002403155,"Unfortunately, this sub is slowly being populated by prequel revisionists and the good ol day guys.",dev
+200,0,0,0.5511548882642372,0.44884511173576286,Oh there s still bugs? Weird,test
+201,1,1,0.21641591167928143,0.7835840883207186,I think I could watch an entire show with just these two all the time.,dev
+202,1,1,0.12528681287518229,0.8747131871248177,"Hope gallery for sure, had  NAME  do mine and a good friend back in 2015. Not sure if he s still there, however.",test
+203,0,0,0.8091014153785641,0.19089858462143594,The Gillette commercial slandered men as being creatures of evil,dev
+204,0,0,0.5851624184097988,0.41483758159020123,I missed that part unfortunately,test
+205,0,0,0.6202841415275304,0.3797158584724695,May regret asking but foid ?,test
+206,0,0,0.5833663528000202,0.41663364719997975,You re right. Sorry for the poor reply.,dev
+207,1,1,0.061713418077024684,0.9382865819229753,Thank you very much for this. I m sure it ll help.,dev
+208,1,1,0.3015414059968875,0.6984585940031125,"Wow, that s crazy. Ever tried DMT?",test
+209,0,1,0.35125783208886885,0.6487421679111312,I said to myself  It s going to be reefer madness  Clicked the link and it was Reefer Madness.,test
+210,0,0,0.7705645205214825,0.2294354794785175,That is a face i do not want to wake up to in the morning,dev
+211,0,0,0.7921207888162245,0.20787921118377556,"And the shit like  like for  NAME , Ignore for satan",test
+212,0,0,0.7231337558900715,0.2768662441099286,No! They re still on the sidewalk right there! With literally absolutely no way around them!,test
+213,0,0,0.7991429009789108,0.20085709902108917,"She can take her boring, drunk husband with her. He s not interesting at all.",test
+214,1,1,0.330785104532764,0.669214895467236,"I always find myself wondering where people are from, sometimes it is obvious though haha.",dev
+215,1,1,0.15213429859323702,0.847865701406763,Thank you  NAME . Apparently having a sense of humor isn t your strong suit,dev
+216,1,1,0.047295467290235926,0.9527045327097641,Noice! I hope to improve my Mika with this  Thank you and may the Muscle Spirit be with you!,test
+217,0,0,0.8633017403089205,0.13669825969107957,It means less when you hear words come out of her foul mouth. Almost incomprehensible.,dev
+218,0,0,0.6423016871071503,0.3576983128928497,"Some people just need reassurance that they are, in fact, dumb.",test
+219,0,0,0.6439866346109935,0.3560133653890065,Try this new food   No way you sociopath!!,dev
+220,0,0,0.7346220836982916,0.26537791630170837,"If this is actually how it goes, I won t feel so bad going from 5 to 8 in week 17.",dev
+221,0,0,0.652622408913808,0.34737759108619204,I mean that s still weird bro... it s like a college grad feeling up a junior in HS,dev
+222,1,1,0.22759471176876656,0.7724052882312334,You have a nice bro.,test
+223,1,0,0.5403817177488284,0.45961828225117163,"Oh gosh, I can t wait to see how much you ve accomplished Mr. Not Retarded Criminal",dev
+224,1,1,0.20739713977650265,0.7926028602234974,I was born in 1980 so the 90s were my teen decade. I loved it. Best decade ever,dev
+225,1,0,0.6821444534793439,0.3178555465206561,"I ve literally done this when drunk before, I doubt it was you but my apologies nonetheless haha",train
+226,1,1,0.41148846615719414,0.5885115338428059,Yes? FBI? This Lady Right here..,train
+227,1,1,0.27858516479964,0.72141483520036,"Beautiful face, but scenically over the top",dev
+228,0,0,0.7236715104590086,0.27632848954099143,"I wouldn t ever make a broad generalization like that. Typical honkies, assuming stuff",test
+229,0,1,0.3106038922080002,0.6893961077919998,Every day in everyway. If I am to happy with anything next thing I know I m actively destroying it.,test
+230,0,0,0.6990717517984557,0.3009282482015443,You don t understand the design of our government.,dev
+231,0,0,0.7344722505164085,0.26552774948359154,"Hip hop has fallen down so far music in general, since the 90 s.",test
+232,0,0,0.5683936273563827,0.43160637264361734,"I pose you this question,  How do you know  RELIGION  is not the right religion?",test
+233,1,1,0.1802247632089159,0.8197752367910841,You are welcome mr ms  NAME,dev
+234,0,0,0.8033414356733429,0.1966585643266571,And no rails because we have a reasonably logic scense. And we cant sue nobody for our own dumb mistakes.,dev
+235,0,1,0.5135105054386322,0.48648949456136775,You will never have as many girls interested in you as when you have a girlfriend. They can smell it,dev
+236,0,0,0.5944781388950684,0.4055218611049316,It doesn t look cool,test
+237,1,1,0.13374415385578786,0.8662558461442121,"Ugh I love Stapleton.  NAME  has always really been loyal to the authentic sound though IMO, he definitely stands out.",test
+238,1,1,0.24775903982458758,0.7522409601754124,Looks like backyard  NAME  and the gang have a new member...  NAME !,test
+239,0,0,0.8062028194818418,0.19379718051815822,Not really cringey. Its not really embarrassing for you i think people might just feel bad upon reading it.,test
+240,1,1,0.30895634408076544,0.6910436559192346,"If it s a one hit kill like the regular crossbow, absolutely would be a fantastic crate weapon.",train
+241,0,0,0.6811983231786313,0.31880167682136873,"I haven t been keeping up with MHA, but this seems like a real bad idea",dev
+242,1,1,0.1337407608540364,0.8662592391459636,Good to know! I should keep a lookout then.,train
+243,1,1,0.4524741429885154,0.5475258570114846,Ow is correct.,dev
+244,0,0,0.7047727360637082,0.2952272639362919,And here I am thinking that the animation after surrender Victory is annoying ; ;,test
+245,1,1,0.1424944425422383,0.8575055574577617,I love this.,dev
+246,0,0,0.7627592847850352,0.23724071521496484,Monument to stupidity more like.,dev
+247,0,0,0.5253102941880312,0.47468970581196884,"The username makes it even better, sucking a dudes toes, who is  NAME . Man I m jealous",test
+248,0,0,0.5653839869017068,0.43461601309829323,"It s like an Arts school but with dangerous, easily weaponizable spells being flung all over the place!",test
+249,1,1,0.23330457055654386,0.7666954294434561,NAME  is the greatest player to ever pick up a basketball,train
+250,1,1,0.4685668090666316,0.5314331909333684,Lol it was worse for them last year,dev
+251,1,1,0.16742667683073054,0.8325733231692695,Thank you !,train
+252,1,1,0.24757810366072686,0.7524218963392731,Good news: this is shark tale not finding Nemo,train
+253,0,0,0.6860734374615237,0.3139265625384763,You ll miss a begging old man asking for a spare coin. RIP,test
+254,1,1,0.10195261925425747,0.8980473807457425,It s a beautiful video of family and  NAME  finally accepting  NAME  as a brother is one of the highlights of the show,train
+255,1,1,0.14729762273730096,0.852702377262699,That s awesome! Heal up quickly,test
+256,1,1,0.24458564595782295,0.755414354042177,"He, like  NAME  and  NAME , are better in the latter halves of seasons. Let s see if he can do some damage.",train
+257,1,1,0.1976938964557058,0.8023061035442942,I see it this way also. I have never played Pokemon Go but I feel like DD creates the same excitement.,train
+258,1,1,0.4821546058546543,0.5178453941453457,"Did he beat all the bosses solo? If he did, he s less of a scrub than I am.",test
+259,1,0,0.6676000596601328,0.3323999403398672,NAME  it d be funny if it weren t so pathetic.,train
+260,0,0,0.6606552014146524,0.3393447985853476,NAME  making  NAME  even more sad.,dev
+261,1,1,0.15358316567056918,0.8464168343294308,"My birthday is in March, so that MK11 Beta access is also going to be awesome.",train
+262,1,1,0.3257225585900041,0.6742774414099959,Cuddling. God damn is it comforting to just snuggle up in my girlfriend s arms and sit there for a while,train
+263,1,0,0.554298656916528,0.44570134308347203,I literally point out the same thing  along with everyone in the YouTube comments  and get downvoted to oblivion. Love it.,train
+264,0,0,0.7795643963542049,0.2204356036457951,The post in this screenshot and your comment shows how fragile you guys really are.,dev
+265,1,1,0.19260996148732212,0.8073900385126779,"I am already using ublock. Thank you for suggesting ghostery, didn t know it.",train
+266,1,1,0.4460087805784667,0.5539912194215333,I was hoping they d put people behind him and let  NAME  pass to them super hard,dev
+267,0,0,0.632121158264658,0.36787884173534197,"He took  NAME , too? That wasn t part of the deal,  NAME ! THAT WASN T PART !",dev
+268,0,0,0.7227974401635189,0.2772025598364811,i will downvoted u into oblivion!!!!!!,dev
+269,1,1,0.4472976531333339,0.5527023468666661,He looks like the son of  NAME  and  NAME .,dev
+270,1,1,0.13338319141231603,0.866616808587684,"Thank you, brother.",train
+271,0,0,0.7896935954701101,0.21030640452988988,Reacting to  NAME  at this point just makes me feel worse about the artist.,test
+272,1,1,0.38287375372769694,0.6171262462723031,There s tons of stories of animals taking care of kids....I believe the story! :,test
+273,0,0,0.6557255065084493,0.34427449349155076,That s quite a lot worse tbh,test
+274,1,1,0.27143579199950174,0.7285642080004983,I m glad that you are still harboring feelings from a game that ended in 2016.,dev
+275,0,0,0.7722202238681031,0.2277797761318969,Child labor laws are ruining this country,test
+276,0,0,0.5800633827344125,0.4199366172655875,"would you kiss a girl if you re drunk tho? Edit : why the downvotes? It s just a question, geez",test
+277,0,0,0.5976650771102106,0.4023349228897895,I ve massively improved but it never really gets cured. There are always situations that will give you anxiety.,test
+278,0,0,0.7191322344233114,0.2808677655766886,DAMN I CAN NOT BELIEVE IT,dev
+279,1,1,0.12739894127645313,0.8726010587235469,Ay i saw that live. You have amazing movement! GG bro!,test
+280,0,0,0.7283036176492721,0.27169638235072796,alarms are kinda rude.,dev
+281,1,1,0.33754192894953294,0.6624580710504671,"She want to take it slow, I can see that... I deal with those girls all the time, they my favorite",train
+282,1,0,0.689733311373184,0.3102666886268159,I destroyed about 1 2 of them because black snakes are actually a good thing to have around. I just didn t want too many of them.,test
+283,1,1,0.2721156556026274,0.7278843443973726,"Don t rush it .... it will eventually all fall into place, Enjoy today",train
+284,1,1,0.08716807760346612,0.9128319223965339,I really love this suggestion. Thank you!,dev
+285,0,0,0.8260076339053228,0.17399236609467714,The only death that made me feel any emotion. And it wasn t even the death itself.,test
+286,0,0,0.6399957504630991,0.3600042495369009,Alleviate  meaning what? Make my working life suck less?,test
+287,1,0,0.5548315645498616,0.44516843545013834,"Having read the entire article, and some of the other FAQ, the only thing this is telling is that  NAME  read the same book very differently.",train
+288,1,1,0.08576907064102313,0.9142309293589769,I took a picture of the sunrise this morning too. Just north of Austin. It was very pretty today.,train
+289,1,1,0.2252340769838933,0.7747659230161067,Point proven. Thanks,test
+290,1,1,0.4448151056333238,0.5551848943666762,The ending was so badass as a young kid! He wasnt even in his mech!,test
+291,0,0,0.8000513688863978,0.19994863111360214,Growing up in Chicago this was my life. Pissed he didn t make it.,dev
+292,0,0,0.6243636251054878,0.37563637489451224,My husband and I have been circling the drain for years. :,test
+293,1,1,0.17766417759037179,0.8223358224096282,Thanks for the advice,dev
+294,1,1,0.18853688729242934,0.8114631127075707,Jeez i need to find some of these places around me..would love a  2 beer. Everywhere i go is like  9 for draft help,dev
+295,0,0,0.7725778006005399,0.2274221993994601,Incredibly frustrating.,test
+296,1,1,0.28295917166615836,0.7170408283338416,NAME  is trying not to laugh through his lines and hoesntly I love it.,test
+297,1,1,0.21326271619143788,0.7867372838085621,"Happy? Not really, but glad we can come to a conclusion to my offhand semi in jest reply.",test
+298,0,0,0.7324622623018584,0.26753773769814154,That sex doesn t exist and we re all just pretending for his benefit...,dev
+299,1,1,0.43253114123857217,0.5674688587614278,Galaxy brained hot take Your IQ must be near  NAME  levels of hyperinteligence,train
+300,0,0,0.8685120476225778,0.13148795237742217,Refusing to pay someone for work that they ve done is theft. You can try to justify it any way you want but that s what it is.,test
+301,1,1,0.5117070385286098,0.48829296147139023,American children raised by English parents can easily end up with accents resembling their parents .,dev
+302,0,0,0.7508260027146608,0.24917399728533915,I got a lot of withholding to throw me into anxiety.,test
+303,0,0,0.7270989045289236,0.2729010954710765,The loading screen has the circle at the bottom that just keeps spinning. I tried uninstalling the app and that didn t work either.,test
+304,0,0,0.727598299967402,0.27240170003259795,Hallmark movies are the worst culprits.,dev
+305,0,0,0.7137932337680504,0.2862067662319497,Do not use logic dude. Not cool.,test
+306,1,1,0.050813362089650815,0.9491866379103492,This looks so cute! :D Her eyes came out great and I love her expression.,dev
+307,0,0,0.5284163787458256,0.4715836212541744,This is so not aww.,dev
+308,1,0,0.61389441913422,0.38610558086577995,Respect my authoritah! Demanding respect sounds like a guarantee of not getting it.,test
+309,1,1,0.3082237169482487,0.6917762830517513,NAME  finally getting WCW going I see..,dev
+310,0,0,0.7196349318959678,0.2803650681040322,He should be banned from the nfl. I can t get behind this.,dev
+311,1,1,0.31682336216771945,0.6831766378322806,I ll probably try this one day,dev
+312,0,0,0.7602686936561532,0.2397313063438468,Next you re gonna tell me they didn t invent iron! The fuck?,dev
+313,0,0,0.8296684463682917,0.17033155363170824,It s shit. It doesn t let you see schedule information.,dev
+314,1,1,0.17443775827468044,0.8255622417253196,He loves buying people beer. He got into that industry to buy people beer.,test
+315,0,0,0.6753505503599584,0.32464944964004155,What a weird character to use for something like this,dev
+316,0,0,0.8683528893107358,0.13164711068926413,"We re angry, but we don t want to be labelled as violent nutters.",dev
+317,1,1,0.3181397385103609,0.6818602614896391,Yea just went yesterday and the woodhaven area didn t seem too bad. Seems very country for being only 25min from downtown.,train
+318,1,1,0.09274811558271778,0.9072518844172822,"Thanks, I love it.",test
+319,1,1,0.1052571603210305,0.8947428396789695,"This is why I love people posting pics in the LA sub, because I see perspectives of LA that I would never see otherwise. Love this pic",train
+320,0,0,0.6990717517984557,0.3009282482015443,You don t understand the design of our government.,dev
+321,0,0,0.5323506150742979,0.46764938492570207,Cries in Shinboner Spirit,dev
+322,1,1,0.48182071600787724,0.5181792839921228,"His wounds weren t that bad, but probably got infected. Antibiotics fixed him. Good as new.",test
+323,0,0,0.6093494155235847,0.3906505844764153,Oh... I m sorry. You holding up okay?,dev
+324,1,0,0.6861520660543712,0.3138479339456289,Is it a radical opinion to say no two consenting adults should not be able to kill each other lol,train
+325,1,1,0.20993335457533735,0.7900666454246627,She has a good voice for a yoga teacher,test
+326,0,0,0.7976671785820255,0.20233282141797446,Isn t she like a worse version of  NAME ? I always hear from everyone that she is pretty trash.,test
+327,1,1,0.17139383543387032,0.8286061645661297,Brilliant post!,train
+328,1,1,0.48165107600401746,0.5183489239959825,"His wounds weren t that bad, but probably got infected. Antibiotics fixed him. Good as new.",test
+329,0,0,0.8561751162479779,0.14382488375202204,"The wage, you Fucking troll. But you don t care do you? See your post history.",test
+330,0,1,0.3627671550930984,0.6372328449069016,Hmmmm this is so familiar but I can t quite put my finger on DJEEEOOOWWWOBRRRRBRBRBRRGRRRRRRDRRRRRRJRHRRJRRERHRJRGRHRRJRHRHRBRJ,test
+331,1,1,0.08184960155267673,0.9181503984473233,"I like it! It kinda feels like new territory, almost more real than old reality shows. It s funnier and lighter too",train
+332,1,1,0.25241890193025995,0.74758109806974,"You know, that never occurred to me! So keep cool in summer, warm in winter?",train
+333,0,0,0.7752591353437723,0.22474086465622764,When they stop showing literally every big Viking loss in these games.,dev
+334,0,1,0.45564901769357413,0.5443509823064259,Wow those latkes look even worse than I thought they would.,dev
+335,1,1,0.1846655996372174,0.8153344003627826,Ah!! Was not expecting to read that this morning on my commute   lol Just so beautiful!,test
+336,0,0,0.6076760756522293,0.39232392434777075,Really not sure how that s your takeaway.,test
+337,0,0,0.6702062023675274,0.32979379763247263,This just reminded me to continue designing that bloody website.,test
+338,1,1,0.07074442283149629,0.9292555771685037,Thank you for that. I just want to feel safe secure and loved just once.,dev
+339,1,1,0.2297341035546029,0.7702658964453971,"If your friend ever decides to go public with their content, make sure to let us know. We re more than happy to promote them.",train
+340,1,1,0.17305001810604193,0.8269499818939581,I also wanted to point this out! I love JJGO!!,test
+341,1,1,0.11597370348358771,0.8840262965164123,Happy cake day !,train
+342,1,1,0.36693709430199306,0.6330629056980069,So what advice do you have for not getting sued? Preferably something OBGYN related. Thanks for doing this,dev
+343,0,0,0.8984119513649668,0.10158804863503323,The UN said the election was a sham. The man is causing death destruction and starvation. Your morals are completely and utterly fucked.,test
+344,0,0,0.6559076547941158,0.3440923452058842,The reduction in class size seems pretty small and insignificant.,dev
+345,1,1,0.5242635390861896,0.47573646091381033,Lmao the brigading is real,test
+346,1,1,0.19410955629555615,0.8058904437044438,"Now I remember, you re an OC student. This sub tells me you re brilliant...",train
+347,1,1,0.2524122136666547,0.7475877863333453,you are a good man,test
+348,1,1,0.12525520304469595,0.874744796955304,"Nice little train journey. Come on everyone, shower up before the tour",train
+349,0,0,0.8014107071818855,0.1985892928181146,That shit sent me on a fucking journey to read.,test
+350,1,1,0.4311934682357592,0.5688065317642408,You re  Stay in school lol,test
+351,1,0,0.7013421542943857,0.29865784570561427,I love how when a girl flees saudi arabia in fear of her life she gets called a drama queen. This right here is a drama queen.,dev
+352,0,1,0.4419510260144516,0.5580489739855484,Passing the torch. Lmao. You never made a good one.,dev
+353,1,1,0.08952400156942386,0.9104759984305761,"Oh man, I remember loving that movie. Been a while ssince I ve seen it but I remember being pretty enthralled.",dev
+354,1,1,0.14378779815097742,0.8562122018490226,Love this   beautiful penmanship,train
+355,0,0,0.7285394753441875,0.2714605246558125,I ll look into it! I don t mind language but misogyny can be pretty intolerable,test
+356,1,1,0.056027195090306625,0.9439728049096934,"Thank you, I hope you do too. You can always message me if you need to talk.",test
+357,0,0,0.6226234862394451,0.3773765137605549,I want someone to take me to the hospital,test
+358,0,1,0.42305973784538087,0.5769402621546191,I kinda like the swirlies in the hair. But then I saw that her eyebrow is actually just the hair and hated it.,dev
+359,0,0,0.748765120130785,0.25123487986921494,So. This is scary as fuck.,test
+360,1,1,0.3365664770119211,0.6634335229880789,I live downtown and walk around at odd hours of the night all the time. Love the empty and abandoned feel of the city.,test
+361,1,1,0.10044017564115071,0.8995598243588493,"Aww this made me tear up! Please keep posting your poems, they are so special",train
+362,0,0,0.6425518307311934,0.3574481692688066,No idea what this means but the fact that you said sweetie lets me know that you re probably really obnoxious or just being sarcastic,dev
+363,1,1,0.29644942303324884,0.7035505769667512,"Relax. You re going to give yourself an aneury... ...on second thought, keep going.",dev
+364,1,1,0.2523486036130561,0.7476513963869439,This...has 9k upvotes. Wow.,train
+365,0,0,0.7444554334407382,0.25554456655926183,"I m sorry to be that guy, but I don t get it",test
+366,0,0,0.7394907945890299,0.2605092054109701,Fuck a newspaper,test
+367,0,0,0.6890130702543279,0.3109869297456721,This is uncomfortably lame,dev
+368,1,0,0.5854740413646121,0.4145259586353879,"Idk, I d say the screams of government pawns dying is a pretty cool sound effect.",dev
+369,0,0,0.7437809231990327,0.2562190768009673,You just posted the same thing but made it worse.,dev
+370,0,1,0.4669007318381042,0.5330992681618958,"That doesn t even look like her! Except the  NAME  in the background, now that s the one we know and love.",test
+371,1,1,0.5156105067354892,0.48438949326451075,Being the most hated team of the refs is fun huh guys?,train
+372,1,1,0.14223506425344956,0.8577649357465504,"Glucose guardian!!!! Salmonblue, you are doing amazing sweetie.",train
+373,0,0,0.7507453939738076,0.24925460602619248,I m just worried about his attitude and approach with younger players. Edit re worded,test
+374,1,1,0.4380720184441017,0.5619279815558983,"Fake news! but really, that s awesome to have a parent that actually understands how to teach their child accountability.",test
+375,1,0,0.6295011307422296,0.3704988692577705,i agree to kill all children,train
+376,0,0,0.6048593103533122,0.39514068964668775,It feels oddly comforting and familiar that we suck at hockey again.,dev
+377,1,1,0.32250174800860953,0.6774982519913905,Well you came to the right place,train
+378,1,1,0.29049911517537963,0.7095008848246204,Better than just saying hey :,train
+379,1,1,0.4998731503871391,0.5001268496128609,Try harder next time  3,dev
+380,0,1,0.4867891150851732,0.5132108849148268,"You re right, my apologies, I must ve misread it.",dev
+381,1,1,0.2851395236271209,0.7148604763728791,"I don t think you can really go wrong with any of them, but I would suggest to watch him against South Carolina this year.",test
+382,1,1,0.32774742403379054,0.6722525759662095,MTV loves Indiana,train
+383,0,0,0.7726497704486289,0.22735022955137105,"Also, there s no point in having a job if it doesn t pay substantially more than the childcare costs.",dev
+384,1,1,0.09701163377005095,0.902988366229949,"Thanks for the advice, but I think I ll stick around for a bit.",train
+385,0,0,0.8888002718125736,0.11119972818742642,"The only ignorant person here is you, and the Pope who makes the same baseless claims as you.",test
+386,0,0,0.7258639878320479,0.2741360121679522,"Rapists can have parental rights in some states, assuming they find him.",test
+387,1,1,0.4676466853556843,0.5323533146443157,Yep i always say this. Absolutely best case scenario is a foul ball. If he puts it in play it s probably a dribbler.,test
+388,1,1,0.07174778616340793,0.9282522138365921,"Great program, the wife and i have been able to pay down 10k in debt in 3 months since moving our daughter into the program",train
+389,1,1,0.09004806010156963,0.9099519398984304,I just started watching Brooklyn 99 this week and was looking for this reference. Thank you.,test
+390,0,0,0.8545384098853933,0.14546159011460671,Why is it arrogant to think LIVING IN A FUCKING BEAR CARCASS is wrong?,dev
+391,1,1,0.3268904374458419,0.6731095625541581,It was a stroller so no real harm done. Thanks for asking x,dev
+392,0,0,0.5271161704882135,0.4728838295117865,"No, not related to  NAME . I forget where we found it. It was in some legal documentation on WISDOJ  I think .",test
+393,1,1,0.18204326322094555,0.8179567367790544,Living his best life.,train
+394,1,0,0.6599587491154738,0.3400412508845262,"What? Trolls? Actually, yeah, probably.",dev
+395,1,1,0.09535330169167111,0.9046466983083289,Hopefully we will se  NAME  at least as a sub. We love you  NAME .,train
+396,0,1,0.3627671550930984,0.6372328449069016,Hmmmm this is so familiar but I can t quite put my finger on DJEEEOOOWWWOBRRRRBRBRBRRGRRRRRRDRRRRRRJRHRRJRRERHRJRGRHRRJRHRHRBRJ,test
+397,1,1,0.4553563855418773,0.5446436144581227,Pointless but fun,train
+398,0,0,0.855946656056783,0.14405334394321698,Filthy birdbrain loving scum barely deserve the bullets needed to boot them off the mountain. Moreiya 4 life,test
+399,1,0,0.6604009380593598,0.3395990619406401,"He might upset  NAME , but  NAME  is going to pick him apart.",dev
+400,1,1,0.16609609207538767,0.8339039079246123,even the safe queen  pearl  was amazing. i would have had pearl and ginger double win,train
+401,0,0,0.6288755246679065,0.37112447533209353,You missed the point,test
+402,1,1,0.2289158317913479,0.7710841682086521,Wow that s just like when I sing it,train
+403,1,1,0.3582282886535946,0.6417717113464054,lmaooo you re right I did mean  NAME  by that haha  she  lol,test
+404,0,0,0.8270293855204848,0.1729706144795152,You have no clue what fascism is  Goes on to promote literal genocide tactics. You re despicable,test
+405,1,1,0.1419474765641724,0.8580525234358276,Thanks so much! Im not sure if its directly from youtube its,test
+406,0,0,0.6661654146403717,0.33383458535962823,"College is a very lonely place. Very stressful, very lonely.  NAME . Good luck out there man.",test
+407,0,0,0.8611294327849338,0.1388705672150662,Leave they don t deserve you and you don t need those sacks of shit,test
+408,0,0,0.8141553437156208,0.18584465628437913,I m sorry your trust has been that badly broken.,test
+409,1,1,0.5057401200698355,0.49425987993016457,I can feel his cheeks puffing out.,test
+410,0,0,0.7130264583662664,0.2869735416337335,He s messing with my emotions and my fantasy hockey pool....,test
+411,0,0,0.5398198269333874,0.46018017306661263,I d make that trade and I don t even like big macs.,dev
+412,0,0,0.6822899931512858,0.31771000684871414,"Yes, you selfish prick.",test
+413,1,1,0.10559039677692517,0.8944096032230748,blessed day with beautiful boy,dev
+414,1,0,0.5898483029817887,0.41015169701821125,Samsies! I could have written the feels in this post. It s like the job I never ever wanted and got and now I ve tenure,train
+415,1,1,0.19173575491145023,0.8082642450885498,The BrokenMachine has one of these videos but I m definitely going to watch yours. Thank you for taking the time to do this.,train
+416,0,0,0.6978919413671718,0.30210805863282825,Oh I m sorry. I assumed. I think that would be suspicious if your username was known to someone else.,dev
+417,1,1,0.10307478367194312,0.8969252163280569,Cool Thanks very much !,train
+418,1,1,0.15361930663124124,0.8463806933687588,I love your username.,train
+419,0,0,0.5869731693759697,0.4130268306240303,"Ah, didn t read the comment that way, my bad",dev
+420,1,1,0.2193828930756453,0.7806171069243547,"FYI pumps are now covered under the ACA Obamacare with most plans. Thanks,  NAME !",dev
+421,0,0,0.6848769165047627,0.3151230834952373,"Apparently, you d want an Alberta with a censor on what we read. Bully for you.",test
+422,1,1,0.21986994133172377,0.7801300586682762,"can he break throws though? just kidding. yellow is the season 2 green, OP dude. keep focussing on small steps. better rank will follow later.",train
+423,1,1,0.13975728032658696,0.860242719673413,thanks for the correction.,train
+424,1,1,0.21549525106120204,0.784504748938798,NAME  is a comedian. Every monologue he does is based in humor    extremely intelligent humor. He is also extremely observant.,train
+425,0,0,0.6518305674935985,0.34816943250640153,I couldn t get my wife on board. She insists on eating a  real dinner .,dev
+426,1,0,0.6058182626972972,0.39418173730270284,"If you don t like it, you didn t have to comment. Just let people be happy.",dev
+427,1,1,0.07394601352589958,0.9260539864741004,I love this! And I find myself thinking the exact same things. Soon...,train
+428,0,0,0.7751627314120997,0.22483726858790037,Just reading this makes me sick,test
+429,0,0,0.6975845836391463,0.3024154163608537,I didn t learn anything from the last short clip video on twitter that cut in mid way through an confrontation  Oh look a new one!,dev
+430,1,1,0.3027759475390692,0.6972240524609308,"While I love the brutality of Odyssey, my personal favorites were from Black Flag.",dev
+431,0,0,0.7574979476927944,0.24250205230720556,Wait so I shouldn t try to sell my shavers by telling my customers that they aren t good enough and could do better? Damn.,test
+432,0,0,0.7424139909006836,0.2575860090993164,"like I said, it s painful.",dev
+433,1,1,0.3099860066408717,0.6900139933591283,Nice try Mommy shark,test
+434,0,0,0.7906701439913857,0.20932985600861434,No or low contact. I don t have time for  family  that doesn t have basic courtesy for me.,test
+435,1,1,0.08509244533337512,0.9149075546666249,"That actually sounds like it would help, I m glad it worked for you and I hope you eye is ok now",train
+436,1,1,0.2772181041781907,0.7227818958218093,if your favorite subreddit is the correct spelling of Zack then you ll LOVE r zach,dev
+437,1,1,0.12237040286303313,0.8776295971369669,"That s amazing! Did you have a zoom on the drone, or is the post effect?",train
+438,0,0,0.7458863819099819,0.25411361809001803,I don t care about this mission Texas stuff,dev
+439,0,0,0.6913449053414226,0.30865509465857743,Its a bit weird of them to recommend you a song by The Strokes after they told you their offer,dev
+440,1,0,0.597211384549431,0.402788615450569,Every single time a person has demanded to see an MD rather than me I have appreciated the dodged bullet. It s never fun for the physician.,test
+441,1,1,0.4421802215651408,0.5578197784348592,The cringe is just beautiful,train
+442,0,0,0.8311955848982032,0.16880441510179678,"The FDA has plenty to criticize. But like here, it s usually criticized horribly off base. It needs to grow some balls and actually enforce things.",dev
+443,0,0,0.7511264478932917,0.2488735521067083,"Talk is cheap, let s see it on the court.  NAME  has been an awful offensive player this season   awful is kind.",dev
+444,1,1,0.2608030278237681,0.7391969721762319,Give the mouse a chance!.leave the cat to it.,dev
+445,0,0,0.7072285781096632,0.29277142189033684,i curse you,test
+446,1,1,0.05952505620504667,0.9404749437949533,Thank you president  NAME  for providing us with meme material that will last a week! I think you mean 5 more years.,train
+447,0,0,0.7389340721771396,0.2610659278228605,Looks like one of mine too. Such a horribly raised entitled rude brat,dev
+448,0,0,0.5947639303487264,0.40523606965127357,I don t think this happened at all tbh,test
+449,0,0,0.8859710002368706,0.11402899976312941,I feel so bad for  NAME . It was probably hard to concentrate on this match with the things going on in his personal life,test
+450,1,1,0.08904255215148604,0.910957447848514,"Thanks dude! I do best with the ice, swat and maddox",train
+451,0,0,0.8662152268043641,0.1337847731956359,It s super annoying. There is a reason I no longer speak to this person.,dev
+452,1,1,0.31401301295273654,0.6859869870472635,"That s fine. I m searching for the truth, not just the legal truth. To each their own.",dev
+453,0,0,0.7927959918271377,0.2072040081728624,Please post any news you may find about her fate. This is so sad and so wrong. We need to know what happens to her.,test
+454,0,0,0.7210661476826574,0.27893385231734263,"No I don t want it to be unhappy or unhealthy AT ALL, just more like a normal fussy baby.",test
+455,1,1,0.1526025773173535,0.8473974226826465,"I second that. What goes up must come down. And to OP, i hope you find peace and clarity. Good luck!",train
+456,0,0,0.7600805758612734,0.23991942413872652,Op forgot to mention his son has a rare scrotum disorder where the balls and shaft are reversed. Poor guy :,dev
+457,0,0,0.9275838036533077,0.07241619634669223,You should be embarrassed. Not only because you are a adulterer but because you are a pedo for thinking of your son.,test
+458,0,0,0.7059373008708629,0.29406269912913713,Way too much fuuuck,test
+459,1,0,0.6242272499257937,0.3757727500742063,"lol, as he goes down on you he suddenly screams into your vagina  THE BEES THE BEES .",test
+460,1,1,0.23012857133506248,0.7698714286649375,I LL SEE YOU AGAIN NEXT TIME,train
+461,1,1,0.48077748381946783,0.5192225161805322,It still has the potential to be permanent if no alternative is found.,dev
+462,1,1,0.2252719062778299,0.7747280937221701,"We are by far the greatest team the world has ever seen, we are just having a rough patch.",test
+463,1,0,0.6939452127124104,0.30605478728758967,We also turned the ball over about a million and 3 times. I m over it honestly,train
+464,0,0,0.9245956513599831,0.07540434864001687,No because to them this disabled boy is faceless. It s easier to digest our hate and vitriol without thinking about it.,test
+465,1,1,0.10497441033542143,0.8950255896645786,I love this!! And it s so true,train
+466,1,1,0.2763875850788592,0.7236124149211408,My mom used to think  NAME  was the handsomest NFL coach for what that s worth.,test
+467,0,0,0.6092347806194505,0.3907652193805496,"i used that as an example, and i also said it would be very difficult. this is hypothetical there s no need to be rude.",dev
+468,0,0,0.850441819598362,0.14955818040163804,Pissed at you for not allowing them to live in ignorant bliss?,dev
+469,1,0,0.6536684389063134,0.34633156109368657,Just goes to show it takes 0 skill to play that hero,dev
+470,1,1,0.3956619821420957,0.6043380178579043,Agreed. There is r clevercomebacks but this is just not even that.,test
+471,1,1,0.16798125635551675,0.8320187436444832,Thank you.,train
+472,0,0,0.7104543409481321,0.28954565905186785,Oh boy do I have some bad news for you!,test
+473,1,1,0.09866395067386924,0.9013360493261308,"Lol, good luck! Hope it goes well for you  I have no idea how it s working at all for me",train
+474,1,1,0.212160652188913,0.787839347811087,Thank you for helping me realize that p r bloopers is exactly what i need right now,train
+475,0,0,0.812532192489796,0.18746780751020398,That s an insult!! To fecal matter.,test
+476,1,1,0.3674597461993905,0.6325402538006095,"Oh yeah, from the vulcan council",test
+477,0,0,0.6688643484420801,0.3311356515579199,Oh my god... i JUST realized this!!! AHHHH this makes me SICK.,dev
+478,0,0,0.7152287290780815,0.28477127092191845,But she s technically confessing of stealing food from her work. But I still think it s mostly to brag but idc.,dev
+479,0,0,0.8353525361523974,0.16464746384760262,That s way dangerous to keep then together they may break out and start feedig on the other ear buds to gain heir strength,test
+480,0,0,0.7902040978153179,0.20979590218468214,We re not upset. We re disgusted. You re disgusting.,dev
+481,0,0,0.8100209174087559,0.18997908259124405,This is just a waste of time. Just like making portland denizens use their tax dollars to built a stadium,test
+482,0,0,0.8491536374499217,0.15084636255007836,It s actually somewhat maddening to me that there are people who watch his video and actually think he is doing a public service. Yikes..,test
+483,1,1,0.43247195528287785,0.5675280447171221,Galaxy brained hot take Your IQ must be near  NAME  levels of hyperinteligence,train
+484,1,1,0.3451118069147825,0.6548881930852175,"Um, excuse me? I m a  rolling  rabbit hole, thank you",test
+485,1,1,0.13280509368500848,0.8671949063149915,I m so happy you said this. I just accepted that I was going crazy.,train
+486,0,0,0.6913202576240072,0.30867974237599277,"I didn t say it was proof that anything was a scam with no future, perhaps you re projecting.",test
+487,1,1,0.21107607052970823,0.7889239294702918,That s my favorite! It smells so good without being overpowering.,train
+488,1,1,0.04054846964985792,0.9594515303501421,"Sounds like you two are really good together   cheers, and much happiness to you both!",dev
+489,0,0,0.8746347694530442,0.12536523054695578,Whoever wrote this article has no concept of what s going on what so ever. There assessments are miles off the mark.,dev
+490,1,1,0.1832064923866581,0.8167935076133419,"Klokslag 12 I find really enjoyable, horror movie podcast, Im not a horror fan but I find these dudes very entertaining",train
+491,1,1,0.08401538859826918,0.9159846114017308,"My boyfriend is so much like your husband. I m so happy for you to have him, he sounds wonderful.",dev
+492,0,0,0.6169647743617345,0.38303522563826553,"Oh,  NAME , don t bring THAT story up!",test
+493,1,1,0.2634902483747238,0.7365097516252762,NAME  has become the best houseguest ever in 24 hours. We aren t worthy,train
+494,0,0,0.6210854552643104,0.3789145447356896,I feel like its got to do with the bad desync in the game right now.,test
+495,1,1,0.225228159477874,0.774771840522126,Welcome to Reddit!,test
+496,1,1,0.30239703056231637,0.6976029694376836,"Yeah i know, i m just stating why it slipped my mind, i m glad you brought it up.",train
+497,0,0,0.7719388537968825,0.22806114620311746,Sadly enough I was thinking the same.,test
+498,0,0,0.6272230706581415,0.37277692934185847,I thought that type of camouflage failed horribly because the high contrast and defined shapes made the ships really stand out.,test
+499,1,0,0.6027547425961503,0.39724525740384975,Naw man Asain men have an easier time. Most of my asain friend are pretty boy. Fuckbois lol,train
+500,0,0,0.7683412654655816,0.23165873453441846,So sorry you are hurting.,dev
+501,1,1,0.25264177507339014,0.7473582249266099,A friend calls this shadow work. I think you re right. It takes a lot of courage and persistence.,test
+502,1,0,0.7139422471152105,0.2860577528847895,The only way change will happen is when the national media actually focuses on them. Precisely what a protest is aimed at engendering.,test
+503,0,0,0.6396675613691508,0.3603324386308492,It s riskier to take on bad contracts right now,dev
+504,1,1,0.2800474323085067,0.7199525676914933,"It s still interesting to watch though ... from far away, with no personal involvement whatsoever.",test
+505,1,1,0.16906905754539192,0.8309309424546081,Just commenting here to give you a notification :  Have a nice day now,dev
+506,1,1,0.37635464257221285,0.6236453574277872,SKYRIM!! Hahaha,train
+507,1,1,0.2285130087789785,0.7714869912210215,No but I will now. Thanks!,train
+508,1,1,0.18755702244371508,0.8124429775562849,Great show honestly,train
+509,0,0,0.899254073455728,0.10074592654427199,"Not sure, I m not good at expressing my feelings, and sometimes I get angry and say things that very hurtful",test
+510,1,1,0.4013025738120207,0.5986974261879793,Baby you was right,train
+511,1,1,0.08680735150401253,0.9131926484959875,Thanks alot  NAME  i will try to use these tips,train
+512,1,1,0.18547560140504293,0.8145243985949571,Thank u goalie  NAME,train
+513,0,0,0.7962710440939014,0.2037289559060986,Those words you used. I don t want to believe that exists.,test
+514,1,1,0.3722561280703244,0.6277438719296756,NAME  that s rough. Thanks for explaining,dev
+515,0,1,0.5042530037748032,0.49574699622519686,I hope you or someone close to you never has to go through what this woman is going through.,dev
+516,1,1,0.06386977346790335,0.9361302265320967,"Gotta love these kids! When they do or say the cutest things like that, it really makes u melt....... Enjoy OP!!!",test
+517,1,1,0.12891813528997642,0.8710818647100236,Thanks a ton man. I definitely do overthink a lot and I d serve myself well letting life come to me more often,train
+518,1,0,0.6866714616356708,0.3133285383643292,You must be really slow. Life must be hard for you. You have my pity.,train
+519,1,1,0.10485873739691698,0.895141262603083,I love that this is written on notebook paper.,test
+520,0,0,0.6084563406377987,0.3915436593622012,"Nice bosses are still just bosses here to exploit you, just to also make you feel bad for, instead of afraid of, defying them",test
+521,1,1,0.38364628803884915,0.6163537119611509,"Firm, but gentle. Baby hamsters or live goldfish. Soft female hands caressing my balls is a wonderful feeling.",test
+522,1,1,0.2876423839333494,0.7123576160666506,"The sheer size of  NAME  now is insane, would love to see him come back at heavyweight",train
+523,0,0,0.6801420930903452,0.31985790690965477,You should ve smashed his head into it.,test
+524,0,1,0.4111447780588896,0.5888552219411104,Not any meaningful amount as far as I can tell. Although I d love to be surprised,dev
+525,0,0,0.8376729860848562,0.16232701391514381,Such bullshit. Reloading components included? Not that they d let that stand in subsequent laws if it is.,test
+526,0,0,0.5659496923812873,0.43405030761871266,"Wow that s a burden, I m sorry.",dev
+527,1,1,0.518412464983498,0.481587535016502,Ho.  NAME . Shit. Glad you made it through that insanity,dev
+528,1,1,0.22344901512656712,0.7765509848734329,I love how you re making an assumption to try and make a point.,dev
+529,0,0,0.5793827056575396,0.42061729434246037,Good that corporate knows about it. They ll launch a LP investigation and fuck the idiots doing this.,dev
+530,0,0,0.8330464158581486,0.16695358414185132,No deal then? Sick of reading about this shite.,dev
+531,1,1,0.13977963406292848,0.8602203659370715,Ah man great memories .. campaigns were soo memorable,train
+532,1,0,0.5587343814518753,0.4412656185481248,They will get the other. It s all fun and games until they noticed I was friends with a deep trust issues with humans since they were little.,dev
+533,0,1,0.3176717172496316,0.6823282827503684,"Not me personally, but I do think it s an excellent idea. You never know when a stomach bug might hit.",dev
+534,1,1,0.24988291971348198,0.750117080286518,Yes sir ! Cheers. I miss typed I get  120 20mg.,train
+535,0,0,0.8404713737076361,0.1595286262923638,What the heck?  3 a month for 30 texts? That s ridiculous.,dev
+536,0,0,0.5356194592914734,0.4643805407085266,"I mean, a lot of animals I ve seen get terrified of regular stuffed animals, imagine having your fears super sized like that",test
+537,1,1,0.4663033757084669,0.5336966242915331,Why are you taking a picture of a playground? Lol,dev
+538,1,1,0.519824072064194,0.48017592793580594,"If there is an ordered psychological work up, will it be 3 days and 3 nights and will they decide if she needs to stay longer? thank you",dev
+539,0,0,0.8428599770104425,0.1571400229895575,"The people that use the image and leave that braindead comment are sheep, nothing more nothing less.",test
+540,0,0,0.6969336869314224,0.3030663130685775,Because she knows shame and he asked.,dev
+541,1,1,0.36182587789195186,0.6381741221080481,"Ha! I actually included that on purpose, was poking fun at me  and the typical MS3  :",train
+542,0,0,0.8942082039281771,0.10579179607182283,It is. It s so bad. Then I start blaming myself for liking them. It s like I have no control over this.,test
+543,1,1,0.1584024193958543,0.8415975806041457,"And lo, for he took to Facebook and quoth righteousness, and the people were joyful, and gave unto him many  likes.",train
+544,0,0,0.6208775397927728,0.3791224602072272,It s not  literally  the same investigation.,dev
+545,0,0,0.536755052134865,0.463244947865135,As we shouldn t. We are trying to win a SB here not showcase another star player.,test
+546,1,1,0.22480413412408928,0.7751958658759107,You re good.,dev
+547,0,0,0.8281130044872582,0.17188699551274184,Here in America too. Those counter protesting fascist get thrown in jail and pepper sprayed like animals. It makes no sense that this happens.,test
+548,0,0,0.8099260883824524,0.1900739116175476,You sound quite childish and unable to engage with any information that doesn t conform to your narrative. Sad.,dev
+549,0,0,0.8949087122964383,0.10509128770356164,Just thinking about all the stupid stuff I did as a kid makes me very afraid for my 5 year old.,dev
+550,0,0,0.5868602903556193,0.41313970964438074,Isn t that the point though? That s it s up to the people that aren t scientist to decide if the science has any meaning?,dev
+551,0,1,0.40708985846997525,0.5929101415300247,True. I don t know the survival rates of the women in ancient rome but I can t imagine it was fantastic.,test
+552,1,0,0.6629330830417945,0.33706691695820545,Right? If I worked 75 hour weeks I d want more than a damn gift card to a coffee shop,train
+553,0,0,0.787332086751483,0.212667913248517,"Anti vaxers aren t funny anymore, now they re just scary...",test
+554,1,0,0.6096765508599722,0.3903234491400278,"Not the point, and also I m sure this means raider can dodge gb it.",dev
+555,0,0,0.6893767038856371,0.3106232961143629,"Ha, who cares about them supporters...the most important thing for society is that justice is served and the man jailed! Scream all you want.",dev
+556,1,1,0.11566246424156168,0.8843375357584383,Beautiful. Makes me wonder how the Persona 6 Velvet Room attendant will be like and how the dynamic with their siblings go...,train
+557,1,1,0.15358316567056918,0.8464168343294308,"My birthday is in March, so that MK11 Beta access is also going to be awesome.",train
+558,0,0,0.6566846265848252,0.3433153734151748,"Probably, I knew this lawn chair was a bad idea.",test
+559,0,1,0.4361924410780381,0.5638075589219619,"In looking at the questions answered in the AMAs following the  NAME  podcast, I don t see any related to  NAME  or race IQ.",test
+560,1,0,0.5717150433732285,0.4282849566267715,NAME  : completely unpredictable Bunch of them were standing together in the middle of the ring lol,train
+561,0,1,0.398403715127287,0.601596284872713,Upvoted for visibility. Disapprove of the poll results.,test
+562,1,1,0.24030608265463893,0.7596939173453611,Same here! I was addicted to her and beaus stories during their trip to Europe right before filming this season. They are the best!,train
+563,0,0,0.7452426723349823,0.2547573276650177,"No, that s not possible. If you have proof then it s not misinformation what your spreading but simply information.",dev
+564,1,1,0.15426485755367125,0.8457351424463287,"The possibilities are fascinating. In other times, I d be enjoying watching the lawyers argue...!",train
+565,0,0,0.8307096741294592,0.16929032587054085,It happens so much that it really scares me tbh.,dev
+566,1,1,0.17763570282492747,0.8223642971750725,Very nice.,train
+567,1,1,0.13680681057108668,0.8631931894289133,Haha love it!,train
+568,1,1,0.1736377532722,0.8263622467278,Lol thanks.,dev
+569,0,0,0.7669592785079872,0.23304072149201283,"Cut your nalis, i hate it",dev
+570,1,1,0.32956726456174423,0.6704327354382558,"Welcome to The Church of Jesus Christ of Latter Day Saints, where families can be SEPARATED forever",test
+571,1,1,0.1664935779540364,0.8335064220459636,"We love him, duh. He s our NT captain and our ace.",dev
+572,1,1,0.23576053959639964,0.7642394604036004,good guy win,train
+573,0,0,0.6898670126066846,0.31013298739331535,"I want to bounce a whole roll of quarters off that ass, holy shit.",dev
+574,1,1,0.13402986199591949,0.8659701380040805,Wow wish I could take that. That is an absolute steal. Not a lock by any means but value alone is worth it,train
+575,0,0,0.7679333037474914,0.2320666962525086,WHAT THE HELL?!?!?!?,dev
+576,0,0,0.7605452664303669,0.23945473356963315,Fuck my life,dev
+577,0,0,0.6340817342007807,0.3659182657992193,So you re male then. Ps ur wrong bud,test
+578,0,0,0.5281198259753983,0.4718801740246017,Had my suspicions but didn t want to mindread such a civilized honest actor.,test
+579,1,1,0.363017139719792,0.636982860280208,"Well I m trying to improve, man",test
+580,1,0,0.5484488389551835,0.4515511610448165,Thats about how 10  of the US population are lol,train
+581,1,1,0.164445062995366,0.835554937004634,"Never heard of him before, But I believe in  NAME . He s going to be a legend after we hire  NAME . Long live  NAME .",train
+582,0,0,0.712966260699142,0.28703373930085796,I m also scared.,dev
+583,0,0,0.6467917740110798,0.35320822598892027,Whoever made this is making Tokyo ghoul look bad,dev
+584,0,0,0.8161110389606073,0.18388896103939267,That just sounds like a show that would piss me off tbh,dev
+585,0,0,0.7942003180088637,0.20579968199113624,I don t think most people suck for 4 yrs and then figure it out again,dev
+586,0,0,0.6895814152657658,0.31041858473423417,I don t feel so financially secure,test
+587,0,0,0.7488270382093956,0.2511729617906044,So. This is scary as fuck.,test
+588,0,0,0.8591678510217826,0.14083214897821736,So ungrateful. I wouldn t have even offered that bc ppl who try to argue with closing times are not people who settle.,test
+589,1,1,0.14236593794014185,0.8576340620598581,Wow! Dude has aged well. Maybe I need some of that snek oil!,train
+590,1,1,0.1464880415451313,0.8535119584548687,"Thanks, I guess? Haha",train
+591,0,0,0.8032178641943792,0.19678213580562082,I just say I don t know shit. I m just a ape man on a rock.,test
+592,0,0,0.6819535818499685,0.31804641815003154,Those inflated monopoly prices go back into Ontario coffers for services like roads and schools! How dare you question them.  s,dev
+593,0,0,0.7175493797677517,0.2824506202322483,Then why are you commenting on a thread about that article?,dev
+594,1,1,0.2628164319754983,0.7371835680245017,At least they have picked up some good humanist notions along the way.,dev
+595,0,0,0.8780659340238297,0.12193406597617025,"It s shit, it s over, put the damn format to bed and send the cunts who make it over to Fox",dev
+596,1,1,0.1979502367074195,0.8020497632925805,I amlooking to adopt from there! This makes me happy!,train
+597,1,1,0.25583210065078554,0.7441678993492145,"Counter s clean, you re welcome!",train
+598,1,1,0.3269338611955934,0.6730661388044066,It was a stroller so no real harm done. Thanks for asking x,dev
+599,1,1,0.36886737357629307,0.6311326264237069,So what advice do you have for not getting sued? Preferably something OBGYN related. Thanks for doing this,dev
+600,0,0,0.7442493212311613,0.2557506787688387,Well that s disgusting,test
+601,0,0,0.6951849265287,0.30481507347130005,"And yet  NAME  can t even get a pub gig, homeboy was born the wrong colour",dev
+602,1,1,0.197896979475649,0.802103020524351,I like that energy,dev
+603,0,0,0.6922488280284169,0.3077511719715831,Yea this past season her outfits were horrid,test
+604,0,0,0.7268132130464083,0.27318678695359166,Must be why I m alive. That sucks.,test
+605,0,0,0.5371296607397702,0.4628703392602298,10 minutes of awkward roleplay,test
+606,0,0,0.8318887265594632,0.16811127344053672,"I will say that her housing bill left a very bad taste in my mouth, and this is coming from someone with a very high opinion of  NAME .",test
+607,0,0,0.6376394776668419,0.362360522333158,His army of Swedish blondes are going to be upset.,test
+608,1,1,0.5244214219260848,0.4755785780739152,"Yeah, right.",train
+609,0,0,0.6128995621700929,0.3871004378299071,Alllllllways. Losing that toonie makes you feel like a rookie every time.,dev
+610,0,0,0.7936211208485718,0.20637887915142816,"oh shoot, im sorry to hear that. was it someone close to you?",dev
+611,0,0,0.7123803060667708,0.2876196939332291,So shocking a couple in their 20s in counseling isn t going to work out.,dev
+612,0,0,0.7689453239421349,0.2310546760578651,And DICE has told us fuck all about how they intend to fix it and when to expect the fix.,dev
+613,1,0,0.6394918641578493,0.36050813584215075,So why wouldn t the white Sox just offer an extra  20 million,train
+614,0,0,0.8382557153936548,0.16174428460634516,if your car is so great why do you have to fill it with petrol all the time This is how stupid you sound,test
+615,1,1,0.4909327692928409,0.5090672307071591,Lol found the neckbeard,test
+616,0,0,0.8547958985302706,0.14520410146972934,Ugh... hate when people talk to me when I m fishing. This would be so awful hahaha,dev
+617,0,0,0.7678206274940511,0.23217937250594886,WHAT THE HELL?!?!?!?,dev
+618,1,1,0.10268603738823678,0.8973139626117632,I love how many penguins stopped and waited for him,test
+619,0,0,0.8070264729745797,0.19297352702542023,You re just a fuming democrat and all I hear is angry democrat mental gymnastics.,dev
+620,1,1,0.17305182966394306,0.8269481703360569,"Yeah, great!",dev
+621,1,1,0.25624937842164985,0.7437506215783501,Thanks for the insight. I guess I m coming off a bit ignorant and maybe naive.,train
+622,0,0,0.7943581888475404,0.20564181115245958,"I m critical of halal, but I also don t eat meat. None of it is humane.",dev
+623,1,1,0.3488772422263864,0.6511227577736136,You are correct.,train
+624,1,1,0.09911281160246332,0.9008871883975367,"Thanks, I love salad.",dev
+625,0,0,0.7858616347472397,0.2141383652527603,that is the saddest damn yogurt ive ever seen,dev
+626,0,0,0.8045536374053119,0.19544636259468803,Who still unironically says SJWs? You look like an idiot saying that.,dev
+627,0,1,0.44090704130998215,0.5590929586900178,Was just wondering about the mobile thing. I only use mobile and I ve never noticed anything odd. It s not something people would care about anyhow.,dev
+628,0,0,0.7158567135858018,0.2841432864141982,All I ll say is when I can smell it walking down the street it makes me very jealous.,dev
+629,1,1,0.1403680336705213,0.8596319663294787,Love it. Be well  NAME,train
+630,1,0,0.6955860233111103,0.3044139766888897,I don t think that would be an issue with  NAME . He doesn t seem like work ethic is his problem,test
+631,1,1,0.24418364457149333,0.7558163554285067,NAME . growing some ladyburn1974 as part of my first grow. thank you!,train
+632,0,1,0.3611199540806487,0.6388800459193513,"Omg,  please",test
+633,0,0,0.6403456678633928,0.3596543321366073,"Not to mention the fact, that he s casually smoking a cigarette 3 inches away from an infant.",dev
+634,1,0,0.6548694491539939,0.3451305508460061,Lol ok. So saying a garbage clip doesn t belong at the top of a gaming subreddit makes me a  NAME .,train
+635,0,0,0.7292141314949665,0.2707858685050335,IM GOING TO GO BACK TO INDONESIA UNLESS YOU STOP PAYING CHILD SUPPORT YOU SHOULD BE SUPPORTING ALESS AND  NAME,test
+636,1,1,0.12036703948372185,0.8796329605162782,"Gotta love guarantee. You should come over to amtrak, at most crew bases it only takes two years to hold a job.",train
+637,0,0,0.7075984588034445,0.2924015411965554,Because they enjoyhis music. Stop asking stupid questions in order to get attention,dev
+638,0,0,0.6840754230056704,0.31592457699432963,Scary stuff.,test
+639,0,0,0.740731617129793,0.25926838287020704,He gets paid to hate them... what s hard to understand?,dev
+640,1,0,0.7082932549219275,0.2917067450780725,If you don t think this can happen in the US your going to be the reason it does.,dev
+641,1,1,0.06935114439666301,0.930648855603337,Ya! It was a bangin  movie! A super fun ride with characters I cared about.,train
+642,0,0,0.7619266703352133,0.23807332966478664,It s been with me all day. Those reams of entries is one of the most quietly horrific things I ve ever seen.,dev
+643,1,1,0.15893955521787873,0.8410604447821213,We re honouring good King Billy. That s also how we decided which  NAME  brother to buy.,train
+644,1,1,0.12186522684278045,0.8781347731572196,Best bedtime Christmas story ever.,test
+645,1,1,0.208329653777653,0.791670346222347,Good. Can t wait for the lulz.,train
+646,0,0,0.7647223049441808,0.2352776950558192,Dumb question: what s a gilding train?,test
+647,0,0,0.7184796024127019,0.2815203975872981,"Damn, we need healthy PGs.",test
+648,0,1,0.4995449211716524,0.5004550788283476,I sense no awful taste here.,dev
+649,0,0,0.6253263929152396,0.3746736070847604,This is like the timeline from hell.,test
+650,0,0,0.6711030595517604,0.3288969404482395,"Ah, so you ve an ugly face as well. Can it be rectified via plastic surgery?",dev
+651,0,0,0.7376821926188994,0.2623178073811006,I CAN CLEAN MY OWN VAGINA NOW!  Kills me every time.,dev
+652,0,0,0.8920104643854927,0.10798953561450729,"I fear slowly losing myself, and my cognition over an illness far more than I fear dying from a random accident tbh.",dev
+653,0,0,0.603755114519638,0.39624488548036196,If we can t even score on the power play pulling the goalie made no sense,test
+654,1,1,0.2432112857131512,0.7567887142868488,Cant wait to see it buddy!,dev
+655,1,1,0.11952327645879812,0.8804767235412019,wow. thank you. you dont know how badly i needed that tbh,test
+656,0,0,0.7276655192049213,0.27233448079507866,No thanks probably stank af.,test
+657,0,0,0.7228040429939073,0.2771959570060927,The sea was angry that day my friends...,test
+658,1,1,0.33537991291950786,0.6646200870804921,Like have an anti interventionist foreign policy.,dev
+659,0,0,0.781400516861346,0.21859948313865393,So the article is pretty much nonsense.,test
+660,0,0,0.8259831727076454,0.17401682729235463,I would literally rather have the government throw  3k into a shredder than fund this shithead s trip down south,dev
+661,1,1,0.29850293294633135,0.7014970670536687,It sure did! for a month I still think a Villa Spang platoon should have been given more of a look.,dev
+662,1,1,0.4060019478989749,0.5939980521010251,I m more interested in why there are goldfish in the picture...,test
+663,1,1,0.14428983219932978,0.8557101678006702,Thank you. We re seven months into reconciliation. We definitely had HB for the first couple weeks as well.,train
+664,1,0,0.84972021650567,0.15027978349433002,what a dumb moment of faux outrage. can t wait to see what contrived outrage someone thinks up next.,train
+665,1,1,0.23871954409341178,0.7612804559065882,I hope she makes enough for therapy for her kid.,train
+666,0,0,0.8365906557320077,0.1634093442679922,"Unfortunately, this sub is slowly being populated by prequel revisionists and the good ol day guys.",dev
+667,0,0,0.7308440670605802,0.2691559329394198,Imperial is already messy and hard to understand,dev
+668,1,1,0.45188004907435286,0.5481199509256471,I guess you were hoping for love from someone who is not well enough to offer love.,train
+669,1,1,0.1313112649855671,0.8686887350144329,Thanks a bunch  3,test
+670,1,1,0.22548360020494118,0.7745163997950588,Thank you. Man I wanted to throw this fact in someones face for goodnesssake,dev
+671,1,1,0.10875855151672997,0.89124144848327,I really hope we win tomorrow. .500 halfway through the season would be insanely satisfying... also I want to win lol,train
+672,0,1,0.4209480199127863,0.5790519800872137,Anthem is a good 45 min from Scottsdale and the rush hour traffic is a nightmare.,dev
+673,0,0,0.5487574758141311,0.45124252418586885,It is definitely not a coincidence that he used women to represent both political sides.,dev
+674,0,0,0.6844957268787228,0.31550427312127716,"All men cheat, you might as well get cheated on by a rich man! Kudos on the level of misanthropy.",dev
+675,1,1,0.2631848008323898,0.7368151991676102,My 2 favorites,dev
+676,1,1,0.06881048556384295,0.931189514436157,I really hope  NAME  gets a great helm. A crown would be cool but I want a properly armored sword and board knight.,train
+677,1,1,0.06851810433590955,0.9314818956640905,Make sure to tell her  r Austin helped you pick a place! She ll appreciate the thought you put into choosing a place special to her.,dev
+678,0,0,0.6546369824175973,0.3453630175824028,Did anyone else read this and say  Fuck yeah! ?,test
+679,0,0,0.7440017564944402,0.2559982435055598,It s pretty dangerous when the state decides which fictional deity is legitimate. For example the  NAME .....,dev
+680,1,1,0.11189814671211429,0.8881018532878857,"tanned  Thank you BBC, very cool!",train
+681,1,1,0.16964103128492414,0.8303589687150759,I like the reference to the Good Place :,dev
+682,1,1,0.23852800929869522,0.7614719907013048,"Ah, as a fanatical supporter of the Alliance I ve not done any of the Horde content, thanks for letting me know",train
+683,0,0,0.695868539763319,0.30413146023668103,209 comments and we don t get to read any? All that good pasta advice going to waste. Shame.,test
+684,1,1,0.2592664879122254,0.7407335120877746,At least it s decent pay. Lol.,train
+685,0,1,0.49534648359105304,0.504653516408947,Can we forget that this moment happened,test
+686,0,0,0.8178575063322725,0.1821424936677275,I miss  NAME . Shame he had to get injured while he was here,dev
+687,1,1,0.1991688313894442,0.8008311686105558,And their cats. IT loves kittens.,train
+688,1,1,0.36182587789195186,0.6381741221080481,"Ha! I actually included that on purpose, was poking fun at me  and the typical MS3  :",train
+689,0,0,0.600309726553782,0.399690273446218,The taste is subjective and it s certainly not good for your health,dev
+690,0,0,0.6650734559628204,0.33492654403717964,. . . Wait a fucking second,test
+691,0,0,0.8248637184190466,0.17513628158095343,"NAME , you re annoying. Did  NAME  steal your girl or what? Everytime someone mentions  NAME  on this subreddit, you appear to trash talk him.",test
+692,0,1,0.3623123788312751,0.6376876211687249,"If this team could make there wide open shots, we could win some games. Its unbelievable how many open shots we miss.",dev
+693,0,0,0.7815581063746109,0.21844189362538918,"As someone who has polluted their body with copious amounts of sugar, I somewhat doubt steroids are any worse. Abuse anything and it will hurt you.",test
+694,1,1,0.16850910971971833,0.8314908902802817,"Seriously one of the best soundtracks. I always get chills from the organs, even just thinking about them.",dev
+695,0,0,0.8843640680276483,0.11563593197235167,"It is so ugly I felt personally attacked by it, what can I say",test
+696,0,0,0.7546138577745202,0.24538614222547986,Those floors with  that  paneling? Ugh! Disgusting!,test
+697,0,0,0.7049875157380766,0.2950124842619234,"Get a card that says  Sorry about your loss  on the front, then on the inside write  It s me. I quit .",dev
+698,1,0,0.6210113844974972,0.3789886155025029,this is a GANGSTER ASS revelation!!!!. thanks mr.  NAME !,train
+699,1,0,0.7294463121392736,0.2705536878607264,Sorry this shit is happening to you. Thanks for capturing the first  NAME  in WWII. Go Coast Guard.,dev
+700,0,0,0.7678003243812144,0.23219967561878566,So sorry you are hurting.,dev
+701,1,1,0.30132786837043035,0.6986721316295696,"Wow, that s crazy. Ever tried DMT?",test
+702,0,0,0.7232064760506536,0.27679352394934637,NAME  you people are so fucking dumb,dev
+703,0,0,0.6554045452437263,0.3445954547562738,"Waahha, ohh, they massawaaa... STOP IT. YOU CAN ACT LIKE A MAN.",test
+704,0,0,0.8231566671317642,0.1768433328682358,The power dynamics argument is one of the most ridiculous arguments ever   unless it s someone who has a  direct  influence on your life or outcomes.,dev
+705,0,0,0.6242157524548407,0.37578424754515927,"It may be wrong, but it s not far from the truth.",dev
+706,0,0,0.630777759120922,0.369222240879078,The comments on this thread are what I expected and that makes me sad.,test
+707,0,0,0.7665775302004562,0.23342246979954384,"Hold my wine, I have to go vomit in sorrow.",test
+708,1,1,0.42223191089661194,0.5777680891033881,"NAME  funny, girl.. not so much",test
+709,0,0,0.8484912688042867,0.15150873119571326,If too many medical professionals die then life will be worse as we cannot get medical treatment,test
+710,0,0,0.5355085880586294,0.4644914119413705,"most government positions  , especially elected positions   don t have any education or skill requirements   FWIW Yea they do.",dev
+711,0,0,0.8063805516363708,0.1936194483636292,"By his comment I would say that he is in fact, a simpleton. So, too late.",test
+712,1,0,0.6837019314906767,0.31629806850932335,"That s ridiculous. I ll read it, thanks.",train
+713,0,0,0.7176796774578975,0.28232032254210254,Then why are you commenting on a thread about that article?,dev
+714,1,0,0.661319770967162,0.338680229032838,Imagine the   nightmare of regulation   flood of unregulated money these guys are up for  congrats.,train
+715,0,0,0.6256750492337104,0.37432495076628963,Yeah. Basically Sky Germany and Sky Sports aren t reliable at all,test
+716,0,0,0.8281152786972863,0.17188472130271373,"Considering how much they project and accuse how often they others of only hating X person because of their race, it makes sense.",dev
+717,0,0,0.6060411200030792,0.3939588799969208,Ironically every  pol  meetup is more diverse than the people pushing diversity and race mixing. Weird how that works huh,test
+718,0,0,0.7138616829466561,0.2861383170533439,For both of you together? The fuck company are you using.,test
+719,0,0,0.5990019880246822,0.40099801197531787,Yeah I sympathize with this sentiment. The flow of Michigan fans into the cfb subreddit this year was overwhelming. Even as a fan I was irritated.,test
+720,0,0,0.6471679540045725,0.3528320459954275,I miss the confetti cakes :,test
+721,0,0,0.8150790758651211,0.1849209241348789,"It was a painful cringe, too. Are we masochists?",test
+722,0,0,0.631660133405282,0.3683398665947179,I m guessing  NAME  and  NAME .  NAME  needs to remove that stick up her ass.,dev
+723,1,1,0.40591860201632235,0.5940813979836777,"I mean I dont think your wrong at all, but I would still be happy to fight you for funsies.",train
+724,0,0,0.5668514162118193,0.43314858378818066,I HAVE BEEN CALLED! I MUST ANSWER....ALWAAAAAAAYYYYYSSSSSS!  Death Scream,dev
+725,0,1,0.3848183550248422,0.6151816449751578,What? I second this,dev
+726,1,1,0.20981664158730307,0.7901833584126969,Great reply as usual,train
+727,1,1,0.08537815661768533,0.9146218433823147,"Oh wow this is good to know, it was always my go to spicy ketchup when I make frozen fries at home.",test
+728,1,1,0.1969336927768751,0.8030663072231249,NAME  has played really well though. Arguably better than  NAME,train
+729,1,1,0.29398872670196596,0.706011273298034,Thanks. I though it was fooling a penquin.,train
+730,1,1,0.4406770445422312,0.5593229554577688,We all lose it too fast from time to time...but you have to make up for it. Hope it gets better.,train
+731,0,0,0.6986323406609564,0.30136765933904364,Yikes!! This rebuild year isn t fun,dev
+732,0,0,0.7913664251801724,0.20863357481982756,Im so sad how that movie turned out. We could have achived something good,test
+733,1,1,0.43151221415051044,0.5684877858494896,Yeah no haha. Out of my price range tbh,train
+734,0,0,0.5248442387349528,0.47515576126504727,I believe it was clear I disagreed. And I don t play wow.,test
+735,0,0,0.8831837334981679,0.11681626650183208,It s kind of worrying that you genuinely believe that left wing people are actively trying to destroy their own country. Approaching USA levels of ridiculous viewpoints.,dev
+736,1,1,0.08286420555113849,0.9171357944488615,Ok I love  NAME  for making  NAME  fist bump 3 times. He was so awkward with that haha.,test
+737,1,1,0.44903900490879034,0.5509609950912097,But what if that s the only job I would enjoy?,train
+738,0,0,0.7225039663708319,0.2774960336291681,Watching  NAME  flip his head back every poke of contact is possibly the most frustrating thing to watch,test
+739,0,1,0.48403314982270573,0.5159668501772943,Oh hell yeah,test
+740,1,1,0.376861568943772,0.623138431056228,"Wow, you people...",dev
+741,0,0,0.604684594514204,0.395315405485796,I did twist my ankle trying to play that on DDR.,test
+742,1,1,0.19427656452469066,0.8057234354753093,"Ok, we get it. You re a top.",test
+743,0,0,0.7856507250927942,0.21434927490720576,WHO WON THIS FIGHT My thoughts: neither side did a good job at explaining their positions and this entire interview was mostly useless,test
+744,1,1,0.523727891128942,0.47627210887105803,It was good of you to get him out of the store as quickly as possible so he could not infect you with his crazy.,dev
+745,1,1,0.39908522415476877,0.6009147758452312,I was hoping this would be a case of r maliciouscompliance It was close.,train
+746,1,1,0.21395439655563475,0.7860456034443652,"Yes, I truly believe in soul mates. we ll just have to agree to disagree",train
+747,1,0,0.5708979989981707,0.42910200100182927,"I don t doubt that, but there s a difference between doing something as a social activity and a psychoactive drugs that actually makes you feel more social.",test
+748,0,0,0.6408468998273569,0.3591531001726431,"Got a bit tipsy in my room alone, dancing in my underwear to some cheesy music for the whole night, and then cried myself to sleep",dev
+749,0,0,0.7316012855016607,0.26839871449833935,"It was intentional. Maybe not with much thought behind it, but a very dangerous instinct.",dev
+750,0,0,0.8071384048713011,0.192861595128699,they will also hate the eagles for years to come because their fans were a bunch of meanies,test
+751,0,0,0.8696818335695792,0.1303181664304208,Why so hateful. I feel sorry for you.,dev
+752,0,0,0.6944474802233755,0.30555251977662445,... that s simply wrong.,test
+753,0,0,0.7889579667043278,0.2110420332956722,This whole sub makes me sad.,test
+754,0,0,0.701864426154367,0.29813557384563305,Goddam it!,dev
+755,0,0,0.7978239063009741,0.2021760936990259,"It s not even an argument, it s just a quote with a stupid voice.",dev
+756,1,1,0.2934837804120334,0.7065162195879666,"...to win the popular vote, which she easily did.",train
+757,0,0,0.863992231294552,0.136007768705448,"This happens to me all the time I m so sorry   it s always with burgers, too. So painful.",test
+758,0,0,0.5536303448548114,0.44636965514518856,"Yeah, this seems weird to me, too.",dev
+759,1,1,0.2743106278460844,0.7256893721539156,"lol, I thought he might have been heading towards that direction with that too.",train
+760,1,1,0.38055090163343896,0.619449098366561,NAME  for sure,dev
+761,0,0,0.8772064103919028,0.12279358960809716,I just want to live. You re the sad loser for going out of your way to comment something so completely stupid,test
+762,1,1,0.2878470178681015,0.7121529821318985,That dad must love monster high as well.,test
+763,1,1,0.1909928995827458,0.8090071004172542,You must be fun at parties.,train
+764,1,0,0.7884917882960145,0.21150821170398543,Conservatives never believe a word they say. They only believe they do.,test
+765,0,0,0.6550669046296682,0.3449330953703318,That explains an awful lot about ICP.,dev
+766,0,1,0.34324759261821014,0.6567524073817899,Before the trade happened I knew  NAME  was  NAME  but  NAME  beauty had not reached me yet,test
+767,0,1,0.15311388600229392,0.8468861139977061,Here s a purple heart for you recapping that! OMG matching romantic scoots I m cryin,dev
+768,0,0,0.8656833420408595,0.13431665795914052,I dislike the shade he s been throwing to our franchise and his inability to take responsibility for the reasons why he was traded,dev
+769,0,0,0.8537681205797617,0.1462318794202383,"Tried it. Failed it. Got mental consequences, my memory wont recover after half a year. You will regret it.",dev
+770,0,0,0.7086082847582549,0.2913917152417452,NAME  is the most useless phantom thief change my mind,dev
+771,0,1,0.3846018371157801,0.6153981628842199,What? I second this,dev
+772,0,0,0.7665323756781979,0.2334676243218021,And yet it looks like one thing you can t is read. Shame shame.,test
+773,0,1,0.5230478581867307,0.4769521418132693,"She wasn t seeking asylum in Thailand though, she was just trying to pass through to Australia, where she already had a visa iirc.",dev
+774,1,1,0.07220048485188568,0.9277995151481143,"Thanks, I m the LAOTOP and I found this response as informative as the comments in the original post.",dev
+775,0,0,0.6475192327402028,0.35248076725979716,This droid has a bad motivator.,test
+776,1,0,0.7084981334336286,0.29150186656637145,Wasnt meant to be rude at all.. more like that everything is going to be alright soon,train
+777,1,1,0.074562826159012,0.925437173840988,Where about sis this it s gorgeous. I d love to have a piece of property with a creek. That s my dream.,dev
+778,1,1,0.12471821036147446,0.8752817896385255,I m glad you did because this was the comment where I stopped my fast scroll haha.,test
+779,0,0,0.7000397972865695,0.29996020271343043,NAME  is always the dirtiest psychopath,test
+780,1,1,0.1055754167104701,0.8944245832895299,Happy Cake Day Baby!!!,dev
+781,1,1,0.1876413753231484,0.8123586246768516,and I love him for that,train
+782,1,0,0.7586390273145098,0.24136097268549017,"I would agree, but at the same time if it pisses off  NAME  supporters enough to keep them home in 2020, I m all for it.",train
+783,1,1,0.2980777642509673,0.7019222357490327,Lmao. I still sing fun with the funk sometimes.,test
+784,1,1,0.225228159477874,0.774771840522126,Welcome to Reddit!,test
+785,0,0,0.750789280440129,0.2492107195598709,I don t think playing with her hair would work. Thats just creepy.,test
+786,0,0,0.8564988735379149,0.14350112646208513,i find it a little disgusting if swear words are used frequently and unironically.,dev
+787,1,1,0.2513550859072876,0.7486449140927124,"I did! Never moving back, I love my life in the  big smoke .",test
+788,1,1,0.23949588789688958,0.7605041121031104,"Thank you, its like if you looked a camera that was taking a picture of your ear, you wouldn t be able to see it.",test
+789,1,1,0.4029236106058348,0.5970763893941652,"I m asexual too, so I m doubly protected against advertisements.",dev
+790,0,0,0.7143677274970069,0.28563227250299306,Yeah cause no man has ever been falsely imprisoned due to allegations proven later to be false,test
+791,0,1,0.4907283422513219,0.5092716577486781,"I was too legit. Too legit to quit. Now I m not legit. I m un legit. And therefore, I must quit.",dev
+792,1,1,0.06228911867051601,0.937710881329484,Thank you so much. Fur babies are one of a kind.,dev
+793,1,1,0.2518897193482813,0.7481102806517187,My exam is over and my winter break starts now     I ve been waiting for this omg,train
+794,0,0,0.660827402769137,0.339172597230863,Oh my goodness.....I m sorry. It s probably gonna take a long time to cope it.....,dev
+795,1,1,0.18029518168963676,0.8197048183103632,"Yes, please do. I d appreciate any help.",train
+796,0,0,0.5530299898682307,0.44697001013176935,Scary. I bet youre fun at parties.,dev
+797,1,1,0.4237075874684674,0.5762924125315326,"Agree 100  I guess I m just happy to see anyone, even total scumbags, willing to criticize dear leader.",dev
+798,1,1,0.07168343593772797,0.928316564062272,"Love the Cafe Zoetrope, such a charming place. Beautiful building too.",train
+799,0,0,0.795310351311312,0.20468964868868803,Its had enough of this life and ending it all.,test
+800,0,0,0.6622784763377854,0.33772152366221464,Please stop talking  NAME .,test
+801,1,1,0.40378182960204834,0.5962181703979517,You can always tell from the vote counts lol. They re way too blatant,test
+802,1,1,0.415387204818064,0.584612795181936,"Lol, the delusion is strong.",dev
+803,1,1,0.35085552203498815,0.6491444779650118,Ok cheers. I m banned from there,train
+804,0,0,0.7612934201444992,0.23870657985550076,malicious intentions? what are you talking about?,dev
+805,0,0,0.7976159291963327,0.20238407080366733,This is exactly what it s been like. I feel personally victimised by it all,test
+806,1,1,0.1301711673255016,0.8698288326744984,NAME  is such a gift. I love him.,test
+807,1,0,0.6302951415010578,0.3697048584989422,Not in the slightest. Who would have guessed the  NAME  would do this LMAO.,test
+808,1,0,0.7358892994292595,0.2641107005707405,"oh, rich people loooooooooooooooooooove to prey on the poor, they couldn t bear not raping, mocking, humiliating, profiting from, the 99",test
+809,0,0,0.6076760756522293,0.39232392434777075,Really not sure how that s your takeaway.,test
+810,1,1,0.47344007633327034,0.5265599236667297,"Wow, I wouldn t doubt that at all. What a crazy situation! Poor woman!!",train
+811,0,0,0.7339689178098596,0.26603108219014043,"To think that Doom GOATs isn t even EM s strongest form...damn, no wonder the  NAME  are 100  on EM",dev
+812,0,0,0.678575267276824,0.32142473272317595,"You can t post a Sons pic and then say  I got this , that just hurts.",test
+813,0,0,0.8384467432590459,0.16155325674095414,"middle of lane is dumb that s where all the oil pools, lane split seems like no one likes it but that s more understandable",test
+814,1,1,0.09637297876944984,0.9036270212305502,Thanks! Will give them a call!,train
+815,1,1,0.4538189499839024,0.5461810500160976,but this girl said no make out lmao she just want a cuddle buddy till marriage XD,train
+816,0,0,0.687555022079426,0.312444977920574,Offense does too. Love  NAME  but he s hurting our spacing being out there so much.,test
+817,1,1,0.3508900533487668,0.6491099466512332,Two overtime games on championship Sunday? We are blessed as football fans. Too bad one game had to be between FYTB and FUKC,dev
+818,0,0,0.7389340721771396,0.2610659278228605,Looks like one of mine too. Such a horribly raised entitled rude brat,dev
+819,1,0,0.6589225960027159,0.34107740399728415,My withdrawal was marked as complete. Likely doesn t matter now though with the servers being completely offline.,train
+820,0,0,0.7953390469093461,0.2046609530906539,Stop giving this idiot attention.,test
+821,0,0,0.6801420930903452,0.31985790690965477,You should ve smashed his head into it.,test
+822,1,1,0.13349198587056366,0.8665080141294363,Ah thank you! I just remembered it the way I said. Was never sure if that s what it meant.,train
+823,0,0,0.6438226033534602,0.3561773966465398,"Not at all. It s great of course for financial reasons, but it then makes me worried about how much time she ll have for a relationship.",test
+824,1,1,0.5239460248611882,0.4760539751388117,"If there s evidence besides say so, chances are better.",train
+825,0,0,0.8264924920421591,0.17350750795784084,I m always paranoid of people following me when I am driving home. I would have pooed my pants yikes.,dev
+826,1,1,0.45755125879315384,0.5424487412068462,You need to recheck your science. A simple Google search will yield research articles showing a biological and genetic basis for being LGBT. Happy reading!,test
+827,1,1,0.13630546905980978,0.8636945309401902,"I love  NAME , but man I wish I knew what  NAME  would have been like here.",test
+828,1,1,0.13554324094597203,0.864456759054028,"I love the enthusiasm inherent in the scream. I never saw anything wrong with it. Not to mention the most innocent, innocuous dancing video ever.",train
+829,1,1,0.48077402014309145,0.5192259798569085,"He is a right click bot now lol, but seriously you do the same but with worse mobility.",test
+830,0,0,0.7288630159747429,0.2711369840252571,"oh man clicking 2 buttons before you read an article, the absolute horror",dev
+831,1,1,0.2678244918026943,0.7321755081973057,"You should hit up  NAME , he can help.",dev
+832,1,1,0.30895634408076544,0.6910436559192346,"If it s a one hit kill like the regular crossbow, absolutely would be a fantastic crate weapon.",train
+833,0,0,0.7718852468991764,0.22811475310082366,"All this, for  one  kid? How fucking selfish.",dev
+834,0,0,0.6835287011841497,0.31647129881585034,"I d be worried about the tone, not the content.",dev
+835,0,0,0.6526164594675415,0.34738354053245846,"You tried your best, and you failed miserably. The lesson is, never try.",dev
+836,1,1,0.3897422693439413,0.6102577306560587,I think  NAME  said it best. When two people watch the same video and see completely different events....there s no fixing that.,test
+837,1,1,0.13615771816768696,0.863842281832313,So cool! Me and my sissy got the same but on our arms! On twitter!,train
+838,1,1,0.06746122885011485,0.9325387711498851,Love this! I ll have to teach  NAME  about Grey Rocking.....and me too,dev
+839,1,1,0.13227391513697884,0.8677260848630212,Thank you very much.,dev
+840,0,0,0.5665371139887121,0.4334628860112879,Feeling your pain. I was laid off due to our department closing the week after Thanksgiving. Good luck to you. Stay strong.,dev
+841,1,0,0.5949772781272633,0.4050227218727367,Come on really. I m for gay rights.,test
+842,1,1,0.09097122930850754,0.9090287706914925,I gave him a hug and told him how glad I was that he was okay after the police assault. He s amazing!,test
+843,1,1,0.18716695448116927,0.8128330455188307,Great album!,train
+844,0,0,0.9324657728743231,0.0675342271256769,I m autistic and frankly this is disgusting. To say this about your child implies autism basically makes you worthless.,dev
+845,1,1,0.06125694261468417,0.9387430573853158,Thanks   ice skating is also one of my favourite non food fun things to do,dev
+846,0,0,0.8812662059081782,0.11873379409182187,Unfortunately if they tried to parent they d never listen or just hate them and run away. Pointless,dev
+847,1,0,0.6183265324837475,0.3816734675162526,U can still pour it out the lock holes. Hook it up,train
+848,1,1,0.16887966340856886,0.8311203365914311,Just for recreational use? Glad you are having a change of mind though,train
+849,1,1,0.23486913288061928,0.7651308671193807,"D oh, it s even in the title! Thanks.",test
+850,1,1,0.37545001927004085,0.6245499807299592,I love converts. They willingly throw away their freedom for a prison cell. So cute,dev
+851,1,1,0.29635092234444704,0.703649077655553,Y all out here really believing this and I think that s the funniest part,test
+852,1,0,0.5622801441247294,0.4377198558752707,Yes. Ignore and move on,test
+853,0,0,0.6478023152302688,0.3521976847697313,I felt his pain!!!   R.I.P. furry giblets!!!!,dev
+854,0,0,0.6236473393483996,0.37635266065160045,"Psst, your spoiler tag is busted. Don t leave spaces between the ! and your text.",test
+855,1,1,0.47555387886759504,0.524446121132405,His entire face is covered by a beard and sunglasses lol,test
+856,1,1,0.43089373740908643,0.5691062625909136,"Right, we don t know for certain. It was just what I ve heard. We ll have to wait until we can test it.",train
+857,0,0,0.8526986266729604,0.1473013733270397,"She sounds abusive and narcissistic. Delete your facebook, hit the gym and kill her.",dev
+858,1,0,0.6847354616445664,0.3152645383554335,General malaise is a favourite. I get a lot of general malaise.,train
+859,1,1,0.489562623284271,0.510437376715729,"YOU WRITE LIKE A YOUNGER MAN, WITH NOTHING HELD BACK. ADMIRABLE, YET MISTAKEN.",train
+860,0,0,0.8285465803150591,0.1714534196849409,"Yeah it was, it was awful, everyone got sick, I was sick for like a week after that event.",dev
+861,0,0,0.6412707088904386,0.35872929110956137,"It s not unlikely that his family was already imprisoned or dead, which gave him the window to run.",test
+862,0,0,0.9070933879029834,0.09290661209701657,"Shit like this is just depressing. Not surprising, but still depressing.",dev
+863,0,0,0.7899609483427436,0.21003905165725648,That partially explains why season 4 was such a fucking mess,test
+864,1,1,0.19802573899188325,0.8019742610081168,I would love to be woken up by that,train
+865,1,1,0.08952400156942386,0.9104759984305761,"Oh man, I remember loving that movie. Been a while ssince I ve seen it but I remember being pretty enthralled.",dev
+866,0,0,0.7894022880649076,0.2105977119350924,Not at all. I m not going to argue with someone who doesn t understand what a strawman is.,test
+867,0,0,0.8690255893913934,0.1309744106086066,Please dont put words into my mouth.I never said rape isnt a problem.,test
+868,1,1,0.21245727579788298,0.787542724202117,Nice Sir !,dev
+869,0,0,0.5755983635465545,0.4244016364534455,6 and he died of cancer iirc,dev
+870,0,0,0.7764505488267659,0.22354945117323405,They did this at one of my jobs. The icing on the  fuck you cake  was the drivers  last day was 4 days before Christmas.,dev
+871,0,0,0.7026711991516381,0.29732880084836183,Threats and promotion of violence,dev
+872,0,0,0.7496109152244901,0.25038908477551,Isn t it the worst feeling ever?,test
+873,1,0,0.6302948135147237,0.36970518648527634,"Now that you re saying it, it actually makes sense. I ll be really hurt, but if she makes him happy I can t stop him.",train
+874,0,0,0.848959275117008,0.15104072488299203,I  hate  it when I can t get hold of a specific food I ve been craving on a binge day.,dev
+875,0,0,0.6945616145601962,0.30543838543980384,My friends that were badly injured from the first fight. Read my backstory comment.,test
+876,0,0,0.7857609639064519,0.21423903609354808,Ouch!!!!! That hurt me just watching.,dev
+877,1,1,0.05935058570418528,0.9406494142958147,Excellent.  NAME    NAME  in particular  made me discover my love for DXM and other even weirder dex sounds.,train
+878,0,1,0.522335159307576,0.47766484069242393,Lmao no fun allowed,dev
+879,0,0,0.7185502926373801,0.2814497073626198,My ecology professor hated outdoor cats for that reason. They re extremely destructive animals.,test
+880,0,0,0.740731617129793,0.25926838287020704,He gets paid to hate them... what s hard to understand?,dev
+881,0,0,0.5664536964635469,0.4335463035364531,"want  a source on that, sorry.",test
+882,0,0,0.8832479348592023,0.11675206514079772,I m not a victim at all. You re just a desperate loser who spends money on a guy he could watch for free.,dev
+883,0,0,0.745713452015236,0.2542865479847641,Going for that most hated title with stupid posts from his  fans,test
+884,1,1,0.17524677259889687,0.8247532274011031,Many thanks!,train
+885,1,1,0.16272329994863155,0.8372767000513684,I wish for world peace!,train
+886,1,0,0.656598635119194,0.34340136488080597,With the way  NAME  carried himself in Hard Knocks I wouldn t be surprised if he flew off the handle during his firing.,train
+887,1,0,0.5897192338512287,0.4102807661487713,Danger noodle!!! Danger noodle!!!,dev
+888,1,1,0.48550289331826024,0.5144971066817398,I m tired i m wasted I LOVE YOU DARLING.,train
+889,0,0,0.5847498770416437,0.41525012295835634,But that rookie year was sick. Such a Slash fan when I was young.,dev
+890,1,1,0.130195021122546,0.869804978877454,Congratulations mate!!,test
+891,1,1,0.18116256157808597,0.818837438421914,Oh wow. You really know your stuff. Luckily I don t have diabetes yet so that s something,test
+892,0,0,0.6956651548983392,0.3043348451016607,Ain t nothin good enough for her,test
+893,1,1,0.29304855627023196,0.706951443729768,"Worth a try to report the bus number, the route and the time to PTV to see if he can get them back. Best of luck!",train
+894,0,0,0.8656799120677243,0.13432008793227568,I dislike the shade he s been throwing to our franchise and his inability to take responsibility for the reasons why he was traded,dev
+895,1,1,0.16967630448015913,0.8303236955198409,Love the idea for the  NAME  skin but I think it might be too hard :,train
+896,1,0,0.7283450668733272,0.27165493312667277,The people you know have silly opinions. Its their best album since black holes.,train
+897,1,1,0.3326982713813834,0.6673017286186166,"I m impressed that you have little knowledge of the game, would you unsubscribe?",train
+898,0,0,0.720739370441343,0.27926062955865705,Looked ugly.,dev
+899,1,0,0.7336301433788962,0.2663698566211038,Well the good news is once all the boomers die off you won t have any pesky old people to blame anymore.,test
+900,1,1,0.13532669938065556,0.8646733006193444,Happy for u!!,train
+901,1,1,0.3335259382764233,0.6664740617235767,She s so hot. Also happy cake day,train
+902,0,0,0.6095301280029358,0.3904698719970642,Oh... I m sorry. You holding up okay?,dev
+903,0,0,0.8619895027650841,0.1380104972349159,"This hits hard, sadly both of my relationships have been toxic so I ve decided not to start any new ones until I start going to uni",test
+904,1,1,0.32789557776820233,0.6721044222317977,"Correct! Unfortunately, we re looking for a bit more computing experience than knowing what site you re on. Thanks for your interest though.",test
+905,0,0,0.6552998741895306,0.3447001258104693,"6lbs is a lap dog, if someone shoots that cause they re scared it s aggressive...",dev
+906,1,1,0.17984517737852135,0.8201548226214787,Haha love it,train
+907,1,0,0.7308319011182957,0.26916809888170434,"oh no I agree that its edited, but I think she has other things going on too.. BDD at least",test
+908,1,1,0.05698860120398874,0.9430113987960113,"Love this. I thought I replied this morning, but I m definitely taking your ideas and going to try them! Best of luck",train
+909,0,0,0.7777212055949213,0.22227879440507872,Why the fuck does this exist,dev
+910,1,1,0.11034557593748007,0.8896544240625199,Good luck and Godspeed.,test
+911,1,1,0.49429243558713165,0.5057075644128683,lol why don t you read about the Iceland one and get back to me.,test
+912,0,0,0.7601543021818631,0.2398456978181369,I am a dishonest and disrespectul,dev
+913,0,0,0.6970637690144172,0.3029362309855828,Now  I M  angry,test
+914,0,0,0.6340817342007807,0.3659182657992193,So you re male then. Ps ur wrong bud,test
+915,1,1,0.48196247004454806,0.5180375299554519,"I like  NAME    I m tired of losing, I m not a loser",train
+916,0,0,0.645130834118067,0.35486916588193296,I felt bad for laughing,test
+917,0,0,0.85142247521292,0.14857752478707992,"This whole ordeal seems entirely pointless, but i don t want to turn away in case i miss some drama",test
+918,0,0,0.713262373153009,0.286737626846991,You are terrible developers.,dev
+919,0,0,0.6929197287705033,0.3070802712294966,Not really if they are busy. They may not even take a break. But again if they are regularly not responding than it is probably an issue.,dev
+920,1,1,0.2771151001951706,0.7228848998048294,"Yeah I think I ll just push her away, thank you.",train
+921,0,0,0.5546794238399408,0.4453205761600591,Here is the rest. He finally give me a bad rating,dev
+922,1,1,0.345075093360949,0.654924906639051,Running with a gun and a sensor dart out makes me feel so cool.,dev
+923,1,1,0.19039424434700813,0.8096057556529919,"Bide your time, keep your eyes open, and build the reputation and relationship needed. The opportunity will come.",test
+924,1,1,0.28759296041141946,0.7124070395885805,u 897w346354365fdddfs said:   You re funny You re shilly,test
+925,0,0,0.6690025056527723,0.3309974943472277,"I m sorry : . Lol. For me, after the ending of 3, and Andromeda, I have zero interest in ME.",test
+926,1,0,0.6967692060641435,0.30323079393585656,"San Junipero. What if old ladies could fuck, using the Matrix!?",train
+927,1,0,0.63031129473385,0.36968870526615005,Not in the slightest. Who would have guessed the  NAME  would do this LMAO.,test
+928,0,0,0.7912689141231093,0.2087310858768907,He must smell terrible when he sweats. That s honestly pretty gross.,test
+929,0,0,0.8193919773504463,0.18060802264955364,Cut the guy off and gave him a yes no question. Which he exasperatedly answered. This is not the way to listen.,dev

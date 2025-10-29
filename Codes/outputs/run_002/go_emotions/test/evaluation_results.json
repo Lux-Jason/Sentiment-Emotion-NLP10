@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8741258741258742,
+    "f1": 0.8714285714285714,
+    "precision": 0.8900112233445566,
+    "recall": 0.8536060279870828
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9353357176753823,
+    "pr_auc": 0.9456598497755795
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          832,
+          98
+        ],
+        [
+          136,
+          793
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 832,
+          "false_positives": 136,
+          "false_negatives": 98,
+          "true_negatives": 793,
+          "precision": 0.859504132231405,
+          "recall": 0.8946236559139785,
+          "specificity": 0.8536060279870828
+        },
+        "class_1": {
+          "true_positives": 793,
+          "false_positives": 98,
+          "false_negatives": 136,
+          "true_negatives": 832,
+          "precision": 0.8900112233445566,
+          "recall": 0.8536060279870828,
+          "specificity": 0.8946236559139785
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          136
+        ],
+        [
+          0,
+          1,
+          98
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 234,
+      "total_correct": 1625,
+      "error_rate": 0.1258741258741259,
+      "accuracy": 0.8741258741258742,
+      "class_0_errors": 98,
+      "class_0_correct": 832,
+      "class_0_error_rate": 0.1053763440860215,
+      "class_1_errors": 136,
+      "class_1_correct": 793,
+      "class_1_error_rate": 0.14639397201291712
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.7384939771814389,
+      "avg_confidence_errors": 0.6227633119110767,
+      "avg_confidence_overall": 0.7239264808537011,
+      "confidence_std": 0.1150060455413298,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 762,
+          "accuracy": 0.7545931758530183
+        },
+        "0.7-0.9": {
+          "count": 1004,
+          "accuracy": 0.953187250996016
+        },
+        "0.9-1.0": {
+          "count": 93,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 234,
+      "error_samples": [
+        {
+          "index": 3,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "You re a melon my dude, that is not how it works at all, you have been brainwashed.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 10,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "You seem slightly sensitive... I was actually thinking we had been infiltrated by the normies",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 26,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "When you call someone trash and he easily beats you, what does that make you? lol",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 30,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I was too legit. Too legit to quit. Now I m not legit. I m un legit. And therefore, I must quit.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 51,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Is there any way to somebody can please translate the notes into doc form or something? I am having trouble viewing them :",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 63,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I feel personally attacked on this one. We re good people... :",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 65,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Funny that punches to the face are completely forbidden in Kyokushin competition.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 68,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Think of how stupid the average person is, and then realize that half of them are stupider than that.     NAME",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 94,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I feel like  NAME  had the right idea losing the will to live. Now if only I could learn this power...",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 99,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I have to deal with this, so now you have to also.",
+          "metadata": {
+            "split": "dev"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.859504132231405,
+      "recall": 0.8946236559139785,
+      "f1-score": 0.8767123287671232,
+      "support": 930.0
+    },
+    "1": {
+      "precision": 0.8900112233445566,
+      "recall": 0.8536060279870828,
+      "f1-score": 0.8714285714285714,
+      "support": 929.0
+    },
+    "accuracy": 0.8741258741258742,
+    "macro avg": {
+      "precision": 0.8747576777879809,
+      "recall": 0.8741148419505307,
+      "f1-score": 0.8740704500978473,
+      "support": 1859.0
+    },
+    "weighted avg": {
+      "precision": 0.8747494725456156,
+      "recall": 0.8741258741258742,
+      "f1-score": 0.8740718712267711,
+      "support": 1859.0
+    }
+  }
+}

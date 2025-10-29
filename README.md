@@ -1,229 +1,86 @@
-# 识别"伪文明评论"：基于礼貌形式—语用/情绪错位的多源监督与两阶段建模
+# Detecting "Pseudo-civility" Comments — Project Overview
 
-## 摘要
+ This repository collects implementations, experiments, and engineering practices for detecting "pseudo-civility": comments that look polite on the surface (polite words, hedging, softened phrasing) but communicate negative pragmatic intent (sarcasm, contempt, passive aggression, or veiled attacks).
 
-本研究聚焦"伪文明评论"——文本表面呈现礼貌、克制或正向语义，但在语用/情绪层面表达嘲讽、轻蔑、攻击或否定立场。我们提出：以**礼貌强度**与**语义—情绪不一致度**为核心变量，结合**平台治理弱标签**（如被移除）与**毒性/讽刺/隐性仇恨**等公开语料，构建"文明/伪文明/不文明"三分类器。方法为"两阶段候选挖掘 + 三分类细分"，并以跨域与可解释性评估为保障，期望在"伪文明类"F1 提升≥5个百分点（相对仅语义模型）并给出可复核的机制解释。
+ This README summarizes:
 
----
+ - Characteristics of the four main datasets used in experiments;
+ - Two primary modeling families and their training differences (classic ensemble/NN vs. QLoRA-driven embedding & fine-tuning);
+ - Recommended comparison and ablation experiments;
+ - The engineering advantages of QLoRA in this project;
+ - Current data limitations and next steps (note: we currently cannot complete full end-to-end pseudo-civility training due to dataset constraints).
 
-## 1. 概念与范围
+ The content below is adapted from `Codes/final_implementation_summary.md` and `Codes/QLoRa/README_MODULAR.md`. It intentionally omits runtime instructions and tests.
 
-* **伪文明（Pseudo-civility）**：具有礼貌形式（礼貌词/缓和句式/请求结构/自谦等），但语用上产生**面子威胁**或负向效果。
-* **区分目标**：
+ ## 1. Four datasets — quick summary
 
-  * **文明**：礼貌形式 + 中性/正向语用；
-  * **不文明**：显性攻击/辱骂/恶意（可无礼貌形式）；
-  * **伪文明**：礼貌形式 + 负向语用/情绪（讽刺、轻蔑、挖苦、被动攻击等）。
+ The project commonly uses four public datasets (stored under `Codes/Archive/datasets` in this repo). Each dataset provides a different supervision signal used to construct features for pseudo-civility detection:
 
----
+ - civil_comments — toxic / abusive labels for online comments. Useful as an "uncivil" anchor and for noise-robust training.
+ - go_emotions — multi-label emotion annotations. Useful for building emotion features (S) and detecting emotion-polarity conflicts that can indicate sarcasm.
+ - toxigen — collections and annotations of generated or implicit toxic content. Helps increase sensitivity to indirect or subtle attacks.
+ - wikipedia_politeness — politeness / mitigation patterns (e.g., Stanford Politeness style data). Used to estimate PolitenessScore (P) and detect polite surface forms.
 
-## 2. 研究问题与假设
+ Combined, these sources let us extract three core signals for each example: Politeness (P), emotion/toxicity (S), and a semantic–emotion inconsistency measure (I) that often marks pseudo-civility.
 
-* **RQ1**：伪文明在"语义空间相似度"和"情绪/毒性侧特征"上分别更接近谁？
-* **RQ2**：引入"语义—情绪不一致度"是否能显著提升伪文明识别？
-* **H1**：伪文明的语义分布更靠近文明，情绪/毒性分布更靠近不文明。
-* **H2**：伪文明的**不一致度**显著高于文明与不文明。
-* **H3（成功标准）**：在伪文明类上，引入"礼貌强度+不一致度"特征，相对仅句向量基线，F1 **提升≥5pp**。
+ ## 2. Two modeling families and training differences
 
----
+ We implemented two complementary modeling routes.
 
-## 3. 数据与标签构造
+ 1) Classic ensemble & lightweight neural models (engineering-first)
 
-### 3.1 主数据（弱监督）
+ - Composition: Logistic Regression, Random Forest, Gradient Boosting, XGBoost, RBF-SVM fused into an ensemble, plus a compact MLP (e.g., 256-128-64).
+ - Inputs: sentence embeddings or TF–IDF combined with handcrafted features (P, S, I, sarcasm cues, meta features).
+ - Pros: low resource requirements, fast training, strong interpretability (coefficients, SHAP). Good for small-to-medium data and fast iteration.
 
-* **r/science Popular Comment Removal**：字段含 `body` 与 `removed`。
-* **目的**：将其作为"平台治理信号"用于候选挖掘与对照实验。
+ 2) QLoRA-driven embeddings and LoRA fine-tuning (performance-first)
 
-### 3.2 辅助数据（强监督/侧信息）
+ - Composition: an embedding-based path (use embeddings + classic classifier) and a QLoRA path (load a quantized base model and fine-tune LoRA adapters).
+ - Key idea: load the base model in low-bit precision (e.g., 4-bit) and only train low-rank LoRA adapters; this saves memory while retaining high performance.
+ - Pros: much lower GPU memory and storage costs than full-precision fine-tuning; adapters are small, versionable, and reusable. Embedding caching enables fast iteration; LoRA micro-tuning raises the performance ceiling when resources allow.
 
-* **礼貌**：Stanford Politeness（Wikipedia/StackExchange；含礼貌强度/标签）。
-* **情绪/立场**：GoEmotions（细粒度情绪分布）。
-* **毒性/攻击**：Jigsaw/Wikipedia Talk（toxic、aggression、personal attack 等）。
-* **讽刺/反语**：SARC（大规模 Reddit 讽刺标签）。
-* **隐性不当**：Implicit Hate / Latent Hatred（隐性仇恨、含沙射影）。
+ Recommendation: start with embedding + classic classifiers for quick validation; use QLoRA adapter fine-tuning when seeking the highest performance and when modest GPU resources are available (e.g., 8–12 GB cards).
 
-> 注：以上数据仅作为**情绪/毒性/讽刺/隐性**的"正负锚点"，帮助我们把"礼貌形式"与"负向语用"拼接出伪文明的可监督信号。
+ ## 3. Comparison and ablation suggestions
 
-### 3.3 三分类标签协议
+ To validate feature and modeling choices, run these comparisons:
 
-* **文明（CIVIL）**：Politeness 高分 ∧ Toxic/Attack=0 ∧（在 r/science 中 `removed=0`）
-* **不文明（UNCIVIL）**：Toxic/Attack=1（不限制礼貌）
-* **伪文明（PSEUDO-CIVIL）**：Politeness 高分 ∧（Toxic/Attack=1 ∪ Sarcasm=1 ∪ Implicit=1）；
-  辅助弱标：r/science 中 **`removed=1` ∧ 礼貌特征命中** 的样本作候选，抽样人工核验纳入。
+ - Baseline: sentence embedding + linear head.
+ - +Politeness: add P features.
+ - +Emotion: add S features.
+ - +Inconsistency: add I = |S − SP| (or a signed conflict indicator).
+ - +Sarcasm/Meta: add sarcasm cues, punctuation/emoji/length features.
+ - Model-level: LR / XGBoost / RF / MLP / Transformer (single-task vs. multi-task with politeness/emotion/toxicity auxiliary heads).
+ - Strategy-level: two-stage (candidate filtering → subset binary classifier) vs. end-to-end three-class classification.
 
-> 这样"礼貌∧被移除"的候选会排除大量"非礼貌跑题/轶事"噪声，更贴近目标定义。
+ These ablations quantify how much each signal and modeling decision helps the pseudo-civility class (primary metric: Pseudo-Civil F1).
 
----
+ ## 4. Why QLoRA matters — core engineering advantages
 
-## 4. 变量与特征设计
+ QLoRA is central to the high-performance, low-cost workflow in this project for several reasons:
 
-### 4.1 关键变量
+ - Low memory footprint: 4-bit quantized model loading plus training of tiny LoRA adapters drastically reduces GPU memory needs.
+ - Cost and speed: training is faster and less memory-bound than full-precision fine-tuning, especially with gradient accumulation and AMP.
+ - Parameter efficiency: adapters are small and can be saved/loaded independently, enabling modular versioning and reuse.
+ - Flexibility: you can precompute and cache embeddings for rapid experiments, and still switch to LoRA micro-tuning to push performance further.
+ - Robust engineering: the implementation supports graceful fallbacks (4-bit → 8-bit → FP32), and standard stabilization techniques (small LR, warmup, early stop, scheduler).
 
-* **PolitenessScore（P）**：礼貌词（please/thanks/would you…）、缓和/条件/被动式模板、敬语/自谦等，长度归一化并做句法模板匹配。
-* **Sentiment/Emotion（S）**：句级情绪强度（情感回归或情绪分布极性）。
-* **SemanticPolarity（SP）**：将句向量投影到"情感方向"或由情感回归头预测的极性值。
-* **Inconsistency（I）**：
-  \[
-  I = |S - SP|,\quad \text{并辅以冲突指示 } \mathbb{1}[S \cdot SP < 0]
-  \]
-  用于刻画"字面正向 vs. 语气/情绪负向"的错位强度。
-* **Sarcasm Cues**：引号、反问、否定尾缀（"…not"）、重复标点、emoji 反差、语气副词反常搭配。
-* **Discourse Acts**（可选）：提问/致谢/反对/解释等话语功能，降低"理性反驳"被误伤。
-* **Meta**：长度、标点密度、大写占比、URL/数字密度、粗口标记等。
+ In short, QLoRA delivers a practical tradeoff between large-model capability and constrained compute resources, making it a suitable bridge from research POC to production-friendly workflows.
 
-### 4.2 文本表征
+ ## 5. Current limitations and next steps (important)
 
-* **句向量**：Sentence-BERT/Modern MiniLM/RoBERTa-base 等。
-* **多任务头**：在共享编码器上增加礼貌/情绪/毒性辅助头，联合训练以增强可分性。
+ The primary bottleneck for delivering a complete, end-to-end pseudo-civility classifier is the lack of a large, high-quality annotated dataset specifically labeled for pseudo-civility (i.e., polite surface form + negative pragmatic intent). While we use multi-source signals (politeness, emotion, toxicity, sarcasm datasets, and platform removal weak labels) to construct training sets, noise and label mismatch limit end-to-end performance and generalization.
 
----
+ Planned next steps:
 
-## 5. 方法与总体流程
+ 1. Build a dedicated annotated pseudo-civility dataset (multi-round review, clear guidelines, example catalogs).
+ 2. Explore weak- and semi-supervised learning: combine platform weak labels (removed flags) with multi-source anchors (P/S/Toxicity) for self-training, contrastive learning, or noise-robust losses.
+ 3. Improve sarcasm/irony detectors and discourse-act models to reduce false positives on reasoned rebuttals.
+ 4. Extend to multilingual and cross-lingual transfer settings.
+ 5. Evaluate adversarial robustness, calibration (ECE), and domain adaptation for safe deployment.
 
-### 5.1 数据流程
+ The codebase already stores artifacts such as embeddings, adapters, and reports to enable rapid iteration once stronger labeled data become available.
 
-1. **清洗**：去 `"[removed]"`/`"[deleted]"`、空白/重复、低信息噪声。
-2. **候选挖掘（阶段A）**：在 r/science 中筛 `Polite=1`，再以 **真值** `removed=1` 取"伪文明候选-弱标"；同时取 `removed=0` 的礼貌样本为"文明对照"。
-3. **强监督拼接（阶段B）**：从 Politeness/GoEmotions/Jigsaw/SARC/Implicit 集合抽取训练样本，按第 3.3 节协议组成"三分类"训练/验证/测试集。
-4. **统一特征抽取**：句向量 + （P, S, SP, I, Sarcasm, Meta, Discourse）。
-5. **存档**：保留 `*.csv`（文本+标签+特征）、`*.npy`（向量）、`metadata.json`（版本与参数）。
+ ## 6. Closing note
 
-### 5.2 建模路线
-
-* **路线一：两阶段**
-
-  * **Stage-1**：文明 vs 非文明（或"会否被移除"）的基础分类器（句向量 + LR/XGB/轻量 Transformer 头），用于**规模化候选筛选**与域内迁移。
-  * **Stage-2**：在"礼貌子集"内的 **伪文明 vs 真实文明** 二分类（加入 I、sarcasm 等特征）。
-* **路线二：端到端三分类**
-
-  * 共享编码器（Transformer），多任务辅助头（礼貌/情绪/毒性） + 主头（三分类）。
-  * 训练时对"伪文明"样本加权，或采用 FocalLoss/LabelSmoothing。
-
-> 实操建议：先以"两阶段"获得可解释增益与可视化，再切换至"端到端三分类"做性能上限。
-
----
-
-## 6. 实验设计
-
-### 6.1 数据切分与规模
-
-* **每个域**：按 8/1/1 划分 train/dev/test（用户/话题去泄漏）。
-* **跨域**：以 r/science 为训练域，随机挑选另一个 Reddit 主题作为外部测试，评估泛化。
-* **人工复核集**：从"Polite ∧ removed=1"候选中抽取 1–2k 条，双标注计算一致性（Cohen's κ）。
-
-### 6.2 评估指标
-
-* **主指标**：伪文明类 F1（PSEUDO-CIVIL F1）。
-* **辅指标**：Macro-F1、文明误杀率（Civil→Pseudo/Uncivil）、不文明漏检率（Uncivil→Civil/Pseudo）、AUPRC、校准（ECE）。
-* **统计检验**：
-
-  * H1/H2：对三类的 I 值做 Mann–Whitney U 与 Cliff's δ；类中心/最近邻距离对比。
-  * H3：成对 bootstrap（或 McNemar 针对伪文明类）验证"+I/+Politeness"增益显著性。
-
-### 6.3 消融与对比
-
-* **Base**：句向量 + 线性头
-* **+Politeness**：加入 P/模板
-* **+Emotion**：加入 S
-* **+Inconsistency**：加入 I（关键）
-* **+Sarcasm/Discourse/Meta**：完整特征
-* **模型对比**：LR / XGBoost / RoBERTa-base（单任务/多任务）
-* **域外测试**：去掉礼貌关键词后性能、换域（不同子版）性能
-
-### 6.4 解释与可视化
-
-* **可解释**：LR/XGB 系数/SHAP；原型样本（class prototypes）
-* **可视化**：UMAP/TSNE（语义）着色 S/I；"极性—不一致度"平面中的三类分布
-* **错误分析**：聚类（TF-IDF→SVD→KMeans）枚举 top terms 与典型错例
-
----
-
-## 7. 训练与实现要点
-
-* **预处理**：小写化、URL/emoji/标点标准化与计数；保留原文本用于最后解释展示。
-* **超参范围**：
-
-  * LR（C ∈ {0.5, 1, 2}, class_weight='balanced'）；
-  * XGB（max_depth ∈ {4,6}, learning_rate ∈ {0.05,0.1}）；
-  * RoBERTa（lr ∈ {1e-5, 2e-5}, batch 16–32, wd 0.01, 3–5 epochs, early-stop）。
-* **不均衡处理**：类权重/过采样；阈值调优以最大化伪文明 F1。
-* **复现性**：固定随机种子；记录数据快照/提交哈希；保存 `config.yaml` 与 `metrics.json`。
-* **产物**：
-
-  * `data/processed/{train,dev,test}.csv`（含标签+特征）
-  * `models/{stage1,stage2,trihead}/…`（权重与配置）
-  * `reports/{tables,figs}/…`（混淆矩阵、PR 曲线、UMAP、消融表）
-  * `analysis/civil_pred_removed*_clusters.csv`（候选聚类与示例）
-
----
-
-## 8. 风险与对策
-
-* **标签语义漂移**（removed≠不文明）：仅把 `removed` 用于**候选挖掘**与域评测；核心三分类依赖多源强监督与人工复核。
-* **领域偏置**：跨域测试 + 领域对抗（DANN）/CORAL 以稳健化。
-* **讽刺/反语漏检**：显式引入 SARC/隐性仇恨数据；设计反问/引号/否定尾缀等规则特征作兜底。
-* **时间漂移**：按年份分层评测；必要时做小规模当代语料微调。
-* **误伤理性反驳**：加入话语行为标签与**证据对齐**（是否攻击人/观点、是否含指称性侮辱）。
-
----
-
-## 9. 里程碑与交付物（按阶段产出）
-
-1. **数据与协议冻结**：标签协议与样本清单、`prepare_corpus` 脚本、数据卡（Data Card）。
-2. **阶段A（候选挖掘）报告**：r/science 礼貌∧移除的候选统计、I 分布、人工复核一致性。
-3. **阶段B（建模）报告**：三分类主结果、消融表、跨域/鲁棒性、显著性检验。
-4. **解释与案例册**：SHAP/原型 + 代表性正/误例；伪文明写作模式清单。
-5. **开源包/复现实验脚本**：`train.py / evaluate.py / analyze.py / demo.ipynb` 与 `README`.
-
----
-
-## 10. 与现有脚本的衔接（立刻可做的小改）
-
-* 在 `test.py` 中：
-
-  * 候选应改为 **(礼貌命中) ∧ (真值 removed==1)**，而不是"预测为 removed"。
-  * 追加计算 `SP` 与 `I`，保存到 `civil_pred_removed_with_features.csv`。
-* 在 `analyze_civil_removed.py` 中：
-
-  * 负例采样应为 **(礼貌命中) ∧ (removed==0)**，并保证与正例等量；
-  * 统一情绪列名（例如 `sentiment_compound`），便于可视化与系数解释；
-  * 出具"特征重要性排行 + 代表样本"表，支撑可解释报告。
-
----
-
-## 11. 成功判据（建议写入封面页）
-
-* 伪文明类 F1 相对基线（仅句向量）提升 **≥5 个百分点**；
-* H1/H2 通过显著性检验；
-* 跨域 Macro-F1 下滑 **≤10%** 且伪文明类仍保持可用召回；
-* 提供可复核的**机制解释与案例册**。
-
----
-
-## 附录：数据集技术要求
-
-### 数据量
-
-为确保研究的统计显著性和模型的泛化能力，需要一个大规模的数据集。
-- **评论总量**：建议至少包含 **100万** 条以上的评论。
-- **父子评论对**：为有效分析回复行为，需要包含至少 **数十万** 级别的父子评论对（即有回复关系的评论）。
-- **数据均衡性**：数据集中应包含足够数量的文明和不文明样本，以避免因数据倾斜导致分析偏差。如果原始数据不均衡，需在预处理阶段考虑过采样或欠采样。
-
-### 数据格式
-
-数据集应为结构化或半结构化格式，便于程序解析，如 **TSV** 、**CSV** 或 **JSON**。每条评论记录必须包含以下核心字段：
-- **`comment_id`**: 每条评论的唯一标识符。
-- **`parent_id`**: 所回复的父评论ID。对于顶级评论（直接回复文章的评论），此字段可为空或为特定值。
-- **`article_id`**: 评论所属文章的唯一标识符。
-- **`comment_text`**: 评论的文本内容。
-- **`timestamp`**: 评论发布的精确时间戳（例如：`YYYY-MM-DD HH:MM:SS`），精度至少到秒。
-
-### 数据来源
-
-数据应来源于允许公开研究、数据量大且具有互动性的在线平台。理想的数据来源包括：
-- **社交媒体平台**：如 Reddit、Twitter。特别是 Reddit，其 `r/changemyview`、`r/science` 等板块有高质量的讨论和完整的评论树结构。
-- **新闻评论区**：如纽约时报、卫报等大型新闻网站的评论区，但需注意数据获取的合法性。
-- **公开的学术数据集**：
-  - **Kaggle - Jigsaw Toxic Comment Classification Challenge**: 虽然主要用于内容分类，但其数据来源于维基百科讨论页，包含了评论文本，可以设法寻找其时间戳和回复关系。
-  - **Pushshift.io Reddit Dataset**: 提供了非常完整的 Reddit 历史数据，包含评论的父子关系和精确时间戳，是本研究的理想数据源。
-- **代码托管平台**：如 GitHub 的 Issues 和 Pull Requests 中的评论，同样具有清晰的回复结构。
+This repository documents the design choices, dataset dependencies, and engineering rationale (especially around QLoRA) for pseudo-civility research. It also explicitly highlights that, given current dataset limitations, a final end-to-end pseudo-civility training pipeline is not yet completed. Future work will focus on data collection and weak-supervision methods combined with QLoRA micro-tuning to reach production-quality performance.

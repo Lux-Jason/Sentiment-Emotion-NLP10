@@ -1,0 +1,7 @@
+graph LR
+  RawData[Raw files CSV JSON HuggingFace] --> Pre[Preprocessing clean dedupe normalize]
+  Pre --> Split[Split train val test]
+  Split --> Emb[Embeddings cache npz]
+  Emb --> Model[Model training classifiers or QLoRA]
+  Model --> Eval[Evaluation metrics and plots]
+  Eval --> Reports[Reports and visualizations]

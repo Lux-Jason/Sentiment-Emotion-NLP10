@@ -1,0 +1,193 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8908606921029282,
+    "f1": 0.8867403314917127,
+    "precision": 0.9215311004784689,
+    "recall": 0.8544809228039042
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9363285146626839,
+    "pr_auc": 0.9449550376674076
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          1045,
+          82
+        ],
+        [
+          164,
+          963
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 1045,
+          "false_positives": 164,
+          "false_negatives": 82,
+          "true_negatives": 963,
+          "precision": 0.8643507030603805,
+          "recall": 0.927240461401952,
+          "specificity": 0.8544809228039042
+        },
+        "class_1": {
+          "true_positives": 963,
+          "false_positives": 82,
+          "false_negatives": 164,
+          "true_negatives": 1045,
+          "precision": 0.9215311004784689,
+          "recall": 0.8544809228039042,
+          "specificity": 0.927240461401952
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          164
+        ],
+        [
+          0,
+          1,
+          82
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 246,
+      "total_correct": 2008,
+      "error_rate": 0.10913930789707187,
+      "accuracy": 0.8908606921029282,
+      "class_0_errors": 82,
+      "class_0_correct": 1045,
+      "class_0_error_rate": 0.07275953859804792,
+      "class_1_errors": 164,
+      "class_1_correct": 963,
+      "class_1_error_rate": 0.14551907719609583
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.8114876453842562,
+      "avg_confidence_errors": 0.6949749326377115,
+      "avg_confidence_overall": 0.7987715285538881,
+      "confidence_std": 0.11928790772725228,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 486,
+          "accuracy": 0.7181069958847737
+        },
+        "0.7-0.9": {
+          "count": 1270,
+          "accuracy": 0.9299212598425197
+        },
+        "0.9-1.0": {
+          "count": 498,
+          "accuracy": 0.9598393574297188
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 246,
+      "error_samples": [
+        {
+          "index": 6,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "10月24日入住西楼,房间很宽敞,但设施旧了一些,它的房间有两道门,这点很少见,所以晚上很安静,走廊的声音会小很多. 当时相同的价格,如果去附近的步行街上找一找,会有惊喜. 还好,电视信号还有,那天嫦娥升空,真巧.",
+          "metadata": {}
+        },
+        {
+          "index": 19,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "硬盘分区很让我崩溃 C盘221G 一共也就250G的盘 也不知道当时分区的人是怎么想的 我还得到售后去重新分一下 恶心人",
+          "metadata": {}
+        },
+        {
+          "index": 22,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "显示屏塑料外壳边缘有损坏 是不是因为无店铺销售 所以提供的是等外品啊",
+          "metadata": {}
+        },
+        {
+          "index": 23,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "单位用户千万别买 支付太不方便  一定要支票到帐才发货 结果给了支票 居然两天不到财务那里 找了一天才找到支票在那里  18号下的订单 28号才送到 而且还是支付的现金 支票依然没有到帐 不知道那个单位可以忍受这样的服务",
+          "metadata": {}
+        },
+        {
+          "index": 25,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "这本书虽然内容不多 但是插图很大 很生动和形象 里面的故事都是小孩子碰到过的事情 并且很有启发性 我女儿看了以后很喜欢 而且碰到术中类似的事情 她会说 大卫 不可以  呵呵 看来是受到潜移默化的影响了 总的来说 个人感觉这本书不错 难怪是获过大奖的书",
+          "metadata": {}
+        },
+        {
+          "index": 67,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "于丹的心得 在电视上看过 也上网看过 记得在大学的时候老师还放给我们看过  现在看有书 就买了一本 翻了翻感觉挺好 还有书签 印刷是彩色的 也很好",
+          "metadata": {}
+        },
+        {
+          "index": 82,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "不带光驱 LINUX换XP有点吃力 需要做个U盘启动 屏幕太小 男同胞可能看不习惯",
+          "metadata": {}
+        },
+        {
+          "index": 87,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "但是没有分区 而且电脑上贴的是VISTA标志 装的是XP系统 从电脑上查 显卡是集成的ATI HD3400,但是问客服 客服只答复 该款电脑是独立显卡  不知道是什么问题 电源开关处的板有点向上凸",
+          "metadata": {}
+        },
+        {
+          "index": 90,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "电视太小了 字幕都无法看清 服务人员还是很不错的 前台的MM态度都很好",
+          "metadata": {}
+        },
+        {
+          "index": 91,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "原来说系统是配DOS 收到的却是正版Vista 2 原来说硬盘是250G 收到的是320G",
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8643507030603805,
+      "recall": 0.927240461401952,
+      "f1-score": 0.8946917808219178,
+      "support": 1127.0
+    },
+    "1": {
+      "precision": 0.9215311004784689,
+      "recall": 0.8544809228039042,
+      "f1-score": 0.8867403314917127,
+      "support": 1127.0
+    },
+    "accuracy": 0.8908606921029282,
+    "macro avg": {
+      "precision": 0.8929409017694248,
+      "recall": 0.8908606921029281,
+      "f1-score": 0.8907160561568153,
+      "support": 2254.0
+    },
+    "weighted avg": {
+      "precision": 0.8929409017694248,
+      "recall": 0.8908606921029282,
+      "f1-score": 0.8907160561568153,
+      "support": 2254.0
+    }
+  }
+}

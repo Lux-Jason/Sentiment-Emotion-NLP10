@@ -1,0 +1,865 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,1,1,0.31270518346355713,0.6872948165364429,"Nice addition to the  url  article. If you have the works from which those thoughts are taken, could you add a citation s  for them?",train
+1,0,1,0.492854095647728,0.507145904352272,Since you already had the filmography listed I cut some films from the intro which you didn t tell much else about. Are you happy with my changes?,dev
+2,0,1,0.5451889194322593,0.45481108056774067,Done. Is it correct?,train
+3,1,1,0.32111409081259845,0.6788859091874015,"Thanks for your work in cleaning up  url   which is now finished, but for a few hard cases which likely will require the writing of articles to conform to those links . Would you like to collaborate on another section of this list?",train
+4,1,1,0.3513356531821319,0.6486643468178681,"Good start. Can you add more, please?",train
+5,0,1,0.5670402561249318,0.4329597438750682,"I don t get the  defaultsort  edit you mention   can you link me to a specific edit showing this? Also, if I rename the template will it be automatically changed on the relevant coaches  pages or do I need to do this myself?",train
+6,0,1,0.40318391982993196,0.596816080170068,"no problem. ic an hit it up through preferences seciton, right?",test
+7,1,1,0.48041156081803194,0.5195884391819681,"Hi, I was removed from the  request for approval  list at the vandalproof, and not put on either the  approved  or  denied  lists. Could you tell me why, please?",train
+8,1,1,0.43258851205313276,0.5674114879468672,"Hey, I just noticed that you are NOT an administator, I had always assumed that you were. I wondered if you would be interested in being nominated?",train
+9,1,1,0.3003934025163161,0.6996065974836839,"Hi Johnuniq, thank you for your edit. Does the file should be deleted removed from commons then?",train
+10,1,1,0.543183694035073,0.45681630596492695,"Unfortunately, I have no clue what you mean. Can you point me to a page that has such a feature?",train
+11,1,1,0.325023278552389,0.674976721447611,"Thanks. BTW, there aren t any others that I ve missed, are there?",train
+12,0,0,0.6651961952955014,0.33480380470449855,"Okay Murgh, I userfied only your revisions of Sore Thumbs to your user space,  url . Did you want the associated talk page or can I delete that?",train
+13,0,1,0.4453555263419171,0.5546444736580829,"Okay, how about this... Give me five minutes. I ll list all the images you have uploaded, you tell me where they came from, okay?",train
+14,1,1,0.4297691538807139,0.5702308461192861,"I used the  url  tool, and clicked rather a lot. I m happy to switch it on for your account, if you d like?",train
+15,0,0,0.6115637710828039,0.38843622891719604,"Hmm, well I ll see before judging. Does it also allow them to be listed from newest to oldest and separated into Russian and English references?",test
+16,0,1,0.5058251594994521,0.494174840500548,"I replied... also, are you watching that page? If so, I will stop bothering you here?",train
+17,0,0,0.6733864142737902,0.32661358572620974,"You recently reverted both these pages with the reason  not in the linked article . I m just curious, what does  not in the linked article  actually mean?",train
+18,0,1,0.5342173809300537,0.4657826190699464,Hmm... I m new here at Wikipedia and your explanation is a little cloudy...Should I delink the references website?,train
+19,1,0,0.6639541632785033,0.3360458367214966,"I had an editorial dispute with a user called  url  , but I m not responding to him anymore as it seems to escalate into heated arguments. If he keeps messaging, would it be ok if I got back in touch with you and you had a word with him?",train
+20,1,1,0.33267065446236144,0.6673293455376386,"could you email me when you get a chance? not having any luck this end, must be spam filters blocking?",train
+21,0,1,0.5185981701578314,0.4814018298421686,The seven day hold is almost up. Is there any progress being made plan for the near future?,train
+22,1,1,0.32978496882339137,0.6702150311766086,Congrats! I thought you were going to be away today?,test
+23,1,1,0.4035961677019043,0.5964038322980957,"No problem, but since I don t know anything about cold fusion, I ve had to go by the description.  I ve left out the thermistor and heater to keep the diagram simple, I can put them in if you think them important  Is the diagram ok I do you think it needs any changes?",train
+24,1,1,0.2186241550222453,0.7813758449777547,Hope you had a good trip. Are you able to take a further look now?,dev
+25,0,1,0.4525927645100869,0.5474072354899131,"Are you a professional illustrator, or an aspiring one? Where might I have seen your work?",train
+26,0,1,0.356498314865741,0.643501685134259,Great job. Any chance of a full date of death for him?,train
+27,1,1,0.36529525560038045,0.6347047443996195,Hi Kathleen   It looks OK to me; all I did was change the template wording a bit and add parent cats to the stub category. What problem were you having?,train
+28,1,1,0.4409674419155877,0.5590325580844123,I ll add that to the others. Will that work?,train
+29,1,1,0.37426380169141293,0.6257361983085871,"Yes, I apologize, my friend  I guess I have some kind of a phobia that you will forget about my posts :    I will wait as long as you want me to. Could you read Mir Harven s posts on talk page?",train
+30,0,1,0.3547162407709158,0.6452837592290842,"Thanks for the tips. But what was that something I heard somewhere about you leaving after getting Final Fantasy VII to FA, or something?",train
+31,0,1,0.35757033298564767,0.6424296670143523,"Hi there, I ve reworded that paragraph a bit. Is it any clearer?",train
+32,0,0,0.5893883519662666,0.41061164803373346,url . Are you planning to merge the info into  url  or just redirect to the article as is?,train
+33,1,0,0.591361133018985,0.408638866981015,"I moved    Engine Arm Aqueduct    to  url , because there seemed to be much more content about the canal than the actual  url . Does that seem reasonable, to you?",train
+34,1,1,0.46803435555554984,0.5319656444444502,"I received a message from the bot you run telling me that one of two duplicate files I uploaded is due for speedy deletion. If possible, could it be made that Bath badge.png is the one that is deleted, rather than Bath rugby badge.png please?",train
+35,1,1,0.31030079802485877,0.6896992019751412,"I m glad you re pleased with the general appearance. Before I label all the streets, is the text size, font style, etc OK?",train
+36,1,1,0.44802110144111407,0.5519788985588859,Sure AGK. Does the draft need to be updated to include the tweaks?,train
+37,1,1,0.3289081375897269,0.6710918624102731,It has been a pleasure working with you on the Burma campaign. What is your source for the Japanese information you have been adding as the books I have been reading on the subject are all from a British or American perspective?,train
+38,1,1,0.12553759190243086,0.8744624080975691,Thanks for adding that pmc  support to  url . I made a suggestion for further improvement in  url ; can you please follow up there if you have the time?,train
+39,0,0,0.6304319203320512,0.3695680796679488,"Hey, out of curiosity, why is your name  TruthbringerToronto  if you re in Montreal? Former Torontonian that escaped perhaps?",dev
+40,1,0,0.6340996280942757,0.36590037190572433,"No, I don t know of any way to measure the number of visitors to articles. Perhaps someone on the  url  can answer your question?",train
+41,0,0,0.5969976688232599,0.40300233117674006,"I was just looking again at the April Fool s pranks from this year and came upon  url  to a page you deleted per  housecleaning . Can we undelete and move it somewhere  the latter only if necessary , tagging with  url  in the process?",train
+42,1,1,0.4428041024597845,0.5571958975402155,"Hi, I m new to RC patrol, and I was wondering how you do the  reverted edits by X to version by Y  edit summary. Is there a shortcut to reverting an edit?",train
+43,1,1,0.5278080134544663,0.4721919865455338,"Actually, I think I should route these terms  seismic design, and seismic engineering  to  url . Does that sound like a better idea?",train
+44,1,1,0.4307880196870201,0.5692119803129799,"Is there any consensus for these changes? If I ve missed the discussion, I do apologise, but could you post me a link to where it occurred?",train
+45,1,1,0.5136608271326888,0.48633917286731115,"Hello. I was just wondering, is it really fair to delete an unintentional duplication of a deleted category without a formal CFD submission?",train
+46,0,0,0.655217028374974,0.344782971625026,What exactly are the rules on this page? Can stuff be added without discussion and  consensus ?,train
+47,1,1,0.2418017582390194,0.7581982417609806,Thanks for your response. What happens now?,train
+48,0,0,0.6944472658337182,0.3055527341662818,"Lists like this are a bad idea to begin with, and this one in particular has been deleted via an AfD. Why not try categories instead?",train
+49,1,1,0.5670480934178859,0.4329519065821142,I aggree... river name then  River . Do you think that since it s a list of rivers in China we should use the Chinese name and the international norm name too?,train
+50,1,1,0.3440488016231842,0.6559511983768158,"You are right, I apologize not doing so. A different layout for the template could be interesting  perhaps even with names, or those delivered in person by text  but I didn t quite see the logic in the way you had broken up the dates by 20 year blocks interspaced with 4 year blocks, right?",train
+51,1,0,0.6993506371021467,0.3006493628978533,"I hope I don t upset anyone by jumping in univited, but why are self created images any different than those found elsewhere so long as they comply with all of the non free content criteria? Is this caveat hiding in a talk page archive somewhere?",train
+52,0,1,0.5332835061019737,0.4667164938980263,"Incorporation sounds like a good plan to me. I guess we need physical signatures for that, not just people typing in a wiki page?",test
+53,0,1,0.3864572051073546,0.6135427948926454,I am afraid I do not quite understand the content of your message. Can you explain a little bit more ?,train
+54,1,1,0.3006468650274654,0.6993531349725346,I also love your new CA Interstate shields. Could I trouble you to replace the current one for  url  with a similar one?,train
+55,1,1,0.5249827061286529,0.475017293871347,What are you having a problem with? Are you having trouble with the ssh authentication?,train
+56,1,1,0.35260687460968965,0.6473931253903104,Hello im trying to make a task force for the Empire of Brazil with some people but we dont know how to make the actually task force stuff like the banner and how to make the quality chart template to see what class each article is. Im asking if you can help make it since i saw you made WikiProject Dam?,dev
+57,1,1,0.5169017370899698,0.4830982629100303,"My post above was a helpful hint about following DYK as a whole, not about the nomination process. Would you mind posting your post under a new heading, as it seems to have little to do with what I was saying and seems to be changing the subject?",train
+58,1,1,0.3360220262653075,0.6639779737346925,Great job. Will it be done by next week?,train
+59,1,1,0.5340523667479047,0.4659476332520953,"I do have one semi newbie question: I made some edits under my IP before registering   url   and would like to  claim  them now that I have registered. Do you know if that s possible, and if so, how to go about it?",test
+60,1,1,0.540131946487111,0.4598680535128889,This is not a suitable candidate for CSD as it asserts notability. May I suggest you consider a  url ?,train
+61,1,1,0.42030434642569203,0.579695653574308,"Great  so bump up to around ten selected pictures  selective choices, obviously  and then you feel it is ready for FPOC? Is there anything you feel the portal is obviously lacking?",train
+62,0,1,0.3634236009704148,0.6365763990295852,Hi. Is there no chance that you could take a photograph of RCMP officers in the uniform we don t have a picture of?,train
+63,1,1,0.4390918599913851,0.5609081400086149,"Your new map is a great, less distorting, format, but it leaves out a whole lot of countries that have recently joined the alliance   Estonia, Latvia, Lithuania, Slovenia etc among them. Can you fix this please?",train
+64,1,1,0.34024281344430574,0.6597571865556943,Hey. I m proposing a  url    would you be interested in coming along?,train
+65,0,0,0.6508330539513043,0.3491669460486957,how do you know that Yuvan is confirmed for Striker? You indeed referring to the  url  starring Siddharth?,train
+66,1,1,0.4900864085814479,0.5099135914185521,did the copyedit for the Japanese flag article and it was completed today. Is there anything else other than a copyedit that you need for this article?,train
+67,0,1,0.41210579098066435,0.5878942090193356,I suggest we start with the History section. What do you think?,train
+68,1,0,0.5993841509642233,0.4006158490357767,My question is  Why?  I am doing all the citations correctly and this still appears often. Can anyone tell me what I m doing wrong?,dev
+69,1,1,0.25101222137094614,0.7489877786290539,"Thanks for the help on the sides of leather question. I m interested in citing the dictionary in the article as a reference for the meaning of  sides , but I d like to have a little more data first u2014 what year s edition of the OED did you cite?",train
+70,1,1,0.19953977594430494,0.8004602240556951,"Hey, thanks for your contributions here : . Would you mind referencing them to conform with wiki policy?",test
+71,0,1,0.42468184813804466,0.5753181518619553,"Hm, I was unaware of said threads. Would you mind providing me with a link?",train
+72,1,1,0.5363560498395333,0.46364395016046667,"Hi, I see that you added the etymology section of the  url  article. What does  RatCE  mean?",train
+73,0,1,0.5712949242451906,0.4287050757548094,"Hey, I am curious as to why you made  url  on the Blink 182 page. Any specific reason?",train
+74,1,1,0.45587204951554583,0.5441279504844542,"Hi there, I ve raised the possibility of unprotecting the tamazepam page  url . What are your thoughts?",test
+75,0,0,0.5968561915173836,0.4031438084826164,Hi. Why did you blank the redirect at  url ?,test
+76,1,1,0.34456967351178647,0.6554303264882135,"OK, same situation here :   Marskell and I agreed on a proposal that would initially just give us some backup on the day to day stuff, not necessarily closes, but to work in to people who could help when we needed time off. Is it OK with you if I go ahead and propose that to Raul?",train
+77,0,0,0.7511421513599548,0.24885784864004523,"That line in  url :    url , the slashed zero character  , shouldn t it be    url  or slashed zero, the slashed zero character  ? How s  url  doing?",train
+78,1,0,0.6641069037744032,0.3358930962255969,"I had an editorial dispute with a user called  url  , but I m not responding to him anymore as it seems to escalate into heated arguments. If he keeps messaging, would it be ok if I got back in touch with you and you had a word with him?",train
+79,0,0,0.6046815699175088,0.39531843008249123,"Hi, I was just curious as to why you seem to have vandalized  url  to say Gartnerpedia instead of Wikipedia. Any reason for this?",train
+80,1,1,0.4437490208416033,0.5562509791583967,Hi Fropuff. How do you convert your commutative diagrams from LaTeX to PNG?,train
+81,0,1,0.363792969190879,0.636207030809121,It s amazing how selective our memory can be. How s the project going along?,train
+82,1,1,0.1781126487751591,0.8218873512248409,"Thanks from me, too  mdash; cheers! I don t suppose you could put copyright and source information on those images, though?",train
+83,0,1,0.5066618698972444,0.4933381301027556,"Yes, or you could change what it looks like. What do you want to do?",test
+84,0,1,0.5216993296429118,0.4783006703570882,I can t seem to find the mention. Do you know what page?,train
+85,1,1,0.49914847096109627,0.5008515290389037,"Hello Sirmyles, I noticed a puzzling section on  url  that could only have been written by you  about the parallels with Shiite law . I would appreciate if you could identify a source that could possibly support this assertion?",test
+86,1,1,0.3731859397212296,0.6268140602787704,"Hi, I have cleaned up this page and, in the AfD, identified many other sources and additional content. I wonder if you would reconsider your delete !vote please  I will do the necessary expansion as and when there is a reasonable expectation of it being kept ?",dev
+87,1,1,0.24738428499430654,0.7526157150056935,"Sure, I ll have a look at it. It looks like it needs a bit of a copyedit though, hope you don t mind?",train
+88,0,0,0.7111305790664697,0.28886942093353024,"right but in this case, the certain artist goes by a different name now, so people would most likely type in    diddy    instead of the other old one. like if somebody changes their name or alias, and people wont know where theyre listed in?",train
+89,0,1,0.4990089124261966,0.5009910875738034,I see. What about  Main Church ?,train
+90,0,1,0.5446624525505258,0.4553375474494742,I think I m going to use Treehouse of Horror for Halloween  Scorpion asked me in IRC for that date . How about October 30 or Nov 1 instead?,train
+91,1,1,0.3720226988740525,0.6279773011259475,"I ll unblock you if you give me some confirmation you ve understood this and you are prepared to discuss the article through the proper channels, calmly and politely. So, cool down please, okay?",test
+92,0,0,0.6427357635063693,0.3572642364936307,An AfD was started for that page before you speedy nuked it. Could you close  url  please?,train
+93,0,1,0.5303553535339838,0.4696446464660162,There s an interesting discussion here:  url . Care to explain?,train
+94,1,1,0.49520587805526295,0.504794121944737,Can you take a look at the article  url  and the conversation going on at  url   that should probably be moved to the article talk page . Your thoughts on the most recent commentary?,train
+95,1,1,0.4371472594273591,0.5628527405726409,Stephen s solution certainly isn t optimal. Fancy giving me a basic rundown on the problem here and I ll see if I can devise a more elegant one?,train
+96,1,1,0.299724796322159,0.700275203677841,"Hi, I d like to help you with the image you just uploaded to the  url  article. Can you tell me where you found it?",dev
+97,1,1,0.3131524545181543,0.6868475454818457,Thanks. Can you use  url ?,test
+98,0,1,0.5707845480280183,0.4292154519719817,So I think it s better research one by one and decide which one is common name  use . What is your opinion ?,train
+99,0,0,0.617287479942346,0.382712520057654,"If you have archives to look through, can you double check if this quote indeed comes from this article? Is it possible it came from another DeCurtis article in March titled  U2 releases The Joshua Tree ?",train
+100,0,1,0.5507325211527075,0.44926747884729246,It looks like the category functioning works. Can we get an alert to render instead of the default missing parameter  nowiki    1      nowiki  behaviour?,train
+101,0,0,0.619983577362279,0.380016422637721,"Sure. Aside from the Flea and Frusciante articles, which get the most traffic?",dev
+102,0,1,0.5390826845761527,0.46091731542384734,"If you live in Oslo, you probably know this better than me, but I took a look at  url  at trafikanten.no and it seems that line 1 still operates to Bergkrystallen during the rush hour. Can you check this out and if necessary restore the line 1 links to the affected station articles?",test
+103,1,1,0.3734295315677375,0.6265704684322625,"url  posted a wonderful grammatical analysis of the  has had  thing, another editor agreed, so I m thinking we should make another request for the change, using Bluewave s post as the basis. What do you think?",train
+104,1,1,0.1909413213972383,0.8090586786027617,"Thank you for your time, but, perhaps; If I give you the iformation and images and such for Lord Strachan, could you maybe make it? It shouldn t be that hard to find info, or images, but I already have them, so if I give you this stuff, perhaps could you do it?",test
+105,0,1,0.42872569883320755,0.5712743011667925,"Okay, I ve read through it, and I m willing to accept that it s your granddaughter. Shall I delete it?",train
+106,1,1,0.5792451456153498,0.42075485438465016,"I see you ve just placed a deletion request on your user page, but this page has no history and hasn t been edited previously. Did you mean to place it on the article you created,  url ?",train
+107,1,1,0.2753300190797261,0.7246699809202739,Good advice from Garion96 there. Would you please come to the talk page of the template and voice your opinion?,dev
+108,0,0,0.6301491259351678,0.3698508740648322,As a UM Bishop he is certainly notable. What was the source of the copyvio?,train
+109,1,1,0.3171689333547356,0.6828310666452644,"I responded to your talk page comment, encouraging you to try your hand at reworking it. Good analysis of a potential problem, so why not take a whack at it?",train
+110,0,0,0.7105529119922422,0.2894470880077577,Would it not make more sense to delete these under G6 a Technical deletions  person    rationale Surpassed template that way you dont have to make a notice here for every one. Has anyone ever contested there deletion?,train
+111,0,0,0.5981010292420623,0.4018989707579377,Didn t get it. What is it about?,train
+112,0,0,0.5891445977972862,0.4108554022027138,"This seems to have become a standard put down of yours url , but can you translate   Go maith leith scxe9al    url  for me? Or did you mean   Gabh mo leithscxe9al  ?",dev
+113,1,1,0.35741922063638576,0.6425807793636142,Hello. Can you help me create a map of Isabela which reflects the 3D map?,train
+114,1,1,0.3834742062985008,0.6165257937014992,"I m always happy to give a second opinion on ID   you re welcome to put images on my talk page to discuss them. Regarding  url , I would tend to go with    url   , what do you think?",test
+115,0,0,0.6911888646858185,0.3088111353141815,"Per  url , edits that change the meaning of an article shouldn t normally be marked as minor. Looking at your recent contributions, I see they re all marked as minor... perhaps you ve inadvertantly ticked the  Mark all edits minor by default  check box in the Editing tab of your user preferences?",train
+116,0,0,0.6314577241962458,0.36854227580375426,url  has been blanked. Is it possible to retrieve this information?,train
+117,0,0,0.6039474603681056,0.39605253963189435,Can you give me a general description of  url ? Does it mention anything about making movie?,train
+118,0,0,0.6346115442148619,0.3653884557851381,"News coverage would be spotty at best... you would have to go through the stats pages and do it by hand pretty much, so any of the Calgary Edmonton Sun, Herald or Journal would suffice. Maybe just send the AJHL an email and ask them?",train
+119,0,1,0.5672734363883165,0.43272656361168343,"Hi, noticed you removed categories on defunct renamed schools. Why do you think them unnecessary?",train
+120,1,1,0.25206679388968356,0.7479332061103164,Nice to see you editing in article space! We have been chipping away at your compiled OBI list   can you believe it s almost done?,train
+121,1,0,0.6010188818118465,0.3989811181881535,You had deleted the mozzarepa article I was working on since it was judged as an advert  something I didn t intend.  How can I edit and change the article so it is acceptable?,train
+122,0,1,0.5508893096656574,0.4491106903343426,Is the bot correct and if so can I assume that is the standard to follow ??,train
+123,0,0,0.6282847948962826,0.3717152051037173,This came up for discussion on  url . What is the last word on it?,train
+124,0,0,0.743418645848156,0.25658135415184397,"The brainteaser of course is that the  url  documentation subpage currently manages to show all situations working correctly with no red links, yet the same metatemplate called from cite web sandbox is having problems. Is the problem that one template can not accept a winklinked date output from a called metatemplate, or is this really just a problem of my buggy coding skills ?",train
+125,1,1,0.5608692148683467,0.4391307851316532,"Hey, I found  url  and at around 1:10, I think I can see the Backstreet Boys holding platinum discs  or double platinum, I m not sure  for Backstreet s Back and Millennium. Can you please verify and is it possible to use this as a source for adding South African certifications?",train
+126,0,0,0.7786555686035849,0.2213444313964151,"Actually, it IS quote mining when you provide a quote from an author that is the exact opposite of the primary meaning and intention of the author. Let me ask you, then, what was the primary message of the Linde letter to the editor?",train
+127,1,1,0.4432286313597992,0.5567713686402008,"Thanks for nuking that thing. While the page was still present, someone opened an  url ...could you please close it?",train
+128,1,1,0.3733659406476657,0.6266340593523343,"Good point for the text, but can I also add the photos? They seem to be out of copyright, but maybe not?",train
+129,1,1,0.34456967351178647,0.6554303264882135,"OK, same situation here :   Marskell and I agreed on a proposal that would initially just give us some backup on the day to day stuff, not necessarily closes, but to work in to people who could help when we needed time off. Is it OK with you if I go ahead and propose that to Raul?",train
+130,0,0,0.6393434353789544,0.36065656462104556,"Jitse, quick question. When a user is blocked, is their IP address blocked also?",train
+131,1,1,0.4749936997686942,0.5250063002313058,"Hi,  url  moved  url  to  url , and then a bot came in to correct a double redirect so that the page can t simply be moved back again. Can you use your administrative powers to make it so?",test
+132,0,0,0.7374005847611104,0.26259941523888963,url  OrphanBot doesn t realize that  person  is a license tag. ?,train
+133,0,1,0.4404422877707056,0.5595577122292944,"No problem, done. What s your connection to Casey?",train
+134,0,0,0.6468838645987844,0.3531161354012155,"Maybe a misspelling, or just having one of those brain fade days  which I suffer often . Did you mean defer or refrain in that opening line in your comment?",train
+135,0,0,0.6360857066993788,0.36391429330062114,"A follow up question: How far away from the true ridge does the watershed extend, using your looser definition? Is it the entire hillside entire you enter a channel?",train
+136,1,1,0.22531989010071318,0.7746801098992868,"Thanks a ton for looking that up for me. For the purposes of a citation, what are the page numbers for the whole article?",dev
+137,1,1,0.5627656908800533,0.4372343091199467,I know there is some discussion at  url  regarding primary topics so I m unsure if performing this edit would be an ok move. Thoughts?,test
+138,1,1,0.47632204159493907,0.5236779584050609,"That sounds fine. When does the drive end: at the start of August 13 or at the end, and according to which timezone?",test
+139,0,1,0.5276658219767363,0.4723341780232637,So I take it you live in Perth? Have you ever been to Virginia?,train
+140,0,0,0.69168937710707,0.30831062289293,"Your DYK hook for  url  is missing something. It says    Frank Bancroft managed the now defunct Major League Baseball Providence Grays...      maybe     his    now defunct Major League Baseball    team, the    Providence Grays,... ?",train
+141,1,1,0.4353896374042201,0.5646103625957799,"I know, I understood that. :  I didn t scold you for it at all, did I make you feel that way?",train
+142,1,1,0.42688197726724664,0.5731180227327534,"Katy, good buddy. Is  url  your lost article?",train
+143,0,0,0.5956748139747283,0.4043251860252717,"Hmn, it appears I m still blocked. Is there a lag?",train
+144,0,1,0.4899216444487786,0.5100783555512214,"I wonder, did anyone add new links leading to the portal? Is there an easy way to check this?",train
+145,0,1,0.5519313416041727,0.4480686583958273,I am a fairly new admin. When is it appropriate to use such a block as you did with a user I d blocked?,train
+146,1,1,0.3397547804176013,0.6602452195823987,"Hi Cmadler, I ve written a new ALT hook at the  person  that I think addresses your concerns. Could you sign off on the nomination?",dev
+147,0,1,0.5660833897867715,0.43391661021322847,"Despite our long standing disagreement, I have no argument with you  url . However, can I suggest you use a less opaque edit summary than   added info   when doing something that is nonetheless controversial?",train
+148,0,0,0.6422842718816312,0.3577157281183688,I m finding that I m not able to access any of the DPL related pages on the Toolserveru2013I get an error message or a blank pageu2013but somehow the Dab Challenge results are still being updated by your bot. Do you know what s going on?,dev
+149,0,0,0.6785795196588703,0.3214204803411297,"Never expected to see that word pop up on Wikipedia. Did youlearn it at AFU, or has it migrated further?",dev
+150,1,1,0.24146873349189035,0.7585312665081096,Thank you for correcting the error on my user page. I have a question how does one go about archiving his talk history?,train
+151,0,0,0.6574834616634968,0.34251653833650314,I noticed you just removed this category from  url  and  url . Why don t you think they qualify as historical films?,train
+152,1,0,0.6055850944993699,0.3944149055006301,"I removed a few obvious links on  url , but wasn t sure about some of the others  sparknotes, paperstarter, etc  and couldn t find anything yea or nay on their use...if you have a few spare minutes  ha! , could you take a look?",train
+153,1,1,0.3649266346147342,0.6350733653852658,Good point   I was unaware of that. Perhaps then you should include a short reference to Aquitanian in the sentence?,train
+154,0,0,0.703367224081978,0.29663277591802195,"person , whom you blocked for 3RR, is contesting their block with what appear to be defensible arguments. Would you like to comment?",train
+155,0,0,0.6415286775975553,0.3584713224024447,"person  I ve moved contents of  url  to  url , but keeping intial desciption of this specific disorder. It leaves though  url  looking very bare   can you word it up using teh eMedicine and DermNZ links already provided ?",train
+156,0,1,0.5836310898805048,0.4163689101194951,"I m serious, I just don t want a mistake to happen to another person that happened to my friend. By the way, does he violate  url ?",train
+157,0,1,0.5352552377096687,0.46474476229033135,"David   On looking through the list of the various Israel Prize categories the Israel Prize Categories page, I note that architecture appears twice, once as  Category:Israel Prize in architecture recipients  and again as  Category:Israel Prize recipients in architecture . Are you aware of how to delete the second category?",train
+158,1,1,0.46146593907191413,0.5385340609280859,Hi! Could you consider speedy deleting  url ?,dev
+159,1,1,0.5696598600597291,0.4303401399402709,I am trying to figure out the exact definition of  url  however do not have access to Andrews. Could you help?,train
+160,0,0,0.658454738055605,0.34154526194439505,I m confused by  url . Why French?,train
+161,0,1,0.5266312042092032,0.4733687957907968,The block you created on April 18th has expired and a new rash of vandalism has broken out. Would you mind blocking this school for even longer than 1 month?,train
+162,0,0,0.6376128739360305,0.36238712606396944,url . What do you think should be done?,train
+163,0,0,0.6229301304992326,0.3770698695007674,I ve heard Greeks pronounce the name of the letter   I   as   yota  . What do you intend  giota  to sound like?,train
+164,0,0,0.6595914927796411,0.34040850722035887,"Drive by comment: Mikka s behaviour reminds me of Stevertigo s on  url ... perhaps an RfC is in order? Nothing harsh, just an opportunity to clarify some policy points on protection and blocking?",train
+165,0,0,0.5855024250555783,0.4144975749444218,"Incidentally, the bot had to sign the message you left for me! Four tildes, right?",train
+166,0,0,0.6134090236354739,0.38659097636452616,I have no idea. Maybe it just needs a few days to update or something?,train
+167,0,1,0.497169103818497,0.502830896181503,"Hello; I tried to visit the page for  url  today after learning of it elsewhere and being pointed here by google, and found it deleted. I viewed the entry for deletion linked to from the page and you stated at the top that the result of the discussion was  keep     how come, then, it is now deleted?",train
+168,1,1,0.40630093833863534,0.5936990616613647,"Hello Iris. Would you add Straka s signing with a Czech team into, to his page?",train
+169,1,1,0.35615139167377496,0.643848608326225,Hi! What would you like help with in particular?,train
+170,1,1,0.34280610879927,0.65719389120073,Hi again! Have you had a chance to get it lately?,dev
+171,0,0,0.6089271517018138,0.39107284829818617,I never saw his press conference. Is there a clip of it online?,train
+172,0,1,0.5731484416148451,0.4268515583851549,Tips? Something about not feeding?,train
+173,0,0,0.6717518689950146,0.32824813100498534,"So these are facts, and they are true. Is there some sort of guideline for using direct personal evidence?",train
+174,0,0,0.6881202217836924,0.3118797782163077,"ahhh... so  Wikipediholic  is preferred to  Wikipediaddiction  ... so the malady is at least recognised, good. Where can one obtain help to fight this insidious addiction?",dev
+175,0,0,0.7491323294477661,0.25086767055223397,"if there is no private information kept, then why is there a user number attached to the link? why not just a link to the survey?",train
+176,1,1,0.5355171992171572,0.46448280078284276,I saw your comment on Jimbo s talk page about plagiarism and copyleft. Would you have time to have a look at  url  and  url   where most of the discussion has taken place ?,test
+177,1,1,0.5252542355830317,0.47474576441696825,Do you live in the US? How excited are people about the album?,train
+178,1,1,0.21326782756576812,0.7867321724342319,Thanks for putting the igneous rock template on all of those articles   it looks really useful! Do you think it should have an ultramafic section added?,dev
+179,1,1,0.5753539425092228,0.4246460574907772,I have always maintained a control of the military section and I can check up the names in the educational section. Which section would you like to clean up?,train
+180,0,0,0.6404055835016079,0.3595944164983921,"I ve deleted the old versions of   Winnie the Pooh   and   Prom  , but I haven t deleted the other two yet: on the   Elite Force   image, the image you ve uploaded says  Mac  on the box, while the description says it s for the PC; and the external link supplied for the   127 Hours   poster shows the original image that was here. Shouldn t these be made consistent first?",train
+181,0,1,0.5451769086728727,0.4548230913271273,"Hi, I ve reverted the edits you made to  url  as the flags by the clubs put s the box totally out of sync  on explorer anyway . Can I suggest that you don t add these flags?",train
+182,0,1,0.4672387079742377,0.5327612920257623,"Haha, hey guys. Who is Temple alumni?",train
+183,0,0,0.5872418620812252,0.41275813791877475,"I found  url , which we don t have on en:wiki. Know anyone to do a proper translation?",train
+184,0,1,0.5065397086284533,0.4934602913715466,The copyediting is being done as I speak. Anything else you can think of?,train
+185,1,1,0.32336677604136077,0.6766332239586392,"After having collected some users willing to come, I created  url  subpage. Would you be so kind and add your ideas?",train
+186,1,1,0.4546279029241119,0.5453720970758881,"I think these are reasonable, and should protect you from lawyering. Should I go ahead and add this?",dev
+187,1,1,0.4066442273594708,0.5933557726405292,"Thanks. Are you Slashdot user Anothy by any chance, or someone else?",train
+188,1,1,0.40355583452593446,0.5964441654740655,In my opinion that would be more constructive way to approach the solution. What do you think?,dev
+189,1,1,0.507216581324637,0.49278341867536307,"I think the we ve reached consensus in the FAC for  url , as every opposing reason has been resolved. Do you think it s looking good?",train
+190,1,1,0.4301298497147782,0.5698701502852218,"Sorry, I ve moved a number of articles and thought I did it correctly. How is moving done properly without losing the edit history?",train
+191,1,0,0.5865749793928916,0.4134250206071084,"Hi, I wsa just noticing that in  url , players such as Tommy Walsh and Paul O Connor have appeared under  T  and  P  respectively, rather than  W  and  O . How should that be fixed?",train
+192,0,1,0.492854095647728,0.507145904352272,Since you already had the filmography listed I cut some films from the intro which you didn t tell much else about. Are you happy with my changes?,dev
+193,0,1,0.42613393529184296,0.573866064708157,"Iu2019m flattered that you have changed the meaning of minor in my honour, but I havenu2019t refused to engage in debate. What would you like to talk about?",train
+194,1,1,0.33804881535837583,0.6619511846416242,Thanks for protecting this. Perhaps no longer needed?,train
+195,0,1,0.4140956524900342,0.5859043475099658,Sure thing. Did you see my note higher up on the page?,train
+196,0,1,0.564051560167973,0.43594843983202697,Personally I think  much  longer gallery captions are probably the answer; these are probably easier than working each image into the text. Didn t that work at s    p       ?,test
+197,0,1,0.41891609465070745,0.5810839053492926,No problem. Also should we add the template like whats been done on  person  user and talk page?,train
+198,1,1,0.4622436452064995,0.5377563547935005,I got the page fixed. Sorry I had to do it several times on the page but it wouldn t let me revert it to before the IP user vandalized it how do you do that?,dev
+199,0,1,0.5613427309200113,0.4386572690799887,Hey three paragraphs at the end of the commercial success are uncited. Can you fix that?,train
+200,1,0,0.6231428360200401,0.37685716397995994,"The PressTV references in Wikipedia s  Turkey PKK Conflict  article are not the same, but the titles are wrong. If you have time, can you correct the titles?",test
+201,0,0,0.5915300539016843,0.4084699460983156,"The standard would be  person   as we discussed at some length at the proposals page , to avoid the clumsy double plural. Any objection if I change it back?",train
+202,0,1,0.4198811900763737,0.5801188099236263,"Hello  url ...I will eyeball it a bit and see what is going on with it, however, it appears this template is for a specific location in the U.S.  the D.C. area . Is this template going to be put into wider circulation once it is fixed and working?",train
+203,0,0,0.738491704282688,0.261508295717312,"I just traced an IP you just blocked for six months,  url , and it is a school IP. Is this block an anonymous only block, or is it a full block?",train
+204,0,1,0.48631128891455333,0.5136887110854467,"At the request of  url , here  url , I ve created a set of quality and importance Categories for Rail transport in Germany, here:  url  and  url  and I ve set up the links in Wikipedia 1.0 assessments. Could you tweak  url  so that it copies the WPTrains  class  parameter across into Rail transport in Germany and to allow the assignment of  importance  for Rail transport in Germany?",train
+205,0,1,0.3397882555949462,0.6602117444050538,"Hi, I meant to do this a long time ago, but I guess I forgot. You are the  Sandpiper  on the HP wiki right?",train
+206,0,0,0.7116749234882166,0.2883250765117834,"We have an ongoing problem with this article, it is stated that he is  Irish born British , where in reality he was Irish, even though the United Kingdom of Great Britain and Ireland existed back then, it is not a reason. Could you help resolve the issue one way or another?",train
+207,1,1,0.5277282617098602,0.47227173829013974,"Actually, I think I should route these terms  seismic design, and seismic engineering  to  url . Does that sound like a better idea?",train
+208,1,1,0.23610040649664055,0.7638995935033595,thanks for the welcome! I have a question... how come you can t edit the article about Whales?,train
+209,1,0,0.6138635079041472,0.3861364920958527,"I m kind of afraid to undo  url , mainly because I have doubt in whether the nihongo template is necessary at all. Thoughts?",train
+210,1,1,0.39779890236605264,0.6022010976339474,Where did you get the tracklist for the album? Can you please drop me a messafe with the link?,dev
+211,0,0,0.6239181747626432,0.3760818252373568,"Feeling tired, stressed, not clear? The talk page for Antractica might be just that  although I have alerted another admin before you  straw on the camels back ?",train
+212,0,0,0.631432056413022,0.368567943586978,url  has been blanked. Is it possible to retrieve this information?,train
+213,0,1,0.41764039953004584,0.5823596004699542,"Thanks for doing the tidy up on the SSC page. One question, what was the reason for removing the item about the Simon PG ownership of the buildings, as well as dropping the link to the company s WP entry?",dev
+214,0,0,0.6135607903105785,0.38643920968942147,"By revert all user contributions, do you mean    all    contributions? or just all contributions to one article?",train
+215,0,1,0.4181590128229764,0.5818409871770236,Thank you for semiprotecting that page. Why is it that everyone seems to vandalize one page at the same time?,dev
+216,0,1,0.4955422171738848,0.5044577828261152,I m intending on creating a list of Crash Bandicoot locations. Do have any advice for me?,train
+217,1,1,0.4311927024376455,0.5688072975623545,Wow! How did you find this?,train
+218,0,1,0.5296830107993882,0.4703169892006118,I see you have a BugZilla account. How do you make it so it doesn t show your email to everybody?,train
+219,1,1,0.5812038039619726,0.4187961960380274,"Also, in accordance with  url , I think the Turkish Army Corps should be 3rd Corps, 4th Corps, 5th Corps, not III Corps, IV Corps, V Corps. What do you think?",dev
+220,0,1,0.5013098523462449,0.49869014765375513,"Sorry, no clue. The help desk wasn t helpful, huh?",train
+221,1,1,0.33374794883152215,0.6662520511684779,I think it s a great idea to get the CO3 community involved with keeping  url  correct and uptodate. I shan t be there myself this year  clashes with various things    would you be able to bring it up?,train
+222,0,0,0.7273680057679632,0.2726319942320368,"Is the caption  Steelhead trout has been said to exist in Aliso Creek...  grammatically correct? Should it be  have been , referring to the trout as a group?",train
+223,1,1,0.3776645450987952,0.6223354549012048,"sorry for delayed response  I think it would be difficult to intergrate them, my program would probably work more easily from a list of articles with typos generated from the database, with the spelling correction code built in to the program. While on the subject, are you planning on running Humanbot again soon?",train
+224,1,0,0.6589412405061217,0.34105875949387837,"The  url  page said that  url  will be shown on the  url  subchannels 26.5 and 26.6, and also on analog channel 48. It is also expected that The U Too will displace Me Too from analog channel 48. If that s the case, then, where do you suppose Me Too will end up? What new channel in Chicago will it be shown on?",train
+225,0,0,0.7367343835442053,0.2632656164557947,"This is a really sore subject, because most of parents of kids with learning difficulties dont agree with the term  retardation    it is unscientific and also quite abusive. Could you please delete the category or rename it  learning disability organisations ?",train
+226,1,1,0.3908961620027226,0.6091038379972774,"Hi, do you mind if I move your hook to go live on 26 27th? The GLAM WIKI conference could do with being highlighed by a non US UK hook?",train
+227,1,1,0.31818029323437524,0.6818197067656248,"I was actually going to work on your suggestions today, regarding the GA nomination for  url . Do you mind reopening the nomination?",train
+228,0,1,0.45528546579319285,0.5447145342068072,I need to have Jerry Eckwood added to the list of Arkansas Razorback players. How do I do this?,test
+229,0,1,0.5151654603559581,0.48483453964404183,"OK, lets get a screenshot then. What is your keyboard layout, is it a qwerty keyboard?",train
+230,1,1,0.5112454878744148,0.4887545121255852,"Hi  The Magnificent Clean keeper  I note that you recently removed a contribution I made to the  url  page, citing lack of  notability  as the reason. Iu2019m not saying you where wrong to do so  notability is an important criteria in the Wiki project , however, since the definition of  notability  is hard to pin down, could we discuss this particular instance, in greater detail, at some point?",train
+231,0,1,0.3900025622314127,0.6099974377685873,I noticed you have improved the  human rights  section on the article  url . Could you update the main article:  url ?,train
+232,0,1,0.5351221296988267,0.4648778703011734,"There are two books I have with more material about this Zen Master; Namu Dai Bosa published in 1976 by The Bhaisajaguru Series, and second: The Soen Roku published by the Zen Studies Society in 1986. Are you familiar with these sources and is there any reason they are not included?",train
+233,1,1,0.5658123522453815,0.43418764775461843,"Any thoughts on what we should do with this? Delete it as a duplicate, or copy to Commons and rename?",train
+234,0,1,0.5254945413482908,0.47450545865170923,"Sorry, but the Find feature tells me that  Heavydata  isn t anywhere on the ANI page. Did you mean to send me somewhere else?",train
+235,1,1,0.5574047380960809,0.4425952619039191,"I see you deleted the Shayla LaVeaux article, citing copyright problems. I d like to see if I can t clean it up... is there any way I can see the deleted article?",dev
+236,0,1,0.5388608875184153,0.4611391124815847,I haven t tagged assessed anything in quite some time. Which article are you referring to?,train
+237,0,1,0.4655694431941564,0.5344305568058436,"See  url . I ve made them, can you help fill them out and place them in the articles?",train
+238,0,0,0.6679000812451064,0.3320999187548937,"All my edits to clear Lloyd George disappeared from the running count. They haven t been undone, is this a bug?",test
+239,0,0,0.5840425932547149,0.4159574067452851,I did a CC sharealike 2.0. How is that different from 1.0?,test
+240,1,1,0.4974052769121057,0.5025947230878943,"I actually posted my comments a couple minutes ago. Do you think that explanation works, or do you think it s a good idea I elaborate further?",train
+241,1,1,0.35179802341269284,0.6482019765873072,I really like the template you used at  url  but it dosen t seem to exist on the WP:Vandalism page. Where can I grab it?,train
+242,1,1,0.26391102770044395,0.736088972299556,"Thanks! Did you know its one week to Halloween, will you be there?",test
+243,0,1,0.529482959184868,0.47051704081513196,I see you are a libertarian SULS alumnus. Did you ever have Professor Rounds?,train
+244,0,0,0.6309066357781195,0.3690933642218806,When i upload  url  I get  url  can you fix it? Also why is  url  showing the old logo?,train
+245,0,1,0.4041785322606801,0.5958214677393199,Glad to see that link go blue. Have you seen the  url  on Google Books?,test
+246,0,1,0.3931172101043442,0.6068827898956558,Thanks for that. Can you see why copying exactly the text I wrote on your user page and then writing it on mine might not be the best avenue to foster collegial conversation with others?,train
+247,1,1,0.41377025493774233,0.5862297450622577,"A quick question, I d like your opinion on something. Do you think I should put  url  GAN on hold or fail it?",train
+248,1,1,0.3188511540186183,0.6811488459813817,"Jeff3000, thanks a lot for your help with the article. But I m just curious   why was the link to the article for  Advent of Divine Justice  deleted?",train
+249,1,1,0.5041585446714147,0.49584145532858526,I m not sure what you are reffering to. Could you give a link?,train
+250,0,0,0.5989240811995662,0.40107591880043386,"Rivers added, changed Treves   Trier, tweaked line  plus some other tidying . Anything else?",train
+251,0,1,0.5323484536489056,0.4676515463510944,"Yes, I took that photo last night on my iPhone. Why do you ask?",train
+252,0,0,0.5930895503447009,0.40691044965529916,"Also, what s the point on being adopted by another user? It sounds good and I d like to be adopted, though I d don t exactly know what I or the adopter would get out of it?",dev
+253,1,0,0.6901870921813273,0.30981290781867266,"I agree with Orlady here; full protection, a fairly serious position when we re talking about an encyclopedia anyone can edit, is only to be taken out as a last  reasonable  resort. Since both participants to the dispute are now blocked, is there any reason for the protection to be necessary?",train
+254,1,0,0.6009382225788353,0.3990617774211647,You had deleted the mozzarepa article I was working on since it was judged as an advert  something I didn t intend.  How can I edit and change the article so it is acceptable?,train
+255,0,1,0.5237656091237288,0.4762343908762711,"Yes, you get all kinds of people coming to visit. Which seat are you in?",train
+256,1,1,0.5299193280763874,0.4700806719236126,It looks like the current version of  url  has been reworked since when you built it in July 2005 and references have never been provided. Do you have any references you can add to the article?,train
+257,0,1,0.5593421937587029,0.4406578062412971,We ve got few like this on the horizon and I m not sure how to approach it. Do we default keep them?,train
+258,1,1,0.25797199555128547,0.7420280044487145,Nice continued work on the expressway articles. Is it possible to have some maps or schematic diagrams showing the location or routes of the expressways?,train
+259,0,0,0.6472712440525215,0.3527287559474785,"Acad, I see we have one fairly ambiguous comment at  url , dealing with hyphenation, which is one of the things we agree on, if memory serves. Any advance on 4 people who care?",train
+260,1,1,0.1420593843933804,0.8579406156066196,Thank you   very much   for partaking in my effort to have a listing of stable article revisions. How do you suggest we get this project off the ground?,train
+261,0,0,0.6879080577124379,0.3120919422875621,"Also, all in all, I think Batman should be changed to  url , not  url , as the latter refers to those with superhuman powers or abilities, which he lacks. Thoughts?",dev
+262,0,1,0.5783136627850116,0.42168633721498844,"Can you review your  url ? We might disagree on what constitutes  played in a fully professional league , but surely this one meets your criteria?",test
+263,0,0,0.7710446066577319,0.22895539334226817,why can t you use corporate authorship? if Deutsche Bank can claim ownership of those emails can t Charter 97 claim ownership of the picture?,train
+264,0,1,0.5264776021532593,0.4735223978467406,"OK, the 3920th is done. Any further thoughts?",train
+265,1,1,0.35227417780973747,0.6477258221902625,Thanks! What type of documentation do you want u2014 an explanation of using the notes feature?,train
+266,1,1,0.32434868935198524,0.6756513106480148,"Hey there, just curious if the changes made to the GA Nomination for Dan Brouthers were sufficient for pass. If not ready for pass, anything else I can do to expedite the process?",train
+267,0,1,0.48900425289161165,0.5109957471083884,"The FLC reviewing process is much slower than I imagined it would be but I suspect the Oscar nominees are bound to get promoted soon. In the meantime, would you be interested in helping turn  url  into something like  url ?",train
+268,0,0,0.7047455104386617,0.2952544895613382,"Who plays white? In X vs. Y, is X white?",train
+269,0,0,0.6235968034934543,0.37640319650654575,I m not sure what you mean by the old factory farming discussion. Is something missing?,dev
+270,1,1,0.28967208166194247,0.7103279183380575,"Hi, I see you were involved in creating the ship infobox. Would you be interested in creating an infobox for windmills so that I could use it on individual windmill articles?",train
+271,1,1,0.4322731285109923,0.5677268714890077,"I want to send you a private message, but you don t have an e mail address registered with your Wikipedia account. How could I contact you?",train
+272,1,0,0.5979145443264113,0.4020854556735887,Do you mean article edits with sock puppets? Could you give me more precise examples?,dev
+273,1,1,0.4442859714873386,0.5557140285126614,"I have found a better citation for reference 7, but am not sure how to insert the page number  p. 97 from the book cited . Do you know the right format for this?",train
+274,0,1,0.4437841874555416,0.5562158125444584,"I am the bot owner, and I replied just above your comment, explaining the situation. Is there some other problem, or some other comment I didn t respond to?",train
+275,1,1,0.4804042203871436,0.5195957796128564,I restored the lead picture series I like. What do you think?,train
+276,0,1,0.4956548229062203,0.5043451770937797,Ok I ve moved  url  back to  url . Oleg you want to write something on the talk page about the move?,train
+277,0,1,0.49480203862896543,0.5051979613710346,Can you please explain what the two fields you added to the table at  url  are supposed to mean? What  reaction ?,dev
+278,0,0,0.675722569336549,0.32427743066345105,"The Radical Afrocentric Historiography article is now redirecting to Afrocentrism, on the basis it seems that its a subsection of Afrocentrism. Where else would like me to put it?",train
+279,1,1,0.4062504415233482,0.5937495584766518,"Hello Iris. Would you add Straka s signing with a Czech team into, to his page?",train
+280,0,0,0.6551043261428282,0.34489567385717174,"What should we write, then? Do we make note of the split up around 1917 and omit the mention of 1931, or do we make note of the split up around 1917 and mention that the marriage  may have  lasted until 1931?",test
+281,0,0,0.6515383563583644,0.34846164364163557,I ve just had an unwarranted ticking off from User:Street Scholar because of my efforts to inform Ravi three months ago. Why is this?,train
+282,1,1,0.17575463998666307,0.8242453600133369,"Thanks for the  nowiki   For  nowiki  templates on Tkachyovs, they help a lot. Maybe in this case we should use the patronimics in the titles and have Alexander Tkachyov as a disambig?",train
+283,1,1,0.4901348206101763,0.5098651793898237,did the copyedit for the Japanese flag article and it was completed today. Is there anything else other than a copyedit that you need for this article?,train
+284,1,1,0.5694773919495367,0.4305226080504633,I am trying to figure out the exact definition of  url  however do not have access to Andrews. Could you help?,train
+285,1,1,0.47945060451522736,0.5205493954847726,Due to certain Edits the page alignment has changed. Could you please help?,train
+286,0,1,0.35039107773625666,0.6496089222637433,"I ve asked Jza84 if he could have a go at drawing a new plan, he s asking if we have any source material he could work from. The only one I can think of is the plan currently in the article, do you have any others?",test
+287,1,1,0.5812356313059812,0.41876436869401873,"xD if you say so! By the way, what s your favorite game ever?",train
+288,1,0,0.6243403367296313,0.3756596632703687,"Someone has Blocked the whole Opera mini Browser, as you know even i use my Mobile Opera for editing. can you please help?",train
+289,0,0,0.5871381974183656,0.41286180258163435,Delete away; the SVG s done :  How would you like it licensed? PD?,train
+290,0,1,0.4997106873103633,0.5002893126896367,"I guess the best thing to do for now, is to not do anything and see what happens. Don t you agree?",train
+291,1,1,0.325023278552389,0.674976721447611,"Thanks. BTW, there aren t any others that I ve missed, are there?",train
+292,1,1,0.5486786764857048,0.4513213235142952,"I wonder if it would ever be worth doing an article on G S scholarship? You know, cover the major discoveries, describe the evolution of the field... or is that too likely to hit problems?",train
+293,1,1,0.45591586614533,0.54408413385467,"I d be shocked if no one has asked you this yet, but you do an enormous amount of work keeping the bio articles free of vandalism and nonsense as well as filling them up with useful content ;  You seem like you could use a few extra buttons on your toolbar. Are you interested in being nominated for adminship?",train
+294,0,0,0.6008060825634637,0.3991939174365363,About being part of a  collective  author on Wikipedia   about having your writing  edited mercilessly  by others   that sort of thing. I m  interviewing  a bunch of people over email   can I add you to my list?,train
+295,1,1,0.5346943484253128,0.4653056515746871,I wasn t sure what you mean by making the title a clickable link. Can you show me how to do that?,train
+296,0,1,0.340069068256707,0.659930931743293,"Hi, I meant to do this a long time ago, but I guess I forgot. You are the  Sandpiper  on the HP wiki right?",train
+297,1,1,0.3776645450987952,0.6223354549012048,"sorry for delayed response  I think it would be difficult to intergrate them, my program would probably work more easily from a list of articles with typos generated from the database, with the spelling correction code built in to the program. While on the subject, are you planning on running Humanbot again soon?",train
+298,0,0,0.6380010031302484,0.36199899686975157,"I have added former cat members to  url , but I m not sure whether  url ,  url  and  url  should go there. BTW, maybe  url  and  url  would be better placed in  url , as  after Tolkien ?",train
+299,0,1,0.5673191970695293,0.43268080293047073,Is your username Davshul? When would you be online?,train
+300,1,1,0.4974052769121057,0.5025947230878943,"I actually posted my comments a couple minutes ago. Do you think that explanation works, or do you think it s a good idea I elaborate further?",train
+301,0,0,0.7664325742615283,0.23356742573847164,Just in case you didn t know    url  has been blocked for being a  url  of  url   also blocked . Shouldn t their nonsense be cleaned up?,test
+302,1,1,0.20600942182673898,0.793990578173261,Thank you very much for your kind comments but I don t recall if or when I made these contributions. Are you sure it was me?,train
+303,1,1,0.5193238654933845,0.48067613450661556,i made a mistake on adding a colon on  url  and it can t be reverted. Could you help?,train
+304,0,0,0.585482675291807,0.41451732470819297,"Fair enough, although the point that the Department serves a sizable population   since some cities may only have inhabitants in the hundreds   should be noted somewhere in the article. Perhaps when someone expands it, sometime in the future?",train
+305,0,1,0.4955422171738848,0.5044577828261152,I m intending on creating a list of Crash Bandicoot locations. Do have any advice for me?,train
+306,0,1,0.5264776021532593,0.4735223978467406,"OK, the 3920th is done. Any further thoughts?",train
+307,1,1,0.4614226289415667,0.5385773710584333,I m sure you re right but I can t find it in FM and haven t found it anywhere else. Could you cite sources in the article?,train
+308,1,1,0.3346190373597897,0.6653809626402103,"Ok. By the way, may I note that is an excellent resource you have there. I noticed the other day that we had acquired a list at  url  of unproduced scripts stories   it seems entirely genuine and fits with material I have read elsewhere but was uncited   I wonder if you could help find a source for it?",train
+309,1,1,0.48794695092542417,0.5120530490745758,"Thanks. As an aside, since this did turn out to be factual, just very hard to source, do you think the community would countenance an unblock request from Blaabla if he accepted some strict unblock conditions  such as packing in the  systemic bias  thing, discussing his edits in a less confrontational manner etc ?",train
+310,1,1,0.22478081287459495,0.775219187125405,Thanks for your response! How should we proceed ?,train
+311,1,1,0.3244821057268321,0.6755178942731679,If you have time could you look at  url  url  on the  url  article. I m wondering what your thoughts are in terms whether it should go or stay?,train
+312,0,0,0.7392999657744563,0.2607000342255437,"When someone tags articles using non existent criteria, there s no way the articles should be deleted. The deleting admin has restored Reviewmageddon now, so it seems it s sorted out?",train
+313,0,1,0.49807210741000973,0.5019278925899903,"Hey, i saw you added  person  some time ago to the pic page. I m just curious, why do you want it to still be available here?",train
+314,0,0,0.6394225579471071,0.36057744205289294,"Today we mostly use petrol and diesel from crude oil, but this is running out in resources within 30 years. Do you know what we will be most likely to use as an alternative?",train
+315,0,0,0.6579966402198494,0.34200335978015056,If no one ever objects no consensus will ever be formed ? yes?,train
+316,1,1,0.45591586614533,0.54408413385467,"I d be shocked if no one has asked you this yet, but you do an enormous amount of work keeping the bio articles free of vandalism and nonsense as well as filling them up with useful content ;  You seem like you could use a few extra buttons on your toolbar. Are you interested in being nominated for adminship?",train
+317,0,1,0.41303159754693164,0.5869684024530684,"style  vertical align: middle; padding: 3px;    Hi, I wish to understand why you deleted my file. I m kinda new here, can you help me?",train
+318,1,1,0.4474645590864871,0.5525354409135129,"Hey, you seem to know a bit about coding, so I figured you might have an answer here. If I want use code to grab the target of a page known to be a redirect, how would I do that?",train
+319,1,1,0.30468504901422877,0.6953149509857712,Hi Gareth. I was wondering if you could point me in the right direction for learning about building a wikipedia profile?,train
+320,0,1,0.3399070564151567,0.6600929435848433,"Hi, I meant to do this a long time ago, but I guess I forgot. You are the  Sandpiper  on the HP wiki right?",train
+321,1,1,0.507216581324637,0.49278341867536307,"I think the we ve reached consensus in the FAC for  url , as every opposing reason has been resolved. Do you think it s looking good?",train
+322,1,1,0.3970637678314648,0.6029362321685352,We are working on adding some information regarding the significance of the podcast. Do you have any additional tips on improving out article s quality?,train
+323,0,0,0.6465931168588455,0.35340688314115454,Interesting; I thought I was fairly familiar with Wikipedia rules. Which rules exactly did I violate by closing an AfD  allegedly  without reading the underlying article?,test
+324,0,0,0.6156050302927568,0.3843949697072432,url  is currently an orphaned article. Can you find some articles to link to  Christa Behmenburg  ?,train
+325,1,1,0.2952150914429488,0.7047849085570512,I d be happy to help but I don t speak Ukrainian. What do you need help with?,train
+326,0,0,0.6279925036090348,0.37200749639096514,I ran across this again this month. It  url  since we last saw it; do you still subscribe to your judgment  url ?,train
+327,0,0,0.6588755037940729,0.3411244962059271,"Also, how does that vandalism thing on your page work? Do you have to change the count manually, or does it detect vandalism itself?",train
+328,1,1,0.27174067052270323,0.7282593294772968,"Hi Tim, I received the photograph from Delft but it s page looks a mess and I can t edit it. Can you, or do you know someone who can, fix it?",train
+329,0,1,0.27716131195424687,0.7228386880457531,Thanks for your input. Can we live with this version of  url ?,train
+330,0,1,0.5681388619495038,0.43186113805049625,Still wondering and hoping. Rather not?,train
+331,0,1,0.3340189309981205,0.6659810690018795,"Hi, I have opened a discussion at  url . Perhaps you would like to contribute?",train
+332,1,1,0.5379691758551594,0.46203082414484065,Sorry to bother you but theres a report on  url  regarding  url  which has been a target for IP vandalism. I m only asking directly because the vandalism is continuing and I m close to not being able to fight it anymore under policy so can I ask if you could please issue the protection and revert the IP s vandalism back to my last revision?,train
+333,0,1,0.5717767388408783,0.42822326115912174,Take a look at the most recent post to  url . Can you make a stub out of it?,train
+334,1,1,0.4897807073134405,0.5102192926865595,Not to worry. What s  D.M. ?,train
+335,1,0,0.6316647214047353,0.36833527859526466,"Regarding our WikiProject discussion about airport naming, I am unsure about Wiki etiquette   should I edit your sandbox with links indicating the common name  i.e. airport even though it s an aerodrome  or should I list them on my own talk page?",train
+336,0,1,0.5506575204391988,0.4493424795608012,"No, YOU mail OTRS with your translations. What do you have to lose, but the few minutes it would take to put them together with an explanation of the situation?",train
+337,1,1,0.43001381065355393,0.5699861893464461,I m currently considering nominating you for adminship at  url . Are you interested?,train
+338,0,0,0.5871381974183656,0.41286180258163435,Delete away; the SVG s done :  How would you like it licensed? PD?,train
+339,1,1,0.47834529332623243,0.5216547066737676,"I was doing some minor editing on this, and noticed that the date of death in the intro and infobox don t match. Could you take a look at this and see which is correct?",train
+340,1,0,0.6231428360200401,0.37685716397995994,"The PressTV references in Wikipedia s  Turkey PKK Conflict  article are not the same, but the titles are wrong. If you have time, can you correct the titles?",test
+341,0,0,0.7385600835071933,0.2614399164928068,"The editor that made this  url  is arguing that another article includes more than 10 reviews, therefore this one can. What is the name of policy guideline about not referring to other articles, so that I can refer to it in explaining to him why his argument is wrong?",test
+342,0,0,0.6443636564738415,0.3556363435261585,"...why not try something a bit more proactive? Now, obviously he s using proxies, but are there no rangeblocks that might make his job harder?",train
+343,1,1,0.30016103536756933,0.6998389646324307,"Hi Johnuniq, thank you for your edit. Does the file should be deleted removed from commons then?",train
+344,0,1,0.5029632428928563,0.49703675710714373,"First off, great work at the  url  article. I m just wondering why you changed the sentence back to  During this period, defense expenditures underwent exponential growth allowing an unprecedent level of weapon acquisitions and the rapid expansion of the  url .  from  During this period, defense expenditures underwent exponential growth allowing an unprecedent level of weapon acquisition and expansion of the  url .  The version I changed it to is more grammarically correct, don t you think?",train
+345,1,1,0.3600462278822879,0.6399537721177121,Many thanks. I m afraid I don t know the reel   is it played in your part or the world?,train
+346,1,1,0.47336350623125056,0.5266364937687494,I noticed that you have a little note at the top saying your status. How do you do that?,train
+347,1,1,0.5313832310094797,0.46861676899052035,No worries found it... but yeah... We need a new Foo s pic... Does Flickr have fair use licenses?,train
+348,0,0,0.6197975706814809,0.38020242931851916,"Yes, it s a worry, particularly in light of the  url . The end could be closer than we think .... or has someone else already said that?",train
+349,1,1,0.4768302698858983,0.5231697301141017,"Great! Do you use IRC at all, or do you stay on wiki?",train
+350,1,1,0.49167783470872206,0.5083221652912779,No worries. So back to my question: what software makes them rock like that?,test
+351,1,1,0.13776155649861543,0.8622384435013846,Thank you for the response on my user page. Would you be willing to add a few words to the FAC candidacy?,dev
+352,1,1,0.3473705686153101,0.6526294313846899,"I just thought that it is nice when you are looking for RQ that you can find an algorithm that will do RQ, not QR. It s fine if we just make a section about RQ in the QR article, is that ok with you?",train
+353,0,0,0.6266644313317035,0.37333556866829654,"In addition to xe1 xe2 xe3 xe0 xe7 xe9 xea xed xf3 xf4 xf5 xfa, I noticed that Portuguese uses   in the middle of words. When do you use  ?",train
+354,1,1,0.542462209052905,0.45753779094709507,"We have a  url  page on  url  which, we suspect, may be in Slovenian. Could you have a look at it  whether it is Slovenian and, if so, whether it is worth translating ?",train
+355,0,0,0.596314123080081,0.40368587691991903,P.S. What 111 year old Swiss case?,train
+356,1,1,0.40932135541822356,0.5906786445817764,"I thought that I should tell you that I created a new SVG version of the Wikipedia logo, located  url . It has a few problems, could you help me with it?",train
+357,0,1,0.5200412861787613,0.47995871382123867,"JoJan, not got a picture of one yet, but I notice in you wrote that it is rare. Where did you get that information as I wonder how rare it is?",train
+358,0,0,0.5945991449245378,0.40540085507546225,"I m now thinking the second primary topic on  url  should just serve as an entry, like what you did to the Street Fighter dab  url . Thoughts?",train
+359,1,1,0.4028086714369272,0.5971913285630728,"Furthermore, I ve heard something about   FE   trading cards. I know that you know more about it than me, so maybe you could write a small passage about it in the  media   can be renamed  and then I can reference it?",train
+360,1,1,0.23164976205551824,0.7683502379444818,"Hey just wanted to say thanks for giving me the Autopatrolled thing! Just curious though, what did I do to get it?",train
+361,1,1,0.3629815492715638,0.6370184507284362,"Hi Leonard G., I just read through your RFA including your reform proposals. Could you take a look at  url , a proposal I have developed which would give just the rollback tool to people who request it?",test
+362,1,1,0.127144063293551,0.872855936706449,Thanks for the advice but that s why I remove the  Thank you for your contributions  on the welcoming template. Is that still okay to do?,train
+363,0,0,0.6337340170766943,0.3662659829233057,"This was virtually all copyvio. Carry out your earlier merge proposal and just add it to Cree language, turning the article into a redirect?",dev
+364,1,1,0.24877200452969184,0.7512279954703082,"Nice work on  url    I had been a bit hesitant to put in those other reports, but now it looks great. How did you find out that I created it?",test
+365,0,0,0.6246762619951347,0.37532373800486535,I was really unsure on what to do with  url  so I made it into a dab. That ok?,train
+366,1,1,0.5150706495848605,0.48492935041513957,"I m curious: how do you make those beautiful coats of arms? Do you have a script that generates them from the heraldic descriptions, or do you make them by hand?",train
+367,0,0,0.5864145852973941,0.41358541470260596,I dont use AWB so im doing it manually. Is that a problem?,train
+368,1,1,0.5414669895503283,0.4585330104496717,Saw your edits on  url    all good   but I have a question. What does  collapse  url   mean in your edit summary?,test
+369,0,0,0.660405419971897,0.33959458002810305,What are the numbers  url ? Are they population figures?,train
+370,0,1,0.38243276599774256,0.6175672340022574,You are obviously very busy. How should I proceed?,train
+371,0,1,0.5592565047597222,0.44074349524027784,"I probably would have gotten to Sinnott and Simon eventually, but I started to feel like I was abusing the peer review process. :  Did you see my note in a section above about another user who likes to work on comics creator articles?",train
+372,0,1,0.5787821964433832,0.4212178035566168,"It look like  url , is going to be on the Featured Content page. Where is the page that list what is on there when in the future, akin to the FA main page nominations page?",train
+373,1,1,0.4258531302067332,0.5741468697932668,I enjoyed your comments on the  Road to Serfdom  article. I wonder if you know if anyone has offered a reading of the book as a satire of the bourgeois administrative pseudo capitalist state?,train
+374,1,1,0.41377025493774233,0.5862297450622577,"A quick question, I d like your opinion on something. Do you think I should put  url  GAN on hold or fail it?",train
+375,1,1,0.47890340906879114,0.5210965909312089,"Hi, I did post at  url  about the new Civil Ensign for Jersey but I ve not had a reply yet. Any thoughts?",train
+376,1,1,0.5342320345342897,0.4657679654657103,Made a bunch of changes to the  url  article. What do you think?,dev
+377,1,1,0.5326833331796134,0.46731666682038664,"Thanks for offer of help on IRC   terminology completely baffling to me  not helped by freenode instructions written as if translated through several languages into final english    just which channel are admins supposed to log into, and how does one register when it seems by invitation only. Finally what on earth is a cloak ?",train
+378,0,1,0.574318191908508,0.42568180809149203,"I was wondering why you removed him from Category:Alameda. He s pretty famous around there and it would be notable to have him in the category of Alameda, wouldn t it?",train
+379,0,1,0.378899071618356,0.621100928381644,I have been working on this with an expert in the field to fix this article. Do you think we are making progress?,train
+380,1,1,0.4070415755449541,0.5929584244550459,"I think I updated the pharmacology project banner to put C class articles into the appropriate category  previously, it was putting them into the unassessed class. If you want to double check, that would be great; I think it may take a little while for it to update the articles?",train
+381,1,1,0.26468004484273366,0.7353199551572663,"Thanks. Oh, and if you don t mind, would you please block the sockmaster?",train
+382,0,1,0.5377782329917626,0.4622217670082374,"Hi, I reverted vandalism on a couple of your subpages that you transclude in your main userpage. Do you want me to semi protect them  your subpages  so that it is more difficult for vandals to subtly vandalize you?",train
+383,0,1,0.4895731719398372,0.5104268280601628,"Ok, would you mind if I created a UK specific category and shoved all the UK articles into there? I would suggest renaming the US category, and putting them both  and other countries  into  Railway Companies  or similar?",train
+384,1,0,0.6002672202599866,0.39973277974001337,"Hey, Another editor and I are confused by your resent edit.  Should the non AQ qulify for the BCS Championship, and face either the Big Ten or Pac 10 Champion, the Rose Bowl may replace that champion with a team from same conference, so long as it is in the Top 14 of the final BCS Standings  Could you please clarify it for us?",train
+385,0,0,0.6574834616634968,0.34251653833650314,I noticed you just removed this category from  url  and  url . Why don t you think they qualify as historical films?,train
+386,0,0,0.7032552824831244,0.29674471751687564,Who deleted it? Would I be violating due process if I undeleted it?,train
+387,1,1,0.2161714983759837,0.7838285016240163,"Thank you so much! I hope it s allright if I move it to my front page, at least when the talk has to be archived?",train
+388,0,1,0.5698970369703407,0.4301029630296593,"Soo... I should merge and rewrite, right?",train
+389,0,0,0.6192595099207723,0.3807404900792278,So the nomination was made by your sock. Could you explain why you choose to use a sock?,train
+390,1,1,0.28876871875004084,0.7112312812499592,Good day. Can look at this report please  url  ?,test
+391,1,1,0.29270194235202207,0.7072980576479779,"I ve made some improvements to  url , keeping in mind your previous comments about the article. Since you gave its grade before, would you like to see it if it could be reassessed?",test
+392,1,1,0.31921412433657437,0.6807858756634256,"I m on it. Instead, could I persuade you to offer comments on the FAC page of  url ?",train
+393,0,1,0.5099851379260808,0.4900148620739192,"How should we go about doing that? We can t just take over the group, can we?",train
+394,1,1,0.5657334101938651,0.43426658980613486,"Any thoughts on what we should do with this? Delete it as a duplicate, or copy to Commons and rename?",train
+395,0,0,0.5956668776175801,0.4043331223824199,I wouldn t know where to put it. I know Record Charts is for charts etc and the certifications but where would I put a discography question?,test
+396,0,0,0.6391973494512165,0.36080265054878347,"Jitse, quick question. When a user is blocked, is their IP address blocked also?",train
+397,1,1,0.31648354730674566,0.6835164526932543,Hello. I was wondering if any of the books you have can shed much more light on  url ?,train
+398,0,1,0.581064526494611,0.4189354735053889,how do I edit the signature thing?   when i put the  s?,train
+399,0,1,0.48669393928106763,0.5133060607189324,"I m also a bit weary of this discussion, and I m afraid the central argument stands. But perhaps if you wish to continue it, you d do a bit of the searching, and report your results?",dev
+400,1,1,0.47742599663120466,0.5225740033687953,Yes I can. Is it an alternate account?,train
+401,0,1,0.5193343353144824,0.4806656646855176,"You mentioned a CU done with a possible result, but I don t see it at SPI. Can you link TC s CU and name the master?",test
+402,0,1,0.48198768251329926,0.5180123174867007,"Well, we can certainly sort out those kinds of issues once the task force has formed. Have you sought or found support through WPMILHIST yet?",test
+403,0,1,0.5408758139987703,0.45912418600122973,"Yes, I do have the Family Guy DVD collection, Volume 1, Seasons 1 2. What s up?",train
+404,1,1,0.426149216489623,0.573850783510377,I am willing to try to discover the problem. What browser do you use?,train
+405,1,1,0.4697262427987463,0.5302737572012537,"I ve been trying to convince this user that his only problem is his username, but he doesn t seem to fully believe it. Would you mind popping over and giving a word or two of encouragement?",train
+406,0,0,0.7480607000815483,0.25193929991845165,The  url  contained a number of British Army cavalry units from formation. Does this make it an  url  division rather than a  British  Indian division?,train
+407,1,1,0.43475633247933065,0.5652436675206693,Please see  url . Can you help?,test
+408,1,1,0.18601132479086202,0.813988675209138,"Thank you, it s much appreciated. What do you think of the changes so far?",test
+409,1,1,0.409514291388548,0.590485708611452,"Hello, Jeff79. Would you weigh in on the above linked discussion regarding an edit you made?",train
+410,0,1,0.3943478374519357,0.6056521625480643,How is the disc? Would you like the peer review to resume?,train
+411,0,0,0.6285664662546773,0.3714335337453227,"Also, I was looking at the edit history for  url , as I thought I had created the page  honestly I cannot remember , but the history prior to your move of the list to  url  is missing. Do you know what happened to it?",train
+412,0,1,0.5245699398019892,0.4754300601980109,"Excuse me, but  url  seems to have slept through its normal editing period last night. Is it still working?",train
+413,0,1,0.5658872706083375,0.43411272939166246,Just noticed that the  time  field is eliminated from the collapsable boxes. Could you make this something that is displayed when the box is expanded?,train
+414,0,1,0.5739848212257644,0.42601517877423556,To be honest  in my experience  those tags are quite likely to stay  u forever  u    because people actually fixing things is a very rare event.. If you want to see a better article is might be quicker to just start cleaning up one .. maybe then others might take it as an example of good practice?,train
+415,1,1,0.45639264706414917,0.5436073529358508,There is a special tool which shows you page sizes? Would you like to know how to use it?,train
+416,0,0,0.6518854917373516,0.34811450826264845,"CG, seems  url  is under attack as having an insufficiently global focus. Can you add anything there about Australian variants?",train
+417,0,1,0.3599608661148157,0.6400391338851843,"Hey, did you ever read over the material I laid out for you   content as well as ideas for organization of an article? Any feedback?",train
+418,1,1,0.35698037831975027,0.6430196216802497,"Can you respond to the comments I left on the S M PR page please. If you are satisfied with the changes, can you tell me if it is qualifiable for FAN and if not for FAN, then for A class status?",train
+419,1,0,0.6349838901356546,0.36501610986434535,"So far, I haven t seen any sound samples in music articles, not even in  url , which is featured according to the nomninator of  url . Can you point me to a page where I can find this discussed?",train
+420,1,1,0.5557919915778915,0.44420800842210856,I had a look at the place noted on the top of the talk page about 1rr and I was unable to find the sanction you talked about. Where is it listed please?,train
+421,0,1,0.37096679815259415,0.6290332018474059,"Hi Jean, just to ask your opinion. Do you think  url  article is of a quality to maybe nominate it for GA yet?",train
+422,1,1,0.3209729409406904,0.6790270590593096,Thanks. Any idea how I log into this account?,train
+423,1,1,0.3624521460115123,0.6375478539884877,"Hi. Would it be OK to move the timeline to a template, so that all the Mars related geology pages can point to the same timeline, making updates easier?",train
+424,0,0,0.6753819594382535,0.3246180405617465,"Unfortunately, I m still worried this may not be enough to avoid arguments.  url  says  A separate rationale must be provided each time the image is used in an article.  Should we just copy the tag for every article using the logo?",test
+425,0,1,0.4501236994475245,0.5498763005524755,Hi. Do you have any thoughts on  url ?,train
+426,1,1,0.32726250622759046,0.6727374937724095,"Sorry for the late reply, but I usually check new additions from the bottom of the page, not the top. What is your disappointment regarding?",dev
+427,0,0,0.6443636564738415,0.3556363435261585,"...why not try something a bit more proactive? Now, obviously he s using proxies, but are there no rangeblocks that might make his job harder?",train
+428,0,1,0.5404575660906794,0.45954243390932065,"So in summing up, I think that  7 innings played and 150 runs scored  is a good solution. What do you think?",train
+429,1,1,0.4227153792546665,0.5772846207453335,"Ok, thanks for that. Could you please tell me why the Kiwa page is giving warning about notability and citations, where as for example this one  url  is not?",test
+430,0,0,0.6135498067696182,0.38645019323038177,"Hello   someone moved  url  to a new title with diacritics   and a hyphen, which nobody in the talk page had ever discussed. How does one undo that?",train
+431,0,1,0.5475297851932945,0.45247021480670546,"I m curious, just for a laugh, what was that reference all about? Something to do with an author with the initials HST?",dev
+432,1,1,0.37409904405858285,0.6259009559414171,"Hey Alex... I just emailed a United Kingdom professor, intending to email a University of Kentucky professor. If he expresses interest, are you the person he should talk to?",train
+433,0,1,0.5738892426509274,0.42611075734907256,That s okay. Did you contest a state by election in the recent past?,test
+434,0,0,0.6505845505185492,0.34941544948145076,I noticed here  url  you mentioned  horing . Is that just a spelling typo for  honoring ?,train
+435,1,1,0.3128641661566034,0.6871358338433966,"Seeing you back on Wikipedia after a long time. How are you doing, and is everyone you know safe?",train
+436,0,1,0.5836310898805048,0.4163689101194951,"I m serious, I just don t want a mistake to happen to another person that happened to my friend. By the way, does he violate  url ?",train
+437,0,0,0.7360171607368462,0.2639828392631538,"The policy is tricky   I guess it comes down to whether or not you think the account is going to be disruptive, and whether it is appropriate to guess that ahead of time. On the other hand, looks like another overreaction to Kurt, in my opinion   what do you think?",train
+438,1,1,0.5758065482498165,0.42419345175018347,"The section starting with    a philosophical defeat, etc    is somewhat informal in style. Could you try to eliminate solecisms when you get a chance?",train
+439,1,1,0.47704497315882055,0.5229550268411794,"Great! Do you use IRC at all, or do you stay on wiki?",train
+440,1,0,0.5940922521065186,0.40590774789348144,"Alternatively, maybe the second column could be    Country of origin    and Rosen could simply be denoted USA Poland, while Pillsbury would be USA USA, without his US State being mentioned   it would be less confusing I think. Any thoughts?",train
+441,0,0,0.6914534379701585,0.3085465620298416,One oddity is that the Library of Congress isn t officially the U.S. national library; there are only national libraries in Medicine and Agriculture. Do you compare specialized libraries?,train
+442,0,1,0.5197083998132102,0.4802916001867899,"Sorry, but which talk page? I came across the graphic at  url    is there another?",test
+443,0,0,0.6450709618016415,0.3549290381983585,"Can we hear this from Counter revolutionary? Perhaps in conjunction with a rebuttal, rather than just a denial, of the allegations?",train
+444,0,0,0.6411912936176806,0.35880870638231943,"Terms like  elected ,  responsible  and  designated points of contact  imply some sort of delegated authority, I d have thought. By omission, is Hornoir saying that the delegate has authority over other aspects of the project?",train
+445,1,0,0.6921631567844779,0.3078368432155221,"Multiple editors never occurred to me   I didn t think much about the boxes, and the blocking help page wasn t of much use. Of  Block anonymous users only  url , Prevent account creation  url , Automatically block the last IP address used by this user, and any subsequent addresses they try to edit from  url ,  which should I have checked?",train
+446,0,0,0.6180299323834234,0.3819700676165766,"You speedily deleted a JPatrickBedell redirect with R3, but there s a number of reliable sources that mention it. Can I repost the redirect, or if controversial, where would the discussion be?",train
+447,1,1,0.3164034787971133,0.6835965212028867,Thanks!  D And how soon are we going to try to get The Lost Age to FA?,train
+448,1,1,0.24689795464206332,0.7531020453579367,"Thanks for the response. May I ask, are you a video gamer?",train
+449,0,0,0.683950382567042,0.316049617432958,"Huaiwei, there is this guy HkCaGu who insist that we shouldnt put Tianjin as one of Xiamen Airline s destination from Singapore just because it passes by Xiamen MF s HUB  however, this is a direct flight from singapore to tianjin via xiamen. what are your views?",train
+450,0,0,0.7118882860060187,0.2881117139939812,Who inherits the chiefship of  url  now? Does   legitimatio per subsequens matrimonium   apply?,test
+451,1,1,0.5486241807405923,0.45137581925940773,"The block seems to no longer be necessary or productive. If I were to bring a motion to get them unblocked, would you support it?",train
+452,0,1,0.42350571180551844,0.5764942881944816,"That looks better. I think I m about done now, but old Theobald s still at FAC isn t he?",train
+453,0,1,0.5442538564117952,0.45574614358820476,Do you feel that you ve had success in forming consensus here within your knowledgebase? What do you feel are the underlying reasons behind your current ban from Wikipedia?,train
+454,1,0,0.5965391278224612,0.40346087217753873,There seems to have been something wrong with the pages you made on the V8 Supercar Championship Series   a glitch with the  align  tags in the beginning infobox made the text grotesquely overflow the margins. I ve trimmed these down; mind checking my work?,train
+455,1,1,0.3888932241209041,0.6111067758790959,"Hi, Michael David. Was there any consensus reached on this issue?",train
+456,1,1,0.3818654990819371,0.6181345009180629,"Greetings, sorry to bother you here... I have been using the MissingTopics tool for years, to generate  url  The last time I used it successfully was Nov 16. Something must have changed in the algorhythms since then, because it will no longer read any page starting with an Amharic character... Is it broke?",train
+457,1,1,0.35122305742848836,0.6487769425715116,"Hi, thanks for your help. There is also this sentence  Asukkaista 84,5  oli ruotsinkielisixe4 ja 15,4  suomenkielisixe4 vuonna 1970 ja kunta oli kaksikielinen.  What does it mean, please?",dev
+458,0,0,0.6123271888748243,0.38767281112517565,"Looking through the discussion page history, the addition was made by  url  who is still active on wikipedia. Why not try a message on  url ?",train
+459,0,1,0.5611042081908054,0.4388957918091946,"I create  url , and then I would click  Move  on the top of the page I want to merge  for example  url ? Is that how you do it?",train
+460,1,1,0.522641446140439,0.47735855385956105,"I don t play club anymore  I stopped this year , I have just been too busy this year, but I will probably start again soon ish. Where abouts do you play?",train
+461,1,0,0.5965391278224612,0.40346087217753873,There seems to have been something wrong with the pages you made on the V8 Supercar Championship Series   a glitch with the  align  tags in the beginning infobox made the text grotesquely overflow the margins. I ve trimmed these down; mind checking my work?,train
+462,1,1,0.5105609573619987,0.4894390426380013,"Hi, would you have any objection to renaming the sub categories of  url  to look more like the articles which describe them   i.e.  url      url  and so on?",train
+463,0,1,0.4598729840019796,0.5401270159980204,I agree that    Pack    need some work. Is there an appropriate way to flag it for some attention?,dev
+464,0,1,0.5446366159766765,0.45536338402332355,I think I m going to use Treehouse of Horror for Halloween  Scorpion asked me in IRC for that date . How about October 30 or Nov 1 instead?,train
+465,1,1,0.3229719069777993,0.6770280930222007,"I m happy to help! After all, what s the point of acquiring knowledge about a process if I don t use that knowledge to help others?",train
+466,1,1,0.5418580706502707,0.4581419293497293,"Sure. I have to warn you, though, the file size advantage has pretty much been lost since SVG font rendering went the way of the dinosaurs :  Do you make a point of having the border, or can I leave it out?",train
+467,0,1,0.45030135315122544,0.5496986468487746,"Thanks for the explanation. Might not Aethelred have been following the example of his father, who also gave his sons the names of former kings?",train
+468,1,1,0.5833917760066816,0.4166082239933185,"Hey Jondel. I was wondering, since Interlingua is basically resurrected Latin, k and w are basically nonexistant in Interlingua, right?",train
+469,1,1,0.5723129264895401,0.42768707351045987,"Hi, it looks like the en em distinction is being preserved. What do you see as the advantage of changing the way they re currently written?",train
+470,1,1,0.299724796322159,0.700275203677841,"Hi, I d like to help you with the image you just uploaded to the  url  article. Can you tell me where you found it?",dev
+471,1,1,0.35227417780973747,0.6477258221902625,Thanks! What type of documentation do you want u2014 an explanation of using the notes feature?,train
+472,0,1,0.5756032181465227,0.42439678185347735,"Yeah, I got one too. Are you still acting as an advocate?",train
+473,1,0,0.6347427637543266,0.36525723624567347,"I have never seen anything which says that warning levels should begin anew each day.  url  says that warning templates  are listed at right in order of severity, but need not be used in succession.  If there is another policy somewhere, could you show it to me?",dev
+474,0,1,0.44115837674949543,0.5588416232505046,"As you ve noticed, I m on a tear through general topology, which was going well, until I went to revise merge update  url , when I stumbled on a very simple conceptual issue. Could you look at the talk page, and tell me what I m doing wrong?",train
+475,0,0,0.6911711329178483,0.3088288670821517,Please do not make false accusations. Where did he add a cn tag to a comment by a non believer?,train
+476,0,1,0.42377162770839405,0.576228372291606,"kindly explain why did you remove my changes. The added links were quite relevant and informational, also The Vanguard Group and Hi5, why do you revert my edits?",train
+477,1,1,0.3122407240573808,0.6877592759426192,Nice work so far on your rewrite of  The One After the Superbowl . Are you planning on including info about the Diet Coke fiasco?,test
+478,1,1,0.21717697942826608,0.7828230205717339,"No worries, please, dear   I ll keep this stage open at least until tomorrow night if you wish. Sounds ok to you?",train
+479,0,1,0.5026226774010665,0.4973773225989336,I ve now dealt with the RFI report. Any others while I m at it?,train
+480,0,1,0.5570312589116471,0.44296874108835294,I bow to your superior knowledge of Irish :   One question   the Irish Wikipedia is called Vikipedia? How so   there s no  v  in the Irish alphabet?,train
+481,0,0,0.647561151368568,0.3524388486314321,"I am doing stub cleaning and consolidation that is needed to reduce the incidence of tiny articles. For instance, did you know that the Luis Rodriguez article was linked to by a music producer, two boxers and a singer?",train
+482,1,1,0.35714568044104067,0.6428543195589593,Thanks! There is yet another at  url ; would you agree it should be closed the same as the others?,train
+483,1,1,0.4492042422914254,0.5507957577085746,"Sorry, I did not know there has been a category before. Can you delete it?",train
+484,0,1,0.5053159322949367,0.49468406770506335,"An issue has been raised at  url  about this article, which you created. Maybe you can clear up the confusion?",train
+485,0,1,0.5545265645934347,0.4454734354065653,Later the same can be done for the other sports. What do you say?,train
+486,1,1,0.5273206755927886,0.4726793244072114,"Thanks. Now, if I had to make an infobox on  London   just   London  , I know there are many terms: Greater London, City of London etc , would it be correct to include the area population density of the territories I mentioned   the city area, or would just the city area suffice?",train
+487,1,1,0.24616343834870058,0.7538365616512994,Thanks for approving my request. Should I remove my request?,dev
+488,0,1,0.45283666596639116,0.5471633340336088,"Hello, I m just wondering how you have found out all the birthdates for the Coronation Street characters? Does it say somewhere?",train
+489,1,1,0.5050474718728428,0.49495252812715723,"Thanks for helping to source alternative names...helps quash everyone including his her favorite. I don t have that ref handy  does  unofficial  mean  lots of people call it that but WMATA doesn t , or  it s often called that as a nickname even in WMATA or other formal documents ?",train
+490,1,1,0.44596527017282217,0.5540347298271778,"At first I couldn t see it, but now that I ve taken a closer look I see what you mean. Now, I wonder, who was the first most decorated PR soldier in WW II?",train
+491,1,1,0.30492298318196054,0.6950770168180395,That might be very helpful. How can I get it?,train
+492,1,1,0.3074412094456189,0.6925587905543811,I saw you put images for the Kings of Bhutan and thank you. Could you find an image to use for  url  also?,train
+493,0,0,0.7479641670849628,0.25203583291503723,The  url  contained a number of British Army cavalry units from formation. Does this make it an  url  division rather than a  British  Indian division?,train
+494,0,0,0.7043407105537753,0.29565928944622466,Mou017ce dawniej sekundnik w ogxf3le nie istniau0142? A  naciu0105g  czy nie byu0142 rxf3wnieu017c uu017cywany do   nastawiania   person nie tylko do  nakru0119cania      winding     person zegarka?,dev
+495,1,1,0.36064761728536476,0.6393523827146352,I think that s a good solution. Should we give it a try?,train
+496,1,1,0.5273206755927886,0.4726793244072114,"Thanks. Now, if I had to make an infobox on  London   just   London  , I know there are many terms: Greater London, City of London etc , would it be correct to include the area population density of the territories I mentioned   the city area, or would just the city area suffice?",train
+497,1,0,0.6202662082428547,0.3797337917571452,"Likewise there is some discussion at  url , where  url  is categorising itself and its documenttation. Could you please fix that as well?",train
+498,0,1,0.35657574138987447,0.6434242586101255,Great job. Any chance of a full date of death for him?,train
+499,0,0,0.7046798155790015,0.29532018442099844,I think some of those  citation needed  cases are on the Oldest Britain s website. Are those considered  validated ?,train
+500,1,1,0.534234445841464,0.46576555415853604,Made a bunch of changes to the  url  article. What do you think?,dev
+501,1,1,0.30517786248938683,0.6948221375106132,Hi Gokul. Just wondered if you got my previous message and had any thoughts about ledes for these articles?,train
+502,1,1,0.48056327477466765,0.5194367252253324,I restored the lead picture series I like. What do you think?,train
+503,0,1,0.5310698354260117,0.46893016457398823,Don t stop editing. Maybe a request at  url  would be of use?,train
+504,0,0,0.6565519932996484,0.3434480067003516,"Sure, but what s the deal with fair use and cropping? I thought the Zatanna one got removed?",train
+505,0,0,0.6733324169640347,0.3266675830359654,"Spent the last half hr watching The Spangle Maker on utube. Is liz frazier hot, or is it just me?",train
+506,1,1,0.43409096986725004,0.56590903013275,I m working on improving the references on Kulwicki s article to get more reliable ones. I ve also worked on improving  url  s article toward GA. Do you know much about drag racing?,train
+507,1,1,0.38649620999730183,0.6135037900026982,I tried to create a similar map for Canada but couldn t get a usable output from the site you used for the Australia map. Could you create a Canadian one?,train
+508,1,1,0.19203690814245689,0.8079630918575431,"Many thanks for your correction on that article. I ve been meaning to expand the content, but this might be quicker to address in the short term: I think it may be better to change  consisting of  to  composed of,  based on reading some stuff from your user page   thoughts?",dev
+509,1,1,0.33839545068105936,0.6616045493189406,Thanks for protecting this. Perhaps no longer needed?,train
+510,0,1,0.5150218172489907,0.48497818275100935,I see that you have made an edit to another page since posting the request for IP block exemption. Does that mean the block is no longer in force?,train
+511,1,0,0.6195971525113662,0.38040284748863384,Per  url  we should summarize the article briefly in the lede. I didn t see anything about higher dimensions in the  url  body so should it be removed from the lede or should the body be expanded?,train
+512,0,0,0.7027412884715762,0.29725871152842376,"Could you clarify this? You re claiming that Betacommand knew before drama exploded onwiki that you were Pickbothmanlol, but did not share that with the community?",train
+513,1,1,0.5805762170295354,0.4194237829704645,"How about saying that the fastest flow is near the deepest part of the channel, and that in most meanders this is near the outer bank? What do you think?",train
+514,0,1,0.5510372682032119,0.4489627317967882,"I assume the citation you added recently to  url  was from a website. Can you add the URL, publication date, and access date?",train
+515,1,1,0.3052224004315012,0.6947775995684988,I see that countybycounty listing that you have of your travels throughout the USA. I have a county map of the USA suitable for marking for travelling  I ve done it for myself ; would you like me to Email this user a copy of the map?,train
+516,1,1,0.5043088986976381,0.4956911013023619,I tried a white map on  url  and a light yellow pink on  url . Which do you think looks better?,dev
+517,1,1,0.5313986616662316,0.4686013383337684,No worries found it... but yeah... We need a new Foo s pic... Does Flickr have fair use licenses?,train
+518,0,0,0.6302746429261923,0.3697253570738077,"I vote that they stay, given that even though they re not  Recurring  in and of themselves, they re part of a recurring phenomenon, which is Stephen doing  Better Know a District  spin offs. So, maybe we should re group them under a heading of  Spin Offs  in the  BKaD  section?",dev
+519,0,0,0.6522626034852592,0.3477373965147408,"Nijdam, you quite rightly say,  Every event that has occurred is a condition . But many events have occurred, a door has been opened, a goat has been revealed, the host has spoken several words, how do you decide which of these events to condition on?",dev
+520,1,1,0.49376777251935833,0.5062322274806417,"While editing the COIN page regarding Ciplex, I accidently broke your sig. Since I don t want any more flame, could you please fix it?",train
+521,1,0,0.6783577051659777,0.32164229483402224,"I actually went to the long term abuse page right now, and tried to block them, but it seems that those accounts don t exist. Have they been listed incorrectly?",train
+522,1,0,0.6128896933672054,0.3871103066327946,"The link you provided to speedy delection criteria only goes up to CSD12, and there is no CSD 13 listed there. Could you clarify?",train
+523,1,1,0.5648202379751863,0.4351797620248137,"Hey I saw that you re using Huggle and wanted to try it out, too. I downloaded it, but every time I try to open the program I get the message: CLR error: 80004005. The program will now terminate....What can I do to fix the problem?",train
+524,1,1,0.41906591500896506,0.5809340849910349,Hi Asbestos! This is kind of weird for me but I see that you are a participant in the photo project and list yourself as a photographer in Edinburgh and I was wondering if there was any possibility that you would be willing to respond to my recent request  url ?,train
+525,1,1,0.24047911543818068,0.7595208845618193,Could you please check over the article of  url . I edited a couple of things and added a few images..could you reply your opinion please?,train
+526,0,0,0.6589660307727363,0.34103396922726376,"Also, how does that vandalism thing on your page work? Do you have to change the count manually, or does it detect vandalism itself?",train
+527,0,1,0.5349189967103369,0.465081003289663,"It s clear that  url  isnt quite up to GA standards yet, I would like to withdraw my nomination. Can that be done?",train
+528,0,0,0.8009743289524351,0.19902567104756483,"No, I said that targetting images merely because of their uploader would be considered wikistalking  I explicitly said I did not want to accuse anyone of anything. Which images do you feel have been tagged incorrectly?",dev
+529,0,0,0.6110618717244911,0.38893812827550883,"You just made  url  to  url , which I reverted. Did I overlook a good reason for your action?",train
+530,0,0,0.6753065767779579,0.3246934232220421,"Third, what picture then should go into the Harrison Ford infobox? Would this one  Image:Harrison Ford 1  do it?",train
+531,1,1,0.23654796630732156,0.7634520336926784,Nice photo! Could you help answer a question   url   at the Reference Desk related to the picture?,train
+532,1,1,0.1540317987917914,0.8459682012082086,"Thanks for your support! Would you consider commenting on the  url  talk page, saying it has your support  and adding those comments for discussion ?",train
+533,0,0,0.6166518880563028,0.3833481119436972,"...for reverting    Image:Wpixcw11 1.jpg    back from the previous incorrect logo uploaded by  url . I had tried, but how did you do it?",dev
+534,0,0,0.6170366774265705,0.3829633225734295,Wow does that mean we can cut  url  into a small stub :  ??,train
+535,1,1,0.40299379110235034,0.5970062088976497,"I recently was approved for VandalProof, and I installed everything and stuff, but I m confused on how it is actually run, like what do I click to start it. Could you please help me a little?",train
+536,1,1,0.5258193501288743,0.47418064987112574,"Well, actually I wanted to know if there were any errors in my own maps. ;  Anyway, is the new map at  url  better?",dev
+537,1,1,0.24983570104994612,0.7501642989500539,"Hello, thank you for adding interesting content to  url   url . Are you able to provide  url  that will help the content meet our   url   standard?",train
+538,1,1,0.5456987216450515,0.4543012783549485,"Also perhaps we should set up a subpage for these discussions, so we ll have the thread completely on one page? What do you think?",train
+539,0,1,0.5215165343469069,0.4784834656530931,Is it possible to revert more than one revision at a time? Or must you be an administrator to do that?,dev
+540,1,1,0.3197063988393961,0.6802936011606039,Thanks! Do you know why this was held jointly and what was worked on?,train
+541,1,1,0.3347740468101419,0.6652259531898581,"Excellent, thanks! I wonder if it s worth temporarily uploading a cropped image for the main page, as 100x100 is really very small?",train
+542,0,1,0.456357967221643,0.543642032778357,"Hi   there are a few issues that I ve pointed out at the nomination page. Also, why does your sign link to the talkpage of  url ?",train
+543,0,0,0.740981974449756,0.259018025550244,"I m also confused as to why the  url  article is linked to the PNG file, but that that file is  not there , but seems to redirect in some way to the SVG file. Has the PNG file been changed to SVG and the link from the article not changed?",test
+544,1,1,0.25392493715600384,0.7460750628439962,"Thank you for getting to all those WikiProject Canada assessements so quickly! Question, is it   useful   what I m doing, adding the template even to what I know will be relative low importance articles?",train
+545,0,1,0.48675417059100134,0.5132458294089987,Your contributions show no edits to any RfC s. Could you provide a link?,train
+546,1,1,0.33267065446236144,0.6673293455376386,"could you email me when you get a chance? not having any luck this end, must be spam filters blocking?",train
+547,1,0,0.6882110183335014,0.3117889816664986,"ok that was really confusing, I clicked on this link  url  and then cleaned the page but the page still exists, sso from what I understood if you put the ending   double redirect  at the end of any article, you ll see how many redirects it has? is that right?",train
+548,0,0,0.7031199523072056,0.29688004769279436,Who deleted it? Would I be violating due process if I undeleted it?,train
+549,0,1,0.3902903069156579,0.6097096930843421,thanks for the reply. Would it contradict any guidelines to change it everywhere to  TWO SQ BRACKETS  NEWNAME the name relevant in the article  TWO SQ BRACKETS   with the hope that the name won t change again before the article is created ?,train
+550,1,1,0.5108662451676306,0.4891337548323694,"Hi JoJan. I see that the template which listed the failed FA attempt on  url  was deleted from the talk page, and I wanted to ask if that is considered OK or not?",train
+551,1,1,0.39465567357353637,0.6053443264264636,"Hey poetic decay, I was planing on merging  url ,  url ,  url ,  url  and  url  together. You think you could help me with it?",train
+552,1,1,0.35210794009787905,0.647892059902121,"Hey, I saw your article on the   Mosambique   in the Good New Article search results and looked at your other contributions, and I see that you do a lot on naval history. Would you be interested in helping me to expand  url ?",train
+553,1,1,0.39074836834885696,0.609251631651143,"I should be able to get that Mayr paper, it s on Wiley. Do you need me to email it to you?",test
+554,1,1,0.519412430354244,0.48058756964575605,Hi. Is there any chance of getting  url  unblocked from making edits on Wikipedia?,train
+555,0,1,0.3900739093802984,0.6099260906197016,"Sorry, what? Could you be more specific please?",train
+556,1,0,0.659600629921012,0.3403993700789881,"I see you ended the AfD on  url  and removed the tag. Will you remove it on the other two articles that were proposed along with it,  url  and  url ?",train
+557,0,0,0.7430973258493484,0.2569026741506516,"The  url  states that   Endymion   was an  person , and the only one of five actually built. Does Conway mention this?",train
+558,1,1,0.5812294501298922,0.41877054987010776,Please see my comments on  url  about a remark you added to  url  about the etymology of the term  minim  in music. Got any sources for your suggestion?,test
+559,0,1,0.4640475239503392,0.5359524760496608,"Okay, I asked for help at  url , was directed to  url . What do you want to do?",train
+560,1,1,0.470611424044609,0.529388575955391,"OK, I ve started the deletion debate at  url . As a major contributor, would you mind indicating there that you agree with deleting the page?",train
+561,0,0,0.6177610625617134,0.3822389374382866,"I have to know; has this got you worried about the quality of GeoNames? If I pick one of the ones that is only accurate to the arc minute, will it be worse?",train
+562,1,1,0.5363560498395332,0.4636439501604667,"Hi, I see that you added the etymology section of the  url  article. What does  RatCE  mean?",train
+563,0,0,0.6567114985510166,0.3432885014489834,"Your block of the  url  article came immediately after three edits that blanked sourced content without any explanation. These edits were unrelated to the edit war that got the article blocked, so could you please to restore the content?",train
+564,0,1,0.4675698404477665,0.5324301595522335,"Thankyou Fail, but the template I want is the one that goes at the bottom of the article and produces a message that goes something like  This article is a copy of the  X  article in the German wikipedia, version 21 December 2009 10:04.  What is that template?",train
+565,1,1,0.44050652667865364,0.5594934733213464,No problem. Have you seen the  url  article?,test
+566,1,1,0.543136257258136,0.45686374274186403,I don t see you around much these days. Busy with non wiki life?,train
+567,0,1,0.504868875584469,0.495131124415531,"Hi. Was the promo for  Packing Heat  a TV one, or an online one that I can cite?",train
+568,1,1,0.3207827281650376,0.6792172718349624,"Good work on the canal junctions! Where appropriate, do you think we should give the nearest pedestrian access point, from the road  as opposed to canal  network?",train
+569,1,1,0.3473705686153101,0.6526294313846899,"I just thought that it is nice when you are looking for RQ that you can find an algorithm that will do RQ, not QR. It s fine if we just make a section about RQ in the QR article, is that ok with you?",train
+570,1,1,0.5092671363753952,0.4907328636246048,hi Mustafaa I have some historical pictures and some sentences written on them which seems to be arabic. Can you tell me if it is arabic or not if i send you a copy?,train
+571,1,1,0.5087856045193602,0.49121439548063983,"Hi there, it looks like the moving editor has added a bunch of references to the talk page supporting the fact Toto is no longer formally referred to as Moorland Totilas. Do you think if we added one or more of the refs he s added on the talk page to the article we could move it back?",train
+572,0,1,0.3600769287446899,0.6399230712553101,"Hey, I m back for a little, but can t stay too long   busy day. What s up?",train
+573,0,1,0.3546599885973768,0.6453400114026232,"Hiya FFM, I want to update the  url  page to make it a proper article and perhaps get it to FA status; I know it s unusual to be part of one s own organization editing, but it is possible    if we work on a draft in userspace and have friends colleagues helping update the article proper. Are you interested in working on this in the coming week or so?",dev
+574,0,0,0.7232106823657276,0.27678931763427245,"He s returned to the same trolling he was doing years ago. If he really wants to edit in good faith, why not insist he make some non controversial edits for a while instead of immediately restarting a two year old edit war?",test
+575,0,0,0.7074422883697128,0.2925577116302872,"Since Wikipedia is moving towards dual licensing  GFDL   CC BY SA 3.0 , will Wikizine be also convert to dual licenses? Or will it remain GFDL only?",train
+576,1,1,0.28011606274197065,0.7198839372580293,"Thanks. As for the previous edits, should I make a note on the User Page that it s my account?",train
+577,1,0,0.6760127580445195,0.32398724195548045,"I don t follow you I was not aware that my edits were vandalism, I was editing according to what had  it appeared to me  been agreed on the talk page, but additional material had been inserted  that had not been agreed upon  that esentialy said the same thing  and was not supported by the sources  that had caused the origioanl disagrement. I think I may have mis understood you point, are you saying that I can only revert three times if its vandalism, or that my edits were vandalims?",dev
+578,0,0,0.6470014051529068,0.3529985948470932,"Sure, only maybe  legendary  would be possibly better than  magical : the magic isn t so much explicitly stated, as hinted, possibly a residual of shamanic influences. What do you think?",train
+579,0,1,0.48189790552782674,0.5181020944721733,"Well, we can certainly sort out those kinds of issues once the task force has formed. Have you sought or found support through WPMILHIST yet?",test
+580,1,1,0.4561946256199434,0.5438053743800566,"Mel, is the above comment from you? If not, could you please respond?",train
+581,1,1,0.33782028423756494,0.6621797157624351,Good luck with the remaining time for your nomination. BTW: under what section on  url  do you think it should appear?,train
+582,0,1,0.5293139340703965,0.47068606592960355,"Thanks for your recent edits on  url , but what does  inapplicable category   referring to  url   in  url  mean? And why did you remove that category from  url ?",train
+583,0,1,0.5351221296988267,0.4648778703011734,"There are two books I have with more material about this Zen Master; Namu Dai Bosa published in 1976 by The Bhaisajaguru Series, and second: The Soen Roku published by the Zen Studies Society in 1986. Are you familiar with these sources and is there any reason they are not included?",train
+584,0,0,0.6829448085737582,0.3170551914262419,"You deleted this, but somehow it still shows up on the parent category s page  url . Is this normal and or can you fix this?",test
+585,0,0,0.6842814816172081,0.31571851838279186,"Already past my two  spelling correction  edits ;   though they are obsessed with defense . I noticed one of them changed a quoted spelling:   acknowledgment   to   acknowledgement  , did you get that one?",test
+586,0,0,0.661297709270521,0.33870229072947894,"url  seems does not exist. Maybe we can create  url , which would be subcat of  url , and include most but not all of its current content?",train
+587,1,1,0.17575463998666307,0.8242453600133369,"Thanks for the  nowiki   For  nowiki  templates on Tkachyovs, they help a lot. Maybe in this case we should use the patronimics in the titles and have Alexander Tkachyov as a disambig?",train
+588,1,1,0.30514444793063067,0.6948555520693693,Hi Gokul. Just wondered if you got my previous message and had any thoughts about ledes for these articles?,train
+589,0,1,0.557399595750238,0.442600404249762,I notice you have cleared the last update but the new one is not showing up on the front page on my PC. Is there some reason for that that you know of?,train
+590,1,1,0.3653682529586648,0.6346317470413352,Hi Kathleen   It looks OK to me; all I did was change the template wording a bit and add parent cats to the stub category. What problem were you having?,train
+591,0,0,0.623285959610101,0.376714040389899,"I began to make an article for  url  but found that one already existed but was deleted. After reading the deletion log and seeing that it was speedy deleted for a7, I think I can write an article that establishes notability, but am I required to get administration approval before recreating a deleted article or can I just create it on my own?",train
+592,0,1,0.5787821964433832,0.4212178035566168,"It look like  url , is going to be on the Featured Content page. Where is the page that list what is on there when in the future, akin to the FA main page nominations page?",train
+593,1,1,0.3198704473317544,0.6801295526682456,Sounds great. Do you think you could add this over at the dicsussion I ve started at  url ?,train
+594,0,1,0.4736621197225991,0.5263378802774009,"Well then, if that s figured out, everything is ok with me. When do we start?",dev
+595,0,0,0.6669254055976435,0.33307459440235654,"It s probably a bit late to be asking this, but why did you dispute the factual accuracy of the page  url ? Also, why was no mention of the nature of the dispute made anywhere?",train
+596,0,1,0.5038369656669981,0.49616303433300185,You ve not said anything recently; Are you still editing? Is everything OK?,train
+597,0,1,0.3012570509377125,0.6987429490622875,Thanks for the contribution. Halloween DYK?,train
+598,0,0,0.6020638481811127,0.39793615181888736,"And while I m on templates, I spotted  url . Does it affect the ME templates?",dev
+599,0,0,0.6560561081702443,0.34394389182975565,Basta colla tua grecofilia tendenzionista! Ai capito bene?,train
+600,1,1,0.4492803049026155,0.5507196950973845,"Good! By the way, what do you think of merging the recurring animals in  url  to  url  and then getting rid of the rest?",dev
+601,0,1,0.5745695664581827,0.42543043354181725,These edits appear to be related to the same issue that caused the page to be protected. Could you please explain why you are doing this?,train
+602,1,1,0.4297691538807139,0.5702308461192861,"I used the  url  tool, and clicked rather a lot. I m happy to switch it on for your account, if you d like?",train
+603,0,1,0.4688820989996504,0.5311179010003496,Sorry I got called away. Which is the better main name  Vancouver Harbour Water Aerodrome  or  Vancouver Coal Harbour Seaplane Base ?,train
+604,0,0,0.6258233927493877,0.37417660725061225,"About 3,500 hits per day at the moment, and the article is terrible. Could you lend a hand?",train
+605,0,0,0.7119394768597738,0.28806052314022623,"According to  url , your  ban  is not specifically linked to any amount of time, but rather your effort and results. That said, what exactly do you mean by  stalked ?",train
+606,1,1,0.48839704049193455,0.5116029595080654,"Yep, no worries. What s the article?",dev
+607,0,1,0.5296129517250978,0.4703870482749022,"Gosh, I didn t realise it was so many. Would that include 20 batches of DYK hooks  totalling 100 total hooks ?",train
+608,0,0,0.6009476292039349,0.39905237079606515,Yamaguchi Japan  Candidate Site for the  url . Time for an article?,train
+609,1,1,0.2985579780211054,0.7014420219788946,Thank you for catching Known for Know. How did you happen to look at the article?,train
+610,0,1,0.5464438602716436,0.4535561397283564,"Since Maddieson has not himself done any work on Mazahua I would be interested in knowing which source he uses for his Mazahua data. could you put a reference to his references here at the talk page, just for my curiosity?",train
+611,1,1,0.5208212081393057,0.47917879186069434,"4. I had once felt that the Euroleague, Italian and Greek leagues were the top leagues. If I were to choose selected European leagues from this page  url , do you have any thoughts on which ones are important?",train
+612,0,1,0.4183551710277652,0.5816448289722348,Oops. Hmm...yeah...that sounds like a good idea...why not go ahead?,train
+613,1,1,0.3416038444257242,0.6583961555742758,"Thanks for explaining. Um, is that an official policy, or one just custom?",train
+614,1,1,0.26536551570953093,0.7346344842904691,Thanks for the detailed reply. Can a random admin who notices the image with the speedy tag do something useful to fix the situation?,test
+615,1,0,0.6201804879306656,0.37981951206933434,"Instead of deletion, I m considering simply redirecting Ponystars to  url . Any objections?",train
+616,0,0,0.5866222796261635,0.4133777203738364,Naughty naughty! :   How goes things?,train
+617,0,0,0.7933081106898194,0.20669188931018054,"person  is dropping OR on various talk pages, including his own and his userpage   and linking his talk page to his blog.  url  or rather blogs  url    not run into this sort of linking before, is there any guidance about it somewhere?",train
+618,0,0,0.6506124732129548,0.34938752678704527,"It just has one too many anime cats, like   Sailor Moon  . Could you also take a shot at it?",train
+619,1,1,0.1562417537230486,0.8437582462769514,"Greetings, and thank you for your cogent remarks at  url . Would you be interested in voting in the straw poll  url  as well?",train
+620,1,1,0.456188168209102,0.543811831790898,"Mel, is the above comment from you? If not, could you please respond?",train
+621,0,1,0.49027975163548254,0.5097202483645175,"Whatever works. I trust that you ll do what ya gotta do, right?",test
+622,1,1,0.49294734153951036,0.5070526584604896,I m see about the new Version 0.7   which stated should FINALLY be published soon... When the exact date it published? Is there anything that I can help?,train
+623,1,1,0.41124146525076455,0.5887585347492355,"Good day, sorry to bother you. Is the 2:00 am news brief called eyewitness news everynite, and if it is do they play move closer to your world?",train
+624,1,1,0.35210794009787905,0.647892059902121,"Hey, I saw your article on the   Mosambique   in the Good New Article search results and looked at your other contributions, and I see that you do a lot on naval history. Would you be interested in helping me to expand  url ?",train
+625,1,1,0.358270792764694,0.641729207235306,"Hello again. Could you move this to  url , please?",train
+626,1,1,0.4141538153621701,0.5858461846378299,Thank you for deleting the attack page I tagged. Should  url  be blocked for creating it?,train
+627,0,0,0.6378154132591721,0.3621845867408279,XD Yes I am. What is your username?,train
+628,1,1,0.31542921819458125,0.6845707818054187,I noticed your nice improvements to  url . Are you thinking of merging redirecting  url  to that article?,train
+629,1,1,0.5747267704860084,0.42527322951399155,"Mattisse hun, you haven t been on wiki for a couple of weeks. Are you ok?",train
+630,0,0,0.6487273029776666,0.3512726970223334,"on a separate point, several of the alternative names you mention  eg fan tailed snipe  I have never heard in the UK or elsewhere in 20 years of birding. Perhaps you could clarify when you add them whether they are former obsolete names, or, if they are still current, where they are used?",train
+631,1,0,0.6316647214047353,0.36833527859526466,"Regarding our WikiProject discussion about airport naming, I am unsure about Wiki etiquette   should I edit your sandbox with links indicating the common name  i.e. airport even though it s an aerodrome  or should I list them on my own talk page?",train
+632,1,1,0.5672586015620763,0.4327413984379237,It s larger now than the sub stub previously deleted. Can sources be added to verify the achievements?,train
+633,1,1,0.5278819159413735,0.4721180840586265,"person    sorry about that, those situations are confusing. Maybe Twinkle uses, or behaves like, rollback?",train
+634,0,1,0.545196120616584,0.45480387938341604,"I wondered, simply because I see you occasionally and had never seen him before, so at first I thought he was you. I wonder if there s a User:Nyttned running around?",train
+635,1,1,0.3854693451942879,0.6145306548057121,"Ah, thanks! Btw, IS THERE any kind of guideline for FAs in regard to lede length somewhere?",train
+636,0,1,0.4687878862739947,0.5312121137260053,Hi Novice. Can you get me a 30 second sample of  Suga Mama  by beyonce from anywhere?,train
+637,0,0,0.6279982650893128,0.3720017349106872,if i send email to is the email made public? where is it made public?,train
+638,1,1,0.35838193229067106,0.6416180677093289,"Thank you that clarifies matters. Has the image been listed for deletion on commons, or should I do so?",train
+639,1,1,0.43507420711191935,0.5649257928880806,"I know, I understood that. :  I didn t scold you for it at all, did I make you feel that way?",train
+640,1,0,0.5966867740703667,0.4033132259296333,"When creating  url , I also had to create  url ,  url  and  url . I was wondering if you could populate them?",dev
+641,1,1,0.3740211095815681,0.6259788904184319,"I was just now leaving a note on Ruhrfisch s talk page, and noticed that you d left a note there. I wrote about the  url  the other day, the first time that I ve ever created an NRHP article: would you be willing to check it, and to add to the infobox if there s something that can easily be added?",train
+642,1,0,0.6384056256639798,0.36159437433602015,"I started working on missing translations of news titles inside citations, but discovered that square brackets leave an ugly residue, while round ones may not be optimal, since they clash visually with the  language  ones. Would it be acceptable to just use the English version as title?",train
+643,0,1,0.4863059487060267,0.5136940512939733,"I couldn t help but notice on your userpage templates for Clive Barker, Child s Play and so on to place on pages related to those subjects. I ve never known how to create them, so could you help?",train
+644,0,0,0.6635173115545464,0.3364826884454536,"I ve asked a question at  url  that you might be able to answer since you changed the redirect. Why does  url  redirect to  url  rather than  url  Surely the world s largest river, the world s largest rainforest and a huge multi national company are all equally as notable as the ancient legendary people?",train
+645,0,1,0.21605317599129492,0.7839468240087051,"Thanks for the reminder, not forgotten. Any opinion, comments?",train
+646,0,1,0.4991608060952911,0.5008391939047089,I see. What about  Main Church ?,train
+647,0,0,0.6993869501628095,0.3006130498371905,url  seems to attract a good bit of vandalism for some reason. Do you think there s anything else that could be done to quash that?,train
+648,0,0,0.6738546563370309,0.32614534366296916,Maybe the area that is now the Chakma Autonomous District Council was  or is?  located within the Lawngtali district?,test
+649,0,1,0.4624247451314033,0.5375752548685967,"The thing that amazes me about Margenat is that he died so young, 24 years old, with so much talent and so much to offer. Can you imagine all that he would have given the world if he lived to a ripe old age?",train
+650,1,1,0.5101023565646221,0.48989764343537784,I don t understand the reason for  url . Would you please explain it to me?,train
+651,1,1,0.3659146205666558,0.6340853794333442,Okay thanks. Any easy way to determine this?,train
+652,0,1,0.4640725466610841,0.5359274533389159,"Okay, I asked for help at  url , was directed to  url . What do you want to do?",train
+653,1,1,0.5770305336779844,0.42296946632201554,"Soman, since you visited the Swedish Social Democratic Party site in May 2010, did you put the May 2010   This article  may need to be rewritten entirely to comply with Wikipedia s quality standards  atomic bomb tag at the top of the article? If so, will you clarify which sections you feel are inappropriate to a discussion of the political party, and what sort of focus you d prefer to see, and why?",train
+654,0,0,0.7570848200080704,0.24291517999192952,"This IP   188.50.98.153, its intention seems to be language fundamentalism, gave a level 3 warning....Any way to protect this article so that only established users can edit it??",train
+655,1,1,0.36958495563074056,0.6304150443692594,Good find. Do you have a cite for the second para?,test
+656,1,1,0.41906591500896506,0.5809340849910349,Hi Asbestos! This is kind of weird for me but I see that you are a participant in the photo project and list yourself as a photographer in Edinburgh and I was wondering if there was any possibility that you would be willing to respond to my recent request  url ?,train
+657,1,0,0.634007196515247,0.36599280348475305,"No, I don t know of any way to measure the number of visitors to articles. Perhaps someone on the  url  can answer your question?",train
+658,1,1,0.4216787262912094,0.5783212737087906,It s not too late to help at all   being busy has kept the work on it to a crawl. ;  I d like to represent what you are referring to; was it on the Abom talk page or somewhere else?,train
+659,0,1,0.5419249885019499,0.45807501149805,"Hey, I saw you re comments on conman33 talk page. Have you met LJ?",train
+660,0,0,0.7654781861216761,0.2345218138783239,"That sounds like they are just  general use  of the word, so in each article delink and  if needed  explain that, in this context, diaphragm means a divider   or just rewrite without the word diaphragm, or use a link to wiktionary. In fact, should linking to wiktionary be a standard way to clear up some of the links to dab pages?",train
+661,0,1,0.4278165013453953,0.5721834986546047,Thanks. Is  url  BOTijo whilst logged out?,train
+662,1,1,0.5516257455037281,0.4483742544962719,"It may very well have been a better candidate for a stub rather than a speedy deletion. I would rather not talk about this on another users talk page, if you would like to discuss if further could we continue any further posts on  url ?",train
+663,0,0,0.6029619413447478,0.39703805865525227,I see where the calligraphy portion of some of my illustrations has been removed in a couple of articles   see:  url  . Is there a particular reason for that?,train
+664,1,0,0.599405568537208,0.400594431462792,"Hi I noticed that you changed the category at  url  from  People from Alabama  to  People from Elmore County, Alabama . Is this appropriate, as Opothleyahola was dead for three years before Elmore county had been organized and had been forcibly removed from the area more than thirty years before?",test
+665,0,0,0.7104733220932486,0.28952667790675135,Would it not make more sense to delete these under G6 a Technical deletions  person    rationale Surpassed template that way you dont have to make a notice here for every one. Has anyone ever contested there deletion?,train
+666,0,0,0.6500286422874916,0.3499713577125084,Turbinella is a disambiguation page. Perhaps perform a move to Turbinella  gastropod  ?,dev
+667,0,0,0.7775149778973468,0.2224850221026532,It seems  url  has tagged the following baiting articles  url   url   url  and  url  with a delete tag out of spite. It there a way to remedy this type of poor behaviour ?,train
+668,1,1,0.2717486001550048,0.7282513998449952,"Thanks for the help! That info should be on  url  in easy to read form, no?",train
+669,1,1,0.5160500269176682,0.4839499730823318,Problem solved! Aren t administrators handy?,train
+670,0,1,0.542365279857524,0.45763472014247597,"Secondly, please show me where Maynard Smith credits this idea to Haldane. Have you read the Grafen paper?",train
+671,1,1,0.3949559287823331,0.6050440712176669,"Ok, I will create. You will help to expand it?",test
+672,1,1,0.3529892603292448,0.6470107396707552,"Hi Zaps, I ve noticed that you edited the abovementioned article. Could you please provide your sources?",train
+673,1,1,0.35260687460968965,0.6473931253903104,Hello im trying to make a task force for the Empire of Brazil with some people but we dont know how to make the actually task force stuff like the banner and how to make the quality chart template to see what class each article is. Im asking if you can help make it since i saw you made WikiProject Dam?,dev
+674,1,0,0.7501368616717391,0.24986313832826088,"The reason for the malfunctioning redirects is that the character immediately after  REDIRECT  is not an ordinary space, but a  non breaking space , hex code 0xA0. Out of curiosity: how did you manage to create them?",test
+675,0,0,0.7046798155790015,0.29532018442099844,I think some of those  citation needed  cases are on the Oldest Britain s website. Are those considered  validated ?,train
+676,0,1,0.5296129517250978,0.4703870482749022,"Gosh, I didn t realise it was so many. Would that include 20 batches of DYK hooks  totalling 100 total hooks ?",train
+677,1,1,0.3529389426207278,0.6470610573792722,You re welcome. What else is peer review for?,train
+678,1,0,0.6250272754029522,0.3749727245970478,Strikehold previously did a  url . What do you think about adding it to the template?,train
+679,0,0,0.6646270680722091,0.335372931927791,If you are beccoming a target again do you want semi prot for a while? How much activity is it getting?,train
+680,1,1,0.16602596235081524,0.8339740376491848,Thanks for the note about my work on the above line. Would you mind if I copied and pasted your version over to mine to work on?,train
+681,0,0,0.6465973943430284,0.35340260565697157,Is it OK that I don t edit wikipedia? It s because lots of other people have done it but I don t want to so can I still go on?,train
+682,0,1,0.34575664532654204,0.654243354673458,"Hello! Um   are you looking for me to do something about that BRFA, or actually write a bot to perform that task?",train
+683,0,1,0.41210579098066435,0.5878942090193356,I suggest we start with the History section. What do you think?,train
+684,0,1,0.3227338923028735,0.6772661076971265,Hi Mike  The above article has now been looked at by two folks who have marked it  good article.  How do I either get rid of the unreviewed article tag or get whatever feedback I need. I have left notes at the request for feedback page twice now.Can you help?,train
+685,0,1,0.53745401944172,0.46254598055828,"He s back  url ,  url  as  url . Also, in the future would you rather me just post these to  url , or do you just want to continue handeling him?",train
+686,1,1,0.5575221211904137,0.44247787880958633,"Can I use a manga image colored by myself? There won t be any problems with the lisense, right?",train
+687,1,1,0.4443292806883359,0.5556707193116641,That s a good idea. What about army and corps HQs though?,train
+688,0,1,0.5777338556976909,0.42226614430230913,"Is this sculpture your own work? If not, who made it?",test
+689,1,0,0.5964094872145062,0.40359051278549385,"Just one more thing: The  url   logo was re made as a vector image a little while ago, but the colors  especially the skin , really seem to be off. Can you fix it?",train
+690,0,0,0.78772591533693,0.21227408466306993,"It s not bizarre and random because I believe it violates the policies of  url  and  url  as its using Wikipedia for non Wikipedia related projects. You say it s a sandbox for your new Wiki, why not put the sandbox ON that wiki?",train
+691,1,0,0.585911812078628,0.4140881879213721,"I was going to be the first, but now I ll be the second. Do you have any idea who that Oppose !voter was or why he was so upset with you?",train
+692,0,1,0.5260225273658661,0.473977472634134,"I ve created  url , which I expected to be a 3 line stub   amazing what these little lumps of rock have to say for themselves. Could you provide a translation of the name?",train
+693,1,1,0.3882644246709228,0.6117355753290772,"One more thing if you want, let s talk on the Seinfeld talk page. I think I am taking up your talk page so let s talk there instead, ok?",train
+694,0,1,0.4410634371181379,0.5589365628818621,"As a rough look over, the splits look ok to me  although yes, more discussion before forking is generally a good thing . If you think there are serious problems with them, why not just address it on the talk page?",train
+695,1,1,0.4564224309249364,0.5435775690750636,"I don t own any from Rousseau either, but I did know it was Grand Cru, just made a mistake! I notice above you and Stefan discussing the Langton s Classification Wines, I m going to have a go at getting articles made for more of the exceptional level producers, I ve just finished one on  url    are you interested in working on any of them together?",test
+696,0,1,0.47838663860077424,0.5216133613992258,I thought I had explained it pretty clearly. What part did you disagree with?,train
+697,0,0,0.7227042253157094,0.27729577468429056,I m baffled. What point is there being unblocked only to file an appeal that C has already decided to reject?,train
+698,1,0,0.6323943213800991,0.3676056786199009,"Well, lyrics are generally frowned upon on Wikipedia, unless the song is old enough that its copyright no longer applies. Could you perhaps link to the article?",train
+699,0,0,0.7056841596411367,0.2943158403588632,"This user, whom you recently blocked, has persisted in using both his user and user talk pages for repeat personal attacks. Would it be wise to protect these pages?",train
+700,1,1,0.5050474718728428,0.49495252812715723,"Thanks for helping to source alternative names...helps quash everyone including his her favorite. I don t have that ref handy  does  unofficial  mean  lots of people call it that but WMATA doesn t , or  it s often called that as a nickname even in WMATA or other formal documents ?",train
+701,1,1,0.5069500889333163,0.49304991106668367,Could you be more specific. Are there specific points in the article that you believe are repetitive?,train
+702,1,1,0.3964564548340308,0.6035435451659692,"I m sorry, but I don t see what you re talking about. Could you be more specific?",train
+703,1,0,0.6411719789752248,0.35882802102477523,"Although Singapore does not use Traditional Chinese, I still think we should at least add Traditional Chinese titles for shows not made by Mediacorp, and bought from overseas  mainly Hong Kong  TV stations. What do you think?",train
+704,1,1,0.4603843446980064,0.5396156553019936,Thanks for the tip. How come I sometimes come across pages where the trailing  s  is left off  or am I confusing that with the  s situation ?,train
+705,1,0,0.6488413662161665,0.35115863378383355,Note however that  url  does not exist. Which page were you talking about in this case?,train
+706,1,1,0.3984009364370594,0.6015990635629406,I ve started looking at this article as you asked and inevitably I ve got a few questions. Would you prefer me to list them here or on the article s talk page?,train
+707,1,1,0.2914424603639634,0.7085575396360366,Thank you. So what did I do to earn the tea?,train
+708,1,1,0.34063475526930553,0.6593652447306945,Hi   how s it going? Do you need more time?,train
+709,1,1,0.41481012989499966,0.5851898701050003,"On another subject, have you finished the books I suggested? Want more?",train
+710,0,0,0.6551860230741203,0.3448139769258797,"Moonriddengirl, is there a specific reason to why they want to use the crop? Is it because there s attribution on it?",train
+711,0,0,0.6428242293948809,0.35717577060511907,"In  url , you removed a cartoon image of Wendy Thomas that had been used in the infobox on her article. I m not very familiar with the NFCC policy you cite, so I was wondering if you thought that giving a rationale on the image for use in that particular article would bring it up to specs?",train
+712,1,1,0.4334887520598564,0.5665112479401436,"Hey, I saw you edited the Dark Tower Series page. I was just wondering if you were a fan of the series?",train
+713,0,1,0.5310545143562403,0.4689454856437597,"Josiah, believe me, I understand how you feel, and unless you really feel like it, I don t think you should involve yourself in the dispute, because it seems intractable. My question is more a procedural one: if an RfC doesn t generate consensus, and an edit war continues, what s the next step?",dev
+714,1,1,0.21768508456625657,0.7823149154337434,"Hi Mike, Awadewit suggested you might be interested in a project we re running here at the British Museum over the next week    url . Perhaps you d be able to help out and sign up?",test
+715,1,1,0.5163741944855526,0.48362580551444745,"Hi, just noticed you reverted this page back to its pre COPYVIO state. Any reason you didn t use the content at  url ?",train
+716,0,1,0.549556465409996,0.450443534590004,"I was reading the article reverse overshot wheel, but I can t find anything about the  reverse  part. Can you expand this?",train
+717,0,0,0.6055616912042487,0.39443830879575126,"Well, it s been a week and no inputu2014time to move on it? Should we relist the thread at  url  and see if that gets some input?",train
+718,1,1,0.3988979985022305,0.6011020014977695,"Hi Mecu, I ve been asked by a user  a photographer  how they could add there pictures with limited copyright, for instance, there more than happy to upload them for use within wikipedia, but just don t want to release it completely free from copyright. Would a fair use tag be appropriate?",test
+719,0,1,0.4575306525829075,0.5424693474170925,"You re back! And, am I ready for what?",train
+720,0,0,0.6351520599680549,0.3648479400319451,Is as usual being overrun with pointless blather. Would you like to set up a subpage to discuss sources?,train
+721,1,0,0.610396053434054,0.38960394656594594,"I was in doubt too, but when dealing with such incomprehensible concoctions I prefer to err on the side of BLP caution. Would you like it userfied?",test
+722,0,1,0.5707845480280183,0.4292154519719817,So I think it s better research one by one and decide which one is common name  use . What is your opinion ?,train
+723,0,1,0.5601707992120548,0.43982920078794524,I think the  url  would be more precise and accurate as  url . What sayest thou?,train
+724,1,1,0.5830532914316187,0.41694670856838134,My question about the truncation operation is to understand the generic algorithm for applying a ring  or un ringing  a Dynkin node. What method  code  do you use to get the higher dimensions truncated based on the Coxeter Dynkin ringed nodes?,train
+725,0,1,0.5099309876363796,0.4900690123636205,"I started editing the article  url , which was a real mess, and added some cited content under the math section. However, there is all this content under the statistics section that is uncited, and wanted to know if someone would help me find sources for this information, or challenge and remove it?",train
+726,0,0,0.6735306439935839,0.32646935600641613,"You recently reverted both these pages with the reason  not in the linked article . I m just curious, what does  not in the linked article  actually mean?",train
+727,1,1,0.5486786764857048,0.4513213235142952,"I wonder if it would ever be worth doing an article on G S scholarship? You know, cover the major discoveries, describe the evolution of the field... or is that too likely to hit problems?",train
+728,0,1,0.39756696172993433,0.6024330382700657,"Hi there. Regarding the comment you added  url , how can this be verified?",train
+729,1,1,0.3883091900386667,0.6116908099613333,"Hi Thunderbrand, thanks for letting me know that the image I uploaded is on IFD. Can I ask though, why is the image being deleted?",train
+730,1,1,0.22480258397087682,0.7751974160291232,Thanks for your response! How should we proceed ?,train
+731,1,1,0.28432331131393007,0.7156766886860699,"I see you ve done a lot of work on hospital related articles, especially in Oregon. Perhaps you d like to join us in improving the articles for hospitals in Oregon?",dev
+732,0,0,0.6208138383105768,0.37918616168942315,"Well, yes, obviously  but I sort of assumed that the same exemptions would apply to 1RR as 3RR   is that not the case?  Should I self rv?",train
+733,0,0,0.6238078858939757,0.3761921141060243,It needs to be redirected anyone can do that. Is there any information that is in the article that is not in  url ?,train
+734,1,1,0.4844350273287761,0.5155649726712239,"Hello, I ve written a page about the  url , shamelessly copying the style from your CCT FoFC lists. In the process, have I missed anything out?",test
+735,0,0,0.659685277486254,0.34031472251374595,"Drive by comment: Mikka s behaviour reminds me of Stevertigo s on  url ... perhaps an RfC is in order? Nothing harsh, just an opportunity to clarify some policy points on protection and blocking?",train
+736,0,0,0.6637624112211173,0.3362375887788826,"The items in question would have their notability already asserted in their own Wikipedia pages   or is this not a correct assumption? How can we resolve this, and how can we adapt our future preparation of, and reviewing of GAC, if in fact it is necessary?",train
+737,0,0,0.6495760501230416,0.3504239498769584,"Regarding  within the church , the problem is on one end that purring that prepositional at the beginning feels very clunky, but that other formulations almost all result in something like  at ... at , which is no better. I can t see a way to just juggle the sentence, so a different structure seems to be necessary; maybe a formulation with a verb like  contains  or  include  instead would work better?",train
+738,1,1,0.4388486430788011,0.5611513569211989,Saw your note on Herbythyme s pageu2014this is great! How come this isn t more widely  publicized ?,test
+739,1,1,0.46146593907191413,0.5385340609280859,Hi! Could you consider speedy deleting  url ?,dev
+740,0,0,0.7111255793627206,0.2888744206372794,"As for  url  and your note u201cSo there are certainly good strong sources for that usage, although I have not the slightest doubt that you can also find some utterly respectable sources that use  attorney generals. , the explanation might be that the persons in question are semantically not attorneys but generals designates  attorney generals . Any further thought?",train
+741,1,1,0.35122305742848836,0.6487769425715116,"Hi, thanks for your help. There is also this sentence  Asukkaista 84,5  oli ruotsinkielisixe4 ja 15,4  suomenkielisixe4 vuonna 1970 ja kunta oli kaksikielinen.  What does it mean, please?",dev
+742,0,0,0.6422842718816312,0.3577157281183688,I m finding that I m not able to access any of the DPL related pages on the Toolserveru2013I get an error message or a blank pageu2013but somehow the Dab Challenge results are still being updated by your bot. Do you know what s going on?,dev
+743,1,1,0.5253693207388479,0.47463067926115204,Do you live in the US? How excited are people about the album?,train
+744,1,1,0.5413155550204809,0.45868444497951916,"At the Chicago house article, I think the current state of house music in its birthplace, Chicago, should be added. What do you think?",train
+745,1,1,0.5097524190958305,0.4902475809041696,I found this talk page  and  url   while deleting the user pages that you requested. Would you like to have them deleted as well?,train
+746,0,0,0.6197415327070357,0.3802584672929643,I gave user  url  an official 3RR. Is there anything that can be done about this ?,dev
+747,1,1,0.426914292448343,0.573085707551657,I m interested in why you reduced the columns from 5 to 2? Could you reply on my talk page please?,train
+748,0,1,0.5613427309200113,0.4386572690799887,Hey three paragraphs at the end of the commercial success are uncited. Can you fix that?,train
+749,1,1,0.45784047697321595,0.542159523026784,I asked some questions in the Criteria for Inclusion section on 20th Dec but no one has yet responded. Can you take a look?,train
+750,1,1,0.5150706495848605,0.48492935041513957,"I m curious: how do you make those beautiful coats of arms? Do you have a script that generates them from the heraldic descriptions, or do you make them by hand?",train
+751,1,1,0.28946557987755406,0.7105344201224459,I seconded wholeheartedly your proposal at  url . Could you please add a link to the discussion?,train
+752,0,1,0.32149950144743034,0.6785004985525697,"Thanks for your participation. Just out of curiosity, is a site preference for color over black and white explicitly indicated on some guideine or policy page?",train
+753,1,1,0.2882340446802053,0.7117659553197947,Your  url  is a brilliant idea! Would you mind if I linked to it from my collection of  Useful things  on my user page?,train
+754,0,1,0.5350957362917518,0.4649042637082482,It seems like the bot hasn t made any contributions in quite a while. Is something wrong?,train
+755,1,0,0.6882110183335014,0.3117889816664986,"ok that was really confusing, I clicked on this link  url  and then cleaned the page but the page still exists, sso from what I understood if you put the ending   double redirect  at the end of any article, you ll see how many redirects it has? is that right?",train
+756,1,1,0.3038829383904511,0.6961170616095489,Thank you. Was it anything in particular?,train
+757,0,0,0.6046349394203558,0.3953650605796442,On this  url  you set the longitude seconds to 67 when converting to a template. Any idea what the real value should be?,dev
+758,1,1,0.20788793588171917,0.7921120641182808,"Thanks for the alert. By the way, how s Granny doing?",train
+759,1,1,0.4372755427945241,0.5627244572054759,"From the edit history to the template, it appears that your last edit has not been undone so hopefully this issue is resolved. You are both editors of between 1 and 2 years experience here, so perhaps a bit better communications would be a better approach in future?",train
+760,1,1,0.5169017370899698,0.4830982629100303,"My post above was a helpful hint about following DYK as a whole, not about the nomination process. Would you mind posting your post under a new heading, as it seems to have little to do with what I was saying and seems to be changing the subject?",train
+761,0,1,0.550778536962941,0.44922146303705895,"No, YOU mail OTRS with your translations. What do you have to lose, but the few minutes it would take to put them together with an explanation of the situation?",train
+762,1,1,0.4426493310470049,0.5573506689529951,"Up to you   I see myself picking off one or two every now and then but nowhere near the level of work NortyNort is doing now. By the way, I have an open CCI request that I want a second opinion on   could you please help?",train
+763,0,0,0.6552820309892811,0.3447179690107189,What exactly are the rules on this page? Can stuff be added without discussion and  consensus ?,train
+764,0,0,0.6445273159995764,0.3554726840004236,You appear to have created a duplicate of  person  at  person . Is there any particular reason for this?,train
+765,0,0,0.7584994790170262,0.24150052098297378,"Splash I added the info about his age dispute, the user then removed my edits, called me a liar and added a whole bunch of other deliberately negative POV edits to the article. What can I do now, can they be blocked?",dev
+766,0,0,0.6794457578110629,0.32055424218893713,I dislike feuds. What to do?,train
+767,1,1,0.5515595632007362,0.44844043679926376,"I put both in the first sentence, to show a range. Is that OK?",train
+768,0,1,0.3473431676288887,0.6526568323711113,The layout is there and also some content but due to lack of time during the recent past I was unable to bring it to the final  publication suitable  form. Perhaps you could help me in giving the final touches?,dev
+769,0,0,0.5893431556511286,0.41065684434887145,url . Are you planning to merge the info into  url  or just redirect to the article as is?,train
+770,1,1,0.15764677420512296,0.842353225794877,"Thank you, Cremepuff222, for the kind words. :  How have you been?",train
+771,0,0,0.653524980209894,0.346475019790106,We have  url . Fourth times a charm?,train
+772,1,1,0.15196325393200172,0.8480367460679983,"Well, welcome, and thanks for helping out, as you can see it s greatly needed. Do you have  url  yet?",test
+773,0,0,0.6768275596396907,0.3231724403603094,"Hi, what does this mean   if I am to be a named party in the case I at least need ot understand what it is about, please explain     Feuding and BLPs  a case to examine meta behavioral issues and reconcile the applicable principles???   what do you perceive this is related to?",train
+774,0,1,0.3547162407709158,0.6452837592290842,"Thanks for the tips. But what was that something I heard somewhere about you leaving after getting Final Fantasy VII to FA, or something?",train
+775,0,0,0.6350996841781683,0.3649003158218317,"Just curious, how are articles marked for your bot to update their statistics? Is there a tag, or is it any player in a certain category, or...?",train
+776,1,1,0.34032002975690123,0.6596799702430988,"Thanks for readjusting the  url  remarks on stationsby   I must confess I m not that much into Danish history, so my edit contained some guesswork... thanks for correcting me. Do I understand correctly that a Stationsby would not be the station that originaly is intended for a town further away, around which then a new town grows up?",test
+777,0,1,0.528484025157137,0.47151597484286306,Have you been able to find anything confirming that last result yet? Is it being challenged in court?,train
+778,0,1,0.5269555563007491,0.47304444369925086,"If you want I could simply remove the maps from each article, its not that important. What do you think?",train
+779,1,0,0.7050992482921262,0.2949007517078738,Well the only plausible explanation was that you reverted to where I removed an extraneous cat  after Homestarmy s edit  and then swapped out a template... but as you re a competent editor that just seemed odd. Is that what indeed occurred?,train
+780,1,1,0.2064598718043228,0.7935401281956772,"Sure thing, and thank you for noticing! Is the colour better now?",test
+781,0,1,0.54374266978593,0.45625733021407,By the way the list schools was in wikimedia code. Or is there another way it should be done?,train
+782,1,1,0.4377395471770833,0.5622604528229167,"Hi Pete  The user  Darmi  on  url  says that footnotes are used on Wikisource, and he has two pages to show for it. What do you think?",dev
+783,1,1,0.5566663919609197,0.4433336080390803,url  reminded me of a report I want to file about Asad. May I?,train
+784,1,1,0.43807519482487334,0.5619248051751267,"Yep, she told me. How are you doing?",test
+785,1,0,0.6803068866996713,0.31969311330032874,"From my reading of the entries, the Japanese force in  url  South  url    the  url  appears to have been the  url , rather than the  url . Does that sound right?",train
+786,1,1,0.41085895311419807,0.5891410468858019,"Hi Darwi. Just to ask you as curiosity, how did that debate ended?",train
+787,0,1,0.5704106071558916,0.4295893928441084,In your vote against my candidacy you stated that you were a  weak oppose . May I ask why?,train
+788,1,1,0.24739186648060252,0.7526081335193975,"Sure, I ll have a look at it. It looks like it needs a bit of a copyedit though, hope you don t mind?",train
+789,0,1,0.5778370505177894,0.4221629494822106,"Is this sculpture your own work? If not, who made it?",test
+790,0,1,0.5220130443300164,0.4779869556699836,"Sorry, I see what happened now. In fact that s even stranger, how did I manage to make a multi hour edit without getting hit during the vandal s attack?",train
+791,0,1,0.5755086762248145,0.4244913237751855,"Yeah, I got one too. Are you still acting as an advocate?",train
+792,0,1,0.5225390665171928,0.47746093348280716,The discussion page at  url  does not note that semi protection has been removed. Would you be willing to note your action there?,train
+793,1,1,0.444600640204018,0.555399359795982,"lol thanks. so, australia, huh?",train
+794,0,0,0.6533111875546113,0.34668881244538874,"Does anything populate  url ? What is this category for, precisely?",train
+795,1,1,0.3853381186306608,0.6146618813693392,"I m doing the same. Hey, can you please tell me if  url  has been fixed enough by being stub ified?",train
+796,0,1,0.5711008684945471,0.42889913150545295,I suspect so   though with the size of things it may be best to assess each one individually. Using the formal name of the region was copied from the London category which had already been started   maybe we could add disambiguators on an individual case by case basis?,train
+797,0,0,0.6173802205404414,0.3826197794595586,I tried searching for that link in the section that I was editing and it wasn t there I didn t edit from the top but just from the section. Does the filter only look inside the section or is it based on the whole talk page?,train
+798,1,1,0.27520431168537807,0.7247956883146219,"I m an admin, I d be happy to do it. You want me to do it now?",train
+799,1,1,0.2726918615227375,0.7273081384772625,Thank you for your answer. What are the sources for region 4  Australia  release dates?,train
+800,0,0,0.617287479942346,0.382712520057654,"If you have archives to look through, can you double check if this quote indeed comes from this article? Is it possible it came from another DeCurtis article in March titled  U2 releases The Joshua Tree ?",train
+801,1,1,0.30389585928290985,0.6961041407170901,Thank you. Was it anything in particular?,train
+802,1,1,0.4099825304503881,0.5900174695496119,"Erica, I understand you are a figure skating enthusiast. Are you still active in those types of articles?",train
+803,1,1,0.13065589639757536,0.8693441036024246,Thanks for your help with  url . I ve responded to your comments   could you please take a look and let me know if you are content now?,test
+804,1,1,0.42615457700758974,0.5738454229924103,I am willing to try to discover the problem. What browser do you use?,train
+805,0,1,0.3340276805144191,0.6659723194855809,"Hi, I have opened a discussion at  url . Perhaps you would like to contribute?",train
+806,0,1,0.5177100176709534,0.48228998232904663,"I can understand how rivers flow, but how do canals flow? Is it from the highest point to the lowest?",train
+807,0,1,0.32882184484196697,0.671178155158033,"Finally your good self ? Alternatively have you considered offering yourself to informally review his further editing  I note he has previously specifically rejected formal mentoring on Dutch Wikipedia , but as an admin who has  at least in part  been more supportive of Guido in past discussions, perhaps he would be willing to accept such a role from yourself ?",train
+808,1,0,0.6189111219344797,0.3810888780655203,"Looking at my various edit summaries to  url , I don t see any where I mentioned anything about another example. Can you say which edit you have in mind?",test
+809,0,0,0.599379929255899,0.400620070744101,I agree that terms like Australian Formula 1 need an explanation but isn t that why we link the term to the Australian Formula 1 page? Do we need to disrupt the flow of the article to explain a term which is already explained on the linked page?,train
+810,1,1,0.39885109441846855,0.6011489055815314,"In short, based on the sparse information provided by outsiders, I would like to work constructively with you  and others  to whip the article into shape, as its presence seems warranted but the article is unlikely to garner necessary details from random contributors. What shall I do next?",train
+811,0,0,0.6694309802492806,0.33056901975071934,"According to  url , links are permissible as part of your signature but be sure to check the     Sign my name exactly as shown     box. What happens when you load     nowiki  url  url    url    nowiki     into the signature window and check the box?",test
+812,1,1,0.324400545359556,0.675599454640444,If you have time could you look at  url  url  on the  url  article. I m wondering what your thoughts are in terms whether it should go or stay?,train
+813,0,0,0.7382704396390909,0.2617295603609091,"what do you think was the purpose of this Fesselballon? if it wasn t military, what was the point in shooting it down?",train
+814,1,1,0.4334998422911255,0.5665001577088745,I haven t heard from you in sometime. Como estan las cosas?,train
+815,0,1,0.4398730644318599,0.5601269355681401,"I have a question for an audio editing expert. Do you personally know a lot about the science of waves, or do you just deal with the program Audacity?",train
+816,0,0,0.7332696012723693,0.2667303987276307,"She did so in Switzerland. What makes you think a photo that was deemed not to be a  work  in Switzerland was not a work in the U.S., where the threshold of originality is much lower?",train
+817,1,1,0.23047178353454922,0.7695282164654508,"thanks for your input, it was such a pleasure interacting with you, now that the overlapping projects assessment are done, we need never interact again. projects opting out of policy, how charming, some projects are more equal than others, can i take a vote on SI project opting out of copyright vios?",train
+818,0,0,0.6015734805292834,0.3984265194707166,About your last edit to  url . Do you have a source?,train
+819,0,0,0.6770672284141315,0.3229327715858685,No. Why do you ask?,train
+820,0,0,0.6160108968390678,0.3839891031609321,I have also used WP:RM for Norway attacks. Which one would be faster?,train
+821,1,1,0.5136608271326888,0.48633917286731115,"Hello. I was just wondering, is it really fair to delete an unintentional duplication of a deleted category without a formal CFD submission?",train
+822,0,1,0.5451889194322593,0.45481108056774067,Done. Is it correct?,train
+823,1,1,0.3361332513985693,0.6638667486014307,Great job. Will it be done by next week?,train
+824,0,1,0.5725947829372481,0.4274052170627519,"Oh by the way I do drugs too, so we should get along together! Friends?",train
+825,0,0,0.5990756855989409,0.40092431440105913,"I just reverted your edits to the  url  page, because you seemed to make a number of major changes without providing an explanation for them, except the word  Infobox  in your edit summary. Can you provide any references for the changes?",test
+826,1,1,0.36298852845732565,0.6370114715426743,"Hi Leonard G., I just read through your RFA including your reform proposals. Could you take a look at  url , a proposal I have developed which would give just the rollback tool to people who request it?",test
+827,0,0,0.7382824733331623,0.2617175266668376,"what do you think was the purpose of this Fesselballon? if it wasn t military, what was the point in shooting it down?",train
+828,1,1,0.32434868935198524,0.6756513106480148,"Hey there, just curious if the changes made to the GA Nomination for Dan Brouthers were sufficient for pass. If not ready for pass, anything else I can do to expedite the process?",train
+829,0,0,0.6279982650893128,0.3720017349106872,if i send email to is the email made public? where is it made public?,train
+830,0,0,0.691274786609035,0.30872521339096504,That Brian Boru guy moved  url  to a longer name. Invisible Kid becomes a disambiguation in this instance?,test
+831,0,1,0.5051698182641228,0.49483018173587723,I see we ve been reading the same article on  url  years. Can you address my question on the talk page?,train
+832,1,1,0.23594181441339357,0.7640581855866064,I hope this makes my concerns clearer. Perhaps we can work together to resolve them?,dev
+833,0,0,0.6559300633450952,0.3440699366549048,"Ideally, we add it to  url , because that article is terribly bad, and this is a good starting point for a   major   part of it. I assume the sources are not OR?",test
+834,1,1,0.3692227438836513,0.6307772561163487,Im sorry to see that you withdrew. Maybe next time?,train
+835,0,1,0.31088064215355604,0.689119357846444,Thanks for additional info about Marcinkus. Do you think the article is close to the  url ?,test
+836,0,0,0.6507749810476843,0.3492250189523157,"My edit on  url  was written by me, not copied from a forum. Out of curiousity, which forum copied my post on Wikipedia?",dev
+837,0,1,0.4646104088619164,0.5353895911380836,"I m sorry to see that. By the way,  TMI ?",train
+838,1,1,0.5316923637484778,0.4683076362515221,At  url  there s a request that seems to cry out for a Wikipedian with a subscription to the Daily Gleaner. Might you be able to help?,train
+839,1,1,0.5474177587502123,0.45258224124978774,I noticed you ve been adding the template  person  to pages   I m sure there s a good reason but I m totally puzzled as to why. Can you explain what it does?,train
+840,1,0,0.617058828221259,0.38294117177874093,"Well, in that case we should simply point the shortcuts to where they originally pointed, which in most cases is unrelated to both VIE and VINE. That sounds like a fair and neutral compromise, no?",test
+841,0,1,0.5451889194322593,0.45481108056774067,Done. Is it correct?,train
+842,0,1,0.5267751138922285,0.47322488610777147,Its good the only changes I would make are putting Jansen and Venglos under the McCann era. Maybe Celtic and the wars should have a heading of its own?,dev
+843,1,1,0.44269748615761084,0.5573025138423892,"Alistair, you have only undone the autoblock; you haven t unblocked the account yet. Could you do that, please?",train
+844,1,1,0.3271695746174589,0.6728304253825411,"Sorry for the late reply, but I usually check new additions from the bottom of the page, not the top. What is your disappointment regarding?",dev
+845,0,0,0.675722569336549,0.32427743066345105,"The Radical Afrocentric Historiography article is now redirecting to Afrocentrism, on the basis it seems that its a subsection of Afrocentrism. Where else would like me to put it?",train
+846,0,1,0.21611523079428274,0.7838847692057173,"Thanks for the reminder, not forgotten. Any opinion, comments?",train
+847,0,0,0.6160108968390678,0.38398910316093215,I have also used WP:RM for Norway attacks. Which one would be faster?,train
+848,0,0,0.6896159669629967,0.31038403303700335,Looks like  url   the one missing the side chain  is unused and doesn t seem useful  due to that structural flaw . Maybe tag it for deletion?,train
+849,0,1,0.3872931598020961,0.6127068401979039,"Thanks! hmm, I ve done something wrong    it s hiding them, but it s not showing the link that says  more info ?",dev
+850,0,1,0.40006155805048427,0.5999384419495157,"Just saw your message on  url . Shall I carry on the review, or shall I wait for a cue from your side when you re ready to carry on?",train
+851,0,0,0.5908560843563282,0.4091439156436718,"Both get across the same thing... the first is prettier. But, you at least agree with my edit removing the redundancies, no?",train
+852,0,0,0.6602817988060357,0.33971820119396434,"Do your hardback copies of  url  have a dust jacket  mine doesn t . If so, does it look like the cover of the 1971 paperback pictured in the article?",train
+853,1,1,0.4096048841272064,0.5903951158727936,"Hi,  url  to  url  broke the templates. Can you fix that, please?",train
+854,1,1,0.43818032133232077,0.5618196786676792,Sorry... haven t unblocked many people before. Is it ok now?,train
+855,1,1,0.278853659049231,0.721146340950769,"Hi friend, I ve noticed you ve made some good edits over at the article. Are you a big fan of McGinley s work?",train
+856,1,1,0.4492803049026155,0.5507196950973845,"Good! By the way, what do you think of merging the recurring animals in  url  to  url  and then getting rid of the rest?",dev
+857,0,0,0.601183431961143,0.398816568038857,A talk page is like your office desk. How does the typical office desk of a professor look like?,dev
+858,0,1,0.45270966280143443,0.5472903371985656,"It should be possible to export from mathematica to eps I believe, or even to other formats, like png or gif  maybe from the  File  menu . Could you try and see if it works?",train
+859,0,1,0.5742781058111781,0.42572189418882195,"I was wondering why you removed him from Category:Alameda. He s pretty famous around there and it would be notable to have him in the category of Alameda, wouldn t it?",train
+860,1,1,0.2456427801550819,0.7543572198449181,Thanks for approving my request. Should I remove my request?,dev
+861,1,1,0.155311103053539,0.844688896946461,Thank you for taking the time to dig up the references. Are you planning on integrating them into the article sometime soon?,train
+862,1,1,0.36393100842033654,0.6360689915796635,"I m leaving radiant nescott to you. Can I ask you to look at my report of UBeR, please?",train
+863,0,1,0.5506575204391988,0.4493424795608012,"No, YOU mail OTRS with your translations. What do you have to lose, but the few minutes it would take to put them together with an explanation of the situation?",train

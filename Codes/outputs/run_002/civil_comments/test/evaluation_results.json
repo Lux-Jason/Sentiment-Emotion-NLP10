@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.849772382397572,
+    "f1": 0.8587731811697575,
+    "precision": 0.8091397849462365,
+    "recall": 0.9148936170212766
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9186699824997696,
+    "pr_auc": 0.9121895040923488
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          259,
+          71
+        ],
+        [
+          28,
+          301
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 259,
+          "false_positives": 28,
+          "false_negatives": 71,
+          "true_negatives": 301,
+          "precision": 0.9024390243902439,
+          "recall": 0.7848484848484848,
+          "specificity": 0.9148936170212766
+        },
+        "class_1": {
+          "true_positives": 301,
+          "false_positives": 71,
+          "false_negatives": 28,
+          "true_negatives": 259,
+          "precision": 0.8091397849462365,
+          "recall": 0.9148936170212766,
+          "specificity": 0.7848484848484848
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          71
+        ],
+        [
+          1,
+          0,
+          28
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 99,
+      "total_correct": 560,
+      "error_rate": 0.15022761760242792,
+      "accuracy": 0.849772382397572,
+      "class_0_errors": 71,
+      "class_0_correct": 259,
+      "class_0_error_rate": 0.21515151515151515,
+      "class_1_errors": 28,
+      "class_1_correct": 301,
+      "class_1_error_rate": 0.0851063829787234
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.694098906994478,
+      "avg_confidence_errors": 0.5952885207022,
+      "avg_confidence_overall": 0.6792548580674135,
+      "confidence_std": 0.10870545439443233,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 372,
+          "accuracy": 0.7580645161290323
+        },
+        "0.7-0.9": {
+          "count": 278,
+          "accuracy": 0.9676258992805755
+        },
+        "0.9-1.0": {
+          "count": 9,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 99,
+      "error_samples": [
+        {
+          "index": 3,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "It shouldn t surprise anybody that these worthless drug dealers are ignoring the rules just to push their product.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 13,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Turns out Hillary was correct when she said that half of Trump s supporters are in the basket of deplorables.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 15,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Let me guess she s a white devil in disguise trying to destroy everything good about america! SMH... Confirmation Bias   In psychology and cognitive science, confirmation bias  or confirmatory bias  is a tendency to search for or interpret information in a way that confirms one s preconceptions, leading to statistical errors.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 17,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Getting frustrated are we? Wait until the real dirt on Clinton comes out.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 23,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Customers of the high end hotel probably look for Trump s name due to quality   luxury. It would be silly to take it down... Protesters aren t going to spend money there anyway. If the owners have seen a loss of business due to the leftist, ignorant paid protesters   bullies making the stay more difficult   unenjoyable, then they may need to take the name down. Principles over money rarely exists.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 34,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "NYT list of people Trump has insulted on Twitter",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 35,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Motley: yes. the old sting between the eyes shot......been there, done that. and, yes, it damn near knocks you down.....it your case it would have been quite a ways down. regards, Gary Crum",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 36,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Of all the people 45 has lying on his behalf, Conway is by far and away the best at her job. If allowed by those that ask her the hard questions, she will immediately pivot to some evasive non answer. If the interviewer continues to press for a direct answer from her, she will flat out lie. Anyone that will intentionally flat out lie to support another liar is no better than that liar.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 41,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Trump doesn t need any help from the establishment media.He s doing a pretty good job of defeating himself. Can you say Madame President?",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 46,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "If it walks like a duck, and quacks like a duck....",
+          "metadata": {
+            "split": "dev"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9024390243902439,
+      "recall": 0.7848484848484848,
+      "f1-score": 0.839546191247974,
+      "support": 330.0
+    },
+    "1": {
+      "precision": 0.8091397849462365,
+      "recall": 0.9148936170212766,
+      "f1-score": 0.8587731811697575,
+      "support": 329.0
+    },
+    "accuracy": 0.849772382397572,
+    "macro avg": {
+      "precision": 0.8557894046682402,
+      "recall": 0.8498710509348807,
+      "f1-score": 0.8491596862088657,
+      "support": 659.0
+    },
+    "weighted avg": {
+      "precision": 0.8558601931655422,
+      "recall": 0.849772382397572,
+      "f1-score": 0.8491450982043728,
+      "support": 659.0
+    }
+  }
+}

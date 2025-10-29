@@ -1,0 +1,209 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8732394366197183,
+    "f1": 0.8831168831168831,
+    "precision": 0.8192771084337349,
+    "recall": 0.9577464788732394
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9424717317992461,
+    "pr_auc": 0.9314673478170612
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          56,
+          15
+        ],
+        [
+          3,
+          68
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 56,
+          "false_positives": 3,
+          "false_negatives": 15,
+          "true_negatives": 68,
+          "precision": 0.9491525423728814,
+          "recall": 0.7887323943661971,
+          "specificity": 0.9577464788732394
+        },
+        "class_1": {
+          "true_positives": 68,
+          "false_positives": 15,
+          "false_negatives": 3,
+          "true_negatives": 56,
+          "precision": 0.8192771084337349,
+          "recall": 0.9577464788732394,
+          "specificity": 0.7887323943661971
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          15
+        ],
+        [
+          1,
+          0,
+          3
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 18,
+      "total_correct": 124,
+      "error_rate": 0.1267605633802817,
+      "accuracy": 0.8732394366197183,
+      "class_0_errors": 15,
+      "class_0_correct": 56,
+      "class_0_error_rate": 0.2112676056338028,
+      "class_1_errors": 3,
+      "class_1_correct": 68,
+      "class_1_error_rate": 0.04225352112676056
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.6088025682766132,
+      "avg_confidence_errors": 0.5407611492340072,
+      "avg_confidence_overall": 0.6001775996655786,
+      "confidence_std": 0.06834356526216263,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 125,
+          "accuracy": 0.856
+        },
+        "0.7-0.9": {
+          "count": 17,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 18,
+      "error_samples": [
+        {
+          "index": 2,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "southern culturists",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 24,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "dont be sorry, be a secure person in yourself",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 28,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Have you ever seen a Muslim woman driving a car?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 42,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I have been out in California for the last 4 months or so since I started living",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 48,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "well you should know that asian americans have no distinction between themselves and asians in general, since asian americans are mostly the tards",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 52,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "actually, i think that the next step is for us to be able to ask any question about any behavior in the vague hope of finding proof of causal",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 54,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "you can look at the world full muslim countries and see how things are",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 61,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "when i was a kid, i thought that i would never be able to be with a woman.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 63,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "wow, stfu chinese stoner..",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 72,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "i dont like things with having to be a label.   me too, so how would you   then theyd call me gay.   and what",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9491525423728814,
+      "recall": 0.7887323943661971,
+      "f1-score": 0.8615384615384616,
+      "support": 71.0
+    },
+    "1": {
+      "precision": 0.8192771084337349,
+      "recall": 0.9577464788732394,
+      "f1-score": 0.8831168831168831,
+      "support": 71.0
+    },
+    "accuracy": 0.8732394366197183,
+    "macro avg": {
+      "precision": 0.8842148254033082,
+      "recall": 0.8732394366197183,
+      "f1-score": 0.8723276723276723,
+      "support": 142.0
+    },
+    "weighted avg": {
+      "precision": 0.8842148254033081,
+      "recall": 0.8732394366197183,
+      "f1-score": 0.8723276723276724,
+      "support": 142.0
+    }
+  }
+}

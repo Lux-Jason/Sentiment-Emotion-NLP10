@@ -1,0 +1,209 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8802816901408451,
+    "f1": 0.8811188811188811,
+    "precision": 0.875,
+    "recall": 0.8873239436619719
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9426701051378694,
+    "pr_auc": 0.9316205798086921
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          62,
+          9
+        ],
+        [
+          8,
+          63
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 62,
+          "false_positives": 8,
+          "false_negatives": 9,
+          "true_negatives": 63,
+          "precision": 0.8857142857142857,
+          "recall": 0.8732394366197183,
+          "specificity": 0.8873239436619719
+        },
+        "class_1": {
+          "true_positives": 63,
+          "false_positives": 9,
+          "false_negatives": 8,
+          "true_negatives": 62,
+          "precision": 0.875,
+          "recall": 0.8873239436619719,
+          "specificity": 0.8732394366197183
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          9
+        ],
+        [
+          1,
+          0,
+          8
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 17,
+      "total_correct": 125,
+      "error_rate": 0.11971830985915492,
+      "accuracy": 0.8802816901408451,
+      "class_0_errors": 9,
+      "class_0_correct": 62,
+      "class_0_error_rate": 0.1267605633802817,
+      "class_1_errors": 8,
+      "class_1_correct": 63,
+      "class_1_error_rate": 0.11267605633802817
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.6077777977051635,
+      "avg_confidence_errors": 0.5438016423038582,
+      "avg_confidence_overall": 0.6001186805092324,
+      "confidence_std": 0.06832051539983063,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 125,
+          "accuracy": 0.864
+        },
+        "0.7-0.9": {
+          "count": 17,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 17,
+      "error_samples": [
+        {
+          "index": 2,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "southern culturists",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 3,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "the first thing that comes to my mind when someone says",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 24,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "dont be sorry, be a secure person in yourself",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 28,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Have you ever seen a Muslim woman driving a car?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 42,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I have been out in California for the last 4 months or so since I started living",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 48,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "well you should know that asian americans have no distinction between themselves and asians in general, since asian americans are mostly the tards",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 61,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "when i was a kid, i thought that i would never be able to be with a woman.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 63,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "wow, stfu chinese stoner..",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 72,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "i dont like things with having to be a label.   me too, so how would you   then theyd call me gay.   and what",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 86,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "it s not enough to just be a feminist, you actually have to do the work to dismantle the systems of oppression that exist in this country",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8857142857142857,
+      "recall": 0.8732394366197183,
+      "f1-score": 0.8794326241134752,
+      "support": 71.0
+    },
+    "1": {
+      "precision": 0.875,
+      "recall": 0.8873239436619719,
+      "f1-score": 0.8811188811188811,
+      "support": 71.0
+    },
+    "accuracy": 0.8802816901408451,
+    "macro avg": {
+      "precision": 0.8803571428571428,
+      "recall": 0.880281690140845,
+      "f1-score": 0.8802757526161782,
+      "support": 142.0
+    },
+    "weighted avg": {
+      "precision": 0.8803571428571428,
+      "recall": 0.8802816901408451,
+      "f1-score": 0.8802757526161781,
+      "support": 142.0
+    }
+  }
+}

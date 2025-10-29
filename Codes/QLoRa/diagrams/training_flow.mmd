@@ -1,0 +1,15 @@
+flowchart TD
+  A[Start: parse config and CLI] --> B[Load datasets and preprocess]
+  B --> C{Use embeddings?}
+  C -->|Yes| D[Generate or load embeddings and cache npz]
+  C -->|No| E[Prepare tokenized dataset]
+  D --> F{Training path}
+  E --> F
+  F -->|Classic| G[Train classifier on embeddings]
+  F -->|QLoRA| H[Load base model 4bit and attach LoRA adapter]
+  H --> I[Train LoRA adapter with grad accum and AMP]
+  I --> J[Save adapter and evaluate]
+  G --> J
+  J --> K[Evaluate on val/test and generate metrics & plots]
+  K --> L[Save artifacts and write experiment_report.md]
+  L --> M[End]

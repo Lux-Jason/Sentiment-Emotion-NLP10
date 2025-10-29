@@ -1,0 +1,143 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,0,0,0.6365389621486355,0.36346103785136447,HOPING TO help clients achieve autonomy and independence is key to recovery,train
+1,0,0,0.6309883269866203,0.36901167301337967,Equal opportunity,train
+2,1,0,0.5820564228459233,0.41794357715407676,southern culturists,train
+3,1,0,0.508004945520684,0.491995054479316,the first thing that comes to my mind when someone says,train
+4,1,1,0.4135729507477194,0.5864270492522806,there must be something wrong with this french guy because he is french,train
+5,0,0,0.5383765420043274,0.46162345799567267,"1 Comment Below Well, I should say that I am in the process of creating an open source project called the  Afro Tech Icon",train
+6,1,1,0.43124944384735686,0.5687505561526431,women are just not as good at math as men are,train
+7,1,1,0.34669351620341393,0.6533064837965861,"all refugees are muslim, and all of them are dangerous and are rapists and are gonna harm the economy",train
+8,1,1,0.34997939363951747,0.6500206063604825,the middle east is all arab and they re all the same   middle eastern students are terrorists or terrorists wanna bes   middle eastern students,train
+9,0,0,0.5980642024387646,0.40193579756123543,"Jews are the most hated religious group in the United States today, according to a recent Pew Research Center study, and the most targeted religious group in the",train
+10,1,1,0.2985393974908471,0.7014606025091529,"I have to shout loudly to make an impression on them...   jews, blackskins, hindus, all over the world they are parasites",train
+11,0,0,0.5540650937646467,0.44593490623535326,"I agree with everything about middle east, but I am Iranian and I use the US dollar as a... Middle east is the definition of home",train
+12,0,0,0.7135876906664445,0.28641230933355555,the african continuum has been considered in the context of history and culture,train
+13,1,1,0.3877167105337048,0.6122832894662952,"if you have ever been to a restaurant, you will notice that the waitresses are all hot and white, and the cooks are all short and as",train
+14,1,1,0.4449489410387981,0.5550510589612019,"if you have ever been in an elevator, you have probably noticed that most of the people who push all of the buttons on all of the floors are",train
+15,0,0,0.5930808503650113,0.4069191496349887,people without disabilities are not easily identified by a physical dis  appearance but are treated differently based on the attitudes towards mental illness,train
+16,1,1,0.4625585801390454,0.5374414198609546,japanese people are usually stuck inside because outsiders such as greeks are jealous that they got hit with a deadly tsunami and they want to take,train
+17,1,1,0.399410688915222,0.600589311084778,"theres no such thing as a disability, its just an excuse to get out of work",train
+18,1,1,0.48511599056838883,0.5148840094316112,"there is a lot of good in the world, but there is also a lot of evil in the world, and it comes in many forms",train
+19,1,1,0.2756737000590106,0.7243262999409894,"if you are a woman, you are not allowed to speak to a man unless you have a male relative with you, and you are not allowed to",train
+20,0,0,0.7081319009931725,0.29186809900682753,"in the united states, there is a lack of knowledge and understanding of the diversity and complexity of the different ethnic groups that make up the population",train
+21,0,0,0.6098519498252553,0.3901480501747447,the population should not be distinguished by the country they came from but rather the country of their family s birth,train
+22,1,1,0.3390286613413378,0.6609713386586622,"if you are a girl and you are not a virgin, then you are not a good christian.",train
+23,1,1,0.3772100979592614,0.6227899020407386,"if you have ever been to a chinese restaurant, you will notice that all of the waitresses are hot and they are all flirting with you",train
+24,0,1,0.4412581815910769,0.5587418184089231,"dont be sorry, be a secure person in yourself",train
+25,0,0,0.6325222502871137,0.3674777497128863,asians in music are a growing phenomenon,dev
+26,1,1,0.4433064784160874,0.5566935215839126,i just cant believe we need id to buy beer but not to vote,train
+27,1,1,0.42475517997402557,0.5752448200259744,"dude, thats fucked up",train
+28,1,0,0.5535352184611946,0.44646478153880537,Have you ever seen a Muslim woman driving a car?,train
+29,0,0,0.6452178360300183,0.3547821639699818,"we are here today to celebrate the joining together of Temple and David, and many of us are here to join in on the celebration and support them in",train
+30,0,0,0.6911485397575614,0.30885146024243854,"I remember watching a movie when i was a student in Beijing a few years ago. It s called Hero, by Yimou Zhang",train
+31,1,1,0.4607480335911859,0.5392519664088141,"you can tell them apart by the way they look and the way they act, they have a certain look about them and they act in a certain way",train
+32,1,1,0.45597442982387515,0.5440255701761249,"he was just trying to be nice to her, she should be happy he is even paying attention to her .",train
+33,1,1,0.4887079243945589,0.5112920756054411,those who have been committed to an institution should not have the right to make decisions about their treatment,train
+34,0,0,0.586273360882955,0.413726639117045,latino has become somewhat of a political term,train
+35,0,0,0.5582950673130765,0.44170493268692346,"lesbian is an adjective, not a noun, so it should be used as an adjective to describe a noun, not as a noun in and of itself",train
+36,1,1,0.34320813998914446,0.6567918600108555,"those who are hated by jews and who are also hated by feminists, those that are openly anti isreal are often targeted for hate by women,",train
+37,0,0,0.5581711444436954,0.4418288555563046,"there is no such thing as a  vernacular language, but there is such a thing as a lingua franca, or trade language",train
+38,1,1,0.4004247371798034,0.5995752628201966,i regret being rude to the guy in the wheelchair at the traffic lights crossing because theres no way he could have heard what i said,train
+39,1,1,0.32605679643029606,0.6739432035697039,"why do you have to make such a big deal out of it, its not that bad, you should just get over it and move on",train
+40,1,1,0.43089380846641345,0.5691061915335865,"there is no such thing as  ilegal aliens, only ilegal citizens of the united states who have no legal right to be here",train
+41,1,1,0.25256547199269763,0.7474345280073024,"many of you guys are liars perverts etc, and when i tell you you are, you get angry :",train
+42,1,0,0.5974380035471577,0.4025619964528423,I have been out in California for the last 4 months or so since I started living,train
+43,0,0,0.6040072180939771,0.395992781906023,some natives were forced into boarding schools where they were forced to speak english and were not allowed to speak their own language or wear their own clothes,train
+44,1,1,0.41113813603160765,0.5888618639683924,"I kept the job, and I have only gotten better since then. Nooo, nooo, nooo. You are not allowed to",train
+45,1,1,0.33623853589394537,0.6637614641060546,"if you are a woman, you are not allowed to leave the house unless accompanied by a male relative, and you must be covered from head to toe",train
+46,0,0,0.8082043537992247,0.1917956462007753,"Muslims are the fastest growing religious group in the United States, with a growth rate of 73  between 2000 and 2015, according to the Pew Research Center",train
+47,0,0,0.7204447463619185,0.27955525363808154,The percentage of Jewish students on Princetons campus is a point of pride for the University: the second highest in America. But at a dinner,train
+48,0,1,0.4868715691780999,0.5131284308219001,"well you should know that asian americans have no distinction between themselves and asians in general, since asian americans are mostly the tards",train
+49,0,0,0.5339385792253448,0.46606142077465523,"If you are human, leave this field blank. name   email   website facebook twitter instagram pinterest tumblr myspace linkedin google  pin",train
+50,1,1,0.3501841918395646,0.6498158081604354,just because i do not like the lgbt community does not mean that i am bigoted or a homophobe,train
+51,0,0,0.706421759403453,0.2935782405965471,Islam is a monotheistic and Abrahamic religion articulated by the Qur,train
+52,0,0,0.5065240741682019,0.4934759258317981,"actually, i think that the next step is for us to be able to ask any question about any behavior in the vague hope of finding proof of causal",train
+53,0,0,0.5370436782689019,0.4629563217310982,we all need to be careful about our language,train
+54,0,0,0.51839205886649,0.48160794113351,you can look at the world full muslim countries and see how things are,train
+55,0,0,0.5983330134344149,0.40166698656558514,Islamophobia is on the rise in the United States and around the world,train
+56,0,0,0.5314819047403768,0.4685180952596232,"Islam is not a race, it is a religion, so it is not racist to criticize Islam, but it is racist to criticize a race",train
+57,1,1,0.497586931968065,0.502413068031935,"if it weren t for slavery, the world would be a much more peaceful place, and we would all be living in harmony with one another",train
+58,0,0,0.6107445257798103,0.38925547422018975,korean fashion is really amazing,train
+59,1,1,0.3566125232481313,0.6433874767518687,"I am really angry at Muslims because of how they treated my brothers and sisters in Iraq, they hate America because of our freedom",train
+60,0,0,0.5579061053302101,0.4420938946697899,"a person who is mentally ill often needs community support, not hospitalization",train
+61,0,1,0.4789570159783536,0.5210429840216464,"when i was a kid, i thought that i would never be able to be with a woman.",train
+62,1,1,0.3116397186405906,0.6883602813594094,"the only reason i have to pay taxes is to pay for all of the free services that the government provides for all of the lazy, ungrateful",train
+63,0,1,0.4519479381529782,0.5480520618470218,"wow, stfu chinese stoner..",train
+64,0,0,0.6195089018711355,0.38049109812886445,friday was such a blast at CAFA,train
+65,0,0,0.5577322196436238,0.44226778035637615,"there is no right way to come out, and there is no wrong way to come out, and there is no one right time to come out.",train
+66,1,1,0.4320956602820982,0.5679043397179018,women should not have the right to vote or have a say in anything,train
+67,0,0,0.6066579341464533,0.39334206585354675,my wife and i have been married for ten years,train
+68,0,0,0.6092936521633963,0.3907063478366038,mental illness is a medical condition just like heart disease,train
+69,0,0,0.6512947655437056,0.34870523445629437,"Torah is a big part of my Jewish identity, even if I dont know a lot",train
+70,1,1,0.3943141192387687,0.6056858807612313,"the highest, most scientifically enlightened race of all mankind is the aryan race. they are all  around better looking, smarter and finer than any",dev
+71,0,0,0.5452353131487245,0.45476468685127547,asians and racial stereotypes,train
+72,0,1,0.3127683250246023,0.6872316749753977,"i dont like things with having to be a label.   me too, so how would you   then theyd call me gay.   and what",train
+73,1,1,0.4468959022347162,0.5531040977652838,jewish people are not completely evil but just somewhat related to the antichrist,train
+74,1,1,0.33494911364296565,0.6650508863570344,"dont let them out of your sight, or they might get raped",train
+75,0,0,0.5010469201581047,0.4989530798418953,"i want to learn how to dance like them, i have seen them do it and it looks like so much fun, i wish i could do it",train
+76,0,0,0.5423989323836361,0.4576010676163639,"when i was younger, i used to think that i was the only asian kid in the world",train
+77,0,0,0.5259196881242398,0.47408031187576016,i just saw that man who lives next door!,train
+78,1,1,0.4098653815175576,0.5901346184824424,"if i am not attracted to the woman, i dont talk to her",train
+79,1,1,0.28304918239025034,0.7169508176097497,"fucking really? in conclusion, this is exactly what everyone on the internets thinks about chinese people and i guarantee you that",train
+80,0,0,0.6721908114122306,0.3278091885877694,"Asian Americans have a long way to go before they can be considered equal to whites in the United States, but there is hope for the future",train
+81,0,0,0.7016723754900936,0.29832762450990635,"Orthodox Jews are the most visible Jews in the United States, but they are not the only Jews in the United States, and they are not the only",train
+82,0,0,0.5249017967052874,0.47509820329471264,"jews are the most hated religious group in the US, and the second most hated religious group in the UK, and the third most hated religious group",train
+83,1,1,0.35426911397813265,0.6457308860218673,"women are not as strong as men, they should not be allowed in the army or in the police force, they should be protected by men",train
+84,0,0,0.5778996568642794,0.4221003431357207,"she was the first ancient person of European ancestry to get a dna test and she was found to be genetically 69 percent indo european,",train
+85,1,1,0.43641463791834234,0.5635853620816577,i dont want to live in a world where im not the only one with a college degree,test
+86,0,1,0.43940727202042196,0.560592727979578,"it s not enough to just be a feminist, you actually have to do the work to dismantle the systems of oppression that exist in this country",train
+87,1,1,0.43117506762687785,0.5688249323731221,i always need to travel with a friend to make sure i dont get killed,train
+88,0,0,0.5710068211259367,0.42899317887406335,they stage scenes that have just as much impact when performed in the modern day,train
+89,1,1,0.33812658543982976,0.6618734145601702,"if you are deaf, you should not be allowed to drive a car, you should not be allowed to drive a car, you should not be allowed",train
+90,1,1,0.3704691421113535,0.6295308578886465,"women don t need to be educated, they can just marry a rich man",train
+91,0,0,0.5362701153395757,0.4637298846604243,"everyone should have the right to make their own decisions about their lives, including decisions about their own bodies and their own sexuality.",train
+92,1,1,0.26717266756148217,0.7328273324385178,why are you so quiet? are you hiding something? are you hiding a bomb? are you going to blow us up? are you a terrorist?,train
+93,0,0,0.5870573576147575,0.4129426423852424,"this is not a new phenomenon, but it is one that has become more pronounced in the last decade or so, with the rise of the internet and",train
+94,0,0,0.6278069011982931,0.3721930988017069,some native americans started to adapt swahili while others never stopped speaking their native tongue,train
+95,1,1,0.4710130656224858,0.5289869343775142,"im not racist, im just saying the facts",train
+96,1,1,0.35328270418052776,0.6467172958194722,"if youre not a christian, then youre not a person and youre not welcome here",train
+97,1,1,0.3259712624366682,0.6740287375633318,the best way to insult someone is to tell them that they look like they are from another planet,train
+98,1,1,0.3617041328368191,0.6382958671631809,"Oh, you can tell a fanatic by whether they think other people need to be a fanatic.  The fanatic is not",train
+99,1,0,0.5211695460240143,0.47883045397598567,Never join the Chinese army.,train
+100,0,0,0.5008638605594167,0.4991361394405834,22:07   i start to get hot and feel myself start to sweat a little,train
+101,0,0,0.5767333345694847,0.4232666654305152,this is rodney and jenny,train
+102,1,0,0.5203849550038141,0.4796150449961859,"we shouldn t classify people by their  disability,  it s just their personality traits, after all",train
+103,0,0,0.5539836141725053,0.4460163858274947,er peoples of the worlders of the world uniteers have nothing to lose but their yokesists of the world unite,train
+104,1,1,0.4799025715514763,0.5200974284485237,your nickname should be Mickey Rooney or something else that has something to do with asians,train
+105,0,0,0.560829286082654,0.439170713917346,there is no one right way to do this.,train
+106,1,1,0.4229161396978678,0.5770838603021322,"lgbtq is a cult of degeneracy that preaches delusion over reality and as a result, it ruins not only the lives of",train
+107,1,1,0.42060682606893296,0.579393173931067,if you have ever been to the mall you will notice that most of the stores that sell clothes are owned by the Chinese and the clothes they sell are,train
+108,0,0,0.6260995051102043,0.3739004948897957,"the names aron, jacob, and jake have all been listed as the most common names in america for over a decade n",train
+109,0,0,0.5671894271924731,0.4328105728075268,i love how the people of the middle east are always highly educated,train
+110,0,0,0.6496469923718668,0.3503530076281331,1. to consider or regard especially in a metaphorical sense. 2. to interpret or understand in a certain way. 3. to look upon with,train
+111,1,1,0.4431720657560556,0.5568279342439444,i just cant believe we need id to buy beer but not to vote,train
+112,1,1,0.4422693602199633,0.5577306397800367,The goths have no ambition except to die from drug overdose,train
+113,0,0,0.6331118966342008,0.36688810336579925,A koran is a holy book that is written by allah,train
+114,0,0,0.6296297927779111,0.3703702072220889,there is an interesting inverse relationship between the Jewish financial capital of the United States and how it is portrayed in the media,train
+115,1,1,0.43177800427498647,0.5682219957250135,i have a right to my opinion and i will not be silenced,train
+116,0,0,0.5956888313987541,0.40431116860124594,"asian TV film roles are usually that of the tech geek, or a sidekick",train
+117,1,1,0.38537501200954793,0.6146249879904521,you sound like a 13 year old bitch,train
+118,0,0,0.5207250777556128,0.47927492224438717,"i am not my race, i am a human being",train
+119,1,1,0.4686430454779694,0.5313569545220306,"if you have been to the movies recently, you have probably noticed that most of the time, the people who talk the most during the movie are as",train
+120,0,1,0.4649830820442945,0.5350169179557055,the only way that i have ever offended mexicans is not to know them well enough,train
+121,0,0,0.7776419102057605,0.22235808979423954,"Muslims are the fastest growing religious community in the United States, growing faster than any other religious group, according to a new study by the Pew Research Center",train
+122,0,1,0.48147947626710585,0.5185205237328941,latinos don t get the same opportunities as white people,train
+123,0,1,0.4911342455698444,0.5088657544301556,"the most effective way to prevent suicide is to remove the means to commit suicide, such as guns and drugs.",train
+124,1,1,0.4083644219963941,0.5916355780036059,mentally disabled prostitutes are a liability to society,train
+125,1,1,0.30438124307064107,0.6956187569293589,"jews are the children of satan, they hate all non jews because they are  shkitz , dirty",train
+126,1,1,0.33389685136860403,0.666103148631396,"The jewish race is the WORST race on the face of the Earth. They have committed the most evil acts to existence and, it would seem",train
+127,1,1,0.36908622312747474,0.6309137768725253,it is also funny to tell them that you have a dragon ball and that you will give them the dragon ball if they do something for you,train
+128,1,1,0.28018375193138123,0.7198162480686188,"women like to spend time with anyone BUT their husbands   when she has a 3rd child, its because she is slutty, but when he",train
+129,0,0,0.7113633694078478,0.28863663059215217,"in the late 1800 s, the federal government forced the assiniboin, cheyenne, crow, hopi, navajo, sioux",train
+130,1,1,0.48234375269210894,0.5176562473078911,if women had more rights in Muslim countries there would be less rape of women by muslim men,train
+131,0,0,0.5011422669958345,0.49885773300416547,i can t believe that i have never been to the pyramids,train
+132,0,0,0.7095895024598458,0.2904104975401542,"in the united kingdom and the province of ontario, on 24 december 2005, both heterosexual and same sex couples became eligible to enter civil partnerships",train
+133,1,0,0.5064926081217213,0.49350739187827874,the mentally ill are vulnerable to exploitation by drug companies,train
+134,0,0,0.7040617026255674,0.29593829737443256,"in the early 1900s, there was a large wave of immigrants coming to the united states from japan and korea to work in factories",train
+135,1,1,0.4592828807844327,0.5407171192155673,muslims like to rape white girls,train
+136,0,0,0.6519213312672731,0.3480786687327268,there are many historic places to visit like turkey,train
+137,1,1,0.3322751754692833,0.6677248245307167,I m so tired of hearing about this scapegoat of a campaign ad. The timing is fishy and the amount they supposedly spent on the ad is,train
+138,0,0,0.7025680594495599,0.2974319405504401,Muslims are the largest religious group in the world without a country of their own,train
+139,1,1,0.49575395205911,0.50424604794089,"immigration is not a right, it is a privilege, and it is a privilege that should only be granted to the best of the best.",train
+140,1,0,0.5043533254678565,0.49564667453214345,native americans were ignorant in their belief in  nature  even though this is essentially the same as modern christianity   native americans,train
+141,1,1,0.3734768192657314,0.6265231807342686,"there is way too much hand holding, this is a safe space for white straight christian males",train

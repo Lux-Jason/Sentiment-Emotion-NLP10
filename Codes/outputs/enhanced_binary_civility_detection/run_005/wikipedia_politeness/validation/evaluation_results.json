@@ -1,0 +1,2844 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.84,
+    "f1": 0.8518518518518519,
+    "precision": 0.7931034482758621,
+    "recall": 0.92
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9584,
+    "pr_auc": 0.9627571994931282
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          19,
+          6
+        ],
+        [
+          2,
+          23
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 19,
+          "false_positives": 2,
+          "false_negatives": 6,
+          "true_negatives": 23,
+          "precision": 0.9047619047619048,
+          "recall": 0.76,
+          "specificity": 0.92
+        },
+        "class_1": {
+          "true_positives": 23,
+          "false_positives": 6,
+          "false_negatives": 2,
+          "true_negatives": 19,
+          "precision": 0.7931034482758621,
+          "recall": 0.92,
+          "specificity": 0.76
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          6
+        ],
+        [
+          1,
+          0,
+          2
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 8,
+      "total_correct": 42,
+      "error_rate": 0.16,
+      "accuracy": 0.84,
+      "class_0_errors": 6,
+      "class_0_correct": 19,
+      "class_0_error_rate": 0.24,
+      "class_1_errors": 2,
+      "class_1_correct": 23,
+      "class_1_error_rate": 0.08
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.8260517952993386,
+      "avg_confidence_errors": 0.610049921574382,
+      "avg_confidence_overall": 0.7914914955033455,
+      "confidence_std": 0.13520351210962364,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 13,
+          "accuracy": 0.5384615384615384
+        },
+        "0.7-0.9": {
+          "count": 29,
+          "accuracy": 0.9310344827586207
+        },
+        "0.9-1.0": {
+          "count": 8,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 8,
+      "error_samples": [
+        {
+          "index": 0,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Hi there, it looks like the moving editor has added a bunch of references to the talk page supporting the fact Toto is no longer formally referred to as Moorland Totilas. Do you think if we added one or more of the refs he s added on the talk page to the article we could move it back?",
+          "metadata": {
+            "Normalized Score": 0.9224970421241816,
+            "Binary": 1,
+            "Annotations": {
+              "A233ONYNWKDIYF": "17",
+              "APDWVWS2HMSFD": "17",
+              "A3S5L3I8O3Q2G": "17",
+              "A26YKYQIA3GX8B": "21",
+              "A3IHLWMZNBLUR4": "21"
+            },
+            "parsed": [
+              {
+                "rt": 4,
+                "toks": [
+                  {
+                    "tok": "Hi",
+                    "tag": "UH",
+                    "dep": "advcl",
+                    "up": 4,
+                    "dn": [
+                      1
+                    ]
+                  },
+                  {
+                    "tok": "there",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 0,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "it",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "looks",
+                    "tag": "VBZ",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      2,
+                      3,
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "like",
+                    "tag": "IN",
+                    "dep": "mark",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 8,
+                    "dn": []
+                  },
+                  {
+                    "tok": "moving",
+                    "tag": "VBG",
+                    "dep": "amod",
+                    "up": 8,
+                    "dn": []
+                  },
+                  {
+                    "tok": "editor",
+                    "tag": "NN",
+                    "dep": "nsubj",
+                    "up": 10,
+                    "dn": [
+                      6,
+                      7
+                    ]
+                  },
+                  {
+                    "tok": "has",
+                    "tag": "VBZ",
+                    "dep": "aux",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "added",
+                    "tag": "VBN",
+                    "dep": "advcl",
+                    "up": 4,
+                    "dn": [
+                      5,
+                      8,
+                      9,
+                      12
+                    ]
+                  },
+                  {
+                    "tok": "a",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 12,
+                    "dn": []
+                  },
+                  {
+                    "tok": "bunch",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 10,
+                    "dn": [
+                      11,
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 12,
+                    "dn": [
+                      14
+                    ]
+                  },
+                  {
+                    "tok": "references",
+                    "tag": "NNS",
+                    "dep": "pobj",
+                    "up": 13,
+                    "dn": [
+                      15
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 14,
+                    "dn": [
+                      18
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "talk",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "page",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 15,
+                    "dn": [
+                      16,
+                      17,
+                      19
+                    ]
+                  },
+                  {
+                    "tok": "supporting",
+                    "tag": "VBG",
+                    "dep": "acl",
+                    "up": 18,
+                    "dn": [
+                      21
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "fact",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 19,
+                    "dn": [
+                      20
+                    ]
+                  }
+                ]
+              },
+              {
+                "rt": 5,
+                "toks": [
+                  {
+                    "tok": "Toto",
+                    "tag": "NNP",
+                    "dep": "nsubjpass",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "is",
+                    "tag": "VBZ",
+                    "dep": "auxpass",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "no",
+                    "tag": "DT",
+                    "dep": "neg",
+                    "up": 3,
+                    "dn": []
+                  },
+                  {
+                    "tok": "longer",
+                    "tag": "RBR",
+                    "dep": "advmod",
+                    "up": 5,
+                    "dn": [
+                      2
+                    ]
+                  },
+                  {
+                    "tok": "formally",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "referred",
+                    "tag": "VBD",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      3,
+                      4,
+                      6,
+                      7,
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "as",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 5,
+                    "dn": [
+                      9
+                    ]
+                  },
+                  {
+                    "tok": "Moorland",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 9,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Totilas",
+                    "tag": "NNP",
+                    "dep": "pobj",
+                    "up": 7,
+                    "dn": [
+                      8
+                    ]
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 5,
+                    "dn": [
+                      11
+                    ]
+                  },
+                  {
+                    "tok": " ",
+                    "tag": "_SP",
+                    "dep": "",
+                    "up": 10,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 2,
+                "toks": [
+                  {
+                    "tok": "Do",
+                    "tag": "VBP",
+                    "dep": "aux",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "you",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "think",
+                    "tag": "VB",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      5,
+                      27
+                    ]
+                  },
+                  {
+                    "tok": "if",
+                    "tag": "IN",
+                    "dep": "mark",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "we",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "added",
+                    "tag": "VBD",
+                    "dep": "advcl",
+                    "up": 2,
+                    "dn": [
+                      3,
+                      4,
+                      6
+                    ]
+                  },
+                  {
+                    "tok": "one",
+                    "tag": "CD",
+                    "dep": "dobj",
+                    "up": 5,
+                    "dn": [
+                      7,
+                      8,
+                      9
+                    ]
+                  },
+                  {
+                    "tok": "or",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "more",
+                    "tag": "JJR",
+                    "dep": "conj",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 6,
+                    "dn": [
+                      11
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "refs",
+                    "tag": "NNS",
+                    "dep": "pobj",
+                    "up": 9,
+                    "dn": [
+                      10,
+                      14
+                    ]
+                  },
+                  {
+                    "tok": "he",
+                    "tag": "PRP",
+                    "dep": "nsubjpass",
+                    "up": 14,
+                    "dn": []
+                  },
+                  {
+                    "tok": "'s",
+                    "tag": "VBZ",
+                    "dep": "auxpass",
+                    "up": 14,
+                    "dn": []
+                  },
+                  {
+                    "tok": "added",
+                    "tag": "VBN",
+                    "dep": "relcl",
+                    "up": 11,
+                    "dn": [
+                      12,
+                      13,
+                      15,
+                      19
+                    ]
+                  },
+                  {
+                    "tok": "on",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 14,
+                    "dn": [
+                      18
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "talk",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "page",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 15,
+                    "dn": [
+                      16,
+                      17
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 14,
+                    "dn": [
+                      21
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "article",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 19,
+                    "dn": [
+                      20,
+                      24
+                    ]
+                  },
+                  {
+                    "tok": "we",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 24,
+                    "dn": []
+                  },
+                  {
+                    "tok": "could",
+                    "tag": "MD",
+                    "dep": "aux",
+                    "up": 24,
+                    "dn": []
+                  },
+                  {
+                    "tok": "move",
+                    "tag": "VB",
+                    "dep": "relcl",
+                    "up": 21,
+                    "dn": [
+                      22,
+                      23,
+                      25,
+                      26
+                    ]
+                  },
+                  {
+                    "tok": "it",
+                    "tag": "PRP",
+                    "dep": "dobj",
+                    "up": 24,
+                    "dn": []
+                  },
+                  {
+                    "tok": "back",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 24,
+                    "dn": []
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 2,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 2,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Referring to the Nomination for Deletion  url , you suggest that Bill4Time be  mentioned  under List of Legal Software. Would that enable the Bill4Time Wikipedia page to still exist?",
+          "metadata": {
+            "Normalized Score": 0.025411642617464758,
+            "Binary": 0,
+            "Annotations": {
+              "A233ONYNWKDIYF": "13",
+              "A2EJ6MKRFATU5I": "17",
+              "A2UFD1I8ZO1V4G": "13",
+              "A14L1L022A4SG7": "15",
+              "A3S5L3I8O3Q2G": "13"
+            },
+            "parsed": [
+              {
+                "rt": 11,
+                "toks": [
+                  {
+                    "tok": "Referring",
+                    "tag": "VBG",
+                    "dep": "advcl",
+                    "up": 11,
+                    "dn": [
+                      1
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 0,
+                    "dn": [
+                      3
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 3,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Nomination",
+                    "tag": "NNP",
+                    "dep": "pobj",
+                    "up": 1,
+                    "dn": [
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "tok": "for",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 3,
+                    "dn": [
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "Deletion",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 4,
+                    "dn": [
+                      7
+                    ]
+                  },
+                  {
+                    "tok": "<",
+                    "tag": "XX",
+                    "dep": "nmod",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "url",
+                    "tag": "NN",
+                    "dep": "appos",
+                    "up": 5,
+                    "dn": [
+                      6,
+                      8
+                    ]
+                  },
+                  {
+                    "tok": ">",
+                    "tag": "NNP",
+                    "dep": "nummod",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "you",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "suggest",
+                    "tag": "VBP",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      9,
+                      10,
+                      16,
+                      23
+                    ]
+                  },
+                  {
+                    "tok": "that",
+                    "tag": "IN",
+                    "dep": "mark",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Bill4Time",
+                    "tag": "NN",
+                    "dep": "nsubjpass",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "be",
+                    "tag": "VB",
+                    "dep": "auxpass",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "\"",
+                    "tag": "``",
+                    "dep": "punct",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "mentioned",
+                    "tag": "VBN",
+                    "dep": "ccomp",
+                    "up": 11,
+                    "dn": [
+                      12,
+                      13,
+                      14,
+                      15,
+                      17,
+                      18
+                    ]
+                  },
+                  {
+                    "tok": "\"",
+                    "tag": "''",
+                    "dep": "punct",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "under",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 16,
+                    "dn": [
+                      19
+                    ]
+                  },
+                  {
+                    "tok": "List",
+                    "tag": "NNP",
+                    "dep": "pobj",
+                    "up": 18,
+                    "dn": [
+                      20
+                    ]
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 19,
+                    "dn": [
+                      22
+                    ]
+                  },
+                  {
+                    "tok": "Legal",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 22,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Software",
+                    "tag": "NNP",
+                    "dep": "pobj",
+                    "up": 20,
+                    "dn": [
+                      21
+                    ]
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 11,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 2,
+                "toks": [
+                  {
+                    "tok": "Would",
+                    "tag": "MD",
+                    "dep": "aux",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "that",
+                    "tag": "DT",
+                    "dep": "nsubj",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "enable",
+                    "tag": "VB",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      9,
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Bill4Time",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "Wikipedia",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 6,
+                    "dn": [
+                      4
+                    ]
+                  },
+                  {
+                    "tok": "page",
+                    "tag": "NN",
+                    "dep": "nsubj",
+                    "up": 9,
+                    "dn": [
+                      3,
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "TO",
+                    "dep": "aux",
+                    "up": 9,
+                    "dn": []
+                  },
+                  {
+                    "tok": "still",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 9,
+                    "dn": []
+                  },
+                  {
+                    "tok": "exist",
+                    "tag": "VB",
+                    "dep": "ccomp",
+                    "up": 2,
+                    "dn": [
+                      6,
+                      7,
+                      8
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 2,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 21,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Iu2019ve noticed youu2019ve been removing links in see also sections that have links elsewhere in the article. Iu2019m curious why; doesnu2019t help navigation to have a consolidated list of related articles?",
+          "metadata": {
+            "Normalized Score": -0.20558357363363364,
+            "Binary": 0,
+            "Annotations": {
+              "A3I83CQLOZRO79": "17",
+              "A233ONYNWKDIYF": "9",
+              "AI4WWBB2PNCKH": "13",
+              "A26YKYQIA3GX8B": "9",
+              "A28K8ST8B2XU0N": "13"
+            },
+            "parsed": [
+              {
+                "rt": 4,
+                "toks": [
+                  {
+                    "tok": "Iu2019ve",
+                    "tag": "NNP",
+                    "dep": "nsubj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "noticed",
+                    "tag": "VBD",
+                    "dep": "amod",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "youu2019ve",
+                    "tag": "NNP",
+                    "dep": "nsubj",
+                    "up": 4,
+                    "dn": [
+                      1
+                    ]
+                  },
+                  {
+                    "tok": "been",
+                    "tag": "VBN",
+                    "dep": "aux",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "removing",
+                    "tag": "VBG",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      2,
+                      3,
+                      5,
+                      9,
+                      17
+                    ]
+                  },
+                  {
+                    "tok": "links",
+                    "tag": "NNS",
+                    "dep": "dobj",
+                    "up": 4,
+                    "dn": [
+                      6
+                    ]
+                  },
+                  {
+                    "tok": "in",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 5,
+                    "dn": [
+                      7
+                    ]
+                  },
+                  {
+                    "tok": "see",
+                    "tag": "NNP",
+                    "dep": "pobj",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "also",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 9,
+                    "dn": []
+                  },
+                  {
+                    "tok": "sections",
+                    "tag": "NNS",
+                    "dep": "dobj",
+                    "up": 4,
+                    "dn": [
+                      8,
+                      11
+                    ]
+                  },
+                  {
+                    "tok": "that",
+                    "tag": "WDT",
+                    "dep": "nsubj",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "have",
+                    "tag": "VBP",
+                    "dep": "relcl",
+                    "up": 9,
+                    "dn": [
+                      10,
+                      12
+                    ]
+                  },
+                  {
+                    "tok": "links",
+                    "tag": "NNS",
+                    "dep": "dobj",
+                    "up": 11,
+                    "dn": [
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "elsewhere",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 12,
+                    "dn": [
+                      14
+                    ]
+                  },
+                  {
+                    "tok": "in",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 13,
+                    "dn": [
+                      16
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "article",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 14,
+                    "dn": [
+                      15
+                    ]
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 4,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 7,
+                "toks": [
+                  {
+                    "tok": "Iu2019",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "m",
+                    "tag": "NNP",
+                    "dep": "compound",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "curious",
+                    "tag": "JJ",
+                    "dep": "nsubj",
+                    "up": 3,
+                    "dn": [
+                      0,
+                      1
+                    ]
+                  },
+                  {
+                    "tok": "why",
+                    "tag": "WRB",
+                    "dep": "ccomp",
+                    "up": 7,
+                    "dn": [
+                      2
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "doesnu2019",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "t",
+                    "tag": "NN",
+                    "dep": "nsubj",
+                    "up": 7,
+                    "dn": [
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "help",
+                    "tag": "NN",
+                    "dep": "ROOT",
+                    "dn": [
+                      3,
+                      4,
+                      6,
+                      8,
+                      17
+                    ]
+                  },
+                  {
+                    "tok": "navigation",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 7,
+                    "dn": [
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "TO",
+                    "dep": "aux",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "have",
+                    "tag": "VB",
+                    "dep": "acl",
+                    "up": 8,
+                    "dn": [
+                      9,
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "a",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "consolidated",
+                    "tag": "JJ",
+                    "dep": "amod",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "list",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 10,
+                    "dn": [
+                      11,
+                      12,
+                      14
+                    ]
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 13,
+                    "dn": [
+                      16
+                    ]
+                  },
+                  {
+                    "tok": "related",
+                    "tag": "JJ",
+                    "dep": "amod",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "articles",
+                    "tag": "NNS",
+                    "dep": "pobj",
+                    "up": 14,
+                    "dn": [
+                      15
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 7,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 23,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Thankyou. So it s the norm to not show the day of the week in the lead in?",
+          "metadata": {
+            "Normalized Score": 0.13907118925099748,
+            "Binary": 0,
+            "Annotations": {
+              "A1T5YMBH35PDBX": "6",
+              "AO3XB5I5QNNUI": "21",
+              "A31RP7HI5172B": "10",
+              "A3SQ6ORWDN5BGZ": "17",
+              "AMSWIR4J9XEIJ": "21"
+            },
+            "parsed": [
+              {
+                "rt": 0,
+                "toks": [
+                  {
+                    "tok": "Thankyou",
+                    "tag": "NNP",
+                    "dep": "ROOT",
+                    "dn": [
+                      1
+                    ]
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 0,
+                    "dn": [
+                      2
+                    ]
+                  },
+                  {
+                    "tok": " ",
+                    "tag": "_SP",
+                    "dep": "",
+                    "up": 1,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 2,
+                "toks": [
+                  {
+                    "tok": "So",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "it",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "'s",
+                    "tag": "VBZ",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      4,
+                      7,
+                      18
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "norm",
+                    "tag": "NN",
+                    "dep": "attr",
+                    "up": 2,
+                    "dn": [
+                      3
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "TO",
+                    "dep": "aux",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "not",
+                    "tag": "RB",
+                    "dep": "neg",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "show",
+                    "tag": "VB",
+                    "dep": "xcomp",
+                    "up": 2,
+                    "dn": [
+                      5,
+                      6,
+                      9
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 9,
+                    "dn": []
+                  },
+                  {
+                    "tok": "day",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 7,
+                    "dn": [
+                      8,
+                      10,
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 9,
+                    "dn": [
+                      12
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 12,
+                    "dn": []
+                  },
+                  {
+                    "tok": "week",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 10,
+                    "dn": [
+                      11
+                    ]
+                  },
+                  {
+                    "tok": "in",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 9,
+                    "dn": [
+                      17
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 17,
+                    "dn": []
+                  },
+                  {
+                    "tok": "lead",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 17,
+                    "dn": []
+                  },
+                  {
+                    "tok": "-",
+                    "tag": "HYPH",
+                    "dep": "punct",
+                    "up": 17,
+                    "dn": []
+                  },
+                  {
+                    "tok": "in",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 13,
+                    "dn": [
+                      14,
+                      15,
+                      16
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 2,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 29,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I restored the lead picture series I like. What do you think?",
+          "metadata": {
+            "Normalized Score": 0.6941318127718009,
+            "Binary": 1,
+            "Annotations": {
+              "A1T5YMBH35PDBX": "16",
+              "A233ONYNWKDIYF": "17",
+              "A3S5L3I8O3Q2G": "13",
+              "A28TXBSZPWMEU9": "19",
+              "A2GODV4YZGD8X9": "19"
+            },
+            "parsed": [
+              {
+                "rt": 1,
+                "toks": [
+                  {
+                    "tok": "I",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 1,
+                    "dn": []
+                  },
+                  {
+                    "tok": "restored",
+                    "tag": "VBD",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      5,
+                      8
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "lead",
+                    "tag": "JJ",
+                    "dep": "amod",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "picture",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "series",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 1,
+                    "dn": [
+                      2,
+                      3,
+                      4,
+                      7
+                    ]
+                  },
+                  {
+                    "tok": "I",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "like",
+                    "tag": "VBP",
+                    "dep": "relcl",
+                    "up": 5,
+                    "dn": [
+                      6
+                    ]
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 1,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 3,
+                "toks": [
+                  {
+                    "tok": "What",
+                    "tag": "WP",
+                    "dep": "dobj",
+                    "up": 3,
+                    "dn": []
+                  },
+                  {
+                    "tok": "do",
+                    "tag": "VBP",
+                    "dep": "aux",
+                    "up": 3,
+                    "dn": []
+                  },
+                  {
+                    "tok": "you",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 3,
+                    "dn": []
+                  },
+                  {
+                    "tok": "think",
+                    "tag": "VB",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      2,
+                      4
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 3,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 33,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Either way, administrators shouldn t be relying on counting how many categories are there for deletion, even if I accept to create the category only one day in advance. Suppose the bot fails to create the category for a day; then, you ll see only five categories and do no deletions on that day?",
+          "metadata": {
+            "Normalized Score": -0.34146097696223693,
+            "Binary": 0,
+            "Annotations": {
+              "A1R4VG71V6XECZ": "21",
+              "A2WKPCZU4U110T": "9",
+              "A1BJTTNDDFZ3ZP": "8",
+              "A3E157ZN8XPUKJ": "21",
+              "A1RT9SQ9D9DLOV": "13"
+            },
+            "parsed": [
+              {
+                "rt": 7,
+                "toks": [
+                  {
+                    "tok": "Either",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 1,
+                    "dn": []
+                  },
+                  {
+                    "tok": "way",
+                    "tag": "NN",
+                    "dep": "npadvmod",
+                    "up": 7,
+                    "dn": [
+                      0
+                    ]
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "administrators",
+                    "tag": "NNS",
+                    "dep": "nsubj",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "should",
+                    "tag": "MD",
+                    "dep": "aux",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "n't",
+                    "tag": "RB",
+                    "dep": "neg",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "be",
+                    "tag": "VB",
+                    "dep": "aux",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "relying",
+                    "tag": "VBG",
+                    "dep": "ROOT",
+                    "dn": [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      8,
+                      17,
+                      21,
+                      31
+                    ]
+                  },
+                  {
+                    "tok": "on",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 7,
+                    "dn": [
+                      9
+                    ]
+                  },
+                  {
+                    "tok": "counting",
+                    "tag": "VBG",
+                    "dep": "pcomp",
+                    "up": 8,
+                    "dn": [
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "how",
+                    "tag": "WRB",
+                    "dep": "advmod",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "many",
+                    "tag": "JJ",
+                    "dep": "amod",
+                    "up": 12,
+                    "dn": [
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "categories",
+                    "tag": "NNS",
+                    "dep": "nsubj",
+                    "up": 13,
+                    "dn": [
+                      11
+                    ]
+                  },
+                  {
+                    "tok": "are",
+                    "tag": "VBP",
+                    "dep": "ccomp",
+                    "up": 9,
+                    "dn": [
+                      12,
+                      14,
+                      15
+                    ]
+                  },
+                  {
+                    "tok": "there",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "for",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 13,
+                    "dn": [
+                      16
+                    ]
+                  },
+                  {
+                    "tok": "deletion",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 15,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "even",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "if",
+                    "tag": "IN",
+                    "dep": "mark",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "I",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "accept",
+                    "tag": "VBP",
+                    "dep": "advcl",
+                    "up": 7,
+                    "dn": [
+                      18,
+                      19,
+                      20,
+                      23
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "TO",
+                    "dep": "aux",
+                    "up": 23,
+                    "dn": []
+                  },
+                  {
+                    "tok": "create",
+                    "tag": "VB",
+                    "dep": "xcomp",
+                    "up": 21,
+                    "dn": [
+                      22,
+                      25,
+                      28
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 25,
+                    "dn": []
+                  },
+                  {
+                    "tok": "category",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 23,
+                    "dn": [
+                      24
+                    ]
+                  },
+                  {
+                    "tok": "only",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 27,
+                    "dn": []
+                  },
+                  {
+                    "tok": "one",
+                    "tag": "CD",
+                    "dep": "nummod",
+                    "up": 28,
+                    "dn": [
+                      26
+                    ]
+                  },
+                  {
+                    "tok": "day",
+                    "tag": "NN",
+                    "dep": "npadvmod",
+                    "up": 23,
+                    "dn": [
+                      27,
+                      29
+                    ]
+                  },
+                  {
+                    "tok": "in",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 28,
+                    "dn": [
+                      30
+                    ]
+                  },
+                  {
+                    "tok": "advance",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 29,
+                    "dn": []
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 7,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 16,
+                "toks": [
+                  {
+                    "tok": "Suppose",
+                    "tag": "VB",
+                    "dep": "ccomp",
+                    "up": 16,
+                    "dn": [
+                      3
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "bot",
+                    "tag": "NN",
+                    "dep": "nsubj",
+                    "up": 3,
+                    "dn": [
+                      1
+                    ]
+                  },
+                  {
+                    "tok": "fails",
+                    "tag": "VBZ",
+                    "dep": "ccomp",
+                    "up": 0,
+                    "dn": [
+                      2,
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "to",
+                    "tag": "TO",
+                    "dep": "aux",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "create",
+                    "tag": "VB",
+                    "dep": "xcomp",
+                    "up": 3,
+                    "dn": [
+                      4,
+                      7,
+                      8
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "category",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 5,
+                    "dn": [
+                      6
+                    ]
+                  },
+                  {
+                    "tok": "for",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 5,
+                    "dn": [
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "a",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "day",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 8,
+                    "dn": [
+                      9
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "then",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "you",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "'ll",
+                    "tag": "MD",
+                    "dep": "aux",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "see",
+                    "tag": "VB",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      19,
+                      20,
+                      21,
+                      27
+                    ]
+                  },
+                  {
+                    "tok": "only",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "five",
+                    "tag": "CD",
+                    "dep": "nummod",
+                    "up": 19,
+                    "dn": [
+                      17
+                    ]
+                  },
+                  {
+                    "tok": "categories",
+                    "tag": "NNS",
+                    "dep": "dobj",
+                    "up": 16,
+                    "dn": [
+                      18
+                    ]
+                  },
+                  {
+                    "tok": "and",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 16,
+                    "dn": []
+                  },
+                  {
+                    "tok": "do",
+                    "tag": "VBP",
+                    "dep": "conj",
+                    "up": 16,
+                    "dn": [
+                      23,
+                      24
+                    ]
+                  },
+                  {
+                    "tok": "no",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 23,
+                    "dn": []
+                  },
+                  {
+                    "tok": "deletions",
+                    "tag": "NNS",
+                    "dep": "dobj",
+                    "up": 21,
+                    "dn": [
+                      22
+                    ]
+                  },
+                  {
+                    "tok": "on",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 21,
+                    "dn": [
+                      26
+                    ]
+                  },
+                  {
+                    "tok": "that",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 26,
+                    "dn": []
+                  },
+                  {
+                    "tok": "day",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 24,
+                    "dn": [
+                      25
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 16,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 36,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Hi, yes I love your stats tool too. But could it also cover wikiversity and perhaps the other sister projects?",
+          "metadata": {
+            "Normalized Score": 0.2090033772008594,
+            "Binary": 0,
+            "Annotations": {
+              "A233ONYNWKDIYF": "13",
+              "A22SZHZTF72TRM": "16",
+              "A3BA2LVL6Y7YO7": "19",
+              "AVHARSCRX7M9E": "6",
+              "AMJAP6BGF5LVM": "17"
+            },
+            "parsed": [
+              {
+                "rt": 4,
+                "toks": [
+                  {
+                    "tok": "Hi",
+                    "tag": "UH",
+                    "dep": "intj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "yes",
+                    "tag": "UH",
+                    "dep": "intj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "I",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "love",
+                    "tag": "VBP",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      7,
+                      8,
+                      9
+                    ]
+                  },
+                  {
+                    "tok": "your",
+                    "tag": "PRP$",
+                    "dep": "poss",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "stats",
+                    "tag": "NNS",
+                    "dep": "compound",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "tool",
+                    "tag": "VBP",
+                    "dep": "dobj",
+                    "up": 4,
+                    "dn": [
+                      5,
+                      6
+                    ]
+                  },
+                  {
+                    "tok": "too",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 4,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 4,
+                "toks": [
+                  {
+                    "tok": "But",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "could",
+                    "tag": "MD",
+                    "dep": "aux",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "it",
+                    "tag": "PRP",
+                    "dep": "nsubj",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "also",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "cover",
+                    "tag": "VB",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      2,
+                      3,
+                      5,
+                      12
+                    ]
+                  },
+                  {
+                    "tok": "wikiversity",
+                    "tag": "NN",
+                    "dep": "dobj",
+                    "up": 4,
+                    "dn": [
+                      6,
+                      11
+                    ]
+                  },
+                  {
+                    "tok": "and",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 5,
+                    "dn": []
+                  },
+                  {
+                    "tok": "perhaps",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "other",
+                    "tag": "JJ",
+                    "dep": "amod",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "sister",
+                    "tag": "NN",
+                    "dep": "compound",
+                    "up": 11,
+                    "dn": []
+                  },
+                  {
+                    "tok": "projects",
+                    "tag": "NNS",
+                    "dep": "conj",
+                    "up": 5,
+                    "dn": [
+                      7,
+                      8,
+                      9,
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 4,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "index": 43,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "The three readings given for that kanji are   12395;  12435;  nin ,   12375;  12398;  12406;  shinobu , and   12375;  12398;  12403;  shinobi . So what s the reading of this word   19981;  24525;?",
+          "metadata": {
+            "Normalized Score": -0.43151644869187455,
+            "Binary": 0,
+            "Annotations": {
+              "A233ONYNWKDIYF": "13",
+              "AC25X12LNYY6Y": "9",
+              "A2UBXHCHM2I6IL": "13",
+              "A302M81U0HM7RJ": "13",
+              "A22CF8BF9YQND7": "9"
+            },
+            "parsed": [
+              {
+                "rt": 7,
+                "toks": [
+                  {
+                    "tok": "The",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "three",
+                    "tag": "CD",
+                    "dep": "nummod",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "readings",
+                    "tag": "NNS",
+                    "dep": "nsubj",
+                    "up": 7,
+                    "dn": [
+                      0,
+                      1,
+                      3
+                    ]
+                  },
+                  {
+                    "tok": "given",
+                    "tag": "VBN",
+                    "dep": "acl",
+                    "up": 2,
+                    "dn": [
+                      4
+                    ]
+                  },
+                  {
+                    "tok": "for",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 3,
+                    "dn": [
+                      6
+                    ]
+                  },
+                  {
+                    "tok": "that",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 6,
+                    "dn": []
+                  },
+                  {
+                    "tok": "kanji",
+                    "tag": "FW",
+                    "dep": "pobj",
+                    "up": 4,
+                    "dn": [
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "are",
+                    "tag": "VBP",
+                    "dep": "ROOT",
+                    "dn": [
+                      2,
+                      8,
+                      10,
+                      13
+                    ]
+                  },
+                  {
+                    "tok": "&",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "#",
+                    "tag": "$",
+                    "dep": "nmod",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "12395;&#12435",
+                    "tag": "CD",
+                    "dep": "conj",
+                    "up": 7,
+                    "dn": [
+                      9
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "(",
+                    "tag": "-LRB-",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "nin",
+                    "tag": "NNP",
+                    "dep": "parataxis",
+                    "up": 7,
+                    "dn": [
+                      11,
+                      12,
+                      14,
+                      15,
+                      16,
+                      18,
+                      19,
+                      21,
+                      32
+                    ]
+                  },
+                  {
+                    "tok": ")",
+                    "tag": "-RRB-",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "&",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "#",
+                    "tag": "NNP",
+                    "dep": "nmod",
+                    "up": 18,
+                    "dn": []
+                  },
+                  {
+                    "tok": "12375;&#12398;&#12406",
+                    "tag": "CD",
+                    "dep": "conj",
+                    "up": 13,
+                    "dn": [
+                      17
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": []
+                  },
+                  {
+                    "tok": "(",
+                    "tag": "-LRB-",
+                    "dep": "punct",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "shinobu",
+                    "tag": "NNP",
+                    "dep": "conj",
+                    "up": 13,
+                    "dn": [
+                      20,
+                      22,
+                      23,
+                      24,
+                      25,
+                      27,
+                      28,
+                      30
+                    ]
+                  },
+                  {
+                    "tok": ")",
+                    "tag": "-RRB-",
+                    "dep": "punct",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": ",",
+                    "tag": ",",
+                    "dep": "punct",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "and",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "&",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "#",
+                    "tag": "$",
+                    "dep": "nmod",
+                    "up": 27,
+                    "dn": []
+                  },
+                  {
+                    "tok": "12375;&#12398;&#12403",
+                    "tag": "CD",
+                    "dep": "conj",
+                    "up": 21,
+                    "dn": [
+                      26
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 21,
+                    "dn": []
+                  },
+                  {
+                    "tok": "(",
+                    "tag": "-LRB-",
+                    "dep": "punct",
+                    "up": 30,
+                    "dn": []
+                  },
+                  {
+                    "tok": "shinobi",
+                    "tag": "NNP",
+                    "dep": "appos",
+                    "up": 21,
+                    "dn": [
+                      29,
+                      31
+                    ]
+                  },
+                  {
+                    "tok": ")",
+                    "tag": "-RRB-",
+                    "dep": "punct",
+                    "up": 30,
+                    "dn": []
+                  },
+                  {
+                    "tok": ".",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 13,
+                    "dn": [
+                      33
+                    ]
+                  },
+                  {
+                    "tok": " ",
+                    "tag": "_SP",
+                    "dep": "",
+                    "up": 32,
+                    "dn": []
+                  }
+                ]
+              },
+              {
+                "rt": 2,
+                "toks": [
+                  {
+                    "tok": "So",
+                    "tag": "RB",
+                    "dep": "advmod",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "what",
+                    "tag": "WP",
+                    "dep": "nsubj",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "'s",
+                    "tag": "VBZ",
+                    "dep": "ROOT",
+                    "dn": [
+                      0,
+                      1,
+                      4,
+                      11,
+                      12
+                    ]
+                  },
+                  {
+                    "tok": "the",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 4,
+                    "dn": []
+                  },
+                  {
+                    "tok": "reading",
+                    "tag": "NN",
+                    "dep": "nsubj",
+                    "up": 2,
+                    "dn": [
+                      3,
+                      5
+                    ]
+                  },
+                  {
+                    "tok": "of",
+                    "tag": "IN",
+                    "dep": "prep",
+                    "up": 4,
+                    "dn": [
+                      7
+                    ]
+                  },
+                  {
+                    "tok": "this",
+                    "tag": "DT",
+                    "dep": "det",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "word",
+                    "tag": "NN",
+                    "dep": "pobj",
+                    "up": 5,
+                    "dn": [
+                      6,
+                      8,
+                      10
+                    ]
+                  },
+                  {
+                    "tok": "&",
+                    "tag": "CC",
+                    "dep": "cc",
+                    "up": 7,
+                    "dn": []
+                  },
+                  {
+                    "tok": "#",
+                    "tag": "$",
+                    "dep": "nmod",
+                    "up": 10,
+                    "dn": []
+                  },
+                  {
+                    "tok": "19981;&#24525",
+                    "tag": "CD",
+                    "dep": "conj",
+                    "up": 7,
+                    "dn": [
+                      9
+                    ]
+                  },
+                  {
+                    "tok": ";",
+                    "tag": ":",
+                    "dep": "punct",
+                    "up": 2,
+                    "dn": []
+                  },
+                  {
+                    "tok": "?",
+                    "tag": ".",
+                    "dep": "punct",
+                    "up": 2,
+                    "dn": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.9047619047619048,
+      "recall": 0.76,
+      "f1-score": 0.8260869565217391,
+      "support": 25.0
+    },
+    "1": {
+      "precision": 0.7931034482758621,
+      "recall": 0.92,
+      "f1-score": 0.8518518518518519,
+      "support": 25.0
+    },
+    "accuracy": 0.84,
+    "macro avg": {
+      "precision": 0.8489326765188834,
+      "recall": 0.8400000000000001,
+      "f1-score": 0.8389694041867954,
+      "support": 50.0
+    },
+    "weighted avg": {
+      "precision": 0.8489326765188835,
+      "recall": 0.84,
+      "f1-score": 0.8389694041867954,
+      "support": 50.0
+    }
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.6875,
+    "f1": 0.7383720930232558,
+    "precision": 0.635,
+    "recall": 0.8819444444444444
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.80110811042524,
+    "pr_auc": 0.8054430534132627
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          213,
+          219
+        ],
+        [
+          51,
+          381
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 213,
+          "false_positives": 51,
+          "false_negatives": 219,
+          "true_negatives": 381,
+          "precision": 0.8068181818181818,
+          "recall": 0.4930555555555556,
+          "specificity": 0.8819444444444444
+        },
+        "class_1": {
+          "true_positives": 381,
+          "false_positives": 219,
+          "false_negatives": 51,
+          "true_negatives": 213,
+          "precision": 0.635,
+          "recall": 0.8819444444444444,
+          "specificity": 0.4930555555555556
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          219
+        ],
+        [
+          1,
+          0,
+          51
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 270,
+      "total_correct": 594,
+      "error_rate": 0.3125,
+      "accuracy": 0.6875,
+      "class_0_errors": 219,
+      "class_0_correct": 213,
+      "class_0_error_rate": 0.5069444444444444,
+      "class_1_errors": 51,
+      "class_1_correct": 381,
+      "class_1_error_rate": 0.11805555555555555
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.6338917700533087,
+      "avg_confidence_errors": 0.5753753022154997,
+      "avg_confidence_overall": 0.6156053738539934,
+      "confidence_std": 0.07833421590847217,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 744,
+          "accuracy": 0.6438172043010753
+        },
+        "0.7-0.9": {
+          "count": 120,
+          "accuracy": 0.9583333333333334
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 270,
+      "error_samples": [
+        {
+          "index": 1,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Since you already had the filmography listed I cut some films from the intro which you didn t tell much else about. Are you happy with my changes?",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 2,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Done. Is it correct?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 5,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I don t get the  defaultsort  edit you mention   can you link me to a specific edit showing this? Also, if I rename the template will it be automatically changed on the relevant coaches  pages or do I need to do this myself?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 6,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "no problem. ic an hit it up through preferences seciton, right?",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 13,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Okay, how about this... Give me five minutes. I ll list all the images you have uploaded, you tell me where they came from, okay?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 16,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I replied... also, are you watching that page? If so, I will stop bothering you here?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 18,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Hmm... I m new here at Wikipedia and your explanation is a little cloudy...Should I delink the references website?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 19,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "I had an editorial dispute with a user called  url  , but I m not responding to him anymore as it seems to escalate into heated arguments. If he keeps messaging, would it be ok if I got back in touch with you and you had a word with him?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 21,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "The seven day hold is almost up. Is there any progress being made plan for the near future?",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 25,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Are you a professional illustrator, or an aspiring one? Where might I have seen your work?",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8068181818181818,
+      "recall": 0.4930555555555556,
+      "f1-score": 0.6120689655172413,
+      "support": 432.0
+    },
+    "1": {
+      "precision": 0.635,
+      "recall": 0.8819444444444444,
+      "f1-score": 0.7383720930232558,
+      "support": 432.0
+    },
+    "accuracy": 0.6875,
+    "macro avg": {
+      "precision": 0.7209090909090909,
+      "recall": 0.6875,
+      "f1-score": 0.6752205292702486,
+      "support": 864.0
+    },
+    "weighted avg": {
+      "precision": 0.7209090909090908,
+      "recall": 0.6875,
+      "f1-score": 0.6752205292702486,
+      "support": 864.0
+    }
+  }
+}

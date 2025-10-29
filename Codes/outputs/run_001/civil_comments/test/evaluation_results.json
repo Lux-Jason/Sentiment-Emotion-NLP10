@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8467374810318664,
+    "f1": 0.8453292496171516,
+    "precision": 0.8518518518518519,
+    "recall": 0.8389057750759878
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9187436676798378,
+    "pr_auc": 0.9122420315886737
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          282,
+          48
+        ],
+        [
+          53,
+          276
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 282,
+          "false_positives": 53,
+          "false_negatives": 48,
+          "true_negatives": 276,
+          "precision": 0.8417910447761194,
+          "recall": 0.8545454545454545,
+          "specificity": 0.8389057750759878
+        },
+        "class_1": {
+          "true_positives": 276,
+          "false_positives": 48,
+          "false_negatives": 53,
+          "true_negatives": 282,
+          "precision": 0.8518518518518519,
+          "recall": 0.8389057750759878,
+          "specificity": 0.8545454545454545
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          53
+        ],
+        [
+          0,
+          1,
+          48
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 101,
+      "total_correct": 558,
+      "error_rate": 0.15326251896813353,
+      "accuracy": 0.8467374810318664,
+      "class_0_errors": 48,
+      "class_0_correct": 282,
+      "class_0_error_rate": 0.14545454545454545,
+      "class_1_errors": 53,
+      "class_1_correct": 276,
+      "class_1_error_rate": 0.16109422492401215
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.6947924979102962,
+      "avg_confidence_errors": 0.593597874777695,
+      "avg_confidence_overall": 0.6792831550629628,
+      "confidence_std": 0.10869400258579737,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 374,
+          "accuracy": 0.7540106951871658
+        },
+        "0.7-0.9": {
+          "count": 276,
+          "accuracy": 0.967391304347826
+        },
+        "0.9-1.0": {
+          "count": 9,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 101,
+      "error_samples": [
+        {
+          "index": 3,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "It shouldn t surprise anybody that these worthless drug dealers are ignoring the rules just to push their product.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 13,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Turns out Hillary was correct when she said that half of Trump s supporters are in the basket of deplorables.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 15,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Let me guess she s a white devil in disguise trying to destroy everything good about america! SMH... Confirmation Bias   In psychology and cognitive science, confirmation bias  or confirmatory bias  is a tendency to search for or interpret information in a way that confirms one s preconceptions, leading to statistical errors.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 17,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Getting frustrated are we? Wait until the real dirt on Clinton comes out.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 23,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Customers of the high end hotel probably look for Trump s name due to quality   luxury. It would be silly to take it down... Protesters aren t going to spend money there anyway. If the owners have seen a loss of business due to the leftist, ignorant paid protesters   bullies making the stay more difficult   unenjoyable, then they may need to take the name down. Principles over money rarely exists.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 25,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Reduces TFSAs, increased income taxes, takes away tax credits, takes away child supplement, going after dividends and cap gains.......its bloody ridiculous how he punishes success shall I go on?",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 35,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Motley: yes. the old sting between the eyes shot......been there, done that. and, yes, it damn near knocks you down.....it your case it would have been quite a ways down. regards, Gary Crum",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 36,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Of all the people 45 has lying on his behalf, Conway is by far and away the best at her job. If allowed by those that ask her the hard questions, she will immediately pivot to some evasive non answer. If the interviewer continues to press for a direct answer from her, she will flat out lie. Anyone that will intentionally flat out lie to support another liar is no better than that liar.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 46,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "If it walks like a duck, and quacks like a duck....",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 48,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Bernstein is just an over the hill one trick pony looking for a comeback.",
+          "metadata": {
+            "split": "test"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8417910447761194,
+      "recall": 0.8545454545454545,
+      "f1-score": 0.8481203007518797,
+      "support": 330.0
+    },
+    "1": {
+      "precision": 0.8518518518518519,
+      "recall": 0.8389057750759878,
+      "f1-score": 0.8453292496171516,
+      "support": 329.0
+    },
+    "accuracy": 0.8467374810318664,
+    "macro avg": {
+      "precision": 0.8468214483139856,
+      "recall": 0.8467256148107212,
+      "f1-score": 0.8467247751845157,
+      "support": 659.0
+    },
+    "weighted avg": {
+      "precision": 0.8468138149247021,
+      "recall": 0.8467374810318664,
+      "f1-score": 0.8467268928257408,
+      "support": 659.0
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8849462365591397,
+    "f1": 0.8809788654060067,
+    "precision": 0.9124423963133641,
+    "recall": 0.8516129032258064
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9470736501329634,
+    "pr_auc": 0.9541037870082986
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          427,
+          38
+        ],
+        [
+          69,
+          396
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 427,
+          "false_positives": 69,
+          "false_negatives": 38,
+          "true_negatives": 396,
+          "precision": 0.8608870967741935,
+          "recall": 0.9182795698924732,
+          "specificity": 0.8516129032258064
+        },
+        "class_1": {
+          "true_positives": 396,
+          "false_positives": 38,
+          "false_negatives": 69,
+          "true_negatives": 427,
+          "precision": 0.9124423963133641,
+          "recall": 0.8516129032258064,
+          "specificity": 0.9182795698924732
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          69
+        ],
+        [
+          0,
+          1,
+          38
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 107,
+      "total_correct": 823,
+      "error_rate": 0.11505376344086021,
+      "accuracy": 0.8849462365591397,
+      "class_0_errors": 38,
+      "class_0_correct": 427,
+      "class_0_error_rate": 0.08172043010752689,
+      "class_1_errors": 69,
+      "class_1_correct": 396,
+      "class_1_error_rate": 0.14838709677419354
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.7453574583170246,
+      "avg_confidence_errors": 0.6243381609514576,
+      "avg_confidence_overall": 0.7314337327061475,
+      "confidence_std": 0.11341149948371922,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 370,
+          "accuracy": 0.7513513513513513
+        },
+        "0.7-0.9": {
+          "count": 501,
+          "accuracy": 0.9700598802395209
+        },
+        "0.9-1.0": {
+          "count": 59,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 107,
+      "error_samples": [
+        {
+          "index": 28,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "This is a pathetic grasp to hope where there is none, hoping for a top 15 pick isnt going to bring us out of the bottom Look at edmonton",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 49,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Damn that s a good looking pizza",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 50,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I ve still not noticed the kid",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 57,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "No. It s slower and takes more calculation but it can be done. That s why it should be practiced.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 60,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Thank god I m not dating anymore. I wouldn t want to risk some girl I m trying to bang seeing my reddit history.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 71,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "JV for AD   i know its lopsided, but we need to swallow that pill.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 77,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "NAME  : completely unpredictable Bunch of them were standing together in the middle of the ring lol",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 79,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Yow thats gnarly.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 83,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "it s ironic you are identifying with the nazi character lol",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 99,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Haha just loose all your libido because of dysphoria nerd",
+          "metadata": {
+            "split": "dev"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8608870967741935,
+      "recall": 0.9182795698924732,
+      "f1-score": 0.8886576482830385,
+      "support": 465.0
+    },
+    "1": {
+      "precision": 0.9124423963133641,
+      "recall": 0.8516129032258064,
+      "f1-score": 0.8809788654060067,
+      "support": 465.0
+    },
+    "accuracy": 0.8849462365591397,
+    "macro avg": {
+      "precision": 0.8866647465437788,
+      "recall": 0.8849462365591398,
+      "f1-score": 0.8848182568445226,
+      "support": 930.0
+    },
+    "weighted avg": {
+      "precision": 0.8866647465437788,
+      "recall": 0.8849462365591397,
+      "f1-score": 0.8848182568445225,
+      "support": 930.0
+    }
+  }
+}
