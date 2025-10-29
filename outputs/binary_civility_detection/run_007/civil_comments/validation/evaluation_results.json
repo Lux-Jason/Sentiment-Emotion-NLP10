@@ -1,0 +1,133 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8,
+    "f1": 0.8,
+    "precision": 0.8,
+    "recall": 0.8
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.8,
+    "pr_auc": 0.8944444444444444
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          4
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 4,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "true_negatives": 4,
+          "precision": 0.8,
+          "recall": 0.8,
+          "specificity": 0.8
+        },
+        "class_1": {
+          "true_positives": 4,
+          "false_positives": 1,
+          "false_negatives": 1,
+          "true_negatives": 4,
+          "precision": 0.8,
+          "recall": 0.8,
+          "specificity": 0.8
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 2,
+      "total_correct": 8,
+      "error_rate": 0.2,
+      "accuracy": 0.8,
+      "class_0_errors": 1,
+      "class_0_correct": 4,
+      "class_0_error_rate": 0.2,
+      "class_1_errors": 1,
+      "class_1_correct": 4,
+      "class_1_error_rate": 0.2
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5317831085944538,
+      "avg_confidence_errors": 0.5264183666513805,
+      "avg_confidence_overall": 0.530710160205839,
+      "confidence_std": 0.023881038275319347,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 10,
+          "accuracy": 0.8
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 2,
+      "error_samples": [
+        {
+          "index": 1,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "The show had both sponsors and listeners. No need to denigrate the man s show.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 3,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Took this as an opportunity to check back in on The Yard and the floorpans are finally up and they are ATROCIOUS. Yeah, because I want to spend 2500  to share a thin wall with my roommate. Oh, and I want to pick between a dining table OR living room set, because in this modern world you can t have both. And if you do want both, one is going to be in a tiny spot by your door and the other is going to be down a long hallway of useless square ft next to your kitchenette. So dumb.",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "1": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 5.0
+    },
+    "accuracy": 0.8,
+    "macro avg": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    },
+    "weighted avg": {
+      "precision": 0.8,
+      "recall": 0.8,
+      "f1-score": 0.8,
+      "support": 10.0
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.8752017213555675,
+    "f1": 0.8696629213483146,
+    "precision": 0.9095182138660399,
+    "recall": 0.8331539289558665
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.939185388381541,
+    "pr_auc": 0.9451232612446772
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          853,
+          77
+        ],
+        [
+          155,
+          774
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 853,
+          "false_positives": 155,
+          "false_negatives": 77,
+          "true_negatives": 774,
+          "precision": 0.8462301587301587,
+          "recall": 0.9172043010752688,
+          "specificity": 0.8331539289558665
+        },
+        "class_1": {
+          "true_positives": 774,
+          "false_positives": 77,
+          "false_negatives": 155,
+          "true_negatives": 853,
+          "precision": 0.9095182138660399,
+          "recall": 0.8331539289558665,
+          "specificity": 0.9172043010752688
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          155
+        ],
+        [
+          0,
+          1,
+          77
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 232,
+      "total_correct": 1627,
+      "error_rate": 0.12479827864443249,
+      "accuracy": 0.8752017213555675,
+      "class_0_errors": 77,
+      "class_0_correct": 853,
+      "class_0_error_rate": 0.08279569892473118,
+      "class_1_errors": 155,
+      "class_1_correct": 774,
+      "class_1_error_rate": 0.1668460710441335
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.7425759318279073,
+      "avg_confidence_errors": 0.6193397583234062,
+      "avg_confidence_overall": 0.7271962695078189,
+      "confidence_std": 0.11755044426396236,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 742,
+          "accuracy": 0.7412398921832885
+        },
+        "0.7-0.9": {
+          "count": 1013,
+          "accuracy": 0.9605133267522211
+        },
+        "0.9-1.0": {
+          "count": 104,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 232,
+      "error_samples": [
+        {
+          "index": 2,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I play those characters all of the time and have never, ever experienced this.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 5,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Nobody has been banned lol",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 15,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Electricity scam ? ...and I m pretty sure  NAME  is not an idiot.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 33,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "I used the call screening on my sister for a laugh.. she was not as amused as I was :",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 39,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "For real my wife was like what the hell are you laughing so hard at... I couldnt even explain i just kept laughing.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 42,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Omg TDG has a new singer? That s so sad. I was rocking out to them in middle school too. Simpler times.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 55,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "Very tired us can attendant:  here are your vagina slimes.  ... thankfully the customer just laughed kt off.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 58,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "Oh I know. I was just pointing out that our current number one has consistency issues as well so we are used to it.",
+          "metadata": {
+            "split": "test"
+          }
+        },
+        {
+          "index": 59,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "They will get the other. It s all fun and games until they noticed I was friends with a deep trust issues with humans since they were little.",
+          "metadata": {
+            "split": "dev"
+          }
+        },
+        {
+          "index": 67,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "My response would have been, If  NAME  sees me as unworthy, then I do believe that  NAME  would have more use for my tithings.",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8462301587301587,
+      "recall": 0.9172043010752688,
+      "f1-score": 0.8802889576883385,
+      "support": 930.0
+    },
+    "1": {
+      "precision": 0.9095182138660399,
+      "recall": 0.8331539289558665,
+      "f1-score": 0.8696629213483146,
+      "support": 929.0
+    },
+    "accuracy": 0.8752017213555675,
+    "macro avg": {
+      "precision": 0.8778741862980993,
+      "recall": 0.8751791150155677,
+      "f1-score": 0.8749759395183265,
+      "support": 1859.0
+    },
+    "weighted avg": {
+      "precision": 0.8778571642284018,
+      "recall": 0.8752017213555675,
+      "f1-score": 0.8749787975162663,
+      "support": 1859.0
+    }
+  }
+}

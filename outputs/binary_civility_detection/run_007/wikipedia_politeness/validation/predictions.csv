@@ -1,0 +1,51 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,0,0,0.5084282129908331,0.4915717870091669,What do you think? Do these subdivisions make sense?,train
+1,1,1,0.4764574088644008,0.5235425911355992,I see that there now. Do you want me to tie it all in or do you want to work on it?,train
+2,0,1,0.49490491564479755,0.5050950843552025,"Thats ok, as long as you verify the copyright as by sending an e mail, or noting the license on the AEK webpage. That wont be a problem, will it?",train
+3,0,1,0.4908863657727651,0.5091136342272349,"He Colfer, just to let you know I changed the headings in name  I think we should avoid making diaries, but order based on activities , but kept  hopefully  the spirit of your changes in tact. How does it look to you?",train
+4,1,1,0.4949602235221401,0.5050397764778599,"Here s my question, just to be clear, is it possible for the owner to release the picture under a lower resolution for Wikipedia and at the same time retaining the ownership of the higher resolution version? If it is, can you help me process this image?",train
+5,0,0,0.5239278889660964,0.47607211103390357,I have moved the navbox and the noinclude of the  url  to  url  because it would be stupid seeing an article called Template:PDC Top 16 when it is showing the top 20 players. Your thoughs?,train
+6,1,1,0.496795441423183,0.503204558576817,"In short, based on the sparse information provided by outsiders, I would like to work constructively with you  and others  to whip the article into shape, as its presence seems warranted but the article is unlikely to garner necessary details from random contributors. What shall I do next?",train
+7,1,0,0.5096692738088783,0.4903307261911217,True. What do you think about the notability of this particular article?,train
+8,1,1,0.4814996283171905,0.5185003716828095,I noticed that you are the major contributor to the articles. Mind if I nominate  url  at  url ?,train
+9,0,0,0.534385396930066,0.4656146030699339,This why 399 is disabled as well? The times I looked it wasn t using very many conditions; what did you see?,train
+10,1,1,0.49809911562328923,0.5019008843767108,"In the  url  article, is polar mount correct? It might be improved by a bit more detail about how it works, perhaps?",train
+11,0,0,0.5208456885290765,0.47915431147092347,"Re your vote on motion 1, I don t currently have a mafia, to the best of my knowledge mdash;but maybe it s not a bad idea. Shall I post a sign up sheet?",train
+12,1,1,0.43320955013162554,0.5667904498683745,"Thanks! By the way, have you sent anything to Maggie since you received the email from the photographer?",train
+13,1,1,0.49241533647018043,0.5075846635298196,Thanks for the revert on  url . Kinda curious how this blanking is always done by IPs that trace back to USAF installations isn t it?,train
+14,1,1,0.4105536403326644,0.5894463596673356,Thanks very much for your edit to the  url  article. Would you be interested in tackling the  url  of  url ?,train
+15,0,0,0.548777302384021,0.451222697615979,"My question is more towards a question on what their titles are. Is Kira, for example, the Yellow Ptera Ranger or the Yellow Dino Ranger?",train
+16,0,1,0.49169100235776586,0.5083089976422341,ARSBot seems to not be working? Can it be turned back on?,train
+17,0,1,0.48482099253662103,0.515179007463379,Delete away; the SVG s done :  How would you like it licensed? PD?,train
+18,1,0,0.5201788533137445,0.47982114668625553,You have listed it as no source but the author asserts own work. Could you please clarify this?,train
+19,1,1,0.43837299358250725,0.5616270064174927,Hi. I stumbled upon your user page and was wondering if you could offer any tips for creating locator maps... where do you get the  base  map and what program do you use to fill in the colours?,train
+20,1,1,0.44596598415064703,0.554034015849353,Thank you. Was it anything in particular?,train
+21,0,0,0.5137094347323814,0.48629056526761866,"I have to ask, why are you separating topics into different sections? And was I right in my edits to  url ?",train
+22,1,1,0.4509898738262339,0.5490101261737661,Thanks. Beer?,train
+23,1,1,0.40594542731780137,0.5940545726821986,"Thanks for the quick response. Would you have any suggestions on editors who would be interested in this field, or who might have experience with FA reviews?",train
+24,0,0,0.5177619471616108,0.48223805283838916,"Just had a look at  url , and oh dear god. Any interest?",train
+25,0,1,0.4984752248469949,0.5015247751530051,What user list? The one I linked to?,train
+26,0,0,0.553167924604466,0.44683207539553405,"PS I also am wondering about the letter  ll . It seems, like the Welsh  url , to have a particular  and tricky  pronunciation, but thereu2019s nothing on the  url  or  url  pages about it: Can you shed any light on this?",train
+27,0,0,0.5211042492490956,0.4788957507509044,"Re: your comment at  url ,. I suppose you know there s a list at  url ?",train
+28,0,0,0.5226846051604325,0.47731539483956753,I m not totally sure what you mean. Are you asking for a list of all featured articles on the English Wikipedia?,train
+29,1,1,0.4181666211881564,0.5818333788118436,Thank you for your kind comment. Do you have a suggestion where the portals should be placed in the article?,train
+30,0,0,0.5615494491204299,0.4384505508795701,"Your DYK hook for  url  is missing something. It says    Frank Bancroft managed the now defunct Major League Baseball Providence Grays...      maybe     his    now defunct Major League Baseball    team, the    Providence Grays,... ?",train
+31,1,1,0.4229590763885468,0.5770409236114532,Thanks for your response! How should we proceed ?,train
+32,1,1,0.4596476159651737,0.5403523840348263,Sounds good. Could you drop Fritzpoll a note?,train
+33,1,1,0.4843633397870586,0.5156366602129414,"All is good here, hopefully the same with yourself. How many English first class cricketer you think we ve got to get done in total?",train
+34,0,0,0.5330923235091534,0.4669076764908467,"Like most users with their articles screwed over by  url  s new web facelift, I m at a lost with  url  being dead. Can you help?",train
+35,1,1,0.46159263885223567,0.5384073611477643,That would be awesome. Do you want to ask someone for clarification on whether project sandboxes are allowed?,train
+36,1,0,0.5255800972449745,0.4744199027550256,"I removed a few obvious links on  url , but wasn t sure about some of the others  sparknotes, paperstarter, etc  and couldn t find anything yea or nay on their use...if you have a few spare minutes  ha! , could you take a look?",train
+37,1,1,0.4648744838464425,0.5351255161535575,I have started to fix it. Can you help?,train
+38,0,0,0.5769641201762488,0.4230358798237512,"That sounds like they are just  general use  of the word, so in each article delink and  if needed  explain that, in this context, diaphragm means a divider   or just rewrite without the word diaphragm, or use a link to wiktionary. In fact, should linking to wiktionary be a standard way to clear up some of the links to dab pages?",train
+39,0,1,0.493599353701496,0.506400646298504,I see you don t edit the heats from morning session. Will you be here for the finals ?,train
+40,0,1,0.472116250647287,0.527883749352713,Hello. Is now  url  ready for FAC?,train
+41,0,1,0.48951705952347413,0.5104829404765259,I ve got some. Want any of them?,train
+42,1,1,0.47647802554484264,0.5235219744551574,I see that there now. Do you want me to tie it all in or do you want to work on it?,train
+43,0,0,0.5057235921470364,0.49427640785296356,See email first. Is this coming from somewhere or something particular?,train
+44,0,1,0.477452328795003,0.522547671204997,url  needs urdu script for the name of the subject  Bangla script has already been added . Can you help?,train
+45,0,1,0.4896994320993995,0.5103005679006005,I ve got some. Want any of them?,train
+46,1,1,0.47857185476596054,0.5214281452340395,"I wondered if you could recommend the best book on  url . FOr Christmas, what would be the most detailed book  with lots of beautiful photographs  of Ladakh?",train
+47,1,1,0.45506886441322403,0.544931135586776,Thanks! Do you know why this was held jointly and what was worked on?,train
+48,0,0,0.515993560370424,0.48400643962957607,"No answer. Do you want to take it to ANI, or should I?",train
+49,1,0,0.5154775122573985,0.48452248774260154,I wasn t sure what you mean by making the title a clickable link. Can you show me how to do that?,train

@@ -1,0 +1,171 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.9024390243902439,
+    "f1": 0.9,
+    "precision": 0.9230769230769231,
+    "recall": 0.8780487804878049
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.9399167162403331,
+    "pr_auc": 0.9552344373991835
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          38,
+          3
+        ],
+        [
+          5,
+          36
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 38,
+          "false_positives": 5,
+          "false_negatives": 3,
+          "true_negatives": 36,
+          "precision": 0.8837209302325582,
+          "recall": 0.926829268292683,
+          "specificity": 0.8780487804878049
+        },
+        "class_1": {
+          "true_positives": 36,
+          "false_positives": 3,
+          "false_negatives": 5,
+          "true_negatives": 38,
+          "precision": 0.9230769230769231,
+          "recall": 0.8780487804878049,
+          "specificity": 0.926829268292683
+        }
+      },
+      "most_confused_pairs": [
+        [
+          1,
+          0,
+          5
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 8,
+      "total_correct": 74,
+      "error_rate": 0.0975609756097561,
+      "accuracy": 0.9024390243902439,
+      "class_0_errors": 3,
+      "class_0_correct": 38,
+      "class_0_error_rate": 0.07317073170731707,
+      "class_1_errors": 5,
+      "class_1_correct": 36,
+      "class_1_error_rate": 0.12195121951219512
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.5785687485386543,
+      "avg_confidence_errors": 0.5477954395001794,
+      "avg_confidence_overall": 0.5755664744861202,
+      "confidence_std": 0.04378263558162654,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 82,
+          "accuracy": 0.9024390243902439
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 8,
+      "error_samples": [
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "装修简洁实用 但电源插口少 要配个接线器为好 另外浴缸的hot龙头请配图示 第一次来的一定弄很久 酒店lobby太大 早餐要历经磨难",
+          "metadata": {}
+        },
+        {
+          "index": 6,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "女人 尤其是女孩 心思细密 敏感浪漫 更容易好高务远 一想天开 这本书就是让女人懂得要脚踏实地 不要心高手低 也不要以为爱情会是幸福生活的全部 总的来说还不错 但我更喜欢 女人的幸福与什么有关  感觉更贴合中国女人的实际",
+          "metadata": {}
+        },
+        {
+          "index": 8,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "酒店外观相对气派,但房间确实很简陋,设施陈旧,卫生一般,最多就是个90年代未的水平 不过大庆宾馆较少 找了一遍发现也的确再没有什么宾馆了",
+          "metadata": {}
+        },
+        {
+          "index": 14,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "随着孩子的长大 这本书居然成了孩子的最爱 1岁7个月  连着2个多月 睡前必要这本书 孩子最喜欢的就是最后一页 有时候讲着讲着 就一下子翻到最后 当我说大卫的妈妈说 我爱你的时候  宝贝女儿也抬头等我说 我爱你",
+          "metadata": {}
+        },
+        {
+          "index": 17,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "货终于收到了 速度倒是很快 感觉质量还可以 就是图片有的颜色是白色背景的 我觉得还是彩色的好一些 要是再多给几个挂钩就好了 还有就是建议妈妈们不要将图片挂在卫生间附近 我就犯了个错 结果图片可能因为受潮 都变形了 原来以为是质量问题 后来看了没有挂的图片 还是挺好的",
+          "metadata": {}
+        },
+        {
+          "index": 26,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "系统换XP后会更好用点 微软为什么一定要让生产商强制安装vista这种自以为很cool的大块头呢 如果能有包就更好了",
+          "metadata": {}
+        },
+        {
+          "index": 63,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "对于次级债的解说 可以参考如下网站",
+          "metadata": {}
+        },
+        {
+          "index": 74,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "今天才知道这书还有第6卷,真有点郁闷:为什么同一套书有两种版本呢?当当网是不是该跟出版社商量商量,单独出个第6卷,让我们的孩子不会有所遗憾",
+          "metadata": {}
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.8837209302325582,
+      "recall": 0.926829268292683,
+      "f1-score": 0.9047619047619048,
+      "support": 41.0
+    },
+    "1": {
+      "precision": 0.9230769230769231,
+      "recall": 0.8780487804878049,
+      "f1-score": 0.9,
+      "support": 41.0
+    },
+    "accuracy": 0.9024390243902439,
+    "macro avg": {
+      "precision": 0.9033989266547406,
+      "recall": 0.9024390243902439,
+      "f1-score": 0.9023809523809524,
+      "support": 82.0
+    },
+    "weighted avg": {
+      "precision": 0.9033989266547405,
+      "recall": 0.9024390243902439,
+      "f1-score": 0.9023809523809524,
+      "support": 82.0
+    }
+  }
+}

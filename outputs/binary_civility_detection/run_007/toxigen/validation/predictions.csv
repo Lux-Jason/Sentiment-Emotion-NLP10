@@ -1,0 +1,39 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,0,0,0.5019321951411146,0.4980678048588854,"once in a while this negativity was sidetracked by the optimism, the expectation, the eagerness to tell you that some day, everything would be",train
+1,1,1,0.4192745304337152,0.5807254695662848,more than ever i hate black people. they are ruining the future of all minorities. i mean their kids are going to have the same opportunities as the,train
+2,0,0,0.5076468009528399,0.49235319904716013,"when i was a kid, i used to play with a lot of kids who were using chopsticks to eat and i thought that was so cool",train
+3,1,1,0.3922731301723349,0.6077268698276651,"if you are a white person, you should be able to get away with anything you do, no matter how bad, because you are white",train
+4,0,1,0.4589680484364017,0.5410319515635983,"I have been called a kike, a yiddo, a hebe, a sheeny, a shegetz, a shegetz",train
+5,0,1,0.477894877251707,0.522105122748293,"Kim Jong Un is probably not very fond of jews  In China, Israel is known as an  anti Muslim country  that specializes in",train
+6,0,0,0.5506321815758342,0.44936781842416584,iran is a very diverse place with a lot of history and culture and it is a shame that it is not better represented in western media,train
+7,0,0,0.5293215662123965,0.47067843378760355,so that was like the week that changed everything,train
+8,1,1,0.48788662790713866,0.5121133720928613,i work a lot. all the time. i work hard and would like to put food on my table without a lot of government help,train
+9,0,1,0.47899212076528086,0.5210078792347191,"she is not a terrorist, she is just like you and me",train
+10,0,1,0.4826405103112338,0.5173594896887662,"i wish i could dance like you, i am so envious of your talent!",train
+11,0,0,0.5494301285270462,0.4505698714729538,"if we don t learn about the past, we will not be able to understand the present or the future",train
+12,0,0,0.5097204997815089,0.4902795002184911,"One person asked about how to respond to those individuals who are asking about the connection between the transphobia of cis people and patriarchy, and were",train
+13,1,0,0.520693108733941,0.47930689126605897,"you speak english so well, how long have you been in the usa",train
+14,0,0,0.5299450036175316,0.4700549963824684,people who are blind or have low vision can do many things that you might not expect.,train
+15,1,1,0.4841891596853176,0.5158108403146824,there is no way he could have gotten into harvard on his own.,train
+16,0,0,0.5926131824810588,0.4073868175189412,"Islam is the second largest religion in the world, and the third largest in the U.",train
+17,1,0,0.5337799912888344,0.46622000871116565,chinese americans are losing their heritage every day,train
+18,1,0,0.5331302686321828,0.4668697313678171,no education,train
+19,1,0,0.5043180473316424,0.4956819526683575,"we shouldn t classify people by their  disability,  it s just their personality traits, after all",train
+20,0,0,0.5877482887656635,0.4122517112343364,"in the united kingdom and the province of ontario, on 24 december 2005, both heterosexual and same sex couples became eligible to enter civil partnerships",train
+21,0,0,0.5637170344775391,0.436282965522461,China opened up to the WTO,train
+22,0,0,0.5460566616997223,0.45394333830027767,friday was such a blast at CAFA,train
+23,1,0,0.5070782103959115,0.49292178960408856,i like real american christians   i like real american christians,train
+24,0,0,0.5800347614795862,0.41996523852041373,the second largest living indigenous population of the united states,train
+25,1,1,0.4386661836579545,0.5613338163420455,"women should not have the same rights as men, they should not vote, drive, or go out without their husband",train
+26,1,1,0.4707420947639419,0.5292579052360581,"people with disabilities should be grateful for what theyve got, theyve got it easy compared to what we had to go through in the past",train
+27,1,1,0.4876869067351467,0.5123130932648533,if women had more rights in Muslim countries there would be less rape of women by muslim men,train
+28,0,0,0.5371529991331416,0.4628470008668584,in the 19th century there was a lot of hatred for the british,train
+29,1,1,0.45908183986747,0.54091816013253,it is cheaper for the government to let them in then it is for them to deport them back to mexico or wherever they came from,train
+30,1,1,0.48275420681774384,0.5172457931822562,asians like to be hyper asians,train
+31,1,0,0.5313203516784027,0.46867964832159725,we are the only true religion,train
+32,0,0,0.5332303874784228,0.4667696125215772,Asian Americans have a long way to go before they can be considered equal to their white counterparts in the United States.,train
+33,1,1,0.4584024289197589,0.5415975710802411,"the economy sucks, but a decent woman wants a man that makes more than her",train
+34,1,1,0.4118885920448011,0.5881114079551989,"I have to shout loudly to make an impression on them...   jews, blackskins, hindus, all over the world they are parasites",train
+35,1,1,0.41891210924596245,0.5810878907540376,"If you are a woman, you should not be allowed to drive a car because you are not as good at it as a man is.",train
+36,1,0,0.5019123783735315,0.4980876216264685,the only way to solve the problem is to put them away,train
+37,0,0,0.5281278171593247,0.4718721828406754,how does that compare with the stereotyped male words,train

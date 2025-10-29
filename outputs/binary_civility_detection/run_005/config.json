@@ -1,0 +1,116 @@
+{
+  "experiment_name": "binary_civility_detection",
+  "description": "Advanced pseudo-civility detection with modular architecture",
+  "data": {
+    "datasets": [
+      "chnsenticorp",
+      "wikipedia_politeness",
+      "go_emotions",
+      "civil_comments",
+      "toxigen"
+    ],
+    "max_samples": 400,
+    "test_size": 0.2,
+    "val_size": 0.1,
+    "random_state": 42,
+    "archive_root": "Archive",
+    "output_dir": "outputs",
+    "min_text_length": 10,
+    "max_text_length": 512,
+    "remove_duplicates": true,
+    "balance_classes": true
+  },
+  "model": {
+    "model_name": "Qwen/Qwen3-Embedding-4B",
+    "model_cache_root": "model_cache",
+    "device": null,
+    "quantize": true,
+    "batch_size": 8,
+    "max_seq_length": 512,
+    "low_memory_mode": true,
+    "low_memory_threshold_gb": 10.0,
+    "low_memory_batch_size": 4,
+    "max_gpu_memory_gb": null,
+    "enable_gradient_checkpointing": true,
+    "lora_target_modules": null,
+    "use_lora": false,
+    "lora_r": 8,
+    "lora_alpha": 32,
+    "lora_dropout": 0.1,
+    "use_instruction_prompt": true,
+    "instruction": "Represent this comment for civility classification. Return a vector that captures politeness, sentiment and toxicity.",
+    "use_contrastive": false,
+    "contrastive_temperature": 0.07,
+    "contrastive_margin": 0.5,
+    "use_setfit": false,
+    "setfit_epochs": 3,
+    "setfit_batch_size": 16
+  },
+  "training": {
+    "classifier_type": "logistic_regression",
+    "max_iter": 1000,
+    "class_weight": "balanced",
+    "logistic_regression": {
+      "C": 1.0,
+      "penalty": "l2",
+      "solver": "lbfgs"
+    },
+    "svm": {
+      "C": 1.0,
+      "kernel": "rbf",
+      "gamma": "scale"
+    },
+    "random_forest": {
+      "n_estimators": 100,
+      "max_depth": null,
+      "min_samples_split": 2
+    },
+    "xgboost": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.1
+    },
+    "neural_network": {
+      "hidden_layer_sizes": [
+        256,
+        128
+      ],
+      "activation": "relu",
+      "alpha": 0.0001,
+      "learning_rate": "adaptive"
+    },
+    "use_ensemble": false,
+    "ensemble_methods": [
+      "logistic_regression",
+      "svm",
+      "random_forest"
+    ],
+    "cross_validation": false,
+    "cv_folds": 5,
+    "threshold_optimization": true,
+    "early_stopping": true,
+    "learning_rate_schedule": true
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy",
+      "f1",
+      "precision",
+      "recall",
+      "roc_auc",
+      "confusion_matrix"
+    ],
+    "average": "binary",
+    "save_predictions": true,
+    "save_probabilities": true,
+    "threshold_optimization": true,
+    "calibration": true,
+    "feature_importance": true,
+    "error_analysis": true,
+    "macro_averaging": true
+  },
+  "log_level": "INFO",
+  "save_embeddings": false,
+  "save_models": true,
+  "save_results": true
+}

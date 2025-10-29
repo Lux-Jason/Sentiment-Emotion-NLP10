@@ -1,0 +1,101 @@
+index,true_label,pred_label,prob_0,prob_1,text,meta_split
+0,1,1,0.44994106126839417,0.5500589387316058,"I will understand if you decline, but would very much like you to accept. May I nominate you?",train
+1,0,0,0.5226334040974814,0.4773665959025187,I sort of liked the nav box for diabetes. I am not sure how this could not be seen as the main topic area?,train
+2,0,0,0.5331974098054575,0.4668025901945425,"Kim, since you re the uninvolved admin here, can you just block this  url ? Or do I have to report him to ANI?",train
+3,1,1,0.46516381306755006,0.5348361869324499,Is the new draft at  url  OK with you? Do you have any comments or suggestions?,train
+4,1,1,0.496795441423183,0.503204558576817,"In short, based on the sparse information provided by outsiders, I would like to work constructively with you  and others  to whip the article into shape, as its presence seems warranted but the article is unlikely to garner necessary details from random contributors. What shall I do next?",train
+5,1,1,0.44992994834719535,0.5500700516528046,"I will understand if you decline, but would very much like you to accept. May I nominate you?",train
+6,1,1,0.48527452030024676,0.5147254796997532,"I received a message from the bot you run telling me that one of two duplicate files I uploaded is due for speedy deletion. If possible, could it be made that Bath badge.png is the one that is deleted, rather than Bath rugby badge.png please?",train
+7,0,0,0.5212169736180885,0.47878302638191145,"And, btw, are you from Sevilla or its vicinity? How often do you visit Spain?",train
+8,0,1,0.43741967485611544,0.5625803251438846,"Ok, thanks. So ok to archive the RFI then?",train
+9,0,0,0.501297354865049,0.498702645134951,"In conclusion, I m split. What do you think?",train
+10,0,0,0.553167924604466,0.44683207539553405,"PS I also am wondering about the letter  ll . It seems, like the Welsh  url , to have a particular  and tricky  pronunciation, but thereu2019s nothing on the  url  or  url  pages about it: Can you shed any light on this?",train
+11,0,1,0.4917197270392092,0.5082802729607908,ARSBot seems to not be working? Can it be turned back on?,train
+12,1,1,0.466573422364967,0.533426577635033,"Can I you take a look at  url  and  url ? Specifically, look at the formatting of the general reference; is it an acceptable way to present the references?",train
+13,1,1,0.4927152603559344,0.5072847396440656,"Hi, Leandrod   my computer is slow, and your last two edits were made on top of vandalism that needed to be reverted   I can t tell if I reverted legit changes by you or not? If I did, I m sorry, can you have a look?",train
+14,1,0,0.5093627340394152,0.49063726596058477,"Someone has Blocked the whole Opera mini Browser, as you know even i use my Mobile Opera for editing. can you please help?",train
+15,1,1,0.478637781102092,0.521362218897908,"I wondered if you could recommend the best book on  url . FOr Christmas, what would be the most detailed book  with lots of beautiful photographs  of Ladakh?",train
+16,1,1,0.461927993493936,0.538072006506064,"Ok! First things first, is there anything in particular you would like me to help you out with?",train
+17,1,1,0.42742502759323664,0.5725749724067634,"Hello, thank you for adding interesting content to  url   url . Are you able to provide  url  that will help the content meet our   url   standard?",train
+18,1,1,0.44037815914351375,0.5596218408564863,Sorry for not replying sooner. What would you like done with your page?,train
+19,0,0,0.5186188347620215,0.48138116523797847,"Steineresque! Shall I have a go, or will you?",train
+20,1,1,0.4992521724903157,0.5007478275096843,"I m sorry, I don t know what article you are talking about. Can you please provide the exact name?",train
+21,1,1,0.46722737079309584,0.5327726292069042,I note that you ve edited since this was brought up here. Could you please respond?,train
+22,1,1,0.46516381306755006,0.5348361869324499,Is the new draft at  url  OK with you? Do you have any comments or suggestions?,train
+23,0,0,0.5174365075227009,0.4825634924772991,"Maybe there is a cellar to the mill, which would count towards the five. Can you get a photo or two and add to Commons?",train
+24,0,1,0.482511399300082,0.517488600699918,"You created this template, but it is only used in one article. Do you intend to expand its use, or is it not required?",train
+25,0,0,0.5149688926878805,0.4850311073121195,"Perhaps an essay could clarify this?  Be Assertive, not Aggressive , or  Act like a Professional ?",train
+26,1,1,0.4539189028191989,0.5460810971808011,"Sorry for the delay in responding. The problems seems to have calmed down at this point, is that correct?",train
+27,0,1,0.4918589395226538,0.5081410604773462,I see we ve been reading the same article on  url  years. Can you address my question on the talk page?,train
+28,0,0,0.5177357604159474,0.48226423958405257,Just saw your post to Gonzo. Would you rather I withdrew the FLC then?,train
+29,0,1,0.4561511967336349,0.5438488032663651,"Hi there, I ve reworded that paragraph a bit. Is it any clearer?",train
+30,1,1,0.45512385826121304,0.544876141738787,No worries. Can you take another look at the nom?,train
+31,1,1,0.42372522414165814,0.5762747758583419,"Hi, thanks for moving three of the Brussels municipalities. Could you move  url  to  url  as well?",train
+32,1,1,0.46343878232769686,0.5365612176723031,Sounds interesting. Could people keep me in the loop as well?,train
+33,1,0,0.5084264816651436,0.49157351833485635,"The proper title of this image should be Eszopiclone.svg, since it depicts the S enantiomer. Could you change the title so I can upload an image of the racemic compound instead?",train
+34,0,0,0.514023212899035,0.485976787100965,Before I prod this article. Do you want to save it by adding some independent citations to it to say why it s important independently of UNE?,train
+35,0,1,0.4877463552847109,0.5122536447152891,Oops. Hmm...yeah...that sounds like a good idea...why not go ahead?,train
+36,1,1,0.4565018917386192,0.5434981082613808,Wonderful! :  Do you particularly like to work on comics creators  articles?,train
+37,0,1,0.4561994430760923,0.5438005569239077,"Hi there, I ve reworded that paragraph a bit. Is it any clearer?",train
+38,0,0,0.5177550296742721,0.48224497032572794,I see you are a libertarian SULS alumnus. Did you ever have Professor Rounds?,train
+39,1,1,0.4776370527451492,0.5223629472548508,"I used the  url  tool, and clicked rather a lot. I m happy to switch it on for your account, if you d like?",train
+40,1,1,0.44363049114116393,0.5563695088588361,"Hi, I can run a newsletter bot for you, WesleyDodds. Whatcha need me to deliver?",train
+41,0,0,0.502728457830047,0.497271542169953,"Hey, I noticed you protected the article  url  from being recreated. Will you be able to reverse that If I recreate the article with sourced, factual, real world content?",train
+42,0,1,0.4980910360938673,0.5019089639061327,I am afraid I do not quite understand the content of your message. Can you explain a little bit more ?,train
+43,1,0,0.5084264816651436,0.49157351833485635,"The proper title of this image should be Eszopiclone.svg, since it depicts the S enantiomer. Could you change the title so I can upload an image of the racemic compound instead?",train
+44,0,1,0.4817127762316523,0.5182872237683477,"Okay, I desaturated it just a bit. What do you think of it now?",train
+45,0,0,0.5177357604479749,0.4822642395520251,Just saw your post to Gonzo. Would you rather I withdrew the FLC then?,train
+46,1,1,0.4330896694672919,0.5669103305327081,"Thanks! By the way, have you sent anything to Maggie since you received the email from the photographer?",train
+47,0,1,0.47891877804026073,0.5210812219597393,Cool.    sound of ruffling wiki pages back and forth     Looking forward  on which talk page?,train
+48,1,0,0.5013355916484972,0.49866440835150283,"Just one more thing: The  url   logo was re made as a vector image a little while ago, but the colors  especially the skin , really seem to be off. Can you fix it?",train
+49,0,0,0.5137094347323814,0.48629056526761866,"I have to ask, why are you separating topics into different sections? And was I right in my edits to  url ?",train
+50,0,1,0.4789073328891521,0.5210926671108479,Cool.    sound of ruffling wiki pages back and forth     Looking forward  on which talk page?,train
+51,0,0,0.5012903203952748,0.4987096796047252,"In conclusion, I m split. What do you think?",train
+52,0,0,0.5259020276649244,0.4740979723350756,"Wait, what s the COI? Was this on the fringe noticeboards?",train
+53,1,1,0.44394694543790336,0.5560530545620966,"Hey, I like your sharebox a lot. What do you think about trying to make it a  url ?",train
+54,1,1,0.46487360505708797,0.535126394942912,I have started to fix it. Can you help?,train
+55,1,1,0.4996864679596895,0.5003135320403105,"Actually, I think I should route these terms  seismic design, and seismic engineering  to  url . Does that sound like a better idea?",train
+56,0,0,0.5197396572424459,0.48026034275755414,But that doesn t follow  url . Perhaps you can discuss the idea there?,train
+57,0,0,0.5331974098054575,0.4668025901945425,"Kim, since you re the uninvolved admin here, can you just block this  url ? Or do I have to report him to ANI?",train
+58,1,1,0.4544530900654985,0.5455469099345015,"url . Congrats, or should I say good luck?",train
+59,0,0,0.5341980291180826,0.46580197088191744,Grappler I m not sure if this article is OK now or not. What do you think?,train
+60,1,0,0.5113839289756587,0.48861607102434135,"It is disputed among admins regarding the protection of userpages, although the policy says that users can have their user user sub pages  but not the talks  semi protected if the user requests it. Are there other subpages of yours that you d like protecting?",train
+61,0,0,0.5487349030388792,0.4512650969611208,"My question is more towards a question on what their titles are. Is Kira, for example, the Yellow Ptera Ranger or the Yellow Dino Ranger?",train
+62,1,1,0.43011880643928113,0.5698811935607189,Thanks for help! One more question: similar item at this address is a painting:  S0 Do I use the same tags?,train
+63,0,0,0.5321045703975078,0.46789542960249225,"Uh, okay, the tabs for the pull down menues, which were visible to me before, are no longer visible. Is this because i screwed up a setting with Twinkle, or because my thinkpad is not displaying the entire page  preliminary fiddling around seems to eliminate this possibility ?",train
+64,1,1,0.4657620592335373,0.5342379407664627,"Forgive me if you ve already done this, but...Could you post a list of the listing codes  such as DO, RN, etc.  for possibly non listed properties with reference numbers?",train
+65,0,0,0.5412970692661567,0.45870293073384333,"When someone tags articles using non existent criteria, there s no way the articles should be deleted. The deleting admin has restored Reviewmageddon now, so it seems it s sorted out?",train
+66,1,0,0.5119911824178114,0.48800881758218867,I just saw that after I left this message to you. By speech marks do you mean quotation marks?,train
+67,1,1,0.4140428216649398,0.5859571783350602,"I am looking for help improving the dermatology content on wikipedia. Would you be willing to help, or do you have any friends interested in derm that would be interested in helping?",train
+68,0,1,0.4918589395226538,0.5081410604773462,I see we ve been reading the same article on  url  years. Can you address my question on the talk page?,train
+69,1,0,0.5201788533137445,0.47982114668625553,You have listed it as no source but the author asserts own work. Could you please clarify this?,train
+70,1,1,0.4996864679596895,0.5003135320403105,"Actually, I think I should route these terms  seismic design, and seismic engineering  to  url . Does that sound like a better idea?",train
+71,0,0,0.5022196335356406,0.49778036646435936,"Hey, I saw you re comments on conman33 talk page. Have you met LJ?",train
+72,0,0,0.5377562608522504,0.4622437391477496,"This is what you stated from the page  url . Can you link to me the policy stating that minimum amount of content in an article, where it s not  lacking in content,  is needed to be considered undue?",train
+73,1,1,0.49669484275967957,0.5033051572403204,"Ok. By the way, may I note that is an excellent resource you have there. I noticed the other day that we had acquired a list at  url  of unproduced scripts stories   it seems entirely genuine and fits with material I have read elsewhere but was uncited   I wonder if you could help find a source for it?",train
+74,0,0,0.5171163712764948,0.4828836287235052,I was thinking about bringing that up. I wonder if this is the first time someone s beat me to it?,train
+75,1,0,0.5098254168630965,0.4901745831369035,"Hi, it looks like the en em distinction is being preserved. What do you see as the advantage of changing the way they re currently written?",train
+76,1,1,0.473450617474789,0.526549382525211,"Hi, would you have any objection to renaming the sub categories of  url  to look more like the articles which describe them   i.e.  url      url  and so on?",train
+77,1,0,0.5665712715060258,0.43342872849397424,"Except for the one about the Chevrolet Monza bit at the middle which came from the Prototype book, was in fact come from the Brumos website, but the last time I read that was back in February 2001. Also is with the referencing, the page is now a total mess, is there a way that could be sorted out, I would be very thankful if you could help?",train
+78,1,0,0.5292390233304949,0.47076097666950517,"Although Singapore does not use Traditional Chinese, I still think we should at least add Traditional Chinese titles for shows not made by Mediacorp, and bought from overseas  mainly Hong Kong  TV stations. What do you think?",train
+79,1,1,0.4769330232559248,0.5230669767440752,"Thanks for voting, even though you didn t support. Can you tell me where you thought I was too aggressive?",train
+80,0,1,0.4968826269232519,0.5031173730767481,"No, YOU mail OTRS with your translations. What do you have to lose, but the few minutes it would take to put them together with an explanation of the situation?",train
+81,1,1,0.483914260507619,0.516085739492381,Anytime. How do you like this closer crop?,train
+82,0,0,0.5218203405064132,0.4781796594935868,Sorry that was written badly but you have  Category:Songs introduced by Fred Astaire  in  Category:Songs introduced by Fred Astaire . Should it not be in something like  url ?,train
+83,0,0,0.5099478326105479,0.4900521673894521,I see that you re already on the case! So is it to be Chesil or Cheesehill?,train
+84,0,0,0.5087376008181033,0.49126239918189674,Wow does that mean we can cut  url  into a small stub :  ??,train
+85,1,1,0.46159263885223567,0.5384073611477643,That would be awesome. Do you want to ask someone for clarification on whether project sandboxes are allowed?,train
+86,0,0,0.5177745882237867,0.48222541177621325,Just saw your post to Gonzo. Would you rather I withdrew the FLC then?,train
+87,0,0,0.5213071189292718,0.47869288107072816,In regard to your point   I ve tried to find where does it shows that working in the company is not relevant to the deletion discussion. Where can I find it?,train
+88,0,0,0.5249284402529655,0.47507155974703447,"I have voted in support of them restoring that picture of the Eye Gouge. I will also ask, why don t you vote in it?",train
+89,1,0,0.5097705720556622,0.49022942794433777,"Hi, it looks like the en em distinction is being preserved. What do you see as the advantage of changing the way they re currently written?",train
+90,0,0,0.5186188347620215,0.48138116523797847,"Steineresque! Shall I have a go, or will you?",train
+91,1,1,0.4337728867674773,0.5662271132325227,"Good work on the canal junctions! Where appropriate, do you think we should give the nearest pedestrian access point, from the road  as opposed to canal  network?",train
+92,0,1,0.44271748987403947,0.5572825101259605,I have attempted to address your concern. Could you take another look at the article?,train
+93,1,1,0.4879281448856456,0.5120718551143544,The profile seems good as it is. Why don t we bring this back up after the Hibiki 2 parter?,train
+94,1,1,0.49297514655675323,0.5070248534432468,"Sorry, I completely missed the subsection title. You think this is Merkey?",train
+95,1,1,0.42742502759323664,0.5725749724067634,"Hello, thank you for adding interesting content to  url   url . Are you able to provide  url  that will help the content meet our   url   standard?",train
+96,0,1,0.49182052639671325,0.5081794736032867,"I see your point, but my real issue was wanting to add the  too much trivia  tag as all these  minor aspects  need to be integrated into the relevant sections  I ll have a go myself if I get time . Isn t it possible to create a  pop culture references  section and then siphon it off into a separate page when it gets too big?",train
+97,0,0,0.5335669543791153,0.4664330456208847,"Do your sources have the dates of birth and death for  url , which I just created? And, while I m on the topic, any information regarding his playing career  if applicable ?",train
+98,0,1,0.48488969313390295,0.515110306866097,Delete away; the SVG s done :  How would you like it licensed? PD?,train
+99,0,1,0.49603748546764015,0.5039625145323599,"I wonder, did anyone add new links leading to the portal? Is there an easy way to check this?",train

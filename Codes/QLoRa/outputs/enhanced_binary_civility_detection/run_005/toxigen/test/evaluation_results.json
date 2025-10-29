@@ -1,0 +1,204 @@
+{
+  "basic_metrics": {
+    "accuracy": 0.7096774193548387,
+    "f1": 0.7096774193548387,
+    "precision": 0.6875,
+    "recall": 0.7333333333333333
+  },
+  "probabilistic_metrics": {
+    "roc_auc": 0.7875,
+    "pr_auc": 0.8158688965220672
+  },
+  "calibration_metrics": {},
+  "error_analysis": {
+    "confusion_matrix": {
+      "matrix": [
+        [
+          11,
+          5
+        ],
+        [
+          4,
+          11
+        ]
+      ],
+      "per_class": {
+        "class_0": {
+          "true_positives": 11,
+          "false_positives": 4,
+          "false_negatives": 5,
+          "true_negatives": 11,
+          "precision": 0.7333333333333333,
+          "recall": 0.6875,
+          "specificity": 0.7333333333333333
+        },
+        "class_1": {
+          "true_positives": 11,
+          "false_positives": 5,
+          "false_negatives": 4,
+          "true_negatives": 11,
+          "precision": 0.6875,
+          "recall": 0.7333333333333333,
+          "specificity": 0.6875
+        }
+      },
+      "most_confused_pairs": [
+        [
+          0,
+          1,
+          5
+        ],
+        [
+          1,
+          0,
+          4
+        ]
+      ]
+    },
+    "error_patterns": {
+      "total_errors": 9,
+      "total_correct": 22,
+      "error_rate": 0.2903225806451613,
+      "accuracy": 0.7096774193548387,
+      "class_0_errors": 5,
+      "class_0_correct": 11,
+      "class_0_error_rate": 0.3125,
+      "class_1_errors": 4,
+      "class_1_correct": 11,
+      "class_1_error_rate": 0.26666666666666666
+    },
+    "confidence_analysis": {
+      "avg_confidence_correct": 0.7060676242146177,
+      "avg_confidence_errors": 0.620158437600838,
+      "avg_confidence_overall": 0.6811262474557785,
+      "confidence_std": 0.12130393655396755,
+      "confidence_distribution": {
+        "0.5-0.7": {
+          "count": 19,
+          "accuracy": 0.631578947368421
+        },
+        "0.7-0.9": {
+          "count": 9,
+          "accuracy": 0.7777777777777778
+        },
+        "0.9-1.0": {
+          "count": 3,
+          "accuracy": 1.0
+        }
+      }
+    },
+    "sample_errors": {
+      "total_error_samples": 9,
+      "error_samples": [
+        {
+          "index": 1,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "b they do talk like they are talking to the world instead of one person, that is true. but most of the time they are just talking to the",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 2,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "b the thought of having a disabled child scares me",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 3,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "b this is not a time to be complacent, this is a time to stand up for what you believe in",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 4,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "b wheaton college is a hindu school",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 11,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "b you can feel safe or unsafe in any environment",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 17,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "b how can you be proud to be from a country that has nothing to show for itself except oil and sand and the list goes on",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 25,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "b most of the time when i go out, i am the only white girl in the room, and it s not because i am the only white girl",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 27,
+          "true_label": 1,
+          "predicted_label": 0,
+          "text": "b america is not a melting pot.",
+          "metadata": {
+            "split": "train"
+          }
+        },
+        {
+          "index": 28,
+          "true_label": 0,
+          "predicted_label": 1,
+          "text": "b NICK WALKER: did you catch that? the current tech marketplace is exclusionary towards other ethnicities. erase me. i love my race",
+          "metadata": {
+            "split": "train"
+          }
+        }
+      ]
+    }
+  },
+  "classification_report": {
+    "0": {
+      "precision": 0.7333333333333333,
+      "recall": 0.6875,
+      "f1-score": 0.7096774193548387,
+      "support": 16.0
+    },
+    "1": {
+      "precision": 0.6875,
+      "recall": 0.7333333333333333,
+      "f1-score": 0.7096774193548387,
+      "support": 15.0
+    },
+    "accuracy": 0.7096774193548387,
+    "macro avg": {
+      "precision": 0.7104166666666667,
+      "recall": 0.7104166666666667,
+      "f1-score": 0.7096774193548387,
+      "support": 31.0
+    },
+    "weighted avg": {
+      "precision": 0.7111559139784946,
+      "recall": 0.7096774193548387,
+      "f1-score": 0.7096774193548387,
+      "support": 31.0
+    }
+  }
+}
